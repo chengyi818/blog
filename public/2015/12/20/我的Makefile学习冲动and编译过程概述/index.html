@@ -1,0 +1,356 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>openwrt编译(2)_编译过程概述 | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="John Doe">
+    
+    <meta name="description" content="前言又到了成胖子每周一博的时间了,本周是第三周.本周我们继续了解openwrt的编译过程,如果还有没写过简单ipk或者编译过openwrt的朋友,可以参见我之前的博客或者网上的其他文章
+一 年轻的冲动为什么我在学习的过程中,有先学习整个编译过程和Makefile的冲动呢?
+
+1.我们知道电脑的运算速">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Hexo" title="Hexo"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Hexo">Hexo</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/12/20/我的Makefile学习冲动and编译过程概述/" title="openwrt编译(2)_编译过程概述" itemprop="url">openwrt编译(2)_编译过程概述</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://yoursite.com" title="John Doe">John Doe</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2015-12-19T16:00:00.000Z" itemprop="datePublished">2015-12-20</time>
+    Updated:<time datetime="2016-04-07T04:46:12.517Z" itemprop="dateModified">2016-04-07</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一-年轻的冲动"><span class="toc-number">2.</span> <span class="toc-text">一 年轻的冲动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-学习曲线"><span class="toc-number">3.</span> <span class="toc-text">二 学习曲线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Makefile基本语法"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 Makefile基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-bash基础"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 bash基础</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-world"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 world</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-编译过程概述"><span class="toc-number">4.</span> <span class="toc-text">三 编译过程概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-编译host工具"><span class="toc-number">4.1.</span> <span class="toc-text">3.2 编译host工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-编译交叉工具链"><span class="toc-number">4.2.</span> <span class="toc-text">3.3 编译交叉工具链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-编译内核模块"><span class="toc-number">4.3.</span> <span class="toc-text">3.4 编译内核模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-编译ipk"><span class="toc-number">4.4.</span> <span class="toc-text">3.5 编译ipk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-安装ipk"><span class="toc-number">4.5.</span> <span class="toc-text">3.6 安装ipk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-编译内核"><span class="toc-number">4.6.</span> <span class="toc-text">3.7 编译内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8-合成"><span class="toc-number">4.7.</span> <span class="toc-text">3.8 合成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尾声"><span class="toc-number">5.</span> <span class="toc-text">尾声</span></a></li></ol>
+		</div>
+		
+		<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>又到了成胖子每周一博的时间了,本周是第三周.<br>本周我们继续了解<code>openwrt</code>的编译过程,如果还有没写过简单ipk或者编译过openwrt的朋友,可以参见我之前的<a href="http://blog.csdn.net/icy_river/article/details/48260859" target="_blank" rel="external">博客</a>或者网上的其他<a href="https://www.baidu.com/s?wd=%E7%BC%96%E8%AF%91openwrt&amp;rsv_spt=1&amp;rsv_iqid=0x8f1fcaec0016b4fc&amp;issp=1&amp;f=8&amp;rsv_bp=0&amp;rsv_idx=2&amp;ie=utf-8&amp;tn=baiduhome_pg&amp;rsv_enter=1&amp;rsv_sug3=15&amp;rsv_sug1=10" target="_blank" rel="external">文章</a></p>
+<h2 id="一-年轻的冲动"><a href="#一-年轻的冲动" class="headerlink" title="一 年轻的冲动"></a>一 年轻的冲动</h2><p>为什么我在学习的过程中,有先学习整个编译过程和Makefile的冲动呢?</p>
+<blockquote>
+<p>1.我们知道电脑的运算速度是很快的.即使如此,一个完整的编译过程往往需要好几个小时.这中间到底发生了些什么?屏幕上一闪而过的像天书一样的东西,我怎么才能有所了解?</p>
+<p>2.经历漫长的等待,我们得到了一个镜像bin文件.这里面到底包含了什么东西?我可以知道么?</p>
+<p>3.编译单个ipk的时候,我按照模板写的Makefile怎么和我在书上见的长的不太一样呢?</p>
+<p>4.在单个ipk中,怎么包含头文件,动态库,静态库?怎么解决依赖关系?</p>
+<p>5.在输入<code>make menuconfig</code>之后,又发生了什么?弹出的图形界面中,怎么会有我放在<code>package</code>目录中的源码的信息?</p>
+<p>6.有的时候,编译报错了.提示信息它认识我,我不认识它.我要怎么排查呢?</p>
+<p>…</p>
+</blockquote>
+<p>零零散散的总是有很多疑问困扰着我.我相信有很多刚接触<code>openwrt</code>的朋友都和我有同感.而所有这些都是可以通过完整学习编译过程来解答的.这样想想是不是更有学习的动力了呢?</p>
+<h2 id="二-学习曲线"><a href="#二-学习曲线" class="headerlink" title="二 学习曲线"></a>二 学习曲线</h2><h3 id="2-1-Makefile基本语法"><a href="#2-1-Makefile基本语法" class="headerlink" title="2.1 Makefile基本语法"></a>2.1 Makefile基本语法</h3><p>&emsp;我们知道编译过程是通过Makefile来控制的.这样而言,Makefile的基本语法就必须有所了解.网上有很多零散的资料往往不成体系.推荐阅读一个是陈皓自己写的和翻译的GNU Make的<a href="http://blog.csdn.net/haoel/article/details/2886" target="_blank" rel="external">手册</a>.还是比较全的.英文还凑合的朋友,我推荐还是尽力读读官方的<a href="https://www.gnu.org/software/make/manual/" target="_blank" rel="external">手册</a>,简介精炼,没事学点英文也是好的.后面的文章,假定读者对Makefile语法有所了解.</p>
+<h3 id="2-2-bash基础"><a href="#2-2-bash基础" class="headerlink" title="2.2 bash基础"></a>2.2 bash基础</h3><p>Makefile中的执行部分(recipe)是有bash脚本组成的,所以我们同时应当对bash shell有所了解.</p>
+<h3 id="2-3-world"><a href="#2-3-world" class="headerlink" title="2.3 world"></a>2.3 world</h3><p>有了这两部分的预备知识,我们将开始我们的征途.我们的目标是<strong>world</strong>.</p>
+<h2 id="三-编译过程概述"><a href="#三-编译过程概述" class="headerlink" title="三 编译过程概述"></a>三 编译过程概述</h2><p>###3.1 主机预装工具</p>
+<p>在编译源码之前,我们必须手动安装一部分工具 .</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install gcc g++ binutils patch bzip2 flex bison make autoconf gettext texinfo unzip sharutils subversion libncurses5-dev ncurses-term zlib1g-dev</span><br></pre></td></tr></table></figure>
+<p>这部分是在执行编译工作之前的.</p>
+<h3 id="3-2-编译host工具"><a href="#3-2-编译host工具" class="headerlink" title="3.2 编译host工具"></a>3.2 编译host工具</h3><p>除了我们在第一步安装的工具,编译过程中还需要其他一些主机工具.这部分工具将首先编译.</p>
+<h3 id="3-3-编译交叉工具链"><a href="#3-3-编译交叉工具链" class="headerlink" title="3.3 编译交叉工具链"></a>3.3 编译交叉工具链</h3><p><code>openwrt</code>自带交叉编译链,当然在编译目标平台软件前,需要先编译.</p>
+<h3 id="3-4-编译内核模块"><a href="#3-4-编译内核模块" class="headerlink" title="3.4 编译内核模块"></a>3.4 编译内核模块</h3><p>因为部分内核模块将会生成独立的ipk,所以内核模块需要首先编译.</p>
+<h3 id="3-5-编译ipk"><a href="#3-5-编译ipk" class="headerlink" title="3.5 编译ipk"></a>3.5 编译ipk</h3><p>这里将编译<code>package</code>目录下的各个软件包,这也是和我们最为息息相关的.之后的博客将会重点介绍这个部分.</p>
+<h3 id="3-6-安装ipk"><a href="#3-6-安装ipk" class="headerlink" title="3.6 安装ipk"></a>3.6 安装ipk</h3><p>将生成的ipk安装到文件系统之中(比如build_dir/target-XXX/root-ramips目录).</p>
+<h3 id="3-7-编译内核"><a href="#3-7-编译内核" class="headerlink" title="3.7 编译内核"></a>3.7 编译内核</h3><p>在完成ipk编译之后,将会编译内核,压缩内核.同时使用mkimage工具,在内核前面生成一个用于uboot识别的头部.</p>
+<h3 id="3-8-合成"><a href="#3-8-合成" class="headerlink" title="3.8 合成"></a>3.8 合成</h3><p>在最后一步,将squashfs格式的文件系统和内核连接在一起,即生成了目标镜像文件.</p>
+<h2 id="尾声"><a href="#尾声" class="headerlink" title="尾声"></a>尾声</h2><p>本周到此为止,下一篇我们将介绍根目录下的Makefile,从而知道为什么编译的大致过程是上面提及的八步.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/openwrt-makefile-深度/">openwrt makefile 深度</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/道术/">道术</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://yoursite.com/2015/12/20/我的Makefile学习冲动and编译过程概述/" data-title="openwrt编译(2)_编译过程概述 | Hexo" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/12/26/openwrt主Makefile解析/" title="openwrt编译(3)_主Makefile解析">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  openwrt编译(3)_主Makefile解析</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/12/13/openwrt源码目录概述/"  title="openwrt编译(1)_目录概述">
+ <strong>NEXT:</strong><br/> 
+ <span>openwrt编译(1)_目录概述
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一-年轻的冲动"><span class="toc-number">2.</span> <span class="toc-text">一 年轻的冲动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-学习曲线"><span class="toc-number">3.</span> <span class="toc-text">二 学习曲线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Makefile基本语法"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 Makefile基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-bash基础"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 bash基础</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-world"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 world</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-编译过程概述"><span class="toc-number">4.</span> <span class="toc-text">三 编译过程概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-编译host工具"><span class="toc-number">4.1.</span> <span class="toc-text">3.2 编译host工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-编译交叉工具链"><span class="toc-number">4.2.</span> <span class="toc-text">3.3 编译交叉工具链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-编译内核模块"><span class="toc-number">4.3.</span> <span class="toc-text">3.4 编译内核模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-编译ipk"><span class="toc-number">4.4.</span> <span class="toc-text">3.5 编译ipk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-安装ipk"><span class="toc-number">4.5.</span> <span class="toc-text">3.6 安装ipk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-编译内核"><span class="toc-number">4.6.</span> <span class="toc-text">3.7 编译内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8-合成"><span class="toc-number">4.7.</span> <span class="toc-text">3.8 合成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尾声"><span class="toc-number">5.</span> <span class="toc-text">尾声</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+			<li><a href="/categories/道术/" title="道术">道术<sup>17</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Linux/" title="Linux">Linux<sup>1</sup></a></li>
+		
+			<li><a href="/tags/lxc/" title="lxc">lxc<sup>1</sup></a></li>
+		
+			<li><a href="/tags/makefile-openwrt-深度/" title="makefile openwrt 深度">makefile openwrt 深度<sup>1</sup></a></li>
+		
+			<li><a href="/tags/openwrt/" title="openwrt">openwrt<sup>1</sup></a></li>
+		
+			<li><a href="/tags/openwrt-makefile-深度/" title="openwrt makefile 深度">openwrt makefile 深度<sup>4</sup></a></li>
+		
+			<li><a href="/tags/openwrt-深度/" title="openwrt 深度">openwrt 深度<sup>1</sup></a></li>
+		
+			<li><a href="/tags/工具说/" title="工具说">工具说<sup>8</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
+		
+		<a href="http://yoursite.com" target="_blank" title="John Doe">John Doe</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+
+
+
+  </body>
+</html>

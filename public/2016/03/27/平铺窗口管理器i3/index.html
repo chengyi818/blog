@@ -1,0 +1,375 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>工具说_平铺式窗口管理器i3 | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="John Doe">
+    
+    <meta name="description" content="本周是成胖子每周一博的第十五周 :smile:
+
+前言
+小伙伴们感觉这个桌面炫酷不炫酷?
+窗口管理器可以分为平铺式和层叠式,通常我们使用的都是层叠式,也就是每个窗口都可以相互重叠.
+对于多显示器或者大尺寸显示器而言,平铺式窗口往往更有优势.
+常见的平铺式管理器有:
+
+xmond*
+awesome*
+">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Hexo" title="Hexo"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Hexo">Hexo</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/03/27/平铺窗口管理器i3/" title="工具说_平铺式窗口管理器i3" itemprop="url">工具说_平铺式窗口管理器i3</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="http://yoursite.com" title="John Doe">John Doe</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2016-03-26T16:00:00.000Z" itemprop="datePublished">2016-03-27</time>
+    Updated:<time datetime="2016-04-07T04:46:12.521Z" itemprop="dateModified">2016-04-07</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装与使用"><span class="toc-number">2.</span> <span class="toc-text">安装与使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用"><span class="toc-number">2.2.</span> <span class="toc-text">使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件"><span class="toc-number">3.1.</span> <span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#说明"><span class="toc-number">3.2.</span> <span class="toc-text">说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我的快捷键"><span class="toc-number">4.</span> <span class="toc-text">我的快捷键</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用快捷键"><span class="toc-number">4.1.</span> <span class="toc-text">常用快捷键</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尾记"><span class="toc-number">5.</span> <span class="toc-text">尾记</span></a></li></ol>
+		</div>
+		
+		<p>本周是成胖子每周一博的第十五周 :smile:</p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="http://ww1.sinaimg.cn/large/006kvZhRjw1f2bm4kl8afj30af06imyd.jpg" alt="最终效果图"></p>
+<p>小伙伴们感觉这个桌面炫酷不炫酷?</p>
+<p><a href="http://yumminhuang.github.io/blog/2015/03/29/i3-%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8%E7%AE%80%E4%BB%8B/" target="_blank" rel="external">窗口管理器</a>可以分为平铺式和层叠式,通常我们使用的都是层叠式,也就是每个窗口都可以相互重叠.</p>
+<p>对于<strong>多显示器</strong>或者<strong>大尺寸显示器</strong>而言,平铺式窗口往往更有优势.</p>
+<p>常见的平铺式管理器有:</p>
+<ul>
+<li><a href="http://xmonad.org/" target="_blank" rel="external">xmond</a><br>*</li>
+<li><a href="https://awesome.naquadah.org/" target="_blank" rel="external">awesome</a><br>*</li>
+<li><a href="https://i3wm.org/" target="_blank" rel="external">i3wm</a></li>
+</ul>
+<p>经过筛选,我最终选择了i3.</p>
+<hr>
+<h2 id="安装与使用"><a href="#安装与使用" class="headerlink" title="安装与使用"></a>安装与使用</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>Ubuntu稳定版本安装方法:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># echo &quot;deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe&quot; &gt;&gt; /etc/apt/sources.list</span><br><span class="line"># apt-get update</span><br><span class="line"># apt-get --allow-unauthenticated install sur5r-keyring</span><br><span class="line"># apt-get update</span><br><span class="line"># apt-get install i3 i3lock dmenu i3status</span><br></pre></td></tr></table></figure>
+<p>其他安装方法参见<a href="http://i3wm.org/downloads/" target="_blank" rel="external">这里</a></p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><ul>
+<li>安装完成后,注销.</li>
+<li>在重新登陆界面,可以选择桌面窗口管理器.</li>
+<li>选择i3,输入用户名,密码登陆.</li>
+</ul>
+<hr>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h3><p>i3的配置文件,包括两个:</p>
+<ol>
+<li>主配置文件</li>
+<li>状态栏配置文件</li>
+</ol>
+<p>我的配置文件已经上传到我的<a href="https://github.com/chengyi818/dotfiles" target="_blank" rel="external">dotfiles</a>中.</p>
+<p>其中主配置文件是<code>home/i3/config</code>,状态栏配置文件是<code>.i3status.conf</code>.<br>可以直接下载使用.</p>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><ul>
+<li>如果需要增加开机启动的程序或者脚本,可以仿照主配置文件最后一行的写法,添加自定义的开机执行程序.</li>
+</ul>
+<h2 id="我的快捷键"><a href="#我的快捷键" class="headerlink" title="我的快捷键"></a>我的快捷键</h2><p>根据我的需求,我重新定制了部分快捷键,请参见配置文件中的说明.</p>
+<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><p>MOD键被映射为windows键,也就是左手边Alt左边的键.</p>
+<ul>
+<li>MOD + h,j,k,l：移动屏幕焦点；</li>
+<li>MOD + Shift + h,j,k,l：移动容器；</li>
+<li>MOD + v：垂直分割容器；</li>
+<li>MOD + z：水平分割容器；</li>
+<li>MOD + d：打开应用程序启动器Dmenu；</li>
+<li>MOD + Enter：打开终端。</li>
+<li>MOD + Shift + q : 关闭当前程序</li>
+<li>MOD + Shift + e : 退出i3,可以重新选择窗口管理器.</li>
+</ul>
+<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p><em>i3</em>是面向高级用户的窗口管理工具,使用起来让你很有极客范.大量的操作将使用键盘完成.<br>很有意思,值得尝试.</p>
+<p>下周再见 :wave:</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/工具说/">工具说</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/道术/">道术</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://yoursite.com/2016/03/27/平铺窗口管理器i3/" data-title="工具说_平铺式窗口管理器i3 | Hexo" data-tsina="null" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2016/03/19/翻墙之我见/"  title="翻墙之我见">
+ <strong>NEXT:</strong><br/> 
+ <span>翻墙之我见
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装与使用"><span class="toc-number">2.</span> <span class="toc-text">安装与使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用"><span class="toc-number">2.2.</span> <span class="toc-text">使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置"><span class="toc-number">3.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置文件"><span class="toc-number">3.1.</span> <span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#说明"><span class="toc-number">3.2.</span> <span class="toc-text">说明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#我的快捷键"><span class="toc-number">4.</span> <span class="toc-text">我的快捷键</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常用快捷键"><span class="toc-number">4.1.</span> <span class="toc-text">常用快捷键</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尾记"><span class="toc-number">5.</span> <span class="toc-text">尾记</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+			<li><a href="/categories/道术/" title="道术">道术<sup>17</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Linux/" title="Linux">Linux<sup>1</sup></a></li>
+		
+			<li><a href="/tags/lxc/" title="lxc">lxc<sup>1</sup></a></li>
+		
+			<li><a href="/tags/makefile-openwrt-深度/" title="makefile openwrt 深度">makefile openwrt 深度<sup>1</sup></a></li>
+		
+			<li><a href="/tags/openwrt/" title="openwrt">openwrt<sup>1</sup></a></li>
+		
+			<li><a href="/tags/openwrt-makefile-深度/" title="openwrt makefile 深度">openwrt makefile 深度<sup>4</sup></a></li>
+		
+			<li><a href="/tags/openwrt-深度/" title="openwrt 深度">openwrt 深度<sup>1</sup></a></li>
+		
+			<li><a href="/tags/工具说/" title="工具说">工具说<sup>8</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
+		
+		<a href="http://yoursite.com" target="_blank" title="John Doe">John Doe</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+
+
+
+  </body>
+</html>
