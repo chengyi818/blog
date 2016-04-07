@@ -87,3 +87,18 @@ feed:
 #sitemap
 sitemap:
     path: sitemap.xml
+
+# Markdown
+## https://github.com/chjj/marked
+markdown:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+# Stylus
+stylus:
+  compress: false
