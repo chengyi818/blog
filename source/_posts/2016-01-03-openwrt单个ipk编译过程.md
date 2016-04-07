@@ -1,6 +1,6 @@
 ---
 layout: post
-title: openwrt编译(4)_单个ipk编译过程
+title: openwrt单个ipk编译过程
 category: openwrt
 tags: [openwrt,makefile,深度]
 comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: openwrt编译(2)_编译过程概述
+title: openwrt编译过程概述
 category: openwrt
 tags: [openwrt,makefile,深度]
 comments: true
