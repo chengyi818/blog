@@ -1,13 +1,13 @@
 
  <!DOCTYPE HTML>
-<html >
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   
-    <title>openwrt编译(2)_编译过程概述 | Hexo</title>
+    <title>openwrt编译(2)_编译过程概述 | 祎婷之家</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
-    <meta name="author" content="John Doe">
+    <meta name="author" content="成祎">
     
     <meta name="description" content="前言又到了成胖子每周一博的时间了,本周是第三周.本周我们继续了解openwrt的编译过程,如果还有没写过简单ipk或者编译过openwrt的朋友,可以参见我之前的博客或者网上的其他文章
 一 年轻的冲动为什么我在学习的过程中,有先学习整个编译过程和Makefile的冲动呢?
@@ -18,13 +18,13 @@
     
     
     
-    <link rel="icon" href="/img/favicon.ico">
+    <link rel="icon" href="/blog/img/favicon.ico">
     
     
-    <link rel="apple-touch-icon" href="/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon" href="/blog/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/blog/img/pacman.jpg">
     
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/blog/css/style.css">
 </head>
 
   <body>
@@ -32,14 +32,14 @@
       <div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/logo.svg" alt="Hexo" title="Hexo"/></a>
+				<a href="/blog/"><img src="/blog/img/logo.svg" alt="祎婷之家" title="祎婷之家"/></a>
 			</div>
 			
 			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="Hexo">Hexo</a></h1>
-				<h2 class="blog-motto"></h2>
+				<h1 class="site-name"><a href="/blog/" title="祎婷之家">祎婷之家</a></h1>
+				<h2 class="blog-motto">闻之我也野，视之我也饶，行之我也明</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -52,8 +52,8 @@
 					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
-						<input type="hidden" name="q" value="site:yoursite.com">
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:yiting.co/blog">
 					</form>
 					
 					</li>
@@ -68,15 +68,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/12/20/我的Makefile学习冲动and编译过程概述/" title="openwrt编译(2)_编译过程概述" itemprop="url">openwrt编译(2)_编译过程概述</a>
+      <a href="/blog/2015/12/20/我的Makefile学习冲动and编译过程概述/" title="openwrt编译(2)_编译过程概述" itemprop="url">openwrt编译(2)_编译过程概述</a>
   </h1>
   <p class="article-author">By
     
-      <a href="http://yoursite.com" title="John Doe">John Doe</a>
+      <a href="http://yiting.co/blog" title="成祎">成祎</a>
     </p>
   <p class="article-time">
     <time datetime="2015-12-19T16:00:00.000Z" itemprop="datePublished">2015-12-20</time>
-    Updated:<time datetime="2016-04-07T04:46:12.517Z" itemprop="dateModified">2016-04-07</time>
+    更新日期:<time datetime="2016-04-07T04:46:12.517Z" itemprop="dateModified">2016-04-07</time>
     
   </p>
 </header>
@@ -84,7 +84,7 @@
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一-年轻的冲动"><span class="toc-number">2.</span> <span class="toc-text">一 年轻的冲动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-学习曲线"><span class="toc-number">3.</span> <span class="toc-text">二 学习曲线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Makefile基本语法"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 Makefile基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-bash基础"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 bash基础</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-world"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 world</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-编译过程概述"><span class="toc-number">4.</span> <span class="toc-text">三 编译过程概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-编译host工具"><span class="toc-number">4.1.</span> <span class="toc-text">3.2 编译host工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-编译交叉工具链"><span class="toc-number">4.2.</span> <span class="toc-text">3.3 编译交叉工具链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-编译内核模块"><span class="toc-number">4.3.</span> <span class="toc-text">3.4 编译内核模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-编译ipk"><span class="toc-number">4.4.</span> <span class="toc-text">3.5 编译ipk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-安装ipk"><span class="toc-number">4.5.</span> <span class="toc-text">3.6 安装ipk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-编译内核"><span class="toc-number">4.6.</span> <span class="toc-text">3.7 编译内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8-合成"><span class="toc-number">4.7.</span> <span class="toc-text">3.8 合成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尾声"><span class="toc-number">5.</span> <span class="toc-text">尾声</span></a></li></ol>
 		</div>
 		
@@ -121,20 +121,20 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/openwrt-makefile-深度/">openwrt makefile 深度</a>
+  <span></span> <a href="/blog/tags/openwrt-makefile-深度/">openwrt makefile 深度</a>
   </div>
 
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/道术/">道术</a>
+  <a class="article-category-link" href="/blog/categories/道术/">道术</a>
 </div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2015/12/20/我的Makefile学习冲动and编译过程概述/" data-title="openwrt编译(2)_编译过程概述 | Hexo" data-tsina="null" class="share clearfix">
+  <div data-url="http://yiting.co/blog/blog/2015/12/20/我的Makefile学习冲动and编译过程概述/" data-title="openwrt编译(2)_编译过程概述 | 祎婷之家" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -144,7 +144,7 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2015/12/26/openwrt主Makefile解析/" title="openwrt编译(3)_主Makefile解析">
+ <a href="/blog/2015/12/26/openwrt主Makefile解析/" title="openwrt编译(3)_主Makefile解析">
   <strong>PREVIOUS:</strong><br/>
   <span>
   openwrt编译(3)_主Makefile解析</span>
@@ -153,7 +153,7 @@
 
 
 <div class="next">
-<a href="/2015/12/13/openwrt源码目录概述/"  title="openwrt编译(1)_目录概述">
+<a href="/blog/2015/12/13/openwrt源码目录概述/"  title="openwrt编译(1)_目录概述">
  <strong>NEXT:</strong><br/> 
  <span>openwrt编译(1)_目录概述
 </span>
@@ -164,23 +164,23 @@
 
 	
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一-年轻的冲动"><span class="toc-number">2.</span> <span class="toc-text">一 年轻的冲动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-学习曲线"><span class="toc-number">3.</span> <span class="toc-text">二 学习曲线</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-Makefile基本语法"><span class="toc-number">3.1.</span> <span class="toc-text">2.1 Makefile基本语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-bash基础"><span class="toc-number">3.2.</span> <span class="toc-text">2.2 bash基础</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-world"><span class="toc-number">3.3.</span> <span class="toc-text">2.3 world</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-编译过程概述"><span class="toc-number">4.</span> <span class="toc-text">三 编译过程概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-编译host工具"><span class="toc-number">4.1.</span> <span class="toc-text">3.2 编译host工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-编译交叉工具链"><span class="toc-number">4.2.</span> <span class="toc-text">3.3 编译交叉工具链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-编译内核模块"><span class="toc-number">4.3.</span> <span class="toc-text">3.4 编译内核模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-编译ipk"><span class="toc-number">4.4.</span> <span class="toc-text">3.5 编译ipk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-安装ipk"><span class="toc-number">4.5.</span> <span class="toc-text">3.6 安装ipk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-编译内核"><span class="toc-number">4.6.</span> <span class="toc-text">3.7 编译内核</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8-合成"><span class="toc-number">4.7.</span> <span class="toc-text">3.8 合成</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尾声"><span class="toc-number">5.</span> <span class="toc-text">尾声</span></a></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Categories</p>
+	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/categories/道术/" title="道术">道术<sup>17</sup></a></li>
+			<li><a href="/blog/categories/道术/" title="道术">道术<sup>17</sup></a></li>
 		
 		</ul>
 </div>
@@ -188,29 +188,29 @@
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Linux/" title="Linux">Linux<sup>1</sup></a></li>
+			<li><a href="/blog/tags/Linux/" title="Linux">Linux<sup>1</sup></a></li>
 		
-			<li><a href="/tags/lxc/" title="lxc">lxc<sup>1</sup></a></li>
+			<li><a href="/blog/tags/lxc/" title="lxc">lxc<sup>1</sup></a></li>
 		
-			<li><a href="/tags/makefile-openwrt-深度/" title="makefile openwrt 深度">makefile openwrt 深度<sup>1</sup></a></li>
+			<li><a href="/blog/tags/makefile-openwrt-深度/" title="makefile openwrt 深度">makefile openwrt 深度<sup>1</sup></a></li>
 		
-			<li><a href="/tags/openwrt/" title="openwrt">openwrt<sup>1</sup></a></li>
+			<li><a href="/blog/tags/openwrt/" title="openwrt">openwrt<sup>1</sup></a></li>
 		
-			<li><a href="/tags/openwrt-makefile-深度/" title="openwrt makefile 深度">openwrt makefile 深度<sup>4</sup></a></li>
+			<li><a href="/blog/tags/openwrt-makefile-深度/" title="openwrt makefile 深度">openwrt makefile 深度<sup>4</sup></a></li>
 		
-			<li><a href="/tags/openwrt-深度/" title="openwrt 深度">openwrt 深度<sup>1</sup></a></li>
+			<li><a href="/blog/tags/openwrt-深度/" title="openwrt 深度">openwrt 深度<sup>1</sup></a></li>
 		
-			<li><a href="/tags/工具说/" title="工具说">工具说<sup>8</sup></a></li>
+			<li><a href="/blog/tags/工具说/" title="工具说">工具说<sup>8</sup></a></li>
 		
 		</ul>
 </div>
 
 
   <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
@@ -233,12 +233,12 @@
 	</div>
 		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
 		
-		<a href="http://yoursite.com" target="_blank" title="John Doe">John Doe</a>
+		<a href="http://yiting.co/blog" target="_blank" title="成祎">成祎</a>
 		
 		</p>
 </div>
 </footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
+    <script src="/blog/js/jquery-2.1.0.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
