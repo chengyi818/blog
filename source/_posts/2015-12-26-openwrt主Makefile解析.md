@@ -1,16 +1,18 @@
 ---
 layout: post
 title: openwrt编译(3)_主Makefile解析
-category: 道术
+category: openwrt
 tags: makefile openwrt 深度
 comments: true
 analytics: true
 ---
 
-本周成胖子每周一博到了第四周^_^
+本周成胖子每周一博到了第四周
 
 ## 前言
 前一篇,我们大概描述了整个镜像文件的生成过程.本周我们来解析主Makefile,看看主要编译过程是怎么产生的.
+
+<!--more-->
 
 ## 主Makefile结构
 我们以`chaos calmer`的代码为例,整个编译的入口是在源码根目录下的Makefile.编译的各种命令都应该在源码根目录下键入.

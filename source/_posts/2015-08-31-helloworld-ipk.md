@@ -1,7 +1,7 @@
 ---
 layout: post
 title: openwrt简单ipk生成及Makefile解释
-category: 道术
+category: openwrt
 tags: openwrt
 comments: true
 analytics: true
@@ -17,7 +17,7 @@ analytics: true
 
 所以我自己总结了一篇.
 
-
+<!--more-->
 
 ---
 

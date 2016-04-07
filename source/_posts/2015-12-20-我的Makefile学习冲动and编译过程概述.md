@@ -1,7 +1,7 @@
 ---
 layout: post
 title: openwrt编译(2)_编译过程概述
-category: 道术
+category: openwrt
 tags: openwrt makefile 深度
 comments: true
 analytics: true
@@ -10,6 +10,8 @@ analytics: true
 ## 前言
 又到了成胖子每周一博的时间了,本周是第三周.
 本周我们继续了解`openwrt`的编译过程,如果还有没写过简单ipk或者编译过openwrt的朋友,可以参见我之前的[博客](http://blog.csdn.net/icy_river/article/details/48260859)或者网上的其他[文章](https://www.baidu.com/s?wd=%E7%BC%96%E8%AF%91openwrt&rsv_spt=1&rsv_iqid=0x8f1fcaec0016b4fc&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=15&rsv_sug1=10)
+
+<!--more-->
 
 ## 一 年轻的冲动
 为什么我在学习的过程中,有先学习整个编译过程和Makefile的冲动呢?

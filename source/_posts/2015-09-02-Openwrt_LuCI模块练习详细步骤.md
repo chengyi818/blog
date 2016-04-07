@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Openwrt LuCI模块练习详细步骤
-category: 道术
+category: openwrt
 tags: openwrt 深度
 comments: true
 analytics: true
@@ -9,7 +9,7 @@ analytics: true
 
 
 ## 前言
-又到了成胖子^_^每周一博的时间了.最近在学习openwrt luci方面的知识,为了贯穿整个知识体系,练习题目为:
+又到了成胖子每周一博的时间了.最近在学习openwrt luci方面的知识,为了贯穿整个知识体系,练习题目为:
 
 > 通过页面配置周期性地往/tmp/addtest文件写入内容和时间戳
 
@@ -20,6 +20,8 @@ analytics: true
 > 3.读取/tmp/addtest中的内容并显示在页面上;
 
 代码已经[开源](https://github.com/chengyi818/addtest),欢迎交流~
+
+<!--more-->
 
 ---
 

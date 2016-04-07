@@ -1,7 +1,7 @@
 ---
 layout: post
 title: openwrt编译(4)_单个ipk编译过程
-category: 道术
+category: openwrt
 tags: openwrt makefile 深度
 comments: true
 analytics: true
@@ -9,6 +9,8 @@ analytics: true
 
 本周是成胖子每周一博的第五周.
 更好的阅读体验,请点击[这里](https://www.zybuluo.com/icyriver/note/257687)
+
+<!--more-->
 
 ---
 
