@@ -10,7 +10,7 @@
     <meta name="author" content="成祎">
     
     <meta name="description" content="前言&amp;emsp;这段时间总是在和openwrt打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.
-&amp;emsp;本文是这个系列的第一篇.主要讲一下我对openwrt">
+&amp;emsp;本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从官方下载而来的目录称之为原始目录,将编译后生成的目录称之为生成目录,分两部分介绍各个目录.">
     
     
     
@@ -74,7 +74,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-12-12T16:00:00.000Z" itemprop="datePublished">2015-12-13</time>
-    更新日期:<time datetime="2016-04-07T06:27:12.177Z" itemprop="dateModified">2016-04-07</time>
+    更新日期:<time datetime="2016-04-07T06:37:27.637Z" itemprop="dateModified">2016-04-07</time>
     
   </p>
 </header>
@@ -88,6 +88,7 @@
 		
 		<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;这段时间总是在和<a href="https://en.wikipedia.org/wiki/OpenWrt" target="_blank" rel="external">openwrt</a>打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.</p>
 <p>&emsp;本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从<a href="https://dev.openwrt.org/wiki/GetSource" target="_blank" rel="external">官方下载</a>而来的目录称之为原始目录,将编译后生成的目录称之为生成目录,分两部分介绍各个目录.</p>
+<a id="more"></a>
 <hr>
 <h2 id="原始目录"><a href="#原始目录" class="headerlink" title="原始目录"></a>原始目录</h2><p>下载源码后,源文件如下图所示,下面我们来一一解释;<br><img src="http://img.blog.csdn.net/20151213153906453" alt="原始目录"></p>
 <h4 id="1-scripts"><a href="#1-scripts" class="headerlink" title="1. scripts"></a>1. scripts</h4><p>存放了一些脚本,使用了bash,python,perl等多种脚本语言.编译过程中,用于第三方软件包管理的feeds文件也是在这个目录当中.在编译过程中,使用到的脚本也统一放在这个目录中.</p>
@@ -149,7 +150,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/blog/categories/道术/">道术</a>
+  <a class="article-category-link" href="/blog/categories/openwrt/">openwrt</a>
 </div>
 
 
@@ -202,7 +203,15 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/blog/categories/道术/" title="道术">道术<sup>17</sup></a></li>
+			<li><a href="/blog/categories/docker/" title="docker">docker<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/openwrt/" title="openwrt">openwrt<sup>7</sup></a></li>
+		
+			<li><a href="/blog/categories/命令行的艺术/" title="命令行的艺术">命令行的艺术<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/工具/" title="工具">工具<sup>8</sup></a></li>
+		
+			<li><a href="/blog/categories/道术/" title="道术">道术<sup>0</sup></a></li>
 		
 		</ul>
 </div>

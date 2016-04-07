@@ -9,7 +9,7 @@
     
     <meta name="author" content="成祎">
     
-    <meta name="description" content="##前言　最近我从svn上checkout出来了一个文件夹,然后加入了git的跟踪目录.用过svn的同学可能知道,这个文件夹里面每一层级都有个.svn隐藏文件夹,需要删除他们.本来我准备笨拙地一个一个手动删除的,一位同事在我面前敲了大概是$find . -type d -name &amp;quot;*.s">
+    <meta name="description" content="##前言　最近我从svn上checkout出来了一个文件夹,然后加入了git的跟踪目录.用过svn的同学可能知道,这个文件夹里面每一层级都有个.svn隐藏文件夹,需要删除他们.本来我准备笨拙地一个一个手动删除的,一位同事在我面前敲了大概是$find . -type d -name &amp;quot;*.svn&amp;quot; | xargs rm -rf这样的命令,顿时觉得很高端大气上档次.刚好新学了Markdown,就顺便整理下xargs的用法,练练手.参考网址,当然更主要的参考来自于伟大的$man xargs.">
     
     
     
@@ -73,7 +73,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-08-19T16:00:00.000Z" itemprop="datePublished">2015-08-20</time>
-    更新日期:<time datetime="2016-04-07T06:27:12.177Z" itemprop="dateModified">2016-04-07</time>
+    更新日期:<time datetime="2016-04-07T06:36:34.169Z" itemprop="dateModified">2016-04-07</time>
     
   </p>
 </header>
@@ -86,6 +86,7 @@
 		</div>
 		
 		<p>##前言<br>　最近我从svn上checkout出来了一个文件夹,然后加入了git的跟踪目录.用过svn的同学可能知道,这个文件夹里面每一层级都有个.svn隐藏文件夹,需要删除他们.本来我准备笨拙地一个一个手动删除的,一位同事在我面前敲了大概是<code>$find . -type d -name &quot;*.svn&quot; | xargs rm -rf</code>这样的命令,顿时觉得很高端大气上档次.刚好新学了Markdown,就顺便整理下xargs的用法,练练手.<a href="http://czmmiao.iteye.com/blog/1949225" target="_blank" rel="external">参考网址</a>,当然更主要的参考来自于伟大的<code>$man xargs</code>.</p>
+<a id="more"></a>
 <hr>
 <h3 id="1-概述"><a href="#1-概述" class="headerlink" title="1.概述"></a>1.概述</h3><p><code>xargs</code>从标准输入(stdin)中读取数据进行处理</p>
 <ul>
@@ -176,7 +177,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/blog/categories/道术/">道术</a>
+  <a class="article-category-link" href="/blog/categories/命令行的艺术/">命令行的艺术</a>
 </div>
 
 
@@ -221,7 +222,15 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/blog/categories/道术/" title="道术">道术<sup>17</sup></a></li>
+			<li><a href="/blog/categories/docker/" title="docker">docker<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/openwrt/" title="openwrt">openwrt<sup>7</sup></a></li>
+		
+			<li><a href="/blog/categories/命令行的艺术/" title="命令行的艺术">命令行的艺术<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/工具/" title="工具">工具<sup>8</sup></a></li>
+		
+			<li><a href="/blog/categories/道术/" title="道术">道术<sup>0</sup></a></li>
 		
 		</ul>
 </div>

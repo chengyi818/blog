@@ -11,8 +11,7 @@
     
     <meta name="description" content="本周是成胖子每周一博第六周,更好地阅读体验,请点击这里
 
-前言&amp;emsp;前面我们已经讲了openwrt编译的大部分过程,包括大致的编译步骤,ipk的编译等.今天是我这个系列的最后一篇,我们来看看openwrt的各个部分是如何组织成为最后的bin文件的.
-&amp;emsp;最后一个步骤当中,我们的执行的目">
+前言&amp;emsp;前面我们已经讲了openwrt编译的大部分过程,包括大致的编译步骤,ipk的编译等.今天是我这个系列的最后一篇,我们来看看openwrt的各个部分是如何组织成为最后的bin文件的.">
     
     
     
@@ -76,7 +75,7 @@
     </p>
   <p class="article-time">
     <time datetime="2016-01-09T16:00:00.000Z" itemprop="datePublished">2016-01-10</time>
-    更新日期:<time datetime="2016-04-07T06:27:12.177Z" itemprop="dateModified">2016-04-07</time>
+    更新日期:<time datetime="2016-04-07T06:38:13.409Z" itemprop="dateModified">2016-04-07</time>
     
   </p>
 </header>
@@ -91,6 +90,7 @@
 		<p>本周是成胖子每周一博第六周,更好地阅读体验,请点击<a href="https://www.zybuluo.com/icyriver/note/258252" target="_blank" rel="external">这里</a></p>
 <hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;前面我们已经讲了openwrt编译的大部分过程,包括大致的编译步骤,ipk的编译等.今天是我这个系列的最后一篇,我们来看看openwrt的各个部分是如何组织成为最后的bin文件的.</p>
+<a id="more"></a>
 <p>&emsp;最后一个步骤当中,我们的执行的目标是<strong>target/install</strong>.</p>
 <h2 id="执行过程推导"><a href="#执行过程推导" class="headerlink" title="执行过程推导"></a>执行过程推导</h2><p>我们首先通过Makefile来分析下我们的依赖关系.</p>
 <p>通过前几篇的分析,我们应当知道此时<strong>target/install</strong>将依赖于<strong>target/linux/install</strong>.<br>如下是<code>target/linux/Makefile</code>的节选:</p>
@@ -134,7 +134,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/blog/categories/道术/">道术</a>
+  <a class="article-category-link" href="/blog/categories/openwrt/">openwrt</a>
 </div>
 
 
@@ -187,7 +187,15 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/blog/categories/道术/" title="道术">道术<sup>17</sup></a></li>
+			<li><a href="/blog/categories/docker/" title="docker">docker<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/openwrt/" title="openwrt">openwrt<sup>7</sup></a></li>
+		
+			<li><a href="/blog/categories/命令行的艺术/" title="命令行的艺术">命令行的艺术<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/工具/" title="工具">工具<sup>8</sup></a></li>
+		
+			<li><a href="/blog/categories/道术/" title="道术">道术<sup>0</sup></a></li>
 		
 		</ul>
 </div>

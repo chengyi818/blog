@@ -9,9 +9,8 @@
     
     <meta name="author" content="成祎">
     
-    <meta name="description" content="本周成胖子每周一博到了第四周^_^
-前言前一篇,我们大概描述了整个镜像文件的生成过程.本周我们来解析主Makefile,看看主要编译过程是怎么产生的.
-主Makefile结构我们以chaos calmer的代码为例,整个编译的入口是在源码根目录下的Makefile.编译的各种命令都应该在源码根目录下">
+    <meta name="description" content="本周成胖子每周一博到了第四周
+前言前一篇,我们大概描述了整个镜像文件的生成过程.本周我们来解析主Makefile,看看主要编译过程是怎么产生的.">
     
     
     
@@ -75,7 +74,7 @@
     </p>
   <p class="article-time">
     <time datetime="2015-12-25T16:00:00.000Z" itemprop="datePublished">2015-12-26</time>
-    更新日期:<time datetime="2016-04-07T06:27:12.177Z" itemprop="dateModified">2016-04-07</time>
+    更新日期:<time datetime="2016-04-07T06:37:53.697Z" itemprop="dateModified">2016-04-07</time>
     
   </p>
 </header>
@@ -87,8 +86,9 @@
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主Makefile结构"><span class="toc-number">2.</span> <span class="toc-text">主Makefile结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#顶层"><span class="toc-number">3.</span> <span class="toc-text">顶层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#第二层"><span class="toc-number">4.</span> <span class="toc-text">第二层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#尾记"><span class="toc-number">5.</span> <span class="toc-text">尾记</span></a></li></ol>
 		</div>
 		
-		<p>本周成胖子每周一博到了第四周^_^</p>
+		<p>本周成胖子每周一博到了第四周</p>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前一篇,我们大概描述了整个镜像文件的生成过程.本周我们来解析主Makefile,看看主要编译过程是怎么产生的.</p>
+<a id="more"></a>
 <h2 id="主Makefile结构"><a href="#主Makefile结构" class="headerlink" title="主Makefile结构"></a>主Makefile结构</h2><p>我们以<code>chaos calmer</code>的代码为例,整个编译的入口是在源码根目录下的Makefile.编译的各种命令都应该在源码根目录下键入.<br>整个主Makefile的结构如下:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">world:</span><br><span class="line">ifneq ($(OPENWRT_BUILD),1)</span><br><span class="line">	顶层</span><br><span class="line">else</span><br><span class="line">	第二层</span><br><span class="line">endif</span><br></pre></td></tr></table></figure>
 <p>开始部分是一些注释和变量定义及路径检查.<br>根据<strong>Makefile的规则</strong>,在没有指定编译目标的时候,Makefile中的第一个目标将作为默认目标.<br>换句话说,当我们执行<code>make V=s</code>时,这个时候编译的目标就是<code>world</code>.和我们执行<code>make world V=s</code>效果是一样的.</p>
@@ -158,7 +158,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/blog/categories/道术/">道术</a>
+  <a class="article-category-link" href="/blog/categories/openwrt/">openwrt</a>
 </div>
 
 
@@ -211,7 +211,15 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/blog/categories/道术/" title="道术">道术<sup>17</sup></a></li>
+			<li><a href="/blog/categories/docker/" title="docker">docker<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/openwrt/" title="openwrt">openwrt<sup>7</sup></a></li>
+		
+			<li><a href="/blog/categories/命令行的艺术/" title="命令行的艺术">命令行的艺术<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/工具/" title="工具">工具<sup>8</sup></a></li>
+		
+			<li><a href="/blog/categories/道术/" title="道术">道术<sup>0</sup></a></li>
 		
 		</ul>
 </div>

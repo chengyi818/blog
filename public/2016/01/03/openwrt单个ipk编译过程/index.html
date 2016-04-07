@@ -9,9 +9,7 @@
     
     <meta name="author" content="成祎">
     
-    <meta name="description" content="本周是成胖子每周一博的第五周.更好的阅读体验,请点击这里
-
-前言&amp;emsp;前一篇博客中,我们已经知道整个openwrt的编译顺序,本文我们来探讨与开发者息息相关的单个ipk的编译过程.在开发者进行二次开发的时候,我们既可以单个编译ipk也可以完整编译整个镜像文件.在完整编译的时候,我们选中的单个i">
+    <meta name="description" content="本周是成胖子每周一博的第五周.更好的阅读体验,请点击这里">
     
     
     
@@ -75,7 +73,7 @@
     </p>
   <p class="article-time">
     <time datetime="2016-01-02T16:00:00.000Z" itemprop="datePublished">2016-01-03</time>
-    更新日期:<time datetime="2016-04-07T06:27:12.177Z" itemprop="dateModified">2016-04-07</time>
+    更新日期:<time datetime="2016-04-07T06:38:01.841Z" itemprop="dateModified">2016-04-07</time>
     
   </p>
 </header>
@@ -88,6 +86,7 @@
 		</div>
 		
 		<p>本周是成胖子每周一博的第五周.<br>更好的阅读体验,请点击<a href="https://www.zybuluo.com/icyriver/note/257687" target="_blank" rel="external">这里</a></p>
+<a id="more"></a>
 <hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;前一篇博客中,我们已经知道整个openwrt的编译顺序,本文我们来探讨与开发者息息相关的单个ipk的编译过程.在开发者进行二次开发的时候,我们既可以单个编译ipk也可以完整编译整个镜像文件.在完整编译的时候,我们选中的单个ipk同样会被编入镜像文件中,所以完整编译同样会进行单个ipk包的编译.</p>
 <p>我们前面在<em>stampfile</em>函数部分提高过,当编译目标为<strong>package/stamp-compile</strong>的时候,实际执行的目标为<strong>package/compile</strong>;同时根据<em>subdir</em>函数的定义,<strong>package/compile</strong>将会依赖于package文件夹下被<code>make menuconfig</code>选中的子文件夹的<strong>compile</strong>.简而言之,当我们执行<code>make package/compile</code>相当于对所有选中的文件夹执行<code>make package/XXX/compile</code>.</p>
@@ -136,7 +135,7 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/blog/categories/道术/">道术</a>
+  <a class="article-category-link" href="/blog/categories/openwrt/">openwrt</a>
 </div>
 
 
@@ -189,7 +188,15 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/blog/categories/道术/" title="道术">道术<sup>17</sup></a></li>
+			<li><a href="/blog/categories/docker/" title="docker">docker<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/openwrt/" title="openwrt">openwrt<sup>7</sup></a></li>
+		
+			<li><a href="/blog/categories/命令行的艺术/" title="命令行的艺术">命令行的艺术<sup>1</sup></a></li>
+		
+			<li><a href="/blog/categories/工具/" title="工具">工具<sup>8</sup></a></li>
+		
+			<li><a href="/blog/categories/道术/" title="道术">道术<sup>0</sup></a></li>
 		
 		</ul>
 </div>
