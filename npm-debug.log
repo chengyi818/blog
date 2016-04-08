@@ -28,15 +28,15 @@
 16 verbose url raw hexo-cli
 17 verbose url resolving [ 'https://registry.npmjs.org/', './hexo-cli' ]
 18 verbose url resolved https://registry.npmjs.org/hexo-cli
-19 info trying registry request attempt 1 at 20:15:03
+19 info trying registry request attempt 1 at 21:13:40
 20 verbose etag "8GPIIL9TMJ7642664SKQ52TI2"
 21 http GET https://registry.npmjs.org/hexo-cli
 22 info retry will retry, error on last attempt: Error: socket hang up
-23 info trying registry request attempt 2 at 20:16:18
+23 info trying registry request attempt 2 at 21:14:54
 24 verbose etag "8GPIIL9TMJ7642664SKQ52TI2"
 25 http GET https://registry.npmjs.org/hexo-cli
 26 info retry will retry, error on last attempt: Error: socket hang up
-27 info trying registry request attempt 3 at 20:18:28
+27 info trying registry request attempt 3 at 21:16:57
 28 verbose etag "8GPIIL9TMJ7642664SKQ52TI2"
 29 http GET https://registry.npmjs.org/hexo-cli
 30 silly registry.get cb [ 304, undefined ]
@@ -66,18 +66,18 @@
 39 verbose lock https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz /home/chengyi/.npm/0f399b20--org-hexo-cli-hexo-cli-1-0-1-tgz.lock
 40 verbose addRemoteTarball [ 'https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz',
 40 verbose addRemoteTarball   '8bcc28975ebaa636c8d9594868240727aadc734f' ]
-41 info retry fetch attempt 1 at 20:19:30
-42 verbose fetch to= /home/chengyi/tmp/npm-24386-DoMdSisU/1460117970918-0.9688666046131402/tmp.tgz
+41 info retry fetch attempt 1 at 21:17:59
+42 verbose fetch to= /home/chengyi/tmp/npm-6724-nFU56QtS/1460121479952-0.6565032312646508/tmp.tgz
 43 http GET https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz
 44 error fetch failed https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz
 45 info retry will retry, error on last attempt: Error: socket hang up
-46 info retry fetch attempt 2 at 20:20:43
-47 verbose fetch to= /home/chengyi/tmp/npm-24386-DoMdSisU/1460117970918-0.9688666046131402/tmp.tgz
+46 info retry fetch attempt 2 at 21:19:18
+47 verbose fetch to= /home/chengyi/tmp/npm-6724-nFU56QtS/1460121479952-0.6565032312646508/tmp.tgz
 48 http GET https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz
 49 error fetch failed https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz
 50 info retry will retry, error on last attempt: Error: socket hang up
-51 info retry fetch attempt 3 at 20:22:46
-52 verbose fetch to= /home/chengyi/tmp/npm-24386-DoMdSisU/1460117970918-0.9688666046131402/tmp.tgz
+51 info retry fetch attempt 3 at 21:21:21
+52 verbose fetch to= /home/chengyi/tmp/npm-6724-nFU56QtS/1460121479952-0.6565032312646508/tmp.tgz
 53 http GET https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz
 54 error fetch failed https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz
 55 silly lockFile 0f399b20--org-hexo-cli-hexo-cli-1-0-1-tgz https://registry.npmjs.org/hexo-cli/-/hexo-cli-1.0.1.tgz
