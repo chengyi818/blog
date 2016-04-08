@@ -16,4 +16,3 @@ sudo npm install markdown-it-emoji --save
 sudo npm un hexo-renderer-marked --save
 sudo npm i hexo-renderer-markdown-it --save
 
-sudo npm install twemoji
