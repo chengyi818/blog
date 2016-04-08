@@ -1,7 +1,7 @@
 #!/bin/sh
+read -p "Please input your comment:" comment
 hexo clean
 hexo d -g
 git add -A
-read -p "Please input your comment:" comment
 git commit -m "$comment"
 git push origin master
