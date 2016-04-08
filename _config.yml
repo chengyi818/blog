@@ -91,19 +91,13 @@ sitemap:
 # Markdown
 ## https://github.com/chjj/marked
 markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: false
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-footnote
-    - markdown-it-sup
-    - markdown-it-sub
-    - markdown-it-abbr
-    - markdown-it-emoji
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
 
 # Stylus
 stylus:
