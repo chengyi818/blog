@@ -5,10 +5,10 @@ sudo apt-get install git npm nodejs
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 #安装hexo
-sudo npm install -g hexo-cli
+npm install -g hexo-cli
 
 #安装插件
-sudo npm install hexo-deployer-git --save
-sudo npm install hexo-generator-feed --save
-sudo npm install hexo-generator-sitemap --save
+npm install hexo-deployer-git --save
+npm install hexo-generator-feed --save
+npm install hexo-generator-sitemap --save
 
