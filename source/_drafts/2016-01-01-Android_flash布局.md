@@ -21,3 +21,6 @@ http://www.ezapk.com/69.html | Android ROM各分区用途【华为Android系列�
 https://qiaodahai.com/android-rom-partition.html | 安卓Android系统分区 – 乔大海个人网站
 http://bbs.chinaunix.net/thread-3642251-1-1.html | Android ROM开发(3) Android Nand Flash 分区-移动操作系统-ChinaUnix.net
 http://jues.is-programmer.com/posts/39225.html | android分区 - jues
+
+
+
