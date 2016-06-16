@@ -1,2 +1,2 @@
-layout: categories
-title: categories
+layout: category
+title: category

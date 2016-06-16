@@ -1,7 +1,7 @@
 ---
 layout: false
 title: spacemacs安利
-categories: 工具 #分类
+category: 工具 #分类
 tags: [工具说] 
 description: 争论终结者--在emacs平台上用vim
 photos:
