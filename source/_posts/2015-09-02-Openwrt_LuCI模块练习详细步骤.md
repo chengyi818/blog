@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Openwrt LuCI模块练习详细步骤
-category: openwrt
+categories: openwrt
 tags: [openwrt,深度]
 comments: true
 analytics: true

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: openwrt单个ipk编译过程
-category: openwrt
+categories: openwrt
 tags: [openwrt,makefile,深度]
 comments: true
 analytics: true

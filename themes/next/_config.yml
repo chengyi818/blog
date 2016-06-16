@@ -11,7 +11,7 @@ keywords: "Hexo, NexT"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss: "/blog/atom.xml"
+rss:
 
 # Specify the date when the site was setup
 #since: 2015
@@ -33,7 +33,7 @@ menu:
   about: /about
   archives: /archives
   tags: /tags
-  #commonweal: /404.html
+  commonweal: /404.html
 
 
 # Enable/Disable menu icons.
@@ -122,7 +122,7 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
-
+  GitHub: https://github.com/chengyi818
 
 # Social Links Icons
 # Icon Mapping:
@@ -265,7 +265,10 @@ duoshuo_shortname: chengyi818
 
 
 # Google Analytics
-#google_analytics:
+google_analytics:
+  enable: true
+  id: UA-72539373-3      ## e.g. UA-46321946-2 your google analytics ID.
+  site: yitinglove.cn/blog     ## e.g. wuchong.me your google analytics site or set the value as auto.
 
 # CNZZ count
 #cnzz_siteid:
