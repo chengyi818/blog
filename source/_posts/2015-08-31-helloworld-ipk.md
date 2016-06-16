@@ -3,7 +3,7 @@ layout: post
 title: openwrt简单ipk生成及Makefile解释
 categories: openwrt
 tags: 
-- openwrt
+	- openwrt
 comments: true
 analytics: true
 ---
