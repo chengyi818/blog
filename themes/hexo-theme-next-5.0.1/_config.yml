@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `hexo-site/source/` directory.
-favicon: /images/bagua.jpg
+favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
 keywords: "Hexo, NexT"
@@ -14,14 +14,11 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-since: 2015
+#since: 2015
 
-# Canonical, set a canonical link tag in your hexo, you could use it for your SEO of blog.
-# See: https://support.google.com/webmasters/answer/139066
-# Tips: Before you open this tag, remeber set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
-canonical: true
 
-language: default 
+
+
 # ---------------------------------------------------------------
 # Menu Settings
 # ---------------------------------------------------------------
@@ -29,10 +26,10 @@ language: default
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: categories
-  about: /about
+  #categories: /categories
+  #about: /about
   archives: /archives
-  tags: tags
+  tags: /tags
   #commonweal: /404.html
 
 
@@ -59,9 +56,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
-scheme: Pisces
+#scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -122,7 +119,7 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
-  GitHub: https://github.com/chengyi818
+
 
 # Social Links Icons
 # Icon Mapping:
@@ -141,7 +138,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-avatar: /images/author.jpg
+#avatar:
 
 
 # Table Of Contents in the Sidebar
@@ -241,7 +238,7 @@ mathjax:
 #baidu_analytics:
 
 # Duoshuo ShortName
-duoshuo_shortname: chengyi818
+#duoshuo_shortname:
 
 # Disqus
 #disqus_shortname:
@@ -265,10 +262,7 @@ duoshuo_shortname: chengyi818
 
 
 # Google Analytics
-google_analytics:
-  enable: true
-  id: UA-72539373-3      ## e.g. UA-46321946-2 your google analytics ID.
-  site: yitinglove.cn/blog     ## e.g. wuchong.me your google analytics site or set the value as auto.
+#google_analytics:
 
 # CNZZ count
 #cnzz_siteid:
@@ -292,13 +286,6 @@ facebook_sdk:
   fb_admin:     #<user_id>
   like_button:  #true
   webmaster:    #true
-
-# Facebook comments plugin
-# This plugin depends on Facebook SDK.
-# If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
-facebook_comments_plugin:
-  enable: false
-  num_of_posts: 10
 
 
 # Show number of visitors to each article.
