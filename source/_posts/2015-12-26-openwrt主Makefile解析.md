@@ -1,7 +1,7 @@
 ---
 layout: post
 title: openwrt主Makefile解析
-category: openwrt
+categories: openwrt
 tags: [makefile,openwrt,深度]
 comments: true
 analytics: true
