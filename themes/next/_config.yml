@@ -29,7 +29,7 @@ languages: zh-Hans
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories
+  categories: /category
   about: /about
   archives: /archives
   tags: /tags
