@@ -1,7 +1,7 @@
 #!/bin/bash
 #安装必备环境
 sudo apt-get update
-sudo apt-get install git npm nodejs
+sudo apt-get install git  nodejs npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 #安装hexo
