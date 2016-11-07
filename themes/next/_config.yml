@@ -29,8 +29,8 @@ canonical: true
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories
-  #about: /about
+  categories: /categories
+  about: /about
   archives: /archives
   tags: /tags
   schedule: /schedule
@@ -61,9 +61,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -125,6 +125,7 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 #social:
   #LinkLabel: Link
+  GitHub: https://github.com/chengyi818
 
 
 # Social Links Icons
@@ -144,8 +145,7 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
-
+avatar: /images/author.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -244,7 +244,7 @@ mathjax:
 #baidu_analytics:
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: chengyi818
 
 # Disqus
 #disqus_shortname:
@@ -270,7 +270,10 @@ mathjax:
 
 
 # Google Analytics
-#google_analytics:
+google_analytics:
+  enable: true
+  id: UA-72539373-3      ## e.g. UA-46321946-2 your google analytics ID.
+  site: yitinglove.cn/blog     ## e.g. wuchong.me your google analytics site or set the value as auto.
 
 # CNZZ count
 #cnzz_siteid:
