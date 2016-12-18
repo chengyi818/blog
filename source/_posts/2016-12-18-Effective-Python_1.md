@@ -1,16 +1,16 @@
 ---
 layout: true
-title: 把<Effective Python>读薄之一
+title: 把Effective Python读薄之一
 categories: 编程语言
 tags: [python, effective python]
-description: <Effective Python> 读书笔记
+description: Effective Python 读书笔记
 photos:
 - http://img0.imgtn.bdimg.com/it/u=353228796,2197560558&fm=23&gp=0.jpg
 ---
 
 这两天看到一篇博客,名为<把编程珠玑读薄>,是为名.
 
-本文是我总结的<Effective Python>的第一章
+本文是我总结的Effective Python的第一章
 
 <!--more-->
 
@@ -28,11 +28,13 @@ Python程序员崇尚美观易读的代码,准则我想大概有两个:
 ### 1.Python版本
 
 在16年年末看来,Python3毫无疑问是未来的方向和趋势.Python2和Python3的不兼容给Python程序员带来的巨大的麻烦,但程序员不就是要拥抱变化么.
+
 所以尽快地切换到Python3是明智之选
 
 ### 2.代码风格
 
 代码风格的重要性毋庸置疑,Python主要遵守PEP8.
+
 我目前在编辑器中使用Pylint作为检查工具,只要将Pylint提示的问题都做到心中有数,代码风格应该问题不大.
 
 ### 3.字符串编码
