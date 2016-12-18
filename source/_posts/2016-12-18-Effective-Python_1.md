@@ -2,7 +2,7 @@
 layout: true
 title: 把<Effective Python>读薄之一
 categories: 编程语言
-tags: [python, Effective_Python]
+tags: [python, effective python]
 description: <Effective Python> 读书笔记
 photos:
 - http://img0.imgtn.bdimg.com/it/u=353228796,2197560558&fm=23&gp=0.jpg
