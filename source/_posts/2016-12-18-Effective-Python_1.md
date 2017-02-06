@@ -5,7 +5,7 @@ categories: 编程语言
 tags: [python, effective python]
 description: Effective Python 读书笔记
 photos:
-- http://img0.imgtn.bdimg.com/it/u=353228796,2197560558&fm=23&gp=0.jpg
+- http://pic.58pic.com/58pic/14/55/85/75v58PICqrB_1024.png
 ---
 
 这两天看到一篇博客,名为<把编程珠玑读薄>,是为名.
