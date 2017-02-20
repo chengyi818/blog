@@ -111,11 +111,12 @@ def log(message, when=None):
 
 ### 21. 只能以关键字给出参数
 ```python
-def safe_division_c(number, divisor, *, ignore_overflow=False, ignore_zero_division=False):
+def safe_division_c(number, divisor, *,
+                    ignore_overflow=False, ignore_zero_division=False):
     ...
 ```
 Python3:
 > 在调用上面的函数时,参数`ignore_overflow`和`ignore_zero_divison`将必须以关键字的形式给出.
 
 ## 小结
-以上是<<Effective Python>>>的第二章的总结.
+以上是<<Effective Python>>的第二章的总结.
