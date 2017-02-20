@@ -5,7 +5,7 @@ categories: 编程语言
 tags: [python, effective python]
 description: Effective Python 读书笔记
 photos:
-- http://pic.58pic.com/58pic/14/55/85/75v58PICqrB_1024.png
+- https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=709669172,2095866499&fm=21&gp=0.jpg
 ---
 
 本文是我总结的Effective Python的第二章
