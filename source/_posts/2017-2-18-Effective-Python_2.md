@@ -6,7 +6,6 @@ tags: [python, effective python]
 description: Effective Python 读书笔记 篇二
 photos:
 - https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488161464&di=0e6d6512005cb035a797ee94d7b03e8d&imgtype=jpg&er=1&src=http%3A%2F%2Fimg4.duitang.com%2Fuploads%2Fitem%2F201610%2F01%2F20161001182644_kLa2c.jpeg
-
 ---
 
 本文是我总结的Effective Python的第二章
