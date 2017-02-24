@@ -12,6 +12,9 @@ photos:
 
 本文是我总结的Effective Python的第一章
 
+阅读条件:
+> 掌握Python基本语法
+
 <!--more-->
 
 ## 用Pythonic的方式思考
