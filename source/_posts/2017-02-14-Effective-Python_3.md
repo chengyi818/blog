@@ -5,10 +5,10 @@ categories: 编程语言
 tags: [python, effective python]
 description: Effective Python 读书笔记 篇三
 photos:
-- https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489905279&di=75df5977a6f2763531dbf1400f215b90&imgtype=jpg&er=1&src=http%3A%2F%2Fvimg.256.cc%2Fuploads%2F2017%2F0217%2F20170217040206958.jpg
+- https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491139399&di=531cd8f9561004e6332e065fdd3a5b98&imgtype=jpg&er=1&src=http%3A%2F%2Fy.zdmimg.com%2F201610%2F01%2F57ef9267469454885.jpg_a200.jpg
 ---
 
-本文是我总结的Effective Python的第四章
+本文是我总结的Effective Python的第三章
 
 阅读条件:
 > 掌握Python类的基本使用
