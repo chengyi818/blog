@@ -1,6 +1,6 @@
 ---
 layout: true
-title: vim从入门到放弃
+title: vim从入门到放弃_篇二
 categories: 工具
 tags: [tool, vim, emacs]
 description: 编辑器是程序员最重要的工具,本系列讲述了我从vim入门到放弃vim的历程,希望对其他人有所帮助
