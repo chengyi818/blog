@@ -75,8 +75,8 @@ deploy:
 
 #Extensions
 Plugins:
-    hexo-generator-feed
-    hexo-generator-sitemap
+    #hexo-generator-feed
+    #hexo-generator-sitemap
 
 #Feed Atom
 feed:
