@@ -70,8 +70,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  #repository: git@github.com:chengyi818/blog.git
-  repository: https://github.com/chengyi818/blog
+  repository: git@github.com:chengyi818/blog.git
+  #repository: https://github.com/chengyi818/blog
   branch: gh-pages
 
 #Extensions
