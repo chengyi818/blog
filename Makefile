@@ -12,8 +12,8 @@ update:
 	git push origin master
 
 new:
-	read -p "Please input new post title:" title_name; \
-	hexo new "$title_name"
+	read -p "Please input new post title:" title; \
+	hexo new "$title"
 
 generate:
 	hexo generate
