@@ -73,7 +73,6 @@ deploy:
   #repository: git@github.com:chengyi818/blog.git
   repository: https://github.com/chengyi818/blog
   branch: gh-pages
-  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}
 
 #Extensions
 Plugins:
