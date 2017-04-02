@@ -1,16 +1,4 @@
 ---
-layout: true
 title: {{ title }}
-categories:
-tags: []
-description:
-photos:
--
+date: {{ date }}
 ---
-
-阅读条件:
->
-
----
-
-<!--more-->

@@ -1,6 +1,6 @@
 # Default target: update
 update:
-	read -p "Please input your comment:" comment; \
+	@read -p "Please input your comment:" comment; \
 	hexo clean; \
 	hexo generate --deploy; \
 	git add -A; \
@@ -9,28 +9,28 @@ update:
 
 # new: create new post
 new:
-	read -p "Please input new post title:" title_name; \
+	@read -p "Please input new post title:" title_name; \
 	hexo new "$$title_name"
 
 # move draft to post directory
 publish:
-	read -p "Please input which draft you want to move to post:" title_name; \
+	@read -p "Please input which draft you want to move to post:" title_name; \
 	hexo publish "$$title_name"
 
 # generate: generate html files
 generate:
-	hexo generate
+	@hexo generate
 
 # server: preview web in localhost
 server:
-	hexo server
+	@hexo server
 
 deploy:
-	hexo deploy
+	@hexo deploy
 
 # draft: Display draft posts
 draft:
-	hexo --draft
+	@hexo --draft
 
 clean:
-	hexo clean
+	@hexo clean
