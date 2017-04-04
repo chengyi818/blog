@@ -1,12 +1,12 @@
 ---
 layout: true
-title: vim_to_emacs_3
-tags: []
+title: vim从入门到放弃_篇三
+tags: [tool, vim, emacs]
 photos:
-  - null
+  - https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491919879&di=783431702b21b25ae2b3839bc7c0d0f5&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.lvmama.com%2Fuploads%2Fpc%2Fplace2%2F2016-05-29%2F60504337-83de-47dc-a422-04966772cf50.jpg
 date: 2017-04-04 20:34:58
-categories:
-description:
+categories: 工具
+description: 编辑器是程序员最重要的工具,本系列讲述了我从vim入门到放弃vim的历程,希望对其他人有所帮助
 ---
 
 阅读条件:
