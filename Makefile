@@ -9,7 +9,7 @@ update:
 
 # new: create new post
 new:
-	@read -p "Please input new post title:" title_name; \
+	@read -p "Please input new draft title:" title_name; \
 	hexo new "$$title_name"
 
 # move draft to post directory
