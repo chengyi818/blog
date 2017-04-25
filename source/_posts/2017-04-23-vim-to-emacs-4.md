@@ -3,7 +3,7 @@ layout: true
 title: vim从入门到放弃_篇四
 tags: [tool, vim, emacs]
 photos:
-- https://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=uno&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&cs=538920864,2309338652&os=49820270,3960309523&simid=3366142561,329272032&pn=2&rn=1&di=12854420810&ln=1947&fr=&fmq=1493122504316_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fmedia01.gameloft.com%2Fweb_mkt%2Fminisites%2Funo%2Fprehome%2Fimages%2FunoLogo.png&rpstart=0&rpnum=0&adpicid=0&ctd=1493122507044^3_1680X960%1
+- https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1493727576&di=5f80d701abbfa52583d15eee30714c77&imgtype=jpg&er=1&src=http%3A%2F%2Fimg0.pconline.com.cn%2Fpconline%2F1211%2F23%2F3081921_3_thumb.jpg
 date: 2017-04-23 22:07:58
 categories: 工具
 description: 编辑器是程序员最重要的工具,本系列讲述了我从vim入门到放弃vim的历程,希望对其他人有所帮助
