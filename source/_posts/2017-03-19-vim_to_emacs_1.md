@@ -16,7 +16,7 @@ photos:
 篇一: [初识vim](http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/)
 篇二: [vim的配置与使用](http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/)
 篇三: [vim的不足和新的选择](http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/)
-篇四: spacemacs入门
+篇四: [spacemacs入门](http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/)
 
 
 <!--more-->
