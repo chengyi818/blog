@@ -6,7 +6,7 @@ photos:
   - http://www.ctdf.org.tw/upload/times/20160524141100.jpg
 date: 2017-06-12 17:24:22
 categories: 工具
-description: 描述了如何在Ubuntu 14.04上保存屏幕亮度的设置
+description: 如何在Ubuntu 14.04上保存屏幕亮度的设置
 ---
 
 阅读条件:
