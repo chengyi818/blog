@@ -5,7 +5,7 @@ update:
 	hexo generate --deploy; \
 	git add -A; \
 	git commit -m "$$comment"; \
-	git push origin master
+	git push --force origin master
 
 # new: create new post
 new:
