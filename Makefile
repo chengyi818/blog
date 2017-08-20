@@ -34,3 +34,10 @@ draft:
 
 clean:
 	@hexo clean
+
+help:
+	@echo "update: Defalt Target"
+	@echo "new: Create new post"
+	@echo "publish: Move draft to post directory"
+	@echo "generate: Generate html files"
+	@echo "draft: Display draft posts"
