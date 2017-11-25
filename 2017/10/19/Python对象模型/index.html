@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="道法自然">
 <meta property="og:description" content="Python源码剖析 读书笔记">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511011045&di=ad259cfed81d824722cfeabecea1f726&imgtype=jpg&er=1&src=http%3A%2F%2Fwanzao2.b0.upaiyun.com%2Fsystem%2Fpictures%2F34311724%2Foriginal%2F1458393788_650x347.png">
-<meta property="og:updated_time" content="2017-11-25T13:35:30.442Z">
+<meta property="og:updated_time" content="2017-11-25T13:35:30.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python对象模型">
 <meta name="twitter:description" content="Python源码剖析 读书笔记">
@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511011045&di=ad259cfed81d824722cfeabecea1f726&imgtype=jpg&er=1&src=http%3A%2F%2Fwanzao2.b0.upaiyun.com%2Fsystem%2Fpictures%2F34311724%2Foriginal%2F1458393788_650x347.png" rel="gallery_cjafey1jp002wpx336bdubg8c"
+                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511011045&di=ad259cfed81d824722cfeabecea1f726&imgtype=jpg&er=1&src=http%3A%2F%2Fwanzao2.b0.upaiyun.com%2Fsystem%2Fpictures%2F34311724%2Foriginal%2F1458393788_650x347.png" rel="gallery_cjaffqhcz0036p1336q9u05qh"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511011045&di=ad259cfed81d824722cfeabecea1f726&imgtype=jpg&er=1&src=http%3A%2F%2Fwanzao2.b0.upaiyun.com%2Fsystem%2Fpictures%2F34311724%2Foriginal%2F1458393788_650x347.png" itemprop="contentUrl"/>
               </a>
@@ -347,8 +347,9 @@
 <p>C语言基础, Python爱好者</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>本系列是阅读<em>Python源码剖析</em>的读书笔记.</p>
+<p>&lt;!--more--&gt;</p>
+<h1>序</h1>
+<p>本系列是阅读<em>Python源码剖析</em>的读书笔记.</p>
 <blockquote>
 <p>所有Python的语言魔法都有一个朴素的解释.</p>
 </blockquote>
@@ -357,7 +358,8 @@
 <p>对于一些语言特性,比如元类,装饰器,生成器,弱类型等,总是有一种雾里看花的感觉.惊叹于这些语言特性的魔力,但是要看穿魔法的迷雾还是需要深入到Python的源码实现中去.</p>
 <p>我们都知道原始Python语言本身是用C语言实现的.本系列就是阅读<em>Python源码剖析</em>后的读书笔记.</p>
 <p>我的读书笔记主要基于自己已有的知识,蜻蜓点水般的记录了自己的总结和收获.更多精彩的内容还是要到书中去捡拾.</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python实现主要分为3个主要部分:</p>
+<h1>前言</h1>
+<p>Python实现主要分为3个主要部分:</p>
 <ol>
 <li>模块和库</li>
 <li>Python虚拟机</li>
@@ -369,21 +371,37 @@
 <blockquote>
 <p>如何用C语言实现不同对象的对象模型?甚至对外暴露统一的接口</p>
 </blockquote>
-<h1 id="源码目录与结构"><a href="#源码目录与结构" class="headerlink" title="源码目录与结构"></a>源码目录与结构</h1><p>书中源码是<a href="https://www.python.org/download/releases/2.5/" target="_blank" rel="external">Python 2.5.0</a>,涉及到的主要代码在<code>Include</code>和<code>Objects</code>目录中.前者是头文件声明,后者根据不同的对象在不同的文件中实现了对应的方法.</p>
-<h1 id="Python对象"><a href="#Python对象" class="headerlink" title="Python对象"></a>Python对象</h1><h2 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h2><p>在Python源码中,我们经常看到的一个结构体就是<code>PyObject</code>,似乎每个Python中的对象都可以用这个结构体来描述.下面我们就来看下这个结构体的定义:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">[object.h]</div><div class="line"></div><div class="line">typedef struct _object &#123;</div><div class="line">        PyObject_HEAD</div><div class="line">&#125; PyObject;</div><div class="line"></div><div class="line">#define PyObject_HEAD \</div><div class="line">    int ob_refcnt;    \</div><div class="line">    struct _typeobject *ob_type;</div></pre></td></tr></table></figure></p>
+<h1>源码目录与结构</h1>
+<p>书中源码是<a href="https://www.python.org/download/releases/2.5/" target="_blank" rel="external">Python 2.5.0</a>,涉及到的主要代码在<code>Include</code>和<code>Objects</code>目录中.前者是头文件声明,后者根据不同的对象在不同的文件中实现了对应的方法.</p>
+<h1>Python对象</h1>
+<h2>初识</h2>
+<p>在Python源码中,我们经常看到的一个结构体就是<code>PyObject</code>,似乎每个Python中的对象都可以用这个结构体来描述.下面我们就来看下这个结构体的定义:
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">[object.h]</div><div class="line"></div><div class="line">typedef struct _object &#123;</div><div class="line">        PyObject_HEAD</div><div class="line">&#125; PyObject;</div><div class="line"></div><div class="line">#define PyObject_HEAD \</div><div class="line">    int ob_refcnt;    \</div><div class="line">    struct _typeobject *ob_type;</div></pre></td></tr></table></figure></p>
 <p>源码还是解释的比较清楚的,<code>PyObject</code>仅仅包含了一个叫做<code>PyObject_HEAD</code>的东西.顾名思义,这大概是表示一个Python对象的头部.</p>
 <p>我们将上面的代码合并,看看头部中到底有哪些东西.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">typedef struct _object &#123;</div><div class="line">	int ob_refcnt;</div><div class="line">	struct _typeobject *ob_type;</div><div class="line">&#125; PyObject;</div></pre></td></tr></table></figure>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">typedef struct _object &#123;</div><div class="line">	int ob_refcnt;</div><div class="line">	struct _typeobject *ob_type;</div><div class="line">&#125; PyObject;</div></pre></td></tr></table></figure></p>
 <p>可以看到,首先是引用计数,不用想这一定是和内存回收有关系的,我们先跳过.其次,是一个指向类型结构体的指针.</p>
-<h2 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h2><p>接着我们来看看<code>struct _typeobject</code>是怎么一回事.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">[object.h]</div><div class="line">typedef struct _typeobject &#123;</div><div class="line">	PyObject_VAR_HEAD</div><div class="line">	const char *tp_name; /* For printing, in format &quot;&lt;module&gt;.&lt;name&gt;&quot; */</div><div class="line">	Py_ssize_t tp_basicsize, tp_itemsize; /* For allocation */</div><div class="line"></div><div class="line">	/* Methods to implement standard operations */</div><div class="line"></div><div class="line">	destructor tp_dealloc;</div><div class="line">	printfunc tp_print;</div><div class="line">	getattrfunc tp_getattr;</div><div class="line">	setattrfunc tp_setattr;</div><div class="line">	cmpfunc tp_compare;</div><div class="line">	reprfunc tp_repr;</div><div class="line"></div><div class="line">	/* Method suites for standard classes */</div><div class="line"></div><div class="line">	PyNumberMethods *tp_as_number;</div><div class="line">	PySequenceMethods *tp_as_sequence;</div><div class="line">	PyMappingMethods *tp_as_mapping;</div><div class="line"></div><div class="line">	/* More standard operations (here for binary compatibility) */</div><div class="line"></div><div class="line">	hashfunc tp_hash;</div><div class="line">	ternaryfunc tp_call;</div><div class="line">    ...</div><div class="line">    ...</div><div class="line">&#125; PyTypeObject;</div></pre></td></tr></table></figure></p>
-<p>这段代码还是比较长的,我们大致看看.也能猜出其中不少的含义.<br>其中通过<code>tp_name</code>描述了类型的名称,通过<code>tp_basicsize</code>和<code>tp_itemsize</code>描述了对象的大小.<br>后面还有一系列的对象方法.</p>
-<h2 id="对象数据"><a href="#对象数据" class="headerlink" title="对象数据"></a>对象数据</h2><p>我们在前面已经看到对象的类型,方法都已经有了.那么对象本身的数据呢?我们通过最简单的一个对象类型来看一看.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[intobject.h]</div><div class="line">typedef stuct &#123;</div><div class="line">    PyObject_HEAD</div><div class="line">    long ob_ival;</div><div class="line">&#125; PyIntObject;</div></pre></td></tr></table></figure></p>
-<p>深入一层,我们来看<code>PyInt_Type</code>的定义:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">[intobject.c]</div><div class="line">PyTypeObject PyInt_Type = &#123;</div><div class="line">	PyObject_HEAD_INIT(&amp;PyType_Type)</div><div class="line">	0,</div><div class="line">	&quot;int&quot;,</div><div class="line">	sizeof(PyIntObject),</div><div class="line">	0,</div><div class="line">	(destructor)int_dealloc,		/* tp_dealloc */</div><div class="line">	(printfunc)int_print,			/* tp_print */</div><div class="line">    ...</div><div class="line">    ...</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h2>对象类型</h2>
+<p>接着我们来看看<code>struct _typeobject</code>是怎么一回事.
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">[object.h]</div><div class="line">typedef struct _typeobject &#123;</div><div class="line">	PyObject_VAR_HEAD</div><div class="line">	const char *tp_name; /* For printing, in format &quot;&lt;module&gt;.&lt;name&gt;&quot; */</div><div class="line">	Py_ssize_t tp_basicsize, tp_itemsize; /* For allocation */</div><div class="line"></div><div class="line">	/* Methods to implement standard operations */</div><div class="line"></div><div class="line">	destructor tp_dealloc;</div><div class="line">	printfunc tp_print;</div><div class="line">	getattrfunc tp_getattr;</div><div class="line">	setattrfunc tp_setattr;</div><div class="line">	cmpfunc tp_compare;</div><div class="line">	reprfunc tp_repr;</div><div class="line"></div><div class="line">	/* Method suites for standard classes */</div><div class="line"></div><div class="line">	PyNumberMethods *tp_as_number;</div><div class="line">	PySequenceMethods *tp_as_sequence;</div><div class="line">	PyMappingMethods *tp_as_mapping;</div><div class="line"></div><div class="line">	/* More standard operations (here for binary compatibility) */</div><div class="line"></div><div class="line">	hashfunc tp_hash;</div><div class="line">	ternaryfunc tp_call;</div><div class="line">    ...</div><div class="line">    ...</div><div class="line">&#125; PyTypeObject;</div></pre></td></tr></table></figure></p>
+<p>这段代码还是比较长的,我们大致看看.也能猜出其中不少的含义.
+其中通过<code>tp_name</code>描述了类型的名称,通过<code>tp_basicsize</code>和<code>tp_itemsize</code>描述了对象的大小.
+后面还有一系列的对象方法.</p>
+<h2>对象数据</h2>
+<p>我们在前面已经看到对象的类型,方法都已经有了.那么对象本身的数据呢?我们通过最简单的一个对象类型来看一看.
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[intobject.h]</div><div class="line">typedef stuct &#123;</div><div class="line">    PyObject_HEAD</div><div class="line">    long ob_ival;</div><div class="line">&#125; PyIntObject;</div></pre></td></tr></table></figure></p>
+<p>深入一层,我们来看<code>PyInt_Type</code>的定义:
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">[intobject.c]</div><div class="line">PyTypeObject PyInt_Type = &#123;</div><div class="line">	PyObject_HEAD_INIT(&amp;PyType_Type)</div><div class="line">	0,</div><div class="line">	&quot;int&quot;,</div><div class="line">	sizeof(PyIntObject),</div><div class="line">	0,</div><div class="line">	(destructor)int_dealloc,		/* tp_dealloc */</div><div class="line">	(printfunc)int_print,			/* tp_print */</div><div class="line">    ...</div><div class="line">    ...</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
 <p>可以看到对于Int类型的对象而言,数据就跟在<code>PyObject_HEAD</code>的后面.而在类型信息中,则规定它的各种对应操作.</p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="缓冲池"><a href="#缓冲池" class="headerlink" title="缓冲池"></a>缓冲池</h2><p>在常见的内建对象类型中,包括整数,字符串,列表,字典中,都使用了类似的缓存机制.<br>本质上,就是希望尽可能少的使用到系统调用,同时尽可能高效使用内存.</p>
-<h2 id="模拟Small-Python"><a href="#模拟Small-Python" class="headerlink" title="模拟Small Python"></a>模拟Small Python</h2><p>作者提供了一段非常简洁的C++代码,模拟了简单的Python行为.我没有找到原始代码,但是在<a href="https://gist.github.com/lastmayday/e9a6d4803d7be5f83d65" target="_blank" rel="external">github</a>上我找到一份.</p>
+<h1>其他</h1>
+<h2>缓冲池</h2>
+<p>在常见的内建对象类型中,包括整数,字符串,列表,字典中,都使用了类似的缓存机制.
+本质上,就是希望尽可能少的使用到系统调用,同时尽可能高效使用内存.</p>
+<h2>模拟Small Python</h2>
+<p>作者提供了一段非常简洁的C++代码,模拟了简单的Python行为.我没有找到原始代码,但是在<a href="https://gist.github.com/lastmayday/e9a6d4803d7be5f83d65" target="_blank" rel="external">github</a>上我找到一份.</p>
 <p>我将部分warning修复后,也放到了<a href="https://github.com/chengyi818/kata/blob/master/Language/python/virtual_machine/SmallPython.cc" target="_blank" rel="external">GitHub</a>上,这是本文<strong>最有价值</strong>的部分.</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>本文描述了Python的对象模型的基础.Python对象模型是通过C来实现的,那么如何使用C语言实现面向对象的语言.在我们的示例代码中给出了范例.</p>
+<h1>总结</h1>
+<p>本文描述了Python的对象模型的基础.Python对象模型是通过C来实现的,那么如何使用C语言实现面向对象的语言.在我们的示例代码中给出了范例.</p>
 
       
     </div>
@@ -555,7 +573,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#序"><span class="nav-number">1.</span> <span class="nav-text">序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#源码目录与结构"><span class="nav-number">3.</span> <span class="nav-text">源码目录与结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Python对象"><span class="nav-number">4.</span> <span class="nav-text">Python对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初识"><span class="nav-number">4.1.</span> <span class="nav-text">初识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象类型"><span class="nav-number">4.2.</span> <span class="nav-text">对象类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象数据"><span class="nav-number">4.3.</span> <span class="nav-text">对象数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他"><span class="nav-number">5.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#缓冲池"><span class="nav-number">5.1.</span> <span class="nav-text">缓冲池</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模拟Small-Python"><span class="nav-number">5.2.</span> <span class="nav-text">模拟Small Python</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">源码目录与结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Python对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">初识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.2.</span> <span class="nav-text">对象类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.3.</span> <span class="nav-text">对象数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">其他</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.1.</span> <span class="nav-text">缓冲池</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.2.</span> <span class="nav-text">模拟Small Python</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
           </div>
         </section>

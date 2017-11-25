@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="道法自然">
 <meta property="og:description" content="整理了在字符编解码方面的常见疑问">
 <meta property="og:image" content="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2101644666,226488022&fm=26&gp=0.jpg">
-<meta property="og:updated_time" content="2017-11-25T13:35:30.442Z">
+<meta property="og:updated_time" content="2017-11-25T13:35:30.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="字符编解码_篇一">
 <meta name="twitter:description" content="整理了在字符编解码方面的常见疑问">
@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2101644666,226488022&fm=26&gp=0.jpg" rel="gallery_cjafey1kb003fpx330vjeqezs"
+                 href="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2101644666,226488022&fm=26&gp=0.jpg" rel="gallery_cjaffqhcm002jp13322r4prs7"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2101644666,226488022&fm=26&gp=0.jpg" itemprop="contentUrl"/>
               </a>
@@ -347,9 +347,11 @@
 <p>对字符编解码有一些了解,但是又不够深入,在实际项目中遇到问题有些束手无措的同学</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在项目中遇到了编解码错误的问题,发现自己对这块的知识掌握的不是很全面,于是决定花点时间尽量弄清楚来龙去脉.</p>
-<h2 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h2><p>在我们深入学习编解码的知识之前,我们看看哪些相关的前置知识,同时将我们的问题聚焦.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>最近在项目中遇到了编解码错误的问题,发现自己对这块的知识掌握的不是很全面,于是决定花点时间尽量弄清楚来龙去脉.</p>
+<h2>前置知识</h2>
+<p>在我们深入学习编解码的知识之前,我们看看哪些相关的前置知识,同时将我们的问题聚焦.</p>
 <ol>
 <li>计算机只能处理0和1,而人是无法直接理解0和1.</li>
 <li>既然双方无法直接理解对方,那么根据冯诺依曼结构,必然要在输入和输出时做相应的转换,一旦进入计算机内部字符必然以01比特串的形式存在.</li>
@@ -357,7 +359,8 @@
 <li>我们可以将这种转换称为编解码.另外人能够理解的信息可以分为视频,音频,图片,文字等,所以编解码又可以分为视频编解码,音频编解码等.</li>
 </ol>
 <p>我们聚焦的知识是字符编解码部分.</p>
-<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><p><img src="http://ww1.sinaimg.cn/large/006kvZhRgy1fjjbcziv2bj30qo0k0t96.jpg" alt="self-model.jpg"></p>
+<h2>模型</h2>
+<p><img src="http://ww1.sinaimg.cn/large/006kvZhRgy1fjjbcziv2bj30qo0k0t96.jpg" alt="self-model.jpg"></p>
 <p>前面我们提到计算机必然需要将人能够理解的有意义的字符转换成01比特串,那么必然要存在这样一种映射关系来进行转换.同时保证显示的时候可以将01比特串转换为字符,保证信息不丢失.</p>
 <p>事实上,这个转换的过程是非常复杂的.我们仅仅考虑输入一个字符,至少需要涉及驱动,输入法,窗口管理器,进程间通信等等内容.</p>
 <p>能力所限,我们定义了上图的模型,我们主要介绍虚线以上的内容.假定已经存在一个字符和01比特的映射表,黑盒具有根据映射表将字符和01比特串的来回转换的能力.</p>
@@ -367,7 +370,8 @@
 <li>用户空间程序,尤其是Python3程序是如何使用这种映射关系的.</li>
 </ol>
 <p>相信我,即使是这两部分也会有足够的信息量.</p>
-<h2 id="疑惑"><a href="#疑惑" class="headerlink" title="疑惑"></a>疑惑</h2><p>我们经常说带着问题找答案.我希望在本系列结束后,可以回答如下的问题.</p>
+<h2>疑惑</h2>
+<p>我们经常说带着问题找答案.我希望在本系列结束后,可以回答如下的问题.</p>
 <ol>
 <li>字节,字符等术语是什么意思?</li>
 <li>现代编码模型是什么鬼?</li>
@@ -378,7 +382,8 @@
 <li><code>UnicodeDecodeError</code>/<code>UnicodeEncodeError</code>是怎么发生的</li>
 </ol>
 <p>问题比较多,大家可以尝试着回答. 如果你觉得对这些问题都没有疑问,那么我觉得这个系列可以跳过.</p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>学而不思则罔.</p>
+<h2>尾记</h2>
+<p>学而不思则罔.</p>
 <p>大部分程序员应该都被字符编解码,乱码折磨过.我这里将稍微系统地总结下相关的字符编解码知识.</p>
 
       
@@ -549,7 +554,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前置知识"><span class="nav-number">2.</span> <span class="nav-text">前置知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#模型"><span class="nav-number">3.</span> <span class="nav-text">模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#疑惑"><span class="nav-number">4.</span> <span class="nav-text">疑惑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">5.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">前置知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">疑惑</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">尾记</span></a></li></ol></div>
             
           </div>
         </section>

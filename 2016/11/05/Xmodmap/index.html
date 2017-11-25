@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="道法自然">
 <meta property="og:description" content="本文总结了xmodmap的语法和常用方法">
 <meta property="og:image" content="https://images-na.ssl-images-amazon.com/images/I/41Xe4iVnYHL.jpg">
-<meta property="og:updated_time" content="2017-11-25T13:35:30.442Z">
+<meta property="og:updated_time" content="2017-11-25T13:35:30.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="xmodmap小结">
 <meta name="twitter:description" content="本文总结了xmodmap的语法和常用方法">
@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://images-na.ssl-images-amazon.com/images/I/41Xe4iVnYHL.jpg" rel="gallery_cjafey1i7001lpx33bpih54ry"
+                 href="https://images-na.ssl-images-amazon.com/images/I/41Xe4iVnYHL.jpg" rel="gallery_cjaffqhc8001vp133gc28o7eh"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="https://images-na.ssl-images-amazon.com/images/I/41Xe4iVnYHL.jpg" itemprop="contentUrl"/>
               </a>
@@ -344,16 +344,21 @@
       
         <p>很长一段时间没有更新博客,很惭愧.毫无疑问,写博客是非常好的一个习惯.水滴石穿.</p>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>正如我之前博客中提到过的,我是一个重度vim用户.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>正如我之前博客中提到过的,我是一个重度vim用户.</p>
 <p>如果你也和我一样是个vim爱好者或者是emacs用户,那你想必知道Caps_lock键对我们并没有什么卵用.所以很多用户都会将Caps_lock键和Ctrl对换.</p>
 <p>在Linux中,我们的工具是xmodmap</p>
-<h2 id="xmodmap"><a href="#xmodmap" class="headerlink" title="xmodmap"></a>xmodmap</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>xmodmap是在Linux桌面环境<a href="https://wiki.archlinux.org/index.php/Xorg" target="_blank" rel="external">Xorg</a>中用于修改按键映射关系的工具.</p>
+<h2>xmodmap</h2>
+<h3>介绍</h3>
+<p>xmodmap是在Linux桌面环境<a href="https://wiki.archlinux.org/index.php/Xorg" target="_blank" rel="external">Xorg</a>中用于修改按键映射关系的工具.</p>
 <p>在每次按下键盘时,Linux内核都会生成一个Code.Code同keycodes表比较,然后决定按下的是什么.</p>
 <p>而Xorg使用自己的Keycodes表来参与这个过程.每一个Keycode可以调用一系列keysym.一个keysym就像一个function被Keycode调用执行.</p>
 <p>我们并不能改变每个按键对应的keycode,但是我们可以通过Xmodmap来编辑keycode-keysym的对应关系。</p>
 <p>说了那么多,那么什么是keymap表呢?下面我们来看看.</p>
-<h3 id="keymap表"><a href="#keymap表" class="headerlink" title="keymap表"></a>keymap表</h3><h4 id="查看完整keymap表"><a href="#查看完整keymap表" class="headerlink" title="查看完整keymap表"></a>查看完整keymap表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ xmodmap -pke</div><div class="line">keycode 57 = n N</div></pre></td></tr></table></figure>
+<h3>keymap表</h3>
+<h4>查看完整keymap表</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ xmodmap -pke</div><div class="line">keycode 57 = n N</div></pre></td></tr></table></figure></p>
 <p>每条Keymap之后都跟随要被映射的keysyms.下面的例子表明keycode 57被映射到小写n,同时大写N映射于57 + Shift.</p>
 <p>每个keysym列都对应指定的键组合:</p>
 <ol>
@@ -365,19 +370,28 @@
 <li>AltGr+Shift+Key</li>
 </ol>
 <p>在keysym组合没有被指定时,使用NoSymbol代替.</p>
-<h4 id="查看按键对应的keymap表"><a href="#查看按键对应的keymap表" class="headerlink" title="查看按键对应的keymap表"></a>查看按键对应的keymap表</h4><p>上面我们知道如何查看完整的keymap表.如果我想知道具体某个键的keymap信息呢?</p>
-<p>执行如下命令后,再按下键盘上的按键,将逐条显示对应的keymap表:keycode值 keysyms.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xev | awk -F&apos;[ ) ]+&apos; &apos;/^KeyPress/ &#123; a[NR+2]  &#125; NR in a &#123; printf &quot;%-3s %s\n&quot;, $5, $8  &#125;&apos;</div></pre></td></tr></table></figure></p>
-<h4 id="处理方法列表"><a href="#处理方法列表" class="headerlink" title="处理方法列表"></a>处理方法列表</h4><p>以Linux Mint为例:处理方法列表放在<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/include/X11/keysymdef.h</div></pre></td></tr></table></figure></p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>上面说了辣么多,下面我们看看如何使用xmodmap改变我们的映射关系.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>一般步骤分为以下两步:</p>
-<pre><code>1. 修改`.Xmodmap`
-2. 修改`~/.xinitrc`
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">f [ -f $HOME/.Xmodmap  ]; then</div><div class="line">    /usr/bin/xmodmap $HOME/.Xmodmap</div><div class="line">fi</div></pre></td></tr></table></figure>
-</code></pre><p>下面我们来看下具体的例子.</p>
-<h4 id="交换Caps-lock和左Ctrl的位置"><a href="#交换Caps-lock和左Ctrl的位置" class="headerlink" title="交换Caps_lock和左Ctrl的位置"></a>交换Caps_lock和左Ctrl的位置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">!</div><div class="line">! Swap Caps_Lock and Control_L</div><div class="line">!</div><div class="line">remove Lock = Caps_Lock</div><div class="line">remove Control = Control_L</div><div class="line">keysym Control_L = Caps_Lock</div><div class="line">keysym Caps_Lock = Control_L</div><div class="line">add Lock = Caps_Lock</div><div class="line">add Control = Control_L</div></pre></td></tr></table></figure>
-<h4 id="交换backslash和BackSpace"><a href="#交换backslash和BackSpace" class="headerlink" title="交换backslash和BackSpace"></a>交换backslash和BackSpace</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">keycode 22 = backslash bar backslash bar</div><div class="line">keycode 51 = BackSpace BackSpace BackSpace BackSpace</div></pre></td></tr></table></figure>
-<p>我们甚至可以通过xmodmap来改变鼠标的映射关系.有兴趣的可以阅读我们的<a href="### 参考链接">参考链接</a></p>
-<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p>笔力有限,甚是惭愧.精心筛选,值得一读.</p>
+<h4>查看按键对应的keymap表</h4>
+<p>上面我们知道如何查看完整的keymap表.如果我想知道具体某个键的keymap信息呢?</p>
+<p>执行如下命令后,再按下键盘上的按键,将逐条显示对应的keymap表:keycode值 keysyms.
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xev | awk -F&apos;[ ) ]+&apos; &apos;/^KeyPress/ &#123; a[NR+2]  &#125; NR in a &#123; printf &quot;%-3s %s\n&quot;, $5, $8  &#125;&apos;</div></pre></td></tr></table></figure></p>
+<h4>处理方法列表</h4>
+<p>以Linux Mint为例:处理方法列表放在
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/include/X11/keysymdef.h</div></pre></td></tr></table></figure></p>
+<h3>语法</h3>
+<p>上面说了辣么多,下面我们看看如何使用xmodmap改变我们的映射关系.</p>
+<h3>Example</h3>
+<p>一般步骤分为以下两步:
+1. 修改<code>.Xmodmap</code>
+2. 修改<code>~/.xinitrc</code>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">f [ -f $HOME/.Xmodmap  ]; then</div><div class="line">    /usr/bin/xmodmap $HOME/.Xmodmap</div><div class="line">fi</div></pre></td></tr></table></figure></p>
+<p>下面我们来看下具体的例子.</p>
+<h4>交换Caps_lock和左Ctrl的位置</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">!</div><div class="line">! Swap Caps_Lock and Control_L</div><div class="line">!</div><div class="line">remove Lock = Caps_Lock</div><div class="line">remove Control = Control_L</div><div class="line">keysym Control_L = Caps_Lock</div><div class="line">keysym Caps_Lock = Control_L</div><div class="line">add Lock = Caps_Lock</div><div class="line">add Control = Control_L</div></pre></td></tr></table></figure></p>
+<h4>交换backslash和BackSpace</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">keycode 22 = backslash bar backslash bar</div><div class="line">keycode 51 = BackSpace BackSpace BackSpace BackSpace</div></pre></td></tr></table></figure></p>
+<p>我们甚至可以通过xmodmap来改变鼠标的映射关系.有兴趣的可以阅读我们的[参考链接](### 参考链接)</p>
+<h3>参考链接</h3>
+<p>笔力有限,甚是惭愧.精心筛选,值得一读.</p>
 <ul>
 <li><a href="http://man.cx/xmodmap" target="_blank" rel="external">Linux man手册</a></li>
 <li><a href="http://blog.csdn.net/robertsong2004/article/details/36439597" target="_blank" rel="external">xmodmap使用指南</a></li>
@@ -553,7 +567,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#xmodmap"><span class="nav-number">2.</span> <span class="nav-text">xmodmap</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#介绍"><span class="nav-number">2.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#keymap表"><span class="nav-number">2.2.</span> <span class="nav-text">keymap表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#查看完整keymap表"><span class="nav-number">2.2.1.</span> <span class="nav-text">查看完整keymap表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看按键对应的keymap表"><span class="nav-number">2.2.2.</span> <span class="nav-text">查看按键对应的keymap表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#处理方法列表"><span class="nav-number">2.2.3.</span> <span class="nav-text">处理方法列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">2.3.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example"><span class="nav-number">2.4.</span> <span class="nav-text">Example</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#交换Caps-lock和左Ctrl的位置"><span class="nav-number">2.4.1.</span> <span class="nav-text">交换Caps_lock和左Ctrl的位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#交换backslash和BackSpace"><span class="nav-number">2.4.2.</span> <span class="nav-text">交换backslash和BackSpace</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考链接"><span class="nav-number">2.5.</span> <span class="nav-text">参考链接</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">xmodmap</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">keymap表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.1.</span> <span class="nav-text">查看完整keymap表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.2.</span> <span class="nav-text">查看按键对应的keymap表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.3.</span> <span class="nav-text">处理方法列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">Example</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.1.</span> <span class="nav-text">交换Caps_lock和左Ctrl的位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.2.</span> <span class="nav-text">交换backslash和BackSpace</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.5.</span> <span class="nav-text">参考链接</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

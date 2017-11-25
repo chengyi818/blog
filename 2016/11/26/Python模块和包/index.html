@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="道法自然">
 <meta property="og:description" content="之前没有接触过类似Java/Python的模块,包名导入机制,各种情况傻傻分不清.在此理清概念">
 <meta property="og:image" content="http://img.blog.csdn.net/20151123175634942">
-<meta property="og:updated_time" content="2017-11-25T13:35:30.442Z">
+<meta property="og:updated_time" content="2017-11-25T13:35:30.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python模块和包">
 <meta name="twitter:description" content="之前没有接触过类似Java/Python的模块,包名导入机制,各种情况傻傻分不清.在此理清概念">
@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://img.blog.csdn.net/20151123175634942" rel="gallery_cjafey1ii001tpx33pazdi926"
+                 href="http://img.blog.csdn.net/20151123175634942" rel="gallery_cjaffqhc5001op1338dpjgihm"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="http://img.blog.csdn.net/20151123175634942" itemprop="contentUrl"/>
               </a>
@@ -344,24 +344,36 @@
       
         <p>三天打鱼,两天晒网,好尴尬</p>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在写一个Python的工具,为了使代码清晰易阅读,我分了若干个模块.模块间是有层次关系的,所以此时有必要引入”包(package)”.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>最近在写一个Python的工具,为了使代码清晰易阅读,我分了若干个模块.模块间是有层次关系的,所以此时有必要引入&quot;包(package)&quot;.</p>
 <p>通过一个小的Demo展示了如何在包和模块间互相引用</p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>代码树状图如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">└── relative_import</div><div class="line">    ├── main.py</div><div class="line">    ├── subpackage1</div><div class="line">    │   ├── __init__.py</div><div class="line">    │   ├── module_x.py</div><div class="line">    │   └── module_y.py</div><div class="line">    └── subpackage2</div><div class="line">        ├── __init__.py</div><div class="line">        └── module_z.py</div><div class="line"></div><div class="line">3 directories, 6 files</div></pre></td></tr></table></figure>
-<p>其中main.py是入口,引用关系如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">main--&gt;module_x</div><div class="line">module_x--&gt;module_y</div><div class="line">module_y--&gt;module_z</div></pre></td></tr></table></figure></p>
+<h2>Demo</h2>
+<p>代码树状图如下:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">└── relative_import</div><div class="line">    ├── main.py</div><div class="line">    ├── subpackage1</div><div class="line">    │   ├── __init__.py</div><div class="line">    │   ├── module_x.py</div><div class="line">    │   └── module_y.py</div><div class="line">    └── subpackage2</div><div class="line">        ├── __init__.py</div><div class="line">        └── module_z.py</div><div class="line"></div><div class="line">3 directories, 6 files</div></pre></td></tr></table></figure></p>
+<p>其中main.py是入口,引用关系如下:
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">main--&gt;module_x</div><div class="line">module_x--&gt;module_y</div><div class="line">module_y--&gt;module_z</div></pre></td></tr></table></figure></p>
 <p>我们囊括如下几种情况:</p>
 <ul>
 <li>引用子目录的模块</li>
 <li>引用同级模块</li>
 <li>引用不同目录的模块</li>
 </ul>
-<h3 id="包-Package"><a href="#包-Package" class="headerlink" title="包(Package)"></a>包(Package)</h3><p>包是若干模块的一个集合,一个文件夹变成包的方法就是在其中放入<code>__init__.py</code>文件.在导入包的时候,该文件将会首先执行文件.</p>
+<h3>包(Package)</h3>
+<p>包是若干模块的一个集合,一个文件夹变成包的方法就是在其中放入<code>__init__.py</code>文件.在导入包的时候,该文件将会首先执行文件.</p>
 <p>所以,在我们的代码中,subpackage1和subpackage2是两个包.</p>
-<h3 id="模块-module"><a href="#模块-module" class="headerlink" title="模块(module)"></a>模块(module)</h3><p>模块,简而言之就是一个文件.文件名除去后缀就是模块名了.</p>
-<h3 id="函数和类"><a href="#函数和类" class="headerlink" title="函数和类"></a>函数和类</h3><p>在导入后,使用中是不区分函数和类的.在后面的代码中,我们将会看到.</p>
-<h3 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h3><p>下面是我写的小例子,满足了我开发中的分类需求.<br><a href="https://github.com/chengyi818/kata/tree/master/python/import_module/relative_import" target="_blank" rel="external">github Demo</a><br>在执行了main.py后,将会依次执行module_x,module_y,module_z中的代码.</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="http://blog.csdn.net/leexide/article/details/39908279" target="_blank" rel="external">csdn</a><br><a href="http://www.361way.com/python-import-dif-dir-module/4064.html" target="_blank" rel="external">不同层级导入</a><br><a href="http://codingpy.com/article/python-import-101/" target="_blank" rel="external">python导入模块</a></p>
+<h3>模块(module)</h3>
+<p>模块,简而言之就是一个文件.文件名除去后缀就是模块名了.</p>
+<h3>函数和类</h3>
+<p>在导入后,使用中是不区分函数和类的.在后面的代码中,我们将会看到.</p>
+<h3>示例代码</h3>
+<p>下面是我写的小例子,满足了我开发中的分类需求.
+<a href="https://github.com/chengyi818/kata/tree/master/python/import_module/relative_import" target="_blank" rel="external">github Demo</a>
+在执行了main.py后,将会依次执行module_x,module_y,module_z中的代码.</p>
+<h2>参考资料</h2>
+<p><a href="http://blog.csdn.net/leexide/article/details/39908279" target="_blank" rel="external">csdn</a>
+<a href="http://www.361way.com/python-import-dif-dir-module/4064.html" target="_blank" rel="external">不同层级导入</a>
+<a href="http://codingpy.com/article/python-import-101/" target="_blank" rel="external">python导入模块</a></p>
 
       
     </div>
@@ -531,7 +543,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Demo"><span class="nav-number">2.</span> <span class="nav-text">Demo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#包-Package"><span class="nav-number">2.1.</span> <span class="nav-text">包(Package)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模块-module"><span class="nav-number">2.2.</span> <span class="nav-text">模块(module)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数和类"><span class="nav-number">2.3.</span> <span class="nav-text">函数和类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例代码"><span class="nav-number">2.4.</span> <span class="nav-text">示例代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Demo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">包(Package)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">模块(module)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">函数和类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">示例代码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
             
           </div>
         </section>
