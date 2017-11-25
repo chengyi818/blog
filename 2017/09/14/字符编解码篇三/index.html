@@ -1,0 +1,728 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/blog/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="ascii,gb2312,gbk,ansi," />
+
+
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="道法自然" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="主要介绍了部分常见的编码方案,gb2312,gbk等.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字符编解码篇三">
+<meta property="og:url" content="http://yitinglove.cn/blog/2017/09/14/字符编解码篇三/index.html">
+<meta property="og:site_name" content="道法自然">
+<meta property="og:description" content="主要介绍了部分常见的编码方案,gb2312,gbk等.">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505479173199&di=42c470713ee0f018fff402df4407d487&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160910%2Fd552749e55694e45a2d468e6fce9a37d_th.jpg">
+<meta property="og:updated_time" content="2017-11-25T13:35:30.442Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="字符编解码篇三">
+<meta name="twitter:description" content="主要介绍了部分常见的编码方案,gb2312,gbk等.">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505479173199&di=42c470713ee0f018fff402df4407d487&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160910%2Fd552749e55694e45a2d468e6fce9a37d_th.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yitinglove.cn/blog/2017/09/14/字符编解码篇三/"/>
+
+
+  <title> 字符编解码篇三 | 道法自然 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '[object Object]', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/blog/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">道法自然</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">夜阑卧听风吹雨,铁马冰河入梦来</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/blog/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                字符编解码篇三
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2017-09-14T19:41:16+08:00" content="2017-09-14">
+              2017-09-14
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/计算机基础/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2017/09/14/字符编解码篇三/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/09/14/字符编解码篇三/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+        <div class="post-gallery" itemscope itemtype="//schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox"
+                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505479173199&di=42c470713ee0f018fff402df4407d487&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160910%2Fd552749e55694e45a2d468e6fce9a37d_th.jpg" rel="gallery_cjafekgvk003cb933n1fb0srv"
+                 itemscope itemtype="//schema.org/ImageObject" itemprop="url">
+                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505479173199&di=42c470713ee0f018fff402df4407d487&imgtype=0&src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160910%2Fd552749e55694e45a2d468e6fce9a37d_th.jpg" itemprop="contentUrl"/>
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
+      
+
+      
+        <p>阅读条件:</p>
+<blockquote>
+<p>对字符编解码有一些了解,但是又不够深入,在实际项目中遇到问题有些束手无措的同学</p>
+</blockquote>
+<hr>
+<a id="more"></a>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在上一篇,我们已经介绍了字符编码模型.如果还不熟悉CCS,CEF,CES概念的同学,可以回去再看看<a href="http://yitinglove.cn/blog/2017/09/10/%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%AF%87%E4%BA%8C/">上一篇</a></p>
+<p>本章我们来讲解字符编码方案的进化史.我将整个发展史分为上古时期,混乱时代和天下归一三个阶段,下面分别来介绍.</p>
+<h2 id="上古时期"><a href="#上古时期" class="headerlink" title="上古时期"></a>上古时期</h2><p>在远古时期,在计算机之前,事实上已经有了字符编码的概念.但是年代太过久远,我们不再考虑.</p>
+<h3 id="ascii码呱呱落地"><a href="#ascii码呱呱落地" class="headerlink" title="ascii码呱呱落地"></a>ascii码呱呱落地</h3><p>上古时期,计算机作为一个新生事物刚刚在美国诞生.很明显这个时候美国人民已经有了显示字符的需求.那么显示哪些字符呢?很幸运,美国人民用的字符比较少,加上各种控制符凑了凑大概是128个.一个字节都不用,7个比特就够了.所以美国在上世纪60年代颁布了<a href="https://baike.baidu.com/item/ASCII/309296?fr=aladdin&amp;fromid=99077&amp;fromtitle=ascii%E7%A0%81" target="_blank" rel="external">ascii</a>码.</p>
+<p>关于ascii码的细节,我们不再赘述,相信大家都已经比较熟悉了.</p>
+<h3 id="latin-1码诞生"><a href="#latin-1码诞生" class="headerlink" title="latin-1码诞生"></a>latin-1码诞生</h3><p>随着时间的流逝,计算机走出了北美大陆,来到了欧洲.虽然大家都是拉丁语系的,但是大家用的字符还是稍有不同的.比如法国人民就喜欢在拉丁字母上加上音调.那我们就得扩展字符的映射关系了.</p>
+<p>运气还不错哟,ascii是按字节传输的,还给后面的扩展留了一个比特.这样的话,我们还可以再编128个字符.这样一个名叫<code>latin-1</code>的编码方案就出炉了.我们主要是给西欧人民使用的.</p>
+<h3 id="KOI8系列"><a href="#KOI8系列" class="headerlink" title="KOI8系列"></a>KOI8系列</h3><p>ascii码是大哥,大家都比较尊重他.但是你个西欧小弟都有了自己的字符编码,那么我们当时伟大的苏维埃政权当然要有自己的编码方案啦.</p>
+<p>运气也不错哟,斯拉夫文字字符同样不多.128个字符同样够用,这样就诞生了KOI8系列的各种编码方案.花式使用128~255这个范围来映射各种字符.</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>细心地同学已经发现在上古时期,其实已经出现了编码不兼容的问题了.虽然传输的大小都是1个字节,但是小于128还好说,大家都是一样的映射关系.但是大于128的时候,真的是各说各话了.</p>
+<p>上古时期虽然人心开始思变了,但总的来说还算和平.毕竟计算机的使用范围还比较小.</p>
+<h2 id="混乱时期"><a href="#混乱时期" class="headerlink" title="混乱时期"></a>混乱时期</h2><p>计算机的发展势不可挡,很快就传到了全世界范围.大概是上世纪80年代初,我们国家也有了在计算机上显示自己文字的需求.那么就开始搞啊.</p>
+<h3 id="GB2312"><a href="#GB2312" class="headerlink" title="GB2312"></a>GB2312</h3><p>中华文化博大精深,我们大家都知道.不要说128个字符了,就是刨去ascii码,区区一个字节显然是容纳不了我们博大精深的中华文化的.</p>
+<p>没办法,我们必须得上两个字节了.两个字节最多可以表示65535种可能性,那我们倒也是用不了那么多啦.同时,我们还要考虑到兼容ascii码的问题.也好办,我们使用两个字节编一个汉字,同时呢我们每个字节从<code>0xA1</code>开始.大概编了7445个字符,6763个汉字.</p>
+<p>这样有什么好处呢?这样我们的GB2312编码就可以兼容ascii码啦.我们每读取一个字节,先看看大小,如果小于128,那么就是一个ascii字符.如果大于128就再读取一个字节来组成一个GB2312编码,当成一个汉字.</p>
+<p>像我们这种上了年纪的老同志,都知道当时会说一个英文一个字节,一个汉字两个字节就是这个原因.</p>
+<h3 id="GBK"><a href="#GBK" class="headerlink" title="GBK"></a>GBK</h3><p>GB2312是个好东西啊,解决了我们国家绝大多数汉字输入显示的问题.中国人民从此可以站起来啦.</p>
+<p>但是呢,站的时候还有点小问题.就是有些稍微生僻点的汉字显示不了.比如<code>镕</code>字,<code>祎</code>字.怎么办呢?</p>
+<p>得扩展啊,看看我们的GB2312还有没有扩展空间呢?仔细一分析,嘿!还真有.既然第一个字节已经可以判断出是ascii码还是GB2312编码,那么我们为啥还得让第二个字节小于<code>0xA1</code>呢?</p>
+<p>中国人民的老朋友–微软急人民之所急,就这样颁发了GBK编码.在完全兼容GB2312的基础,一共是编了27484个汉字,基本上把所有的汉字都编进去了.</p>
+<h3 id="GB18030"><a href="#GB18030" class="headerlink" title="GB18030"></a>GB18030</h3><p>全国人民大团结万岁.虽然GBK解决了汉字的问题,可是我们毕竟还有其他55个少数民族的兄弟姐妹要照顾.</p>
+<p>于是呢,我们又颁布了<code>GB18030</code>标准,包含的字符数高达7w+.这是一个变长编码,使用两字节或者四字节编码,与GBK完全兼容.</p>
+<h3 id="Big5"><a href="#Big5" class="headerlink" title="Big5"></a>Big5</h3><p>同一时期呢,在我们的宝岛台湾同样诞生了一种编码方案,主要是为了繁体中文服务的.它拥有一个狂霸酷拽吊炸天的名字,叫做<em>倚天中文系统</em>.又被称为大五码.</p>
+<h3 id="ANSI"><a href="#ANSI" class="headerlink" title="ANSI"></a>ANSI</h3><p>在Windows系列的电脑上,我们经常还会看到一种ANSI编码,这其实是微软自己创造出来的一种概念.</p>
+<p>它主要是指当前系统的(locale)的遗留(legacy)编码.不得不说,这是一个大坑.因为有的时候,你根本不知道它具体代表哪种编码.</p>
+<p>通常在我们的电脑上,如果是安装中文系统,它可能是指<code>GBK</code>编码.如果你选了英文系统,它也可能是<code>ASCII</code>.在其他国家地区,它随时变化给你看.</p>
+<h3 id="别名"><a href="#别名" class="headerlink" title="别名"></a>别名</h3><p>就像你大名叫李明,小名叫狗蛋一样.在字符编码的发展过程中,除了我们常用的这些名字.其实同一种编码方案还有些其他的小名.</p>
+<p>比如Windows系统,为其他所有的编码方案都取了小名,以cp开头.比如GBK又被称为cp936.</p>
+<p>而ISO组织呢,又给全世界好多编码方案取了小名,基本都是<code>ISO-XXX</code>,比如<code>latin-1</code>又被称为<code>ISO-8859-1</code>.</p>
+<p>这部分大家只要大概知道就好,一个王八可能有好几个马甲即可.</p>
+<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p>在上古时期,大家都使用单字节编码.但是到了混乱时期呢,我们就引入了MBCS(Multi Byte Character Set),也就是多字节编码的概念.</p>
+<p>而我们主要接触的<code>GB2312</code>和<code>GBK</code>主要是使用两字节编码,所以又被称为DBCS(Double Byte Character Set).</p>
+<p>这个阶段,很多国家都颁布了自己的编码方案.甚至一些公司和组织也颁布了自己的字符编码方案.可以算的上锣鼓喧天,鞭炮齐鸣,花枝招展,群魔乱舞了.这个乱世谁来终结呢?</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本节我们主要介绍了几种常见的编码方案,包括<code>ascii</code>,<code>latin-1</code>,<code>GB2312</code>,<code>GBK</code>,<code>Big5</code>,<code>ANSI</code>等.</p>
+<p>相对而言,这部分编码是比较简单的.因为他们的字符和CES的编码是一一对应的.在下一章节,我们将介绍横扫六合统一天下的猪脚.</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/ascii/" rel="tag">#ascii</a>
+          
+            <a href="/blog/tags/gb2312/" rel="tag">#gb2312</a>
+          
+            <a href="/blog/tags/gbk/" rel="tag">#gbk</a>
+          
+            <a href="/blog/tags/ansi/" rel="tag">#ansi</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2017/09/10/字符编解码篇二/" rel="next" title="字符编解码_篇二">
+                <i class="fa fa-chevron-left"></i> 字符编解码_篇二
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2017/09/22/字符编码篇四/" rel="prev" title="字符编解码篇四">
+                字符编解码篇四 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/blog/images/author.jpg"
+               alt="成祎" />
+          <p class="site-author-name" itemprop="name">成祎</p>
+          <p class="site-description motion-element" itemprop="description">闻之我也野，视之我也饶，行之我也明</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/blog/archives">
+              <span class="site-state-item-count">38</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/blog/categories">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags">
+                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/blog/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上古时期"><span class="nav-number">2.</span> <span class="nav-text">上古时期</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#ascii码呱呱落地"><span class="nav-number">2.1.</span> <span class="nav-text">ascii码呱呱落地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#latin-1码诞生"><span class="nav-number">2.2.</span> <span class="nav-text">latin-1码诞生</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#KOI8系列"><span class="nav-number">2.3.</span> <span class="nav-text">KOI8系列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结"><span class="nav-number">2.4.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#混乱时期"><span class="nav-number">3.</span> <span class="nav-text">混乱时期</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#GB2312"><span class="nav-number">3.1.</span> <span class="nav-text">GB2312</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GBK"><span class="nav-number">3.2.</span> <span class="nav-text">GBK</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GB18030"><span class="nav-number">3.3.</span> <span class="nav-text">GB18030</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Big5"><span class="nav-number">3.4.</span> <span class="nav-text">Big5</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ANSI"><span class="nav-number">3.5.</span> <span class="nav-text">ANSI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#别名"><span class="nav-number">3.6.</span> <span class="nav-text">别名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结-1"><span class="nav-number">3.7.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">成祎</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'yitinglove-cn-blog';
+      var disqus_identifier = '2017/09/14/字符编解码篇三/';
+      var disqus_title = "字符编解码篇三";
+      var disqus_url = 'http://yitinglove.cn/blog/blog/2017/09/14/字符编解码篇三/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script type="text/javascript" color="255,0,255" opacity='0.5' zIndex="-1" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</body>
+</html>

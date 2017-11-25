@@ -1,0 +1,710 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/blog/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="openwrt,makefile,深度," />
+
+
+
+
+
+  <link rel="alternate" href="/blog/atom.xml" title="道法自然" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/blog/favicon.ico?v=5.0.2" />
+
+
+
+
+
+
+<meta name="description" content="本周是成胖子每周一博第六周,更好地阅读体验,请点击这里
+
+前言&amp;emsp;前面我们已经讲了openwrt编译的大部分过程,包括大致的编译步骤,ipk的编译等.今天是我这个系列的最后一篇,我们来看看openwrt的各个部分是如何组织成为最后的bin文件的.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="openwrt编译打包过程">
+<meta property="og:url" content="http://yitinglove.cn/blog/2016/01/10/openwrt打包过程/index.html">
+<meta property="og:site_name" content="道法自然">
+<meta property="og:description" content="本周是成胖子每周一博第六周,更好地阅读体验,请点击这里
+
+前言&amp;emsp;前面我们已经讲了openwrt编译的大部分过程,包括大致的编译步骤,ipk的编译等.今天是我这个系列的最后一篇,我们来看看openwrt的各个部分是如何组织成为最后的bin文件的.">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/006kvZhRjw1ezuly482n9j31kw0zrn3t.jpg">
+<meta property="og:updated_time" content="2017-11-25T13:35:30.442Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="openwrt编译打包过程">
+<meta name="twitter:description" content="本周是成胖子每周一博第六周,更好地阅读体验,请点击这里
+
+前言&amp;emsp;前面我们已经讲了openwrt编译的大部分过程,包括大致的编译步骤,ipk的编译等.今天是我这个系列的最后一篇,我们来看看openwrt的各个部分是如何组织成为最后的bin文件的.">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/006kvZhRjw1ezuly482n9j31kw0zrn3t.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 'undefined',
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yitinglove.cn/blog/2016/01/10/openwrt打包过程/"/>
+
+
+  <title> openwrt编译打包过程 | 道法自然 </title>
+</head>
+
+<body itemscope itemtype="//schema.org/WebPage" lang="en">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '[object Object]', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/blog/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">道法自然</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">夜阑卧听风吹雨,铁马冰河入梦来</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories" rel="section">
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/blog/about" rel="section">
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives" rel="section">
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags" rel="section">
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                openwrt编译打包过程
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-01-10T00:00:00+08:00" content="2016-01-10">
+              2016-01-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/blog/categories/openwrt/" itemprop="url" rel="index">
+                    <span itemprop="name">openwrt</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/blog/2016/01/10/openwrt打包过程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/01/10/openwrt打包过程/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>本周是成胖子每周一博第六周,更好地阅读体验,请点击<a href="https://www.zybuluo.com/icyriver/note/258252" target="_blank" rel="external">这里</a></p>
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;前面我们已经讲了openwrt编译的大部分过程,包括大致的编译步骤,ipk的编译等.今天是我这个系列的最后一篇,我们来看看openwrt的各个部分是如何组织成为最后的bin文件的.</p>
+<a id="more"></a>
+<p>&emsp;最后一个步骤当中,我们的执行的目标是<strong>target/install</strong>.</p>
+<h2 id="执行过程推导"><a href="#执行过程推导" class="headerlink" title="执行过程推导"></a>执行过程推导</h2><p>我们首先通过Makefile来分析下我们的依赖关系.</p>
+<p>通过前几篇的分析,我们应当知道此时<strong>target/install</strong>将依赖于<strong>target/linux/install</strong>.<br>如下是<code>target/linux/Makefile</code>的节选:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">export TARGET_BUILD=1</div><div class="line"></div><div class="line">prereq clean download prepare compile install menuconfig nconfig oldconfig update refresh: FORCE</div><div class="line">	@+$(NO_TRACE_MAKE) -C $(BOARD) $@</div></pre></td></tr></table></figure>
+<p>我们可以看出,此时执行<strong>compile</strong>将会进入对应的目标平台执行目标<strong>compile</strong>,我们以mt7620a为例.它属于ramips平台.</p>
+<p>如下是<code>target/linux/ramips/Makefile</code>的节选:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">include $(INCLUDE_DIR)/target.mk</div><div class="line"></div><div class="line">$(eval $(call BuildTarget))</div></pre></td></tr></table></figure>
+<p>在这个Makefile文件中,我们找不到目标<strong>compile</strong>,它被文件<em>target.mk</em>封装.我们在ipk的编译中,已经见过类似的用法.</p>
+<p>如下是<code>include/target.mk</code>的节选:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ifeq ($(TARGET_BUILD),1)</div><div class="line">  include $(INCLUDE_DIR)/kernel-build.mk</div><div class="line">  BuildTarget?=$(BuildKernel)</div><div class="line">endif</div></pre></td></tr></table></figure>
+<p>从上面的节选我们看到变量<strong>TARGET_BUILD</strong>为1,所以这里函数<em>BuildTarget</em>其实等于在<code>kernel-build.mk</code>中定义的变量<strong>BuildKernel</strong>.</p>
+<p>如下是<code>include/kernel-build.mk</code>的节选:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">define BuildKernel</div><div class="line">  $(if $(QUILT),$(Build/Quilt))</div><div class="line">  $(if $(LINUX_SITE),$(call Download,kernel))</div><div class="line"></div><div class="line">  $(STAMP_CONFIGURED): $(STAMP_PREPARED) $(LINUX_KCONFIG_LIST) $(TOPDIR)/.config</div><div class="line">	$(Kernel/Configure)</div><div class="line">	touch $$@</div><div class="line"></div><div class="line">  $(LINUX_DIR)/.image: $(STAMP_CONFIGURED) $(if $(CONFIG_STRIP_KERNEL_EXPORTS),$(KERNEL_BUILD_DIR)/symtab.h) FORCE</div><div class="line">	$(Kernel/CompileImage)</div><div class="line">	$(Kernel/CollectDebug)</div><div class="line">	touch $$@</div><div class="line"></div><div class="line">  install: $(LINUX_DIR)/.image</div><div class="line">	+$(MAKE) -C image compile install TARGET_BUILD=</div><div class="line"></div><div class="line">endef</div></pre></td></tr></table></figure>
+<p>&emsp;我们绕来绕去,终于找到了我们要的目标,<strong>install</strong>依赖于<strong>$(LINUX_DIR)/.image</strong>.其中<strong>$(LINUX_DIR)/.image</strong>的依赖和执行就在节选中,我们略过,</p>
+<p>&emsp;同时将进入image文件夹下,执行目标<strong>compile</strong>和<strong>install</strong>.下面我来看看进入image文件夹下,发生的故事.</p>
+<p>&emsp;打开<code>tareget/linux/ramips/image/Makefile</code>,我们找了一圈,也没找到我们要的目标<strong>compile</strong>和<strong>install</strong>;如果我们是完整编译,其实目标<strong>compile</strong>已经被执行过了.此时我们以<strong>install</strong>为目标.</p>
+<p>&emsp;玄机就在最后一句<code>$(eval $(call BuildImage))</code>中,函数<em>BuildImage</em>被定义在<code>include/image.mk</code>中,以下为节选:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line">define BuildImage</div><div class="line"></div><div class="line">  ifeq ($(IB),)</div><div class="line">    .PHONY: download prepare compile clean image_prepare mkfs_prepare kernel_prepare install</div><div class="line">    compile:</div><div class="line">		$(call Build/Compile)</div><div class="line"></div><div class="line">    clean:</div><div class="line">		$(call Build/Clean)</div><div class="line"></div><div class="line">    image_prepare: compile</div><div class="line">		mkdir -p $(KDIR)/tmp</div><div class="line">		$(call Image/Prepare)</div><div class="line">  else</div><div class="line">    image_prepare:</div><div class="line">		mkdir -p $(KDIR)/tmp</div><div class="line">  endif</div><div class="line"></div><div class="line">  mkfs_prepare: image_prepare</div><div class="line">	$(call Image/mkfs/prepare)</div><div class="line"></div><div class="line">  kernel_prepare: mkfs_prepare</div><div class="line">	$(call Image/BuildKernel)</div><div class="line">	$(if $(CONFIG_TARGET_ROOTFS_INITRAMFS),$(if $(IB),,$(call Image/BuildKernel/Initramfs)))</div><div class="line">	$(call Image/InstallKernel)</div><div class="line"></div><div class="line">  $(foreach device,$(TARGET_DEVICES),$(call Device,$(device)))</div><div class="line">  $(foreach fs,$(TARGET_FILESYSTEMS) $(fs-subtypes-y),$(call BuildImage/mkfs,$(fs)))</div><div class="line"></div><div class="line">  install: kernel_prepare</div><div class="line">	$(foreach fs,$(TARGET_FILESYSTEMS),</div><div class="line">		$(call Image/Build,$(fs))</div><div class="line">	)</div><div class="line">	$(call Image/mkfs/ubifs)</div><div class="line">	$(call Image/Checksum,md5sum --binary,md5sums)</div><div class="line">	$(call Image/Checksum,openssl dgst -sha256,sha256sums)</div><div class="line"></div><div class="line">endef</div></pre></td></tr></table></figure>
+<p>这里我们看到了我们的目标<strong>install</strong>和它的依赖关系及执行语句,这里$(TARGET_FILESYSTEMS)通常为squashfs.其中大部分函数定义在我们对应平台的image文件夹下的Makefile中.</p>
+<p>上文中第28行需稍加注意,这里调用函数<em>BuildImage/mkfs</em>,定义如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">define BuildImage/mkfs</div><div class="line">  install: mkfs-$(1)</div><div class="line">  .PHONY: mkfs-$(1)</div><div class="line">  mkfs-$(1): mkfs_prepare</div><div class="line">	$(Image/mkfs/$(1))</div><div class="line">	$(call Build/mkfs/default,$(1))</div><div class="line">	$(call Build/mkfs/$(1),$(1))</div><div class="line">  $(KDIR)/root.$(1): mkfs-$(1)</div><div class="line">endef</div></pre></td></tr></table></figure>
+<p>这里可以看到目标<strong>install</strong>依赖于<strong>mkfs-(1)</strong>.如此我们可以得到整个依赖关系图如下:</p>
+<p><img src="http://ww1.sinaimg.cn/large/006kvZhRjw1ezuly482n9j31kw0zrn3t.jpg" alt="依赖关系图"></p>
+<p>图片不清晰可以下载下来查看.</p>
+<h2 id="稍加解释"><a href="#稍加解释" class="headerlink" title="稍加解释"></a>稍加解释</h2><p>&emsp;上一节我们分析了依赖关系,执行过程其实就是倒叙执行的过程.<br>主要编辑过程就是先将内核编译完成,然后将安装ipk的root-ramips文件夹制作为squash格式的二进制文件,然后包括压缩内核,为内核制作头部,最后将加工过的内核部分和文件系统部分组合起来.</p>
+<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><ol>
+<li>在网上查找资料的时候,发现大部分资料要么雷同,要么浅尝辄止.</li>
+<li>下面这篇文章在我深入学习的过程中,起了不小的作用.<a href="http://blog.chinaunix.net/uid-26675482-id-4704952.html" target="_blank" rel="external">链接</a>;就是排版太差了,我才有了自己写写的冲动.</li>
+<li><code>openwrt</code>的整个编译过程是很复杂的,想想电脑一秒可以做多少次计算,而一次完整编译轻轻松松就要两三个小时.可想而知编译过程之复杂.但是我觉得我把大体的编译过程是弄明白了,也欢迎大家交流.一共用了5篇的篇幅,大体的编译过程也算是交代完了.</li>
+<li>纸上得来终觉浅,下面我觉得我还需要更多的改改写写来加深了解.最近在瞎看看linux内核相关的东西,那本书上也说了要加深学习了解,需要更多的修修补补.与大家共勉.</li>
+</ol>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/openwrt/" rel="tag">#openwrt</a>
+          
+            <a href="/blog/tags/makefile/" rel="tag">#makefile</a>
+          
+            <a href="/blog/tags/深度/" rel="tag">#深度</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2016/01/03/openwrt单个ipk编译过程/" rel="next" title="openwrt单个ipk编译过程">
+                <i class="fa fa-chevron-left"></i> openwrt单个ipk编译过程
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2016/01/17/第一个lxc容器/" rel="prev" title="第一个lxc容器">
+                第一个lxc容器 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/blog/images/author.jpg"
+               alt="成祎" />
+          <p class="site-author-name" itemprop="name">成祎</p>
+          <p class="site-description motion-element" itemprop="description">闻之我也野，视之我也饶，行之我也明</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/blog/archives">
+              <span class="site-state-item-count">38</span>
+              <span class="site-state-item-name">posts</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/blog/categories">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags">
+                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/blog/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#执行过程推导"><span class="nav-number">2.</span> <span class="nav-text">执行过程推导</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#稍加解释"><span class="nav-number">3.</span> <span class="nav-text">稍加解释</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">4.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">成祎</span>
+</div>
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.0.2"></script>
+
+
+
+  
+
+
+
+  
+
+    <script type="text/javascript">
+      var disqus_shortname = 'yitinglove-cn-blog';
+      var disqus_identifier = '2016/01/10/openwrt打包过程/';
+      var disqus_title = "openwrt编译打包过程";
+      var disqus_url = 'http://yitinglove.cn/blog/blog/2016/01/10/openwrt打包过程/';
+
+      function run_disqus_script(disqus_script){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      }
+
+      run_disqus_script('count.js');
+      
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
+        run_disqus_script('embed.js');
+      
+    </script>
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script type="text/javascript" color="255,0,255" opacity='0.5' zIndex="-1" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+</body>
+</html>
