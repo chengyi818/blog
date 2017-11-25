@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://www.ctdf.org.tw/upload/times/20160524141100.jpg" rel="gallery_cjaffqhcl002gp133tpnkcm0h"
+                 href="http://www.ctdf.org.tw/upload/times/20160524141100.jpg" rel="gallery_cjaffstqz002m0d336xgm6v9f"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="http://www.ctdf.org.tw/upload/times/20160524141100.jpg" itemprop="contentUrl"/>
               </a>
@@ -347,18 +347,15 @@
 <p>Ubuntu 14.04使用者</p>
 </blockquote>
 <hr>
-<p>&lt;!--more--&gt;</p>
-<h2>前言</h2>
-<p>我最近在使用Ubuntu 14.04的过程发现屏幕亮度的设置不能保存.默认情况下屏幕一直保持最高亮度.</p>
+<a id="more"></a>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我最近在使用Ubuntu 14.04的过程发现屏幕亮度的设置不能保存.默认情况下屏幕一直保持最高亮度.</p>
 <p>在网上找了些链接加上自己的经验,仅供参考.</p>
-<h2>参考链接</h2>
-<p><a href="https://my.oschina.net/SBaof/blog/479439" target="_blank" rel="external">参考链接</a>大体都是类似的.</p>
+<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://my.oschina.net/SBaof/blog/479439" target="_blank" rel="external">参考链接</a>大体都是类似的.</p>
 <p>主要思路是既然不能保存屏幕亮度,那么我们就利用启动脚本来帮我们在每次开机的时候,主动设置亮度.</p>
 <p>总体来说,这个思路是没问题的.但是链接上一般给出的设备是<code>acpi_video0</code>.</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo ls /sys/class/backlight</div><div class="line">acpi_video0 intel_backlight</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo ls /sys/class/backlight</div><div class="line">acpi_video0 intel_backlight</div></pre></td></tr></table></figure>
 <p>在我的电脑上使用的是英特尔的核心显卡,所以对应的目录应该是<code>intel_backlight</code>.其他的思路是类似的.</p>
-<h2>解决方案</h2>
-<ol>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
 <li>首先需要确定你的显卡使用的是什么?如果觉得麻烦,就把<code>backlight</code>下的目录都写到<code>rc.local</code>中.</li>
 <li>其他思路参照<a href="https://my.oschina.net/SBaof/blog/479439" target="_blank" rel="external">参考链接</a>即可</li>
 <li>注意: 不同目录对应的最大亮度数值是不同.</li>
@@ -532,7 +529,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">参考链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">解决方案</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接"><span class="nav-number">2.</span> <span class="nav-text">参考链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">3.</span> <span class="nav-text">解决方案</span></a></li></ol></div>
             
           </div>
         </section>

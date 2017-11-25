@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491919879&di=783431702b21b25ae2b3839bc7c0d0f5&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.lvmama.com%2Fuploads%2Fpc%2Fplace2%2F2016-05-29%2F60504337-83de-47dc-a422-04966772cf50.jpg" rel="gallery_cjaffqhcp002np133au8aiiem"
+                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491919879&di=783431702b21b25ae2b3839bc7c0d0f5&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.lvmama.com%2Fuploads%2Fpc%2Fplace2%2F2016-05-29%2F60504337-83de-47dc-a422-04966772cf50.jpg" rel="gallery_cjaffstqs00280d33ki0gf9mp"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491919879&di=783431702b21b25ae2b3839bc7c0d0f5&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.lvmama.com%2Fuploads%2Fpc%2Fplace2%2F2016-05-29%2F60504337-83de-47dc-a422-04966772cf50.jpg" itemprop="contentUrl"/>
               </a>
@@ -347,43 +347,26 @@
 <p>编辑器爱好者,了解vim基本使用</p>
 </blockquote>
 <hr>
-<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a>
-篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a>
-篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a>
-篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
-<p>&lt;!--more--&gt;</p>
-<h2>前言</h2>
-<p>前面两篇主要介绍了vim的一些优势.本篇主要是推荐大家去试试Emacs的一个发行版<a href="http://spacemacs.org/" target="_blank" rel="external">Spacemacs</a>.</p>
+<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a><br>篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a><br>篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a><br>篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
+<a id="more"></a>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面两篇主要介绍了vim的一些优势.本篇主要是推荐大家去试试Emacs的一个发行版<a href="http://spacemacs.org/" target="_blank" rel="external">Spacemacs</a>.</p>
 <p>关于Vim和Emacs孰优孰劣的争论已经非常多了,但是很少有人能够同时精通两种编辑器,大部分人都是在捍卫自己的选择.</p>
 <p>国内Emacs的用户要远远少于Vim,所以推荐Vim用户可以去了解了解Emacs.虽然有一些学习成本,但是我觉得物有所值.</p>
-<h2>Vim的精髓</h2>
-<p>vim的精髓在于模式切换,简而言之,在插入模式下,按键的作用是输入.但是在普通模式下,按键又被赋予了大量特殊功能.</p>
-<h2>Vim的不足</h2>
-<h3>遗忘的快捷键</h3>
-<p>我个人感觉我已经算是比较重度的vim用户了,却依然有大量记不住的快捷键.然而人脑的记忆模型就是这样的,长时间不使用的东西,自然就会发生遗忘.</p>
+<h2 id="Vim的精髓"><a href="#Vim的精髓" class="headerlink" title="Vim的精髓"></a>Vim的精髓</h2><p>vim的精髓在于模式切换,简而言之,在插入模式下,按键的作用是输入.但是在普通模式下,按键又被赋予了大量特殊功能.</p>
+<h2 id="Vim的不足"><a href="#Vim的不足" class="headerlink" title="Vim的不足"></a>Vim的不足</h2><h3 id="遗忘的快捷键"><a href="#遗忘的快捷键" class="headerlink" title="遗忘的快捷键"></a>遗忘的快捷键</h3><p>我个人感觉我已经算是比较重度的vim用户了,却依然有大量记不住的快捷键.然而人脑的记忆模型就是这样的,长时间不使用的东西,自然就会发生遗忘.</p>
 <p>那么当我想使用某个快捷键时,能不能快速的搜索呢?或者有什么助记的方法呢?</p>
-<h3>扩展语言</h3>
-<p><code>vimscript</code>是一种小众的脚本语言,虽然我没有详细研究过.但是看了各种介绍后,我感觉对我的吸引力不大.</p>
-<h3>重叠的插件</h3>
-<p>在vim中,经常发生一件工作好几个插件重叠的情况.比如Python语法检查,<code>YouCompleteMe</code>,<code>Syntantic</code>,<code>Python-mode</code>都会涉及.有时真的搞不太清楚,到底是谁在其作用.</p>
-<h2>Emacs的优势</h2>
-<h3>强大的扩展语言</h3>
-<p>Emacs的扩展语言是久闻大名的Emacs lisp -- 著名的函数式编程语言的鼻祖.我对lisp非常感兴趣.从我现在的观点来看,Vim和Emacs完全不冲突.Emacs完全可以通过<code>Evil</code>插件来借鉴Vim的模式切换.</p>
-<p>正是由于Emacs强大的扩展和定制性,所以Emacs才会被称为神之编辑器 -- 无所不能.</p>
-<h2>Spacemacs</h2>
-<p>对于从vim迁移到Emacs的同学,我个人强烈推荐,我自己正在使用的<a href="http://spacemacs.org/" target="_blank" rel="external">spacemacs</a>.目前已经在<a href="https://github.com/syl20bnr/spacemacs" target="_blank" rel="external">Github</a>上有了11000+的star了.</p>
-<h3>切换成本低</h3>
-<p>通过默认的<code>Evil</code>插件,基本实现了绝大多数Vim的功能,稍微熟悉就可以上手工作.我们将在下篇介绍Spacemacs的快速入门.</p>
-<h3>快捷键解释和助记</h3>
-<p>通过空格键可以呼出快捷键菜单,通过有意义的分类后,你会发现快捷键非常容易查找.比如<code>空格+w</code>可以和窗口(window)相关的快捷键.</p>
+<h3 id="扩展语言"><a href="#扩展语言" class="headerlink" title="扩展语言"></a>扩展语言</h3><p><code>vimscript</code>是一种小众的脚本语言,虽然我没有详细研究过.但是看了各种介绍后,我感觉对我的吸引力不大.</p>
+<h3 id="重叠的插件"><a href="#重叠的插件" class="headerlink" title="重叠的插件"></a>重叠的插件</h3><p>在vim中,经常发生一件工作好几个插件重叠的情况.比如Python语法检查,<code>YouCompleteMe</code>,<code>Syntantic</code>,<code>Python-mode</code>都会涉及.有时真的搞不太清楚,到底是谁在其作用.</p>
+<h2 id="Emacs的优势"><a href="#Emacs的优势" class="headerlink" title="Emacs的优势"></a>Emacs的优势</h2><h3 id="强大的扩展语言"><a href="#强大的扩展语言" class="headerlink" title="强大的扩展语言"></a>强大的扩展语言</h3><p>Emacs的扩展语言是久闻大名的Emacs lisp – 著名的函数式编程语言的鼻祖.我对lisp非常感兴趣.从我现在的观点来看,Vim和Emacs完全不冲突.Emacs完全可以通过<code>Evil</code>插件来借鉴Vim的模式切换.</p>
+<p>正是由于Emacs强大的扩展和定制性,所以Emacs才会被称为神之编辑器 – 无所不能.</p>
+<h2 id="Spacemacs"><a href="#Spacemacs" class="headerlink" title="Spacemacs"></a>Spacemacs</h2><p>对于从vim迁移到Emacs的同学,我个人强烈推荐,我自己正在使用的<a href="http://spacemacs.org/" target="_blank" rel="external">spacemacs</a>.目前已经在<a href="https://github.com/syl20bnr/spacemacs" target="_blank" rel="external">Github</a>上有了11000+的star了.</p>
+<h3 id="切换成本低"><a href="#切换成本低" class="headerlink" title="切换成本低"></a>切换成本低</h3><p>通过默认的<code>Evil</code>插件,基本实现了绝大多数Vim的功能,稍微熟悉就可以上手工作.我们将在下篇介绍Spacemacs的快速入门.</p>
+<h3 id="快捷键解释和助记"><a href="#快捷键解释和助记" class="headerlink" title="快捷键解释和助记"></a>快捷键解释和助记</h3><p>通过空格键可以呼出快捷键菜单,通过有意义的分类后,你会发现快捷键非常容易查找.比如<code>空格+w</code>可以和窗口(window)相关的快捷键.</p>
 <p>另过,也可以通过<code>空格+h</code>中的各种帮助来查找快捷键,甚至是解释某个快捷键的功能.</p>
-<h3>插件包的引入</h3>
-<p>layer是指一个功能相关的package的集合.通过社区维护的layer的引入,我们可以通过快速引入一个layer来实现插件功能,而不需要去分别配置.</p>
+<h3 id="插件包的引入"><a href="#插件包的引入" class="headerlink" title="插件包的引入"></a>插件包的引入</h3><p>layer是指一个功能相关的package的集合.通过社区维护的layer的引入,我们可以通过快速引入一个layer来实现插件功能,而不需要去分别配置.</p>
 <p>其实如果阅读过spf13配置的同学,已经可以看到spf13已经使用了类似的概念.但是这是配置上的概念,没有社区为你维护.相对来讲,spacemacs的layer要更为成熟.</p>
-<h3>其他更强大的功能</h3>
-<p>Emacs还可以实现一些更为强大的功能,有些对我比较有吸引力.比如使用org-mode实现GTD.比如番茄钟功能的引入.比如可以直接使用有道词典查单词.</p>
-<h2>尾记</h2>
-<p>对于Spacemacs我也是刚刚入门,希望大家不要抱着偏见来看这些编辑器.Vim的模式切换已经深入人心,对于Vim的学习成本不会成为沉没成本.</p>
+<h3 id="其他更强大的功能"><a href="#其他更强大的功能" class="headerlink" title="其他更强大的功能"></a>其他更强大的功能</h3><p>Emacs还可以实现一些更为强大的功能,有些对我比较有吸引力.比如使用org-mode实现GTD.比如番茄钟功能的引入.比如可以直接使用有道词典查单词.</p>
+<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>对于Spacemacs我也是刚刚入门,希望大家不要抱着偏见来看这些编辑器.Vim的模式切换已经深入人心,对于Vim的学习成本不会成为沉没成本.</p>
 <p>怀着一颗好奇心去试试Spacemacs,说不定有新的惊喜呢 :)</p>
 
       
@@ -558,7 +541,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">Vim的精髓</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">Vim的不足</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">遗忘的快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">扩展语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.</span> <span class="nav-text">重叠的插件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">Emacs的优势</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">4.1.</span> <span class="nav-text">强大的扩展语言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">Spacemacs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.1.</span> <span class="nav-text">切换成本低</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.2.</span> <span class="nav-text">快捷键解释和助记</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.3.</span> <span class="nav-text">插件包的引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">5.4.</span> <span class="nav-text">其他更强大的功能</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vim的精髓"><span class="nav-number">2.</span> <span class="nav-text">Vim的精髓</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vim的不足"><span class="nav-number">3.</span> <span class="nav-text">Vim的不足</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#遗忘的快捷键"><span class="nav-number">3.1.</span> <span class="nav-text">遗忘的快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#扩展语言"><span class="nav-number">3.2.</span> <span class="nav-text">扩展语言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重叠的插件"><span class="nav-number">3.3.</span> <span class="nav-text">重叠的插件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Emacs的优势"><span class="nav-number">4.</span> <span class="nav-text">Emacs的优势</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#强大的扩展语言"><span class="nav-number">4.1.</span> <span class="nav-text">强大的扩展语言</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Spacemacs"><span class="nav-number">5.</span> <span class="nav-text">Spacemacs</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#切换成本低"><span class="nav-number">5.1.</span> <span class="nav-text">切换成本低</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键解释和助记"><span class="nav-number">5.2.</span> <span class="nav-text">快捷键解释和助记</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件包的引入"><span class="nav-number">5.3.</span> <span class="nav-text">插件包的引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他更强大的功能"><span class="nav-number">5.4.</span> <span class="nav-text">其他更强大的功能</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">6.</span> <span class="nav-text">尾记</span></a></li></ol></div>
             
           </div>
         </section>

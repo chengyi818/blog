@@ -329,97 +329,17 @@
 
       
         
-          
-            <p>本周是成胖子每周一博的第十六周 :smile:</p>
+          <p>本周是成胖子每周一博的第十六周 :smile:</p>
 <hr>
-<h2>前言</h2>
-<p>使用i3一周了,感觉还不错.下图是我目前的桌面.</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>使用i3一周了,感觉还不错.下图是我目前的桌面.</p>
 <p><img src="http://ww1.sinaimg.cn/large/006kvZhRgw1f2dkku1ztoj30zk0qotai.jpg" alt="桌面"></p>
 <p>三个显示器全部接在同一台电脑上,大部分操作由键盘完成.</p>
 <p>实际使用中,我们还需要一些辅助的软件.</p>
-<p>&lt;!--more--&gt;</p>
-<h2>工具软件</h2>
-<h2>分屏xrandr</h2>
-<p>i3wm的分屏是通过<code>xrandr</code>来完成的.</p>
-<p>查看显示器的信息:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">$xrandr</div><div class="line">Screen 0: minimum 320 x 200, current 5120 x 1080, maximum 32767 x 32767</div><div class="line">eDP1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 282mm x 165mm</div><div class="line">   1920x1080      60.0*+   59.9     40.0  </div><div class="line">   1680x1050      60.0     59.9  </div><div class="line">   1600x1024      60.2  </div><div class="line">   1400x1050      60.0  </div><div class="line">   1280x1024      60.0  </div><div class="line">   1440x900       59.9  </div><div class="line">   1280x960       60.0  </div><div class="line">   1360x768       59.8     60.0  </div><div class="line">   1152x864       60.0  </div><div class="line">   1024x768       60.0  </div><div class="line">   800x600        60.3     56.2  </div><div class="line">   640x480        59.9  </div><div class="line">VGA1 connected primary 1600x900+1920+0 (normal left inverted right x axis y axis) 442mm x 249mm</div><div class="line">   1600x900       60.0*+</div><div class="line">   1280x1024      75.0     60.0  </div><div class="line">   1440x900       59.9  </div><div class="line">   1024x768       75.1     70.1     60.0  </div><div class="line">   832x624        74.6  </div><div class="line">   800x600        72.2     75.0     70.0     60.3     56.2  </div><div class="line">   640x480        75.0     72.8     66.7     60.0  </div><div class="line">   720x400        70.1  </div><div class="line">HDMI1 connected 1600x900+3520+0 (normal left inverted right x axis y axis) 442mm x 249mm</div><div class="line">   1600x900       60.0*+</div><div class="line">   1280x1024      75.0     60.0  </div><div class="line">   1440x900       59.9  </div><div class="line">   1280x720       60.0     59.9  </div><div class="line">   1024x768       75.1     70.1     60.0  </div><div class="line">   832x624        74.6  </div><div class="line">   800x600        72.2     75.0     70.0     60.3     56.2  </div><div class="line">   640x480        75.0     72.8     66.7     60.0     59.9  </div><div class="line">   720x400        70.1</div></pre></td></tr></table></figure></p>
-<p>可以看到我的三块屏幕从左向右分别是:eDP1,VGA1和HDMI1.</p>
-<p>调整的命令如下:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --output VGA1 --primary --mode 1600x900 --pos 1920x0 --output HDMI1 --mode 1600x900 --pos 3520x0</div></pre></td></tr></table></figure></p>
-<p>命令需要根据实际需要适当调整,其中:</p>
-<p>--mode:</p>
-<blockquote>
-<p>控制分辨率</p>
-</blockquote>
-<p>--pos:</p>
-<blockquote>
-<p>控制窗口的位置,注意这个位置是需要自己经过计算的.</p>
-</blockquote>
-<p>--primary:</p>
-<blockquote>
-<p>指定为主屏幕</p>
-</blockquote>
-<p>--off:</p>
-<blockquote>
-<p>关闭指定屏幕</p>
-</blockquote>
-<h2>音量控制alsamixer</h2>
-<p>Linux Mint安装:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$sudo apt-get install alsamixergui</div></pre></td></tr></table></figure></p>
-<p>控制命令:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$alsamixergui</div><div class="line">或者</div><div class="line">$alsamixer</div></pre></td></tr></table></figure></p>
-<h2>亮度xbacklight</h2>
-<p>将屏幕亮度调整为60%:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xbacklight -set 60</div></pre></td></tr></table></figure></p>
-<h2>网络nmcli</h2>
-<p>这是一个命令行工具,用于控制网络.</p>
-<p>输入<code>nmcli</code>之后,使用TAB补齐.很容易上手.</p>
-<h2>截图scrot</h2>
-<p>之前在cinnamon图形界面下,截图我使用的是<code>shutter</code>感觉还挺好用的.</p>
-<p>在i3wm下,如果还是使用<code>shutter</code>的话,每次会打开一个新的窗口不是很方便.</p>
-<p>所以我使用scrot来截图.首先安装<code>scrot</code>,然后在主配置文件中添加配置:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># scrot fullscreen</div><div class="line">bindsym --release Print exec scrot -e &apos;mv $f /tmp/&apos;</div><div class="line"># scrot - select window or rectangle</div><div class="line">bindsym --release $mod+Print exec scrot -s -e &apos;mv $f /tmp/&apos;</div></pre></td></tr></table></figure></p>
-<p>现在使用Print键全屏截图,使用MOD+Print鼠标划取截图.所有截图的图片存放在/tmp目录下.</p>
-<h2>启动器dmenu</h2>
-<p>dmenu是我们在i3wm下使用的软件启动器,快捷键是<code>$MOD+d</code>.</p>
-<p>如果需要root权限执行的程序,可以使用<code>$MOD+Shift+d</code>来启动dmenu的root模式.</p>
-<p>启动dmenu后,输入需要启动的程序名即可,支持模糊匹配,区分大小写.</p>
-<p>好像还有其他的启动器,由于dmenu已经可以满足我的需要了,所以我浅尝辄止了.</p>
-<h2>系统信息i3status</h2>
-<p><a href="http://i3wm.org/i3status/manpage.html#_options" target="_blank" rel="external">i3status官方说明</a></p>
-<p>状态栏可以显示一些系统信息,包括:</p>
-<ul>
-<li>有线网络</li>
-<li>无线网络</li>
-<li>CPU负载</li>
-<li>特定进程</li>
-<li>电池电量</li>
-<li>时间日期</li>
-<li>硬盘容量</li>
-</ul>
-<p>可以参照<a href="https://github.com/chengyi818/dotfiles/tree/master/home" target="_blank" rel="external">我的配置</a>或者网上其他教程,进行设置.</p>
-<h2>工作区</h2>
-<p>工作区是Linux的常见功能.</p>
-<p>i3wm支持的工作区功能包括:</p>
-<ul>
-<li>新建工作区,最多支持10个</li>
-<li>将指定容器移动到指定工作区</li>
-<li>为工作区重命名</li>
-<li>特定程序运行在指定工作区</li>
-</ul>
-<h3>改名</h3>
-<p>通过在主配置中增加配置,将工作区改名.
-比如将工作区1改为Browser:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 修改工作区名</div><div class="line">#bindsym $mod+1 workspace 1 Browser</div></pre></td></tr></table></figure></p>
-<h3>指定程序打开的工作区</h3>
-<p>指定firefox打开在工作区1</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">assign [class=&quot;(?i)firefox&quot;] 1</div></pre></td></tr></table></figure></p>
-<h2>尾记</h2>
-<p><code>i3wm</code>使用一周以来,体验还是很愉快.感觉占用内存确实比cinnamon少.
-上手比较容易,配置简单.嗯,装逼利器.</p>
-<p><img src="http://imgs.focus.cn/upload/cz/14307/b_143063466.jpg" alt="装逼"></p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/04/02/窗口管理器i3续/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -536,69 +456,15 @@
 
       
         
-          
-            <p>本周是成胖子每周一博的第十五周 :smile:</p>
+          <p>本周是成胖子每周一博的第十五周 :smile:</p>
 <hr>
-<h2>前言</h2>
-<p><img src="http://ww1.sinaimg.cn/large/006kvZhRjw1f2bm4kl8afj30af06imyd.jpg" alt="最终效果图"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><img src="http://ww1.sinaimg.cn/large/006kvZhRjw1f2bm4kl8afj30af06imyd.jpg" alt="最终效果图"></p>
 <p>小伙伴们感觉这个桌面炫酷不炫酷?</p>
-<p>&lt;!--more--&gt;</p>
-<p><a href="http://yumminhuang.github.io/blog/2015/03/29/i3-%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8%E7%AE%80%E4%BB%8B/" target="_blank" rel="external">窗口管理器</a>可以分为平铺式和层叠式,通常我们使用的都是层叠式,也就是每个窗口都可以相互重叠.</p>
-<p>对于<strong>多显示器</strong>或者<strong>大尺寸显示器</strong>而言,平铺式窗口往往更有优势.</p>
-<p>常见的平铺式管理器有:</p>
-<ul>
-<li><a href="http://xmonad.org/" target="_blank" rel="external">xmond</a></li>
-<li><a href="https://awesome.naquadah.org/" target="_blank" rel="external">awesome</a></li>
-<li><a href="https://i3wm.org/" target="_blank" rel="external">i3wm</a></li>
-</ul>
-<p>经过筛选,我最终选择了i3.</p>
-<hr>
-<h2>安装与使用</h2>
-<h3>安装</h3>
-<p>Ubuntu稳定版本安装方法:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># echo &quot;deb http://debian.sur5r.net/i3/ $(lsb_release -c -s) universe&quot; &gt;&gt; /etc/apt/sources.list</div><div class="line"># apt-get update</div><div class="line"># apt-get --allow-unauthenticated install sur5r-keyring</div><div class="line"># apt-get update</div><div class="line"># apt-get install i3 i3lock dmenu i3status</div></pre></td></tr></table></figure></p>
-<p>其他安装方法参见<a href="http://i3wm.org/downloads/" target="_blank" rel="external">这里</a></p>
-<h3>使用</h3>
-<ul>
-<li>安装完成后,注销.</li>
-<li>在重新登陆界面,可以选择桌面窗口管理器.</li>
-<li>选择i3,输入用户名,密码登陆.</li>
-</ul>
-<hr>
-<h2>配置</h2>
-<h3>配置文件</h3>
-<p>i3的配置文件,包括两个:</p>
-<ol>
-<li>主配置文件</li>
-<li>状态栏配置文件</li>
-</ol>
-<p>我的配置文件已经上传到我的<a href="https://github.com/chengyi818/dotfiles" target="_blank" rel="external">dotfiles</a>中.</p>
-<p>其中主配置文件是<code>home/i3/config</code>,状态栏配置文件是<code>.i3status.conf</code>.
-可以直接下载使用.</p>
-<h3>说明</h3>
-<ul>
-<li>如果需要增加开机启动的程序或者脚本,可以仿照主配置文件最后一行的写法,添加自定义的开机执行程序.</li>
-</ul>
-<h2>我的快捷键</h2>
-<p>根据我的需求,我重新定制了部分快捷键,请参见配置文件中的说明.</p>
-<h3>常用快捷键</h3>
-<p>MOD键被映射为windows键,也就是左手边Alt左边的键.</p>
-<ul>
-<li>MOD + h,j,k,l：移动屏幕焦点；</li>
-<li>MOD + Shift + h,j,k,l：移动容器；</li>
-<li>MOD + v：垂直分割容器；</li>
-<li>MOD + z：水平分割容器；</li>
-<li>MOD + d：打开应用程序启动器Dmenu；</li>
-<li>MOD + Enter：打开终端。</li>
-<li>MOD + Shift + q : 关闭当前程序</li>
-<li>MOD + Shift + e : 退出i3,可以重新选择窗口管理器.</li>
-</ul>
-<h2>尾记</h2>
-<p><em>i3</em>是面向高级用户的窗口管理工具,使用起来让你很有极客范.大量的操作将使用键盘完成.
-很有意思,值得尝试.</p>
-<p>下周再见 :wave:</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/03/27/平铺窗口管理器i3/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -715,87 +581,17 @@
 
       
         
-          
-            <p>本周是成胖子每周一博的第十四周:smile:</p>
+          <p>本周是成胖子每周一博的第十四周:smile:</p>
 <hr>
-<h2>写在前面</h2>
-<p>本来这周的博客就是想单纯地介绍下翻墙的工具和一些软件推荐的,捎带着介绍下最简单的原理.搜资料搜到一段话,稍有感触.</p>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>本来这周的博客就是想单纯地介绍下翻墙的工具和一些软件推荐的,捎带着介绍下最简单的原理.搜资料搜到一段话,稍有感触.</p>
 <blockquote>
 <p>作为个搞技术的人，我们要干点疯狂的事。如果我们不动手，我们就要被比我们差的远的坏技术人员欺负。这太丢人了。眼前就是，GFW这个东西，之前是我们不抱团，让它猖狂了。现在咱们得凑一起，想出来一个办法让它郁闷一下，不能老被欺负吧。要不，等到未来，后代会嘲笑我们这些没用的家伙，就象我们说别人“你怎么不反抗？”</p>
 </blockquote>
-<p>&lt;!--more--&gt;</p>
-<p>我先说明我的态度:</p>
-<blockquote>
-<p>悄悄地进村,打枪地不要</p>
-</blockquote>
-<p>当然所谓国家防火长城<a href="https://zh.wikipedia.org/wiki/%E9%98%B2%E7%81%AB%E9%95%BF%E5%9F%8E" target="_blank" rel="external">GFW</a>的存在,很多时候会和所谓的政治挂钩.然而中国人显然对政治是不关心,甚至说麻木也可以.</p>
-<p>我不关心政治,也无意挑战GFW.但是我还是很佩服一部分先行者.</p>
-<p>有志于了解深度细节的同学可以参见<a href="https://docs.google.com/document/d/1mmMiMYbviMxJ-DhTyIGdK7OOg581LSD1CZV4XY1OMG8/pub" target="_blank" rel="external">翻墙路由器的原理与实现</a></p>
-<p>上面写那段话的人,我不知道是不是进号子了,那个疯狂的计划叫<a href="http://gfwrev.blogspot.com/" target="_blank" rel="external">西厢计划</a></p>
-<p>每个人都有不同的&quot;翻墙&quot;的目的.作为程序员,我的目的就是为了用google.英语是程序员的世界语,显然百度在英文网页的搜索上还不及google.</p>
-<h2>翻墙之前</h2>
-<p>有个同学叫&quot;小明&quot;,他想邮寄一个包裹给他在美国的表哥&quot;google&quot;.</p>
-<p>可是他不知道表哥&quot;google&quot;在美国的地址,他下面该怎么办呢?他发现世界上有个地址登记薄(DNS),上面有他表哥家的地址.</p>
-<p>他把地址写在包裹上,然后把包裹交给邮政发送了出去.</p>
-<p>结果到了海关,我们的海关工作人员发现,这个表哥&quot;google&quot;还有这个地址经常从事恐怖色情活动,各种资本主义糟粕.这样可不行,我们的海关工作人员就把这个包裹给丢了.</p>
-<p><img src="http://ww3.sinaimg.cn/large/006kvZhRjw1f23ayn6ppwj30dw03gaa8.jpg" alt="翻墙前"></p>
-<h2>翻墙之后</h2>
-<p>那&quot;小明&quot;要怎样才能把包裹寄给表哥呢?</p>
-<p>有个走私团伙,叫&quot;shadowsocks&quot;.团伙里面有个两个主要成员:</p>
-<ul>
-<li>
-<p>一个叫&quot;client&quot;,潜伏在大陆地区,负责转运违禁物品.</p>
-</li>
-<li>
-<p>一个叫&quot;server&quot;,主要在国外从事非法活动,但是很隐蔽,一般警察叔叔不知道.</p>
-</li>
-</ul>
-<p>&quot;小明&quot;将包裹交给&quot;client&quot;,然后&quot;client&quot;把包裹放进一个更大地包裹里,外面写上&quot;server&quot;的地址,最后把大包裹发送出去.</p>
-<p>&quot;警察叔叔&quot;在海关看到包裹:</p>
-<ul>
-<li>
-<p>先检查了一下地址.嗯,不是黑名单上的地址.过关</p>
-</li>
-<li>
-<p>再打开包裹一看.里面东西被&quot;client&quot;搞的乱七八糟的,根本看不出啥不妥.过关</p>
-</li>
-</ul>
-<p>就这样,大包裹顺利到了&quot;server&quot;.</p>
-<p>&quot;server&quot;收到大包裹后,拆开一看,乱七八糟的.
-不过没关系,&quot;server&quot;和&quot;client&quot;事先沟通好了,知道怎么恢复.然后再把地址为&quot;google&quot;的包裹发出去.</p>
-<p>这个时候,因为包裹完全已经到了国外,&quot;警察叔叔&quot;根本管不到了.这样包裹就到了表哥&quot;google&quot;手上.</p>
-<p><img src="http://ww4.sinaimg.cn/large/006kvZhRjw1f23brs539hj30f00avmy2.jpg" alt="翻墙后"></p>
-<h2>具体操作概述</h2>
-<p>上面瞎扯了一通,下面我们来看看&quot;小明&quot;需要做些什么?</p>
-<p>首先,&quot;小明&quot;必须知道怎么和走私团伙的&quot;client&quot;勾搭.方法很有多,我比较喜欢的是:</p>
-<ul>
-<li>
-<p>chrome + SwitchyOmega</p>
-</li>
-<li>
-<p>proxychains</p>
-</li>
-</ul>
-<p>其次,&quot;小明&quot;得雇佣这个走私团伙.&quot;client&quot;倒是不贵很容易找到.这个&quot;server&quot;因为在美帝的地盘上活动,花费不菲.</p>
-<ul>
-<li>
-<p>shadowsocks-qt5</p>
-</li>
-<li>
-<p>shadowsocks server</p>
-</li>
-</ul>
-<p>没办法太详细解释,万一被查水表就完蛋了.自己去网上找找,教程很多.实在不明白地,给我留言.</p>
-<h3>软件推荐</h3>
-<p><a href="https://rg3.github.io/youtube-dl/" target="_blank" rel="external">youtube-dl</a>可以直接下载youtube上的视频.</p>
-<p><a href="http://proxychains.sourceforge.net/" target="_blank" rel="external">proxychains</a>可以直接在命令行终端连接上shadowsocks client.</p>
-<p>两者结合,可以轻松下载youtube上的视频.值得一试.</p>
-<h2>尾记</h2>
-<p>热爱祖国,热爱党,我是社会主义接班人.我翻墙只是为了学习资本主义的技术更好地建设社会主义祖国.</p>
-<p>为实现中华民族的伟大复兴而努力奋斗.(此处应有国歌响起:musical_note:)</p>
-<p>同志们,下周见 :wave:</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/03/19/翻墙之我见/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -912,139 +708,17 @@
 
       
         
-          
-            <p>本周是成胖子每周一博的第十三周:)</p>
+          <p>本周是成胖子每周一博的第十三周:)</p>
 <hr>
-<h2>前言</h2>
-<p>在github上偶然浏览到<a href="https://dotfiles.github.io/" target="_blank" rel="external">dotfiles</a>.</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在github上偶然浏览到<a href="https://dotfiles.github.io/">dotfiles</a>.</p>
 <blockquote>
-<p>因为Unix及Linux下的很多配置文件都是隐藏文件,以&quot;.&quot;开始,所以我们用dotfiles称呼这些文件.</p>
+<p>因为Unix及Linux下的很多配置文件都是隐藏文件,以”.”开始,所以我们用dotfiles称呼这些文件.</p>
 </blockquote>
-<p>&lt;!--more--&gt;</p>
-<p>dotfiles整理有三个目的:</p>
-<ul>
-<li>
-<p>备份/存储/同步</p>
-</li>
-<li>
-<p>学习/发现</p>
-</li>
-<li>
-<p>分享</p>
-</li>
-</ul>
-<p>对于开发人员而言,一个代码编辑环境无疑是重中之重.我最近组装和改造了我自己的dotfiles.非常欢迎fork和使用,如果有什么问题,可以互相交流.</p>
-<p><a href="https://github.com/chengyi818/dotfiles" target="_blank" rel="external">一键下载使用</a></p>
-<h2>dotfiles原理</h2>
-<p>在类Unix环境下,用户的配置在用户主目录下.比如bashrc,vimrc.我们一般都是直接修改这里.</p>
-<p>如果有<strong>备份的需求</strong>怎么办呢?</p>
-<blockquote>
-<p>最简单的办法就是把相应的文件打包压缩,然后就可以放到网盘或者U盘当中了.</p>
-</blockquote>
-<p>可是如果我们经常不时地<strong>更新</strong>配置文件,怎么才能很方便地压缩呢?</p>
-<blockquote>
-<ul>
-<li>有个笨办法,我每次更新完了,我就自己手动把每个文件重新压缩下.</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>升级一下,可以写个简单地脚本,每次自动执行压缩命令</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>再升级一下,可以把所有的配置文件拉到一个文件中,然后软链接到用户主目录.</li>
-</ul>
-</blockquote>
-<p>配置文件要怎么<strong>存储</strong>呢?</p>
-<blockquote>
-<ul>
-<li>毫无疑问,放到云上是最好的.dropbox或者百度云都还不错.</li>
-</ul>
-</blockquote>
-<p>难道我每次要自己手动<strong>同步</strong>么?</p>
-<blockquote>
-<ul>
-<li>我们现在有了<strong>github</strong>这么方便的工具,不使用一下太可惜了.</li>
-</ul>
-</blockquote>
-<p>综上,我们把常用配置放到同一个文件夹中,然后将它们链接到用户主目录.同时将这个文件夹加入git版本管理,最后上传到github当中.</p>
-<h2>安装主要过程</h2>
-<blockquote>
-<p>我希望可以通过执行一条命令,把任何环境配置成自己最熟悉趁手的环境.</p>
-</blockquote>
-<p>一键脚本主要包含如下几个步骤:</p>
-<ul>
-<li>
-<p>安装必要的软件,比如<a href="https://github.com/technicalpickles/homesick" target="_blank" rel="external">homesick</a>,git,cmake,ctags等.</p>
-</li>
-<li>
-<p>备份现在的配置文件.</p>
-</li>
-<li>
-<p>安装zsh框架<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></p>
-</li>
-<li>
-<p>创建软链接</p>
-</li>
-<li>
-<p>安装vim框架<a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a></p>
-</li>
-<li>
-<p>安装小工具<a href="https://github.com/nvbn/thefuck" target="_blank" rel="external">thefuck</a></p>
-</li>
-<li>
-<p>尝试编译<a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="external">YouCompleteMe</a></p>
-</li>
-</ul>
-<h2>安装说明</h2>
-<p>前面我们已经提及了我们的主要过程,程序员当然不应该重复造轮子,所以我选用了大量的现有组件.</p>
-<ul>
-<li>下载配置,创建软链接,同步配置</li>
-</ul>
-<blockquote>
-<p>使用homesick,使用方法和命令非常类似于git,缺点是没有提供原有文件的备份.</p>
-</blockquote>
-<ul>
-<li>zsh配置</li>
-</ul>
-<blockquote>
-<p>直接使用了很火的oh-my-zsh</p>
-</blockquote>
-<ul>
-<li>vim配置</li>
-</ul>
-<blockquote>
-<p>vim真的是博大精深,用了这么久了,还是每次都有新发现,真的不愧是是编辑器之神.我使用了spf13的vim配置.基本主流插件都有了,而且比较容易进行个人定制.</p>
-</blockquote>
-<ul>
-<li>我的工作</li>
-</ul>
-<blockquote>
-<p>我主要做的就是使用shell脚本备份原有配置,同时尽量把安装过程自动化.我只在很有限的几台电脑上测试过.如果使用过程中有问题,请issue告诉我.</p>
-</blockquote>
-<h2>私人定制</h2>
-<p>每个人都有自己的喜好,我的配置你不一定趁手.如果想进行个人定制,简单的三步就可以了.</p>
-<ol>
-<li>
-<p>进入<a href="https://github.com/chengyi818/dotfiles" target="_blank" rel="external">github</a>,fork我的仓库.</p>
-</li>
-<li>
-<p>将README.md中的一键安装脚本路径修改为你自己的仓库.</p>
-</li>
-<li>
-<p>将仓库中的install.sh文件头部的<code>REPO_URL</code>修改为你的仓库名.</p>
-</li>
-</ol>
-<p>这样你就拥有了可以陪伴自己一生的工具箱,关于我们主要组件的使用方法请去原作者网页浏览,如果有机会,再给大家介绍.</p>
-<h2>使用小结</h2>
-<p>我目前主要使用Linux Mint.我的命令终端使用konsole.tmux主要用于控制多个窗口.oh-my-zsh使得命令行操作更加高效强大.vim的配置插件让你的手指在键盘上舞蹈.</p>
-<p>如果有机会真的要尝试下,八星八钻,花30分钟,你买不了吃亏,你买不了上当.抱着试一试地态度,你真的会爱上它们.</p>
-<h2>尾记</h2>
-<p>今天只是简要地说明了我的dotfiles.说实话,我想做这个已经很久了,一直拖.现在总算是阶段性完成了.如果有人能够受益,多使用真的是太好了.</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/03/12/dotfiles总述/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1161,109 +835,15 @@
 
       
         
-          
-            <p>本周是成胖子每周一博的第十二周:)</p>
+          <p>本周是成胖子每周一博的第十二周:)</p>
 <hr>
-<h2>前言</h2>
-<p>我日常工作基本都在Linux下,记得刚从windows迁移到Linux时,总是担心Linux能否胜任我的要求.目前看来绝大多数工作,Linux都可以完成地很好.本周我来介绍下,我觉得很不错的一些软件.</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我日常工作基本都在Linux下,记得刚从windows迁移到Linux时,总是担心Linux能否胜任我的要求.目前看来绝大多数工作,Linux都可以完成地很好.本周我来介绍下,我觉得很不错的一些软件.</p>
 <p>我使用的是Linux Mint 17.3 rosa.软件排名不分先后,推荐尝试.</p>
-<p>&lt;!--more--&gt;</p>
-<h2>trash-cli</h2>
-<blockquote>
-<p>妈妈再也不用担心我删错文件了.</p>
-</blockquote>
-<p><a href="https://github.com/andreafrancia/trash-cli" target="_blank" rel="external">trash-cli github网址</a></p>
-<p>我们知道在windows或者Linux的图形界面删除文件时,文件会被保存到回收站/垃圾箱中,这样可以避免很多误删除操作.在Linux下工作时,常常需要在命令行下删除文件.这时文件会被直接删除,误操作往往会带来一些麻烦.</p>
-<p>trash-cli的作用就是在命令行删除文件时,先将文件保存到回收站.回收站使用的是和图形界面同一目录,你在命令行删除的文件都可以在回收站中找回.另外记得及时清理回收站哦.</p>
-<p>下面是我的个人设置,你可以把它保存到你的.bashrc或者.zshrc之类的文件中.</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">#trash-cli setting</div><div class="line">#trash-put          将文件或目录移入回收站</div><div class="line">#trash-empty        清空回收站</div><div class="line">#trash-list         列出回收站中的文件</div><div class="line">#restore-trash      还原回收站中的文件</div><div class="line">#trash-rm           删除回首站中的单个文件</div><div class="line">alias rmf=&quot;/bin/rm&quot;</div><div class="line">alias rm=&quot;trash-put&quot;</div><div class="line">alias lstrash=&quot;trash-list&quot;</div></pre></td></tr></table></figure></p>
-<h2>krusader</h2>
-<blockquote>
-<p>神级文件管理器</p>
-</blockquote>
-<p><a href="http://www.krusader.org/" target="_blank" rel="external">官方网站</a></p>
-<p><a href="https://docs.kde.org/trunk5/en/extragear-utils/krusader/krusader.pdf" target="_blank" rel="external">用户手册</a></p>
-<p>离开熟悉的windows环境,唯一让我时常怀念的软件就是<strong>Total Commander</strong>,非常好用的文件管理器.windows环境下的同学强烈推荐.</p>
-<p>Linux系统中的krusader就是一款非常类似的软件,提供了相当丰富的功能.</p>
-<h2>Dia</h2>
-<blockquote>
-<p>没有visio又如何,我有Dia</p>
-</blockquote>
-<p>切换到Linux平台的一个问题是,我们再也没有visio可以使用了.那老板让我画流程图要怎么办呢?</p>
-<p>当然你可以使用一些在线流程图绘制网站,那样功能往往比visio要弱很多.这里向你推荐Dia.</p>
-<p>安装方式很简单
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install dia</div></pre></td></tr></table></figure></p>
-<p>运行命令
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$dia</div></pre></td></tr></table></figure></p>
-<h2>kconsole</h2>
-<blockquote>
-<p>一个伟大的终端应用程序是使用命令行应用程序的必需品</p>
-</blockquote>
-<p>漂亮炫酷的命令行终端有很多,我选择了kconsole.我对它的功能很满意:</p>
-<ol>
-<li>
-<p>搜索/高亮功能。高亮匹配是实时刷新的，这对于拖尾日志文件真的很方便。</p>
-</li>
-<li>
-<p>易于选择和复制文本块。</p>
-</li>
-<li>
-<p>简单选择屏幕滚动，使用CTRL + SHIFT + K清理缓冲区。</p>
-</li>
-<li>
-<p>可自定义隐藏大部分不必要的细节（标签栏、菜单），默认提供许多颜色主题。</p>
-</li>
-</ol>
-<h2>shotwell</h2>
-<blockquote>
-<p>你辣么美</p>
-</blockquote>
-<p><a href="https://wiki.gnome.org/Apps/Shotwell" target="_blank" rel="external">shotwell</a></p>
-<p>我们难免有大量的照片需要管理,shotwell是一个非常不错的照片管理工具.</p>
-<h2>bleachbit</h2>
-<blockquote>
-<p>我是电脑清洁工</p>
-</blockquote>
-<p><a href="https://www.bleachbit.org/" target="_blank" rel="external">bleachbit</a></p>
-<p>Linux系统不像windows系统那样产生大量临时文件,可以长时间开机保持稳定运行.但是还是会产生一些垃圾文件.</p>
-<p>bleachbit就是类似于360之类的电脑清理软件.我们的口号是:<strong>Clean Your System and Free Disk Space</strong></p>
-<h2>deepinMusic</h2>
-<blockquote>
-<p>我就是爱音乐,别让我停下来</p>
-</blockquote>
-<p><a href="http://wiki.deepin.org/?title=%E6%B7%B1%E5%BA%A6%E9%9F%B3%E4%B9%90" target="_blank" rel="external">deepinMusic</a></p>
-<p>Linux下目前基本没有云音乐的播放器.说实话,还真是有点不方便.只能用网页听,或者下载以后播放.</p>
-<p>深度音乐播放器可以安装百度音乐,网易云音乐的插件.虽然还是不能下载,但是基本上可以使用云音乐功能了.</p>
-<p>哎,满满都是泪啊.</p>
-<h2>bcloud</h2>
-<blockquote>
-<p>我有一座大房子</p>
-</blockquote>
-<p><a href="https://github.com/LiuLang/bcloud" target="_blank" rel="external">bcloud</a></p>
-<p>百度云网盘是我觉得蛮好用的一个产品,可惜没有Linux客户端,网页版功能又偏弱.github上有人用python开发了一个相当不错的Linux客户端,实现了windows客户端的大部分功能.</p>
-<h2>Plank</h2>
-<blockquote>
-<p>我像不像Mac Os</p>
-</blockquote>
-<p><a href="https://launchpad.net/plank" target="_blank" rel="external">Plank</a></p>
-<p>Plank类似于Mac中的窗口管理工具,用来管理常用的软件窗口很方便,也很炫酷.</p>
-<h2>GIMP</h2>
-<blockquote>
-<p>没有Ps,没有美图秀秀,我怎么活?</p>
-</blockquote>
-<p><a href="https://www.gimp.org/" target="_blank" rel="external">GIMP</a></p>
-<p>简单一句话,这就是Linux上的Photoshop.</p>
-<h2>atom</h2>
-<blockquote>
-<p>21世纪的编辑器</p>
-</blockquote>
-<p>atom是Github推出的一款编辑器,使用前端语言编写.我个人是vim狂热爱好者,但是不得不说,vim插件的编写语言太过小众,同时vim的学习曲线稍显陡峭.</p>
-<p>atom汲取了很多emacs,vim和sublime的营养.插件配置管理非常方便,我目前的所有博客都是使用atom来进行编辑.</p>
-<p>github是开源软件的中心,各种issue交流非常迅速.所以atom目前正在快速发展之中,我愿意关注它的成长.</p>
-<h2>尾记</h2>
-<p>本周我为大家介绍了,我自己喜爱的一些Linux软件.希望你也可以喜欢.感谢阅读,下周再见:)</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/03/05/Linux工具推荐/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1380,151 +960,22 @@
 
       
         
-          
-            <p>春节放假休息了两周
-本周是成胖子每周一博的第十一周:)</p>
+          <p>春节放假休息了两周<br>本周是成胖子每周一博的第十一周:)</p>
 <hr>
-<h2>1.前言</h2>
-<p>前面我们谈到过GTD工作法及其软件doit.这主要是将目标分解为项目,再将项目分解为行动.最后的粒度将是今天一个具体的行动,比如写一篇博客.</p>
+<h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>前面我们谈到过GTD工作法及其软件doit.这主要是将目标分解为项目,再将项目分解为行动.最后的粒度将是今天一个具体的行动,比如写一篇博客.</p>
 <p>现在我遇到的问题是:</p>
 <ol>
-<li>
-<p>一个行动往往需要数个小时,在这过程当中怎么保持专注?</p>
+<li><p>一个行动往往需要数个小时,在这过程当中怎么保持专注?</p>
 </li>
-<li>
-<p>我们都知道久坐对身体的危害.工作时往往会忽视时间的流逝(心流).怎样定时休息呢?</p>
+<li><p>我们都知道久坐对身体的危害.工作时往往会忽视时间的流逝(心流).怎样定时休息呢?</p>
 </li>
 </ol>
-<p>我的答案是---<strong>番茄工作法</strong></p>
-<p>&lt;!--more--&gt;</p>
-<p><img src="http://www.legalproductivity.com/wp-content/uploads/2010/08/pomodoro_timer.jpg" alt="番茄工作法"></p>
-<h2>2.理念</h2>
-<p>番茄工作法的理念和Unix哲学一致---<em>Do one thing and Do It Well</em></p>
-<p>在一段时间内<strong>专注</strong>地做好一件事,这就是番茄工作法.那么它会带来哪些好处呢?</p>
-<h3>2.1收益</h3>
-<ol>
-<li>面对复杂的问题,我们往往会产生畏难情绪,不愿开始动手.</li>
-</ol>
-<blockquote>
-<p>番茄工作法并不关注deadline,它只是简单的要求你开始一个番茄钟,循环往复.你不需要去考虑难度,只需要开始-&gt;休息-&gt;再开始.</p>
-</blockquote>
-<ol start="2">
-<li>短周期迭代</li>
-</ol>
-<blockquote>
-<p>番茄工作法有助于保持工作节奏.选择-&gt;开始-&gt;休息-&gt;再选择-&gt;开始-&gt;休息.</p>
-</blockquote>
-<ol start="3">
-<li>有助于快速恢复工作状态</li>
-</ol>
-<blockquote>
-<p>早晨刚到办公室或者刚吃过饭常常没有工作状态.利用番茄工作法的神经反射,往往可以快速进入状态.</p>
-</blockquote>
-<ol start="4">
-<li>记录,对比和改进</li>
-</ol>
-<blockquote>
-<p>记录每天完成多少个番茄,通过对比自己的计划,有助于改进.</p>
-</blockquote>
-<ol start="5">
-<li>预估</li>
-</ol>
-<blockquote>
-<p>我们常常被要求预估完成某项任务的时间.通常而言,误差很大.通过不断预估完成某件事需要的番茄钟,有助于我们培养自己的预估能力.</p>
-</blockquote>
-<ol start="6">
-<li>对抗拖延</li>
-</ol>
-<blockquote>
-<p>拖延的原因无外乎:</p>
-</blockquote>
-<blockquote>
-<ol>
-<li>追求完美,对自己期望很高.</li>
-<li>害怕失败</li>
-<li>被强迫要求完成某项任务.</li>
-</ol>
-</blockquote>
-<blockquote>
-<p>无论怎样,番茄钟仅仅要求你,开始一个钟并全身心投入.</p>
-</blockquote>
-<ol start="7">
-<li>简单</li>
-</ol>
-<h2>3.方法</h2>
-<p>下面我们来介绍下,番茄钟的实践方法:</p>
-<h3>3.1 列清单</h3>
-<p>清单包括:活动清单和今日待办清单.这里我使用了GTD工具---doit.im,详情参见我的上一篇<a href="http://yitinglove.cn/2016/02/08/%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86GTD.html">博客</a>.</p>
-<h3>3.2 跟踪</h3>
-<p>跟踪是在三种状态间切换:</p>
-<h4>3.2.1. 选择</h4>
-<p>此时应当保持洞察力,根据<strong>要事第一</strong>原则,选择出需要完成的任务.</p>
-<h4>3.2.2. 工作</h4>
-<p>在一个番茄钟的时间内(通常是25min),专注于完成任务,尽量心无旁骛.</p>
-<h4>3.2.3. 休息</h4>
-<p>每完成一个番茄钟,让自己稍微休息一会(通常是5min),站起来伸个懒腰,扭扭脖子,清空大脑.有助于清除<a href="http://pedia.cloud.edu.tw/Entry/Detail/?title=%E8%A8%98%E6%86%B6%E5%B9%B2%E6%93%BE%E8%AB%96%EF%BC%9A%E5%89%8D%E5%90%91%E5%B9%B2%E6%93%BE%EF%BC%88proactive_interference%EF%BC%89_%E5%BE%8C%E5%90%91%E5%B9%B2%E6%93%BE%EF%BC%88retroactive_interference%EF%BC%89" target="_blank" rel="external">前后向干扰</a>.</p>
-<p>每完成四个番茄钟,让自己稍微多休息一会(通常15min左右).上个洗手间,倒杯水.有条件的话,可以试试短时间的冥想.这里推荐一个<a href="http://www.calm.com/" target="_blank" rel="external">网站</a></p>
-<h3>3.3 记录/对比/改进</h3>
-<p>根据自己一天的记录,来改进自己的工作.</p>
-<blockquote>
-<p>吾日三省吾身</p>
-</blockquote>
-<h2>4. 意外</h2>
-<p>上面首先介绍了最简单的使用场景.下面我们来看看各种意外情况.</p>
-<blockquote>
-<p>世间不如意之事,十之八九.</p>
-</blockquote>
-<h3>4.1 时间剩余</h3>
-<p>可能某件事做完了,但是一个番茄钟还没有到.此时推荐的做法是<a href="https://en.wikipedia.org/wiki/Overlearning" target="_blank" rel="external">过度学习</a>,简单来说,就是接着复习刚才学习的内容.</p>
-<h3>4.2 中断</h3>
-<p>更常见的问题是被打断.在我们需要切换工作记忆时,很明显会降低工作效率.如果频繁切换更是不堪设想.<a href="http://www.woshipm.com/zhichang/174838.html" target="_blank" rel="external">参考文章</a></p>
-<p>中断可以分为内部和外部两种:</p>
-<h4>4.2.1. 内部</h4>
-<p>在工作学习的时候,脑子里面往往有很多念头.一会想喝水,一会想看微信.这个时候不要排斥自己的想法,先记录下来,然后继续番茄钟,等结束之后,再来集中处理.</p>
-<p>如果有doit.im的话,可以先放到收集箱.</p>
-<h4>4.2.2. 外部</h4>
-<p>与内部中断不同的是,如果是外部中断,也就是你的同事同学过来打断你,这往往带有一定的交互性,可能是闲聊,可能是请求帮助,也可能是急事.</p>
-<p>这时处理方法分为四步:</p>
-<blockquote>
-<p>1)告知</p>
-</blockquote>
-<blockquote>
-<p>告知对方,我有事,正在忙</p>
-</blockquote>
-<blockquote>
-<p>2)协商</p>
-</blockquote>
-<blockquote>
-<p>与对方协商,延后给予答复</p>
-</blockquote>
-<blockquote>
-<p>3)计划</p>
-</blockquote>
-<blockquote>
-<p>将这件事记录下来,并安排时间处理</p>
-</blockquote>
-<blockquote>
-<p>4)答复</p>
-</blockquote>
-<blockquote>
-<p>及时给予答复,这样下次你要求延后答复,对方就会很放心.</p>
-</blockquote>
-<h3>4.3 原子性</h3>
-<p>任何时候,番茄钟都是原子性的,不能被分割使用.不要把零碎的时间凑成一个番茄钟.</p>
-<h3>4.4 变化</h3>
-<blockquote>
-<p>穷则变,变则通,通则久.</p>
-</blockquote>
-<p>番茄工作法也仅仅是一种工具,一种工作方法.在掌握了以后完全可以根据自己的实际情况进行调整.但我还是建议先按照25min/5min/15min的间隔方式,使用两周以上.等自己完全掌握了,再适当调整.</p>
-<h2>5. 软件</h2>
-<p>我们处在这个信息时代,真的是很幸福.现在有一款软件---<a href="https://pomotodo.com/" target="_blank" rel="external">pomotodo</a></p>
-<p>非常优秀的一款番茄工作法软件,包括移动端,网页版客户端,各种统计,计划,回顾功能齐全.推荐尝试.</p>
-<h2>6. 尾记</h2>
-<p>对我而言,GTD主要解决的是宏观上的时间把控,比如今天做什么事.
-番茄工作法针对的是微观上的时间把控,怎么将事情集中精力快速完成.</p>
-<p>两者结合使用,药效更好更持久.有兴趣的同学不妨抱着试一试的态度,先用两个疗程.</p>
-
-          
+<p>我的答案是—<strong>番茄工作法</strong></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/02/27/pomotodo/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1641,68 +1092,18 @@
 
       
         
-          
-            <p>本周是成胖子每周一博的第十周:)</p>
+          <p>本周是成胖子每周一博的第十周:)</p>
 <hr>
-<h2>前言</h2>
-<p>偶然在朋友圈看到朋友发了说状态,说<code>omnifocus</code>很炫酷.我当然也不知道是个啥?查了一下,说是一个GTD软件.顺藤摸瓜,我就接触到了所谓第四代时间管理的理念.<a href="https://en.wikipedia.org/wiki/Getting_Things_Done" target="_blank" rel="external">GTD简介</a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>偶然在朋友圈看到朋友发了说状态,说<code>omnifocus</code>很炫酷.我当然也不知道是个啥?查了一下,说是一个GTD软件.顺藤摸瓜,我就接触到了所谓第四代时间管理的理念.<a href="https://en.wikipedia.org/wiki/Getting_Things_Done">GTD简介</a></p>
 <blockquote>
 <p>老人言:不但要埋头拉车,也要抬头看路.</p>
 </blockquote>
 <p>简要来讲,GTD就是以流程化的方式,处理了从目标到具体行动的一系列问题.迫使我们进行思考,从而将个人事务处理的比较有条理.</p>
-<p>&lt;!--more--&gt;</p>
-<p>今天主要来介绍下我使用的个人事务管理软件---doit.im.我也是刚刚学习,可能还有很多不规范的地方.学习方法论这种事情我认为有两步:</p>
-<ol>
-<li>正确理解别人的理念,学习别人的处理方式.</li>
-<li>根据自己的实际情况,将这种理念和工具内化.</li>
-</ol>
-<p>正如我在总序中所言,工具务必多用,并且在使用中动态调整,使之契合自己,而不是一味的教条照搬.</p>
-<h2>理论</h2>
-<p>GTD的理论是由美国人David Allen在他的畅销书<code>Getting Things Done</code>中提出的.中文翻译版的名字是<code>搞定</code>.有兴趣的同学可以找点资料深入看看.</p>
-<p>网上有很多相关的教程,我这里贴一个流程图,我基本就是按照这个执行的.</p>
-<p><img src="http://www.mlocn.com/wp-content/uploads/2015/01/o_GTD-CN.jpg" alt="GTD流程图"></p>
-<h2>工具</h2>
-<p>信息时代,我们不可能再用纸笔来完成GTD流程,目前有不少GTD的软件.我想有这么几个筛选标准.</p>
-<ol>
-<li>符合GTD的理念,各种流程化操作支持.</li>
-<li>Web端,移动端应用全面</li>
-<li>云同步</li>
-</ol>
-<p>我目前选择的是doit.im.个人感觉还是比较好用的,推荐尝试.</p>
-<p>注册的话,直接送一个月的高级账户.另外如果要买高级账户的话,在如下链接是可以打86折的.</p>
-<p><a href="http://blog.hiddenwangcc.com/" target="_blank" rel="external">打折链接1</a></p>
-<p><a href="http://xbeta.info/doitim.htm" target="_blank" rel="external">打折链接2</a></p>
-<h2>使用方法</h2>
-<p>我刚接触时间还不久,就不在这里班门弄斧了.我感觉<a href="http://blog.hiddenwangcc.com/" target="_blank" rel="external">易仁永澄</a>的体悟是比我要高深的多的,推荐大家去看看.</p>
-<p>当然别人的观念方法,只能借鉴.最终还是要内化为自己的方法.</p>
-<blockquote>
-<p>道理就是这么简单的道理.听来的和自己践行后体悟的区别还是很大的.</p>
-</blockquote>
-<p><a href="http://www.duobei.com/course/1680163027;JSESSIONID=fd47cc03-205a-44c6-903b-6f4f29b61191" target="_blank" rel="external">易仁永澄的多贝公开课</a></p>
-<h2>我的一点小心得</h2>
-<p>目前,我使用doit.im一个月了.感觉至少有以下这些好处:</p>
-<ol>
-<li>
-<p>要做的事情从脑子里面挪到了笔记上,心里慢慢开始有谱了.要做的事情可以权衡之后,选择性完成.做事情真的会变得有条理.</p>
-</li>
-<li>
-<p>做任何事情,开始之前有计划,结束之后有回顾,都是极好的.我心里是知道,可是行动上很难坚持.现在doit有手机客户端和web端,计划和回顾一是很方便快捷,二是有提醒功能.</p>
-</li>
-<li>
-<p>脑子里面闪现的各种火花想法可以放到收集箱中,按GTD标准流程处理.同时还有个目标功能,可以静下心来,给自己些目标.</p>
-</li>
-<li>
-<p>泡沫化的阅读和使用时间没啥意义.有了具体的行动计划之后,再借助时间管理将各个行动按时间排序,依次完成.</p>
-</li>
-</ol>
-<p>我的理解啥是目标呢?说白点,就是你想要啥.你不说,我怎么知道你想要啥呢.定目标就是清晰地告诉自己,自己最想得到的.</p>
-<p>有了目标之后,就是拆解目标,将目标拆解为各种项目,最后将项目拆解为各种几个小时内就能完成的行动.</p>
-<p>综上,doit对我而言,现在是目标管理和时间管理的二合一工具,也就是在什么时间做什么事情的事务管理工具.</p>
-<h2>尾记</h2>
-<p>一个好习惯最重要的是什么?坚持.给自己定个目标,然后践行之.</p>
-<p>共勉,下周见:)</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/02/08/事务管理GTD/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1819,8 +1220,7 @@
 
       
         
-          
-            <p>本周是成胖子每周一博的第九周:)</p>
+          <p>本周是成胖子每周一博的第九周:)</p>
 <hr>
 <p>##前言</p>
 <p>我少时浑浑噩噩,性情浮躁.每且凭借些许急智勉强度日.及至大学,沉溺于游戏之中,昏天黑地.毕业后无一技傍身,又蹉跎两年,勉强混个硕士文凭.大好时光,空耗数年.</p>
@@ -1829,44 +1229,11 @@
 <p>种树最好的时间是二十年前,第二好的时间是现在.</p>
 </blockquote>
 <p>现在稍有觉悟,每日阅读精进,这篇算是我的元认知.</p>
-<p>&lt;!--more--&gt;</p>
-<hr>
-<p>##道术之始</p>
-<blockquote>
-<p>形而上者谓之道,形而下者谓之器</p>
-</blockquote>
-<p>在西安时,有一次去参加实习面试.面试流程结束之后,还有点时间,通常面试官会问你还有什么问题没有?</p>
-<p>我当时自觉一事无成,如同浮萍般无力掌握自己的命运,便问了一句,大意是应该学什么语言之类的问题.我估计面试官对这个问题也是很有感慨,他的话对我影响很大.</p>
-<p>他说:技术分为两种:道和术.</p>
-<p>现在我们使用的语言,使用的工具大部分都可以归为术,它们是具体的,也是易变的.现在谁还需要知道70年代开发用什么语言么?如果我们仅仅满足于日常的工作而不去深究,在如此剧烈演变的计算机世界很容易被淘汰.</p>
-<p>潜藏在日常工作之下的,那些深邃的原理可以称之为道.编译原理,数据结构,算法,设计模式,网络原理等等如同在汪洋下的沉静的宝藏,无论海面电闪雷鸣,惊涛骇浪,它们岿然不动.</p>
-<p>到了一定的时候,如果没有深层次的积淀是很难走下去的.</p>
-<h2>武功</h2>
-<blockquote>
-<p>吾道一以贯之</p>
-</blockquote>
-<p>中国人尤其是男孩子从小看武侠片武侠小说长大,用武功来类比是最好不过的了.</p>
-<p>术就好比是招式,要想打倒敌人,完成工作,没有招式是万万不行的.在我们入职初期基本上都在不停地学习招式,企业招收员工不是为了招收一个学生在这学习的,更多的是要盈利,是需要员工创造价值的.所以作为员工而言尽快出活既是任务也是责任.</p>
-<p>道就好比是心法内功.虽然不像实际招式那样可以比划出来.可是没有它,使出的招式威力可就大有不同了.都是一招简单的黑虎掏心,我想王重阳的一掌和韦小宝的一掌想必威力是极为不同的.同时就像&lt;&lt;倚天屠龙记&gt;&gt;里的九阳神功,只要学会了这个内功,其他招式就可以信手拈花,随手可得.</p>
-<p>大部分企业都有具体的业务,有的用C做嵌入式开发,有的用Java,PHP做服务器开发等等.除了极个别优秀的同学,大部分人到了企业之后,都是需要一个熟悉的过程的.我想HR也没指望可以直接招到来之能战的员工.在技术上,一个有些内功修炼的员工工作想必是可以很快上手的.</p>
-<p>我参加工作刚刚满一年,从一个一窍不通的小子到了勉强可以应付工作.我自己也一直在激励自己多修炼内功.</p>
-<h2>兵器</h2>
-<blockquote>
-<p>器者各周其用</p>
-</blockquote>
-<p>行走江湖一把趁手的兵器是必不可少的.当然你如果到了少林扫地僧之类的境界,那就另当别论了.</p>
-<p>一名剑客不了解自己手中的剑那一定是猴子请来的逗比.现实工作中这样的例子比比皆是.我有时看到同事后退目录时用<code>cd ../../..</code>之类的命令,我真是有点着急.稍好一点的可以自己加条alias,进阶的可以使用ohmyzsh之类的框架,再好一点的可以做个dotfiles.</p>
-<p>并不是说别人的工作能力不好,我觉得搞技术的得有点geek精神.对于效率要有自己的追求.好的工具要能评价吸收,最后纳入自己的兵器谱之中.</p>
-<p>感谢这个伟大的时代,感谢github和stackoverflow让我们可以轻松和全世界的优秀开发者交流.</p>
-<p>站在巨人的肩膀上,我将使用vim+tmux+ohmyzsh来打造我的兵器.我的dotfiles初步已经搭建完成,当然它还稚嫩我将会持续改进.
-我借鉴了github上很多前辈的经验.我也很欢迎fork.下面是传送门:</p>
-<p><a href="https://github.com/chengyi818/dotfiles" target="_blank" rel="external">成祎的dotfiles</a></p>
-<h2>尾声</h2>
-<p>残阳如血,城市钢铁丛林,一位年轻的剑客正低着头,一丝不苟地在擦拭着自己的宝剑.他知道这是他最亲密的战友,他熟悉他的剑,就像熟悉自己的手一样.</p>
-<p>武林中门派众多,武功招式繁杂.他坚定信念,三千弱水,只取一瓢.剑客的心中燃烧着热血,想象着自己成为武林高手的一天,所以每日从不曾间断自己的内功修炼.</p>
-<p>这时,敲门声响起,看来一场新的战斗不可避免.他握了握自己手中的宝剑,义无反顾地走了出去.外面风起云涌.</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/01/30/工具说总序/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -1983,112 +1350,13 @@
 
       
         
-          
-            <p>本周是成胖子每周一博第八周.</p>
-<h2>前言</h2>
-<p> 我从小就有很强的好奇心,看到新鲜东西总想着试试.现在算是半只脚踏入Linux的门槛,可以看到很多好玩的东西,令人眼花缭乱.我现在就像一个圆,随着里面的面积越来越大,周长越来越长,和外面未知世界的接触面积也越来越大,内心也越来越焦灼.愈发地感觉时不我待,要看要学要做的事情太多了.</p>
-<p>&lt;!--more--&gt;</p>
-<p> 以前为了应付考试学习,先学--再考--最后忘也无所谓.现在为了自己实用而学习,实在是不想像狗熊掰玉米一样,掰一个扔一个,学一个忘一个.怎么办?除了广为认知的艾宾浩斯遗忘曲线,还有一个学习的好工具---思维导图.</p>
-<p> 本周我准备总结下自己学习思维导图的一些笔记,顺便加深自己对xmind的驾驭能力.</p>
-<hr>
-<h2>思维导图要点</h2>
-<p> 思维导图创始人是英国人Tony Buzan,简单的介绍可以参见<a href="http://baike.baidu.com/view/30054.htm" target="_blank" rel="external">度娘</a></p>
-<p>下面是摘录自网上的思维导图的原理与方法：</p>
-<blockquote>
-<p>思维导图原理：集中发散</p>
-</blockquote>
-<blockquote>
-<p>思维导图方法：点线面体</p>
-</blockquote>
-<blockquote>
-<ol>
-<li>点：中心明确，集中发散；</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="2">
-<li>线：思路清晰，逐层展开；</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="3">
-<li>面：归类分组，充分全面；</li>
-</ol>
-</blockquote>
-<blockquote>
-<ol start="4">
-<li>体：配图填色，立体可现；</li>
-</ol>
-</blockquote>
-<p>思维导图是表达发散性思维的工具,讲究左右脑的协同工作.下面是我自己概括的要点.</p>
-<h3>分类</h3>
-<p> 思维导图的应用面很广,可以说只要是用到大脑的地方都可以用思维导图来帮助记忆.虽然思维导图是一个发散性思维工具,但是并不是不讲究逻辑性.我觉得首先很重要的一点就是<strong>分类</strong>.</p>
-<p> 分类和我们数学中的&quot;枚举&quot;很相似,都讲究个不漏不重.漏了,那表明思维不够全面,有盲点;重了,那表明思维混乱,没有整理清楚.</p>
-<p> 另一方面,如果第一次分类没有把问题交代清楚,还应该使用分类再分类的方法,进行二次分类.</p>
-<h3>关键词</h3>
-<p> 传统的笔记,我们总是眉毛胡子一把抓,统统线性地记录下来.但是在思维导图的观点中,记忆应当是网状的.不但相互之间有很多联系,而且是有结点的.当你需要回忆某个内容,应该从网状的记忆中,首先提取出一个结点,再根据这个结点来回忆其他部分.这个结点,我们称之为&quot;<strong>关键词</strong>&quot;.</p>
-<p> 从上面我们可以知道,关键词应该是我们初步掌握吸收内容后,提炼出来的.在我们复习的时候,我们再根据这些关键词来激活记忆面.</p>
-<h3>图像</h3>
-<p> 上面我们有了关键词,这还是属于左脑的逻辑概念,怎么和右脑关联呢?这就是思维导图中一个重要方法---<strong>图像</strong></p>
-<p> 思维导图中强调想象力的作用.需要重点记忆的关键词,应该使用想象力将之加工为自己有感觉的头像.通过关键词和图像的搭配,使得大脑更轻松地将它视为记忆中的一个节点.</p>
-<p> 我们举一个例子,比如上面提到的&quot;关键词&quot;.我们会联想到什么呢?我想到了钥匙,再和关键词结合,就有了下面这张图片.</p>
-<p>&lt;center&gt;
-<img src="http://ww4.sinaimg.cn/large/006kvZhRjw1f0at73izatj306f062mx1.jpg" alt="关键词" title="关键词">
-&lt;/center&gt;</p>
-<p>备注:我不知道大家经常去哪找图.我以前去百度图库找的图,质量不高,而且很多水印.最近去google image找的图,感觉还不错.上面这幅就是在google找的.</p>
-<h3>色彩管理</h3>
-<p> 这个有点类似于以前划重点用的马克笔,通过合理的色彩搭配使得大脑觉得更有趣更容易接受.</p>
-<p> 思维导图可能有很多方法和技巧,但是作为作品,我觉得还是需要一些基本的审美的.如果搞得枝缠乱绕,五颜六色,我估计就算是思维导图,大脑也不会买账的.</p>
-<h3>学习误区</h3>
-<p> 下面用思维导图的方式,描绘了学习思维导图的常见误区.</p>
-<p><img src="http://ww1.sinaimg.cn/large/006kvZhRjw1f0ak9iqbrqj30es0drdj6.jpg" alt="思维导图_误区" title="误区"></p>
-<h2>软件</h2>
-<p> 我对于工具的看法,总结起来就两点:有用和常用.思维导图无疑是一款有用的工具,那么我们怎么才能常用呢?怎么才能降低时间成本和学习成本?</p>
-<p> 使用思维导图软件无疑是一个办法.目前思维导图软件基本分为两个大的阵营---Mindjet和Xmind.两者各有千秋,大家可以自己考察考察.</p>
-<p> 因为我长期在Linux Mint环境下工作,所以我唯一的选择就是<strong>xmind</strong>.</p>
-<p><a href="http://www.xmindchina.net/" target="_blank" rel="external">xmind中文官网</a></p>
-<p><a href="http://www.xmind.net/" target="_blank" rel="external">xmind英文官网</a></p>
-<h2>使用技巧</h2>
-<p> 根据28准则,工具类的产品只需要掌握20%的部分就足以应付80%的日常工作.xmind的使用是很简单的,基本上可以直接上手.逐渐使用高级功能和快捷键.</p>
-<h3>用户手册</h3>
-<p> xmind的用户手册有中文版,写的很详尽.</p>
-<p><a href="http://www.xmindchina.net/shouce.html" target="_blank" rel="external">xmind用户手册</a></p>
-<p>值得一提的功能有如下:</p>
-<p><a href="http://www.xmindchina.net/help/h-bian-ji-li-shi.html" target="_blank" rel="external">版本回退</a></p>
-<blockquote>
-<p>xmind支持版本回退,类似于git和svn.</p>
-</blockquote>
-<p><a href="http://www.xmindchina.net/help/h-wai-kuang.html" target="_blank" rel="external">外框</a></p>
-<blockquote>
-<p>xmind支持将几个主题用外框进行整合.</p>
-</blockquote>
-<p><a href="http://www.xmindchina.net/help/h-gongzuobu-huabu.html" target="_blank" rel="external">画布</a>和<a href="http://www.xmindchina.net/help/h-dao-ru-gzb.html" target="_blank" rel="external">导入xmind工作簿</a></p>
-<blockquote>
-<p>画布功能可以将多个思维导图整个到一个文件中.导入工作簿可以将其他xmind文件导入.</p>
-</blockquote>
-<p>针对大型项目,我们可以每次做其中一部分,最后用这两个功能将它们整合.</p>
-<p><a href="http://www.xmindchina.net/help/h-shang-zuan-xia-zuan.html" target="_blank" rel="external">上钻下钻</a></p>
-<blockquote>
-<p>xmind到了子主题的部分,往往过小或者区分不明显.上钻下钻你值得拥有.</p>
-</blockquote>
-<h3>快捷键</h3>
-<p>Enter/Tab（insert)</p>
-<blockquote>
-<p>这是一组创建主题的快捷键，稍微对XMind熟悉一些的用户都会知道。这里的Tab键是被设计用来创建子主题的，实践中操作起来，双手左右齐飞，思维图不停地生长，特别舒坦。insert键也是支持的，主要是为了照顾其他软件转过来的用户的使用习惯，不过不推荐使用，因为它距离手的位置太远，而且在Mac上是没有这个键的。</p>
-</blockquote>
-<p>Shift</p>
-<blockquote>
-<p>这两个会在移动主题的时候用到。经常看到新用户询问类似“我移动自由主题的时候会和其他主题连上，怎么办呀”的问题，这个时候只需要轻轻地按住Shift键的同时来移动自由主题即可。额外说一下，双击图上任意空白的地方即可创建自由主题。自由主题是非常实用的，可以和联系线一起使用来画流程图等。</p>
-</blockquote>
-<p>F2/F3/F4/F6</p>
-<blockquote>
-<p>这一组是和编辑相关的较为实用的快捷键。F2编辑主题，F3为主题添加标签，F4添加备注，重点要说说F6，即下钻。选中任何一个主题（除了中心主题）的时候，点击F6就会进入下钻状态。这时候，选中的主题变为了中心主题，其子主题也均在此状态下铺开显示，非常有助于在工作、交流的时候集中注意力，尤其是向别人展示一张内容较多的图的时候更会凸显这一点。</p>
-</blockquote>
-<h2>尾记</h2>
-<p> 我使用过mindjet和xmind,最近使用xmind也挺多.这周为了写博客,再次深入学习了下xmind,感觉收获还是挺多的.</p>
-<p> xmind思维导图免费好用,你值得拥有.</p>
-
-          
+          <p>本周是成胖子每周一博第八周.</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;我从小就有很强的好奇心,看到新鲜东西总想着试试.现在算是半只脚踏入Linux的门槛,可以看到很多好玩的东西,令人眼花缭乱.我现在就像一个圆,随着里面的面积越来越大,周长越来越长,和外面未知世界的接触面积也越来越大,内心也越来越焦灼.愈发地感觉时不我待,要看要学要做的事情太多了.</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/01/24/工具说_思维导图/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -2205,37 +1473,15 @@
 
       
         
-          
-            <p>本周是成胖子每周一博的第七周:)</p>
+          <p>本周是成胖子每周一博的第七周:)</p>
 <hr>
 <p>##前言</p>
-<p>  我的工作是做路由器开发的.为了实现一次开发在不同平台的快速部署,我们尝试在路由器运行LXC容器.通过它来实现我们的虚拟化目标,我们通过打开内核开关,交叉编译lxc工具以及制作基于busybox的简单文件系统,已经达到了基本目标.同时我们在容器内移植了openwrt的opkg功能,使得容器内部可以通过opkg的方式快速安装ipk,从而在传统路由器上快速实现了openwrt的特色功能.</p>
-<p>&lt;!--more--&gt;</p>
-<p>  虽然基本功能可以使用了,但是我的LXC基础还是很薄弱.周末花点时间看看.本文主要基于LXC的核心开发者之一stephan Graber的<a href="https://www.stgraber.org/2013/12/20/lxc-1-0-blog-post-series/" target="_blank" rel="external">博客</a>.</p>
-<hr>
-<p>##第一个Ubuntu容器</p>
-<p>###什么是LXC?
-LXC是linux内核提供给用户空间的接口.通过强大的API和简单的工具,用户可以轻松创建和管理容器.博客的作者stephan Graber是LXC的主要维护者之一.</p>
-<ul>
-<li>LXC的源码托管在github上.<a href="http://github.com/lxc" target="_blank" rel="external">地址</a></li>
-<li>LXC的项目主页.<a href="http://linuxcontainers.org" target="_blank" rel="external">地址</a></li>
-</ul>
-<p>###安装LXC</p>
-<p>LXC 1.0是LXC的第一个长期稳定版本.Ubuntu的用户可以直接通过命令行安装LXC,其他用户可以下载LXC源码然后手动编译.
-命令行安装如下:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install lxc lxctl lxc-templates</div></pre></td></tr></table></figure></p>
-<p>手动安装如下</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">git clone git://github.com/lxc/lxc</div><div class="line">cd lxc</div><div class="line">sh autogen.sh</div><div class="line"># You will probably want to run the configure script with --help and then set the paths</div><div class="line">./configure</div><div class="line">make</div><div class="line">sudo make install</div></pre></td></tr></table></figure></p>
-<p>###运行LXC</p>
-<p>运行LXC的过程很简单,只需要简单几个命令,如下:</p>
-<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"># 建立使用&quot;ubuntu&quot;模板建立一个名为&quot;p1&quot;的容器.Ubuntu版本和体系结构与主机相同.</div><div class="line"># 可以使用&quot;--help&quot;查询所有选项</div><div class="line">sudo lxc-create -t ubuntu -n p1</div><div class="line"></div><div class="line"># 在后台启动一个已经创建的容器</div><div class="line">sudo lxc-start -n p1 -d</div><div class="line"></div><div class="line"># 使用以下方式进入容器</div><div class="line">## 进入一个容器的控制台(使用ctrl-a + q 来脱离容器的控制台)</div><div class="line">sudo lxc-console -n p1</div><div class="line"></div><div class="line">## Spawn bash directly in the container (bypassing the console login), requires a &gt;= 3.8 kernel</div><div class="line">## 直接进入容器中的bash</div><div class="line">sudo lxc-attach -n p1</div><div class="line"></div><div class="line">## SSH 登陆容器</div><div class="line">sudo lxc-info -n p1</div><div class="line">ssh ubuntu@&lt;ip from lxc-info&gt;</div><div class="line"></div><div class="line"># 使用以下方式关闭容器</div><div class="line">## 在容器内部关闭容器</div><div class="line">sudo poweroff</div><div class="line"></div><div class="line">## 在容器外部彻底关闭容器</div><div class="line">sudo lxc-stop -n p1</div><div class="line"></div><div class="line">## 在容器外部杀死容器进程</div><div class="line">sudo lxc-stop -n p1 -k</div></pre></td></tr></table></figure></p>
-<p> 相信以上的命令,大家基本都能直接看懂.试两把也就熟悉了.Ubuntu12.04之后的版本是直接支持所有LXC的所有特性的.</p>
-<p> 当容器建立之后,容器内的网络就已经配置完成了.这个时候HostOs将会建立一个二层桥设备<code>lxcbr0</code>,同时建立一个DHCP服务器为容器内的系统提供服务.</p>
-<hr>
-<p>##尾记
- 本周时间比较匆忙,我和我媳妇搭建了我们自己的博客小站,欢迎大家访问.<a href="http://chengyi818.github.io/" target="_blank" rel="external">传送门</a></p>
-
-          
+<p>&emsp;&emsp;我的工作是做路由器开发的.为了实现一次开发在不同平台的快速部署,我们尝试在路由器运行LXC容器.通过它来实现我们的虚拟化目标,我们通过打开内核开关,交叉编译lxc工具以及制作基于busybox的简单文件系统,已经达到了基本目标.同时我们在容器内移植了openwrt的opkg功能,使得容器内部可以通过opkg的方式快速安装ipk,从而在传统路由器上快速实现了openwrt的特色功能.</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/blog/2016/01/17/第一个lxc容器/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
         
       
     </div>

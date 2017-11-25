@@ -88,74 +88,26 @@
 
 <meta name="description" content="本周是成胖子每周一博的第十三周:)
 
-前言
-在github上偶然浏览到dotfiles.
+前言在github上偶然浏览到dotfiles.
 
-因为Unix及Linux下的很多配置文件都是隐藏文件,以&amp;quot;.&amp;quot;开始,所以我们用dotfiles称呼这些文件.
-
-&amp;lt;!--more--&amp;gt;
-dotfiles整理有三个目的:
-
-
-备份/存储/同步
-
-
-学习/发现
-
-
-分享
-
-
-对于开发人员而言,一个代码编辑环境无疑是重中之重.我最">
+因为Unix及Linux下的很多配置文件都是隐藏文件,以”.”开始,所以我们用dotfiles称呼这些文件.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="dotfiles总述">
 <meta property="og:url" content="http://yitinglove.cn/blog/2016/03/12/dotfiles总述/index.html">
 <meta property="og:site_name" content="道法自然">
 <meta property="og:description" content="本周是成胖子每周一博的第十三周:)
 
-前言
-在github上偶然浏览到dotfiles.
+前言在github上偶然浏览到dotfiles.
 
-因为Unix及Linux下的很多配置文件都是隐藏文件,以&amp;quot;.&amp;quot;开始,所以我们用dotfiles称呼这些文件.
-
-&amp;lt;!--more--&amp;gt;
-dotfiles整理有三个目的:
-
-
-备份/存储/同步
-
-
-学习/发现
-
-
-分享
-
-
-对于开发人员而言,一个代码编辑环境无疑是重中之重.我最">
+因为Unix及Linux下的很多配置文件都是隐藏文件,以”.”开始,所以我们用dotfiles称呼这些文件.">
 <meta property="og:updated_time" content="2017-11-25T13:35:30.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="dotfiles总述">
 <meta name="twitter:description" content="本周是成胖子每周一博的第十三周:)
 
-前言
-在github上偶然浏览到dotfiles.
+前言在github上偶然浏览到dotfiles.
 
-因为Unix及Linux下的很多配置文件都是隐藏文件,以&amp;quot;.&amp;quot;开始,所以我们用dotfiles称呼这些文件.
-
-&amp;lt;!--more--&amp;gt;
-dotfiles整理有三个目的:
-
-
-备份/存储/同步
-
-
-学习/发现
-
-
-分享
-
-
-对于开发人员而言,一个代码编辑环境无疑是重中之重.我最">
+因为Unix及Linux下的很多配置文件都是隐藏文件,以”.”开始,所以我们用dotfiles称呼这些文件.">
 
 
 
@@ -386,28 +338,23 @@ dotfiles整理有三个目的:
       
         <p>本周是成胖子每周一博的第十三周:)</p>
 <hr>
-<h2>前言</h2>
-<p>在github上偶然浏览到<a href="https://dotfiles.github.io/" target="_blank" rel="external">dotfiles</a>.</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在github上偶然浏览到<a href="https://dotfiles.github.io/" target="_blank" rel="external">dotfiles</a>.</p>
 <blockquote>
-<p>因为Unix及Linux下的很多配置文件都是隐藏文件,以&quot;.&quot;开始,所以我们用dotfiles称呼这些文件.</p>
+<p>因为Unix及Linux下的很多配置文件都是隐藏文件,以”.”开始,所以我们用dotfiles称呼这些文件.</p>
 </blockquote>
-<p>&lt;!--more--&gt;</p>
+<a id="more"></a>
 <p>dotfiles整理有三个目的:</p>
 <ul>
-<li>
-<p>备份/存储/同步</p>
+<li><p>备份/存储/同步</p>
 </li>
-<li>
-<p>学习/发现</p>
+<li><p>学习/发现</p>
 </li>
-<li>
-<p>分享</p>
+<li><p>分享</p>
 </li>
 </ul>
 <p>对于开发人员而言,一个代码编辑环境无疑是重中之重.我最近组装和改造了我自己的dotfiles.非常欢迎fork和使用,如果有什么问题,可以互相交流.</p>
 <p><a href="https://github.com/chengyi818/dotfiles" target="_blank" rel="external">一键下载使用</a></p>
-<h2>dotfiles原理</h2>
-<p>在类Unix环境下,用户的配置在用户主目录下.比如bashrc,vimrc.我们一般都是直接修改这里.</p>
+<h2 id="dotfiles原理"><a href="#dotfiles原理" class="headerlink" title="dotfiles原理"></a>dotfiles原理</h2><p>在类Unix环境下,用户的配置在用户主目录下.比如bashrc,vimrc.我们一般都是直接修改这里.</p>
 <p>如果有<strong>备份的需求</strong>怎么办呢?</p>
 <blockquote>
 <p>最简单的办法就是把相应的文件打包压缩,然后就可以放到网盘或者U盘当中了.</p>
@@ -415,17 +362,12 @@ dotfiles整理有三个目的:
 <p>可是如果我们经常不时地<strong>更新</strong>配置文件,怎么才能很方便地压缩呢?</p>
 <blockquote>
 <ul>
-<li>有个笨办法,我每次更新完了,我就自己手动把每个文件重新压缩下.</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>升级一下,可以写个简单地脚本,每次自动执行压缩命令</li>
-</ul>
-</blockquote>
-<blockquote>
-<ul>
-<li>再升级一下,可以把所有的配置文件拉到一个文件中,然后软链接到用户主目录.</li>
+<li><p>有个笨办法,我每次更新完了,我就自己手动把每个文件重新压缩下.</p>
+</li>
+<li><p>升级一下,可以写个简单地脚本,每次自动执行压缩命令</p>
+</li>
+<li><p>再升级一下,可以把所有的配置文件拉到一个文件中,然后软链接到用户主目录.</p>
+</li>
 </ul>
 </blockquote>
 <p>配置文件要怎么<strong>存储</strong>呢?</p>
@@ -441,36 +383,27 @@ dotfiles整理有三个目的:
 </ul>
 </blockquote>
 <p>综上,我们把常用配置放到同一个文件夹中,然后将它们链接到用户主目录.同时将这个文件夹加入git版本管理,最后上传到github当中.</p>
-<h2>安装主要过程</h2>
-<blockquote>
+<h2 id="安装主要过程"><a href="#安装主要过程" class="headerlink" title="安装主要过程"></a>安装主要过程</h2><blockquote>
 <p>我希望可以通过执行一条命令,把任何环境配置成自己最熟悉趁手的环境.</p>
 </blockquote>
 <p>一键脚本主要包含如下几个步骤:</p>
 <ul>
-<li>
-<p>安装必要的软件,比如<a href="https://github.com/technicalpickles/homesick" target="_blank" rel="external">homesick</a>,git,cmake,ctags等.</p>
+<li><p>安装必要的软件,比如<a href="https://github.com/technicalpickles/homesick" target="_blank" rel="external">homesick</a>,git,cmake,ctags等.</p>
 </li>
-<li>
-<p>备份现在的配置文件.</p>
+<li><p>备份现在的配置文件.</p>
 </li>
-<li>
-<p>安装zsh框架<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></p>
+<li><p>安装zsh框架<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></p>
 </li>
-<li>
-<p>创建软链接</p>
+<li><p>创建软链接</p>
 </li>
-<li>
-<p>安装vim框架<a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a></p>
+<li><p>安装vim框架<a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a></p>
 </li>
-<li>
-<p>安装小工具<a href="https://github.com/nvbn/thefuck" target="_blank" rel="external">thefuck</a></p>
+<li><p>安装小工具<a href="https://github.com/nvbn/thefuck" target="_blank" rel="external">thefuck</a></p>
 </li>
-<li>
-<p>尝试编译<a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="external">YouCompleteMe</a></p>
+<li><p>尝试编译<a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="external">YouCompleteMe</a></p>
 </li>
 </ul>
-<h2>安装说明</h2>
-<p>前面我们已经提及了我们的主要过程,程序员当然不应该重复造轮子,所以我选用了大量的现有组件.</p>
+<h2 id="安装说明"><a href="#安装说明" class="headerlink" title="安装说明"></a>安装说明</h2><p>前面我们已经提及了我们的主要过程,程序员当然不应该重复造轮子,所以我选用了大量的现有组件.</p>
 <ul>
 <li>下载配置,创建软链接,同步配置</li>
 </ul>
@@ -495,25 +428,19 @@ dotfiles整理有三个目的:
 <blockquote>
 <p>我主要做的就是使用shell脚本备份原有配置,同时尽量把安装过程自动化.我只在很有限的几台电脑上测试过.如果使用过程中有问题,请issue告诉我.</p>
 </blockquote>
-<h2>私人定制</h2>
-<p>每个人都有自己的喜好,我的配置你不一定趁手.如果想进行个人定制,简单的三步就可以了.</p>
+<h2 id="私人定制"><a href="#私人定制" class="headerlink" title="私人定制"></a>私人定制</h2><p>每个人都有自己的喜好,我的配置你不一定趁手.如果想进行个人定制,简单的三步就可以了.</p>
 <ol>
-<li>
-<p>进入<a href="https://github.com/chengyi818/dotfiles" target="_blank" rel="external">github</a>,fork我的仓库.</p>
+<li><p>进入<a href="https://github.com/chengyi818/dotfiles" target="_blank" rel="external">github</a>,fork我的仓库.</p>
 </li>
-<li>
-<p>将README.md中的一键安装脚本路径修改为你自己的仓库.</p>
+<li><p>将README.md中的一键安装脚本路径修改为你自己的仓库.</p>
 </li>
-<li>
-<p>将仓库中的install.sh文件头部的<code>REPO_URL</code>修改为你的仓库名.</p>
+<li><p>将仓库中的install.sh文件头部的<code>REPO_URL</code>修改为你的仓库名.</p>
 </li>
 </ol>
 <p>这样你就拥有了可以陪伴自己一生的工具箱,关于我们主要组件的使用方法请去原作者网页浏览,如果有机会,再给大家介绍.</p>
-<h2>使用小结</h2>
-<p>我目前主要使用Linux Mint.我的命令终端使用konsole.tmux主要用于控制多个窗口.oh-my-zsh使得命令行操作更加高效强大.vim的配置插件让你的手指在键盘上舞蹈.</p>
+<h2 id="使用小结"><a href="#使用小结" class="headerlink" title="使用小结"></a>使用小结</h2><p>我目前主要使用Linux Mint.我的命令终端使用konsole.tmux主要用于控制多个窗口.oh-my-zsh使得命令行操作更加高效强大.vim的配置插件让你的手指在键盘上舞蹈.</p>
 <p>如果有机会真的要尝试下,八星八钻,花30分钟,你买不了吃亏,你买不了上当.抱着试一试地态度,你真的会爱上它们.</p>
-<h2>尾记</h2>
-<p>今天只是简要地说明了我的dotfiles.说实话,我想做这个已经很久了,一直拖.现在总算是阶段性完成了.如果有人能够受益,多使用真的是太好了.</p>
+<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>今天只是简要地说明了我的dotfiles.说实话,我想做这个已经很久了,一直拖.现在总算是阶段性完成了.如果有人能够受益,多使用真的是太好了.</p>
 
       
     </div>
@@ -683,7 +610,7 @@ dotfiles整理有三个目的:
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">dotfiles原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">安装主要过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">安装说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">私人定制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">6.</span> <span class="nav-text">使用小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">7.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#dotfiles原理"><span class="nav-number">2.</span> <span class="nav-text">dotfiles原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装主要过程"><span class="nav-number">3.</span> <span class="nav-text">安装主要过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装说明"><span class="nav-number">4.</span> <span class="nav-text">安装说明</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#私人定制"><span class="nav-number">5.</span> <span class="nav-text">私人定制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用小结"><span class="nav-number">6.</span> <span class="nav-text">使用小结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">7.</span> <span class="nav-text">尾记</span></a></li></ol></div>
             
           </div>
         </section>
