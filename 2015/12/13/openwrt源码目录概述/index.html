@@ -86,21 +86,24 @@
 
 
 
-<meta name="description" content="前言&amp;emsp;这段时间总是在和openwrt打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.
-&amp;emsp;本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从官方下载而来的目录称之为原始目录,将编译后生成的目录称之为生成目录">
+<meta name="description" content="前言
+ 这段时间总是在和openwrt打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.
+ 本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从官方下载而来的目录称之为原始目录,将编译后生成的目录称之为生成目录,分两部分介绍各个">
 <meta property="og:type" content="article">
 <meta property="og:title" content="openwrt目录概述">
 <meta property="og:url" content="http://yitinglove.cn/blog/2015/12/13/openwrt源码目录概述/index.html">
 <meta property="og:site_name" content="道法自然">
-<meta property="og:description" content="前言&amp;emsp;这段时间总是在和openwrt打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.
-&amp;emsp;本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从官方下载而来的目录称之为原始目录,将编译后生成的目录称之为生成目录">
+<meta property="og:description" content="前言
+ 这段时间总是在和openwrt打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.
+ 本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从官方下载而来的目录称之为原始目录,将编译后生成的目录称之为生成目录,分两部分介绍各个">
 <meta property="og:image" content="http://img.blog.csdn.net/20151213153906453">
 <meta property="og:image" content="http://img.blog.csdn.net/20151213171412350">
 <meta property="og:updated_time" content="2017-11-25T13:35:30.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="openwrt目录概述">
-<meta name="twitter:description" content="前言&amp;emsp;这段时间总是在和openwrt打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.
-&amp;emsp;本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从官方下载而来的目录称之为原始目录,将编译后生成的目录称之为生成目录">
+<meta name="twitter:description" content="前言
+ 这段时间总是在和openwrt打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.
+ 本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从官方下载而来的目录称之为原始目录,将编译后生成的目录称之为生成目录,分两部分介绍各个">
 <meta name="twitter:image" content="http://img.blog.csdn.net/20151213153906453">
 
 
@@ -330,55 +333,90 @@
       
 
       
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;这段时间总是在和<a href="https://en.wikipedia.org/wiki/OpenWrt" target="_blank" rel="external">openwrt</a>打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.</p>
-<p>&emsp;本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从<a href="https://dev.openwrt.org/wiki/GetSource" target="_blank" rel="external">官方下载</a>而来的目录称之为原始目录,将编译后生成的目录称之为生成目录,分两部分介绍各个目录.</p>
-<a id="more"></a>
+        <h2>前言</h2>
+<p> 这段时间总是在和<a href="https://en.wikipedia.org/wiki/OpenWrt" target="_blank" rel="external">openwrt</a>打交道,之前也零零散散地写过一点，还是希望能有点体系。还记得我刚看到源代码的时候，觉得无从下手.我想从Makefile的整个执行过程入手,搞清楚编译源代码的几个小时中,到底发生了哪些故事.</p>
+<p> 本文是这个系列的第一篇.主要讲一下我对openwrt整个目录结构的理解.我们将源代码从<a href="https://dev.openwrt.org/wiki/GetSource" target="_blank" rel="external">官方下载</a>而来的目录称之为原始目录,将编译后生成的目录称之为生成目录,分两部分介绍各个目录.</p>
+<p>&lt;!--more--&gt;</p>
 <hr>
-<h2 id="原始目录"><a href="#原始目录" class="headerlink" title="原始目录"></a>原始目录</h2><p>下载源码后,源文件如下图所示,下面我们来一一解释;<br><img src="http://img.blog.csdn.net/20151213153906453" alt="原始目录"></p>
-<h4 id="1-scripts"><a href="#1-scripts" class="headerlink" title="1. scripts"></a>1. scripts</h4><p>存放了一些脚本,使用了bash,python,perl等多种脚本语言.编译过程中,用于第三方软件包管理的feeds文件也是在这个目录当中.在编译过程中,使用到的脚本也统一放在这个目录中.</p>
-<h4 id="2-tools"><a href="#2-tools" class="headerlink" title="2. tools"></a>2. tools</h4><p>编译时,主机需要使用一些工具软件,<code>tools</code> 里包含了获取和编译这些工具的命令.软件包里面有Makefile文件,有的还包含了patch.每个Makefile当中都有一句<code>$(eval $(call HostBuild))</code>,这表明编译这个工具是为了在<strong>主机</strong>上使用的.</p>
-<h4 id="3-config"><a href="#3-config" class="headerlink" title="3. config"></a>3. config</h4><p>存放着整个系统的配置文件</p>
-<h4 id="4-docs"><a href="#4-docs" class="headerlink" title="4. docs"></a>4. docs</h4><p>包含了整个宿主机的文件源码的介绍, 里面还有Makefile为目标系统生成docs.使用<code>make -C docs/</code>可以为目标系统生成文档.</p>
-<h4 id="5-toolchain"><a href="#5-toolchain" class="headerlink" title="5. toolchain"></a>5. toolchain</h4><p>嵌入式的童鞋应该都知道交叉编译链,这个文件中存放的就是编译交叉编译链的软件包.包括:<code>binutils,gcc,libc</code>等等.</p>
-<h4 id="6-target"><a href="#6-target" class="headerlink" title="6. target"></a>6. target</h4><p>openwrt的源码可以编译出各个平台适用的二进制文件,各平台在这个目录里定义了firmware和kernel的编译过程。</p>
-<h4 id="7-package"><a href="#7-package" class="headerlink" title="7. package"></a>7. package</h4><p>存放了openwrt系统中适用的软件包,包含针对各个软件包的Makefile。openwrt定义了一套Makefile模板.各软件参照这个模板定义了自己的信息，如软件包的版本、下载地址、编译方式、安装地址等。在二次开发过程中,这个文件夹我们会经常打交道.<br>事实上,通过<code>./scripts/feed update -a和./scripts/feed install -a</code>的软件包也会存放在这个目录之中.</p>
-<h4 id="8-include"><a href="#8-include" class="headerlink" title="8. include"></a>8. include</h4><p>openwrt的Makefile都存放在这里。文件名为 *.mk 。这里的文件上是在Makefile里被include的,类似于库文件.这些文件定义了编译过程.</p>
-<h4 id="9-其他"><a href="#9-其他" class="headerlink" title="9. 其他"></a>9. 其他</h4><p>主要目录就是前面提及的8个,剩下的是单个文件.</p>
-<h5 id="9-1-Makefile"><a href="#9-1-Makefile" class="headerlink" title="9.1 Makefile:"></a>9.1 Makefile:</h5><blockquote>
+<h2>原始目录</h2>
+<p>下载源码后,源文件如下图所示,下面我们来一一解释;
+<img src="http://img.blog.csdn.net/20151213153906453" alt="原始目录"></p>
+<h4>1. scripts</h4>
+<p>存放了一些脚本,使用了bash,python,perl等多种脚本语言.编译过程中,用于第三方软件包管理的feeds文件也是在这个目录当中.在编译过程中,使用到的脚本也统一放在这个目录中.</p>
+<h4>2. tools</h4>
+<p>编译时,主机需要使用一些工具软件,<code>tools</code> 里包含了获取和编译这些工具的命令.软件包里面有Makefile文件,有的还包含了patch.每个Makefile当中都有一句<code>$(eval $(call HostBuild))</code>,这表明编译这个工具是为了在<strong>主机</strong>上使用的.</p>
+<h4>3. config</h4>
+<p>存放着整个系统的配置文件</p>
+<h4>4. docs</h4>
+<p>包含了整个宿主机的文件源码的介绍, 里面还有Makefile为目标系统生成docs.使用<code>make -C docs/</code>可以为目标系统生成文档.</p>
+<h4>5. toolchain</h4>
+<p>嵌入式的童鞋应该都知道交叉编译链,这个文件中存放的就是编译交叉编译链的软件包.包括:<code>binutils,gcc,libc</code>等等.</p>
+<h4>6. target</h4>
+<p>openwrt的源码可以编译出各个平台适用的二进制文件,各平台在这个目录里定义了firmware和kernel的编译过程。</p>
+<h4>7. package</h4>
+<p>存放了openwrt系统中适用的软件包,包含针对各个软件包的Makefile。openwrt定义了一套Makefile模板.各软件参照这个模板定义了自己的信息，如软件包的版本、下载地址、编译方式、安装地址等。在二次开发过程中,这个文件夹我们会经常打交道.
+事实上,通过<code>./scripts/feed update -a和./scripts/feed install -a</code>的软件包也会存放在这个目录之中.</p>
+<h4>8. include</h4>
+<p>openwrt的Makefile都存放在这里。文件名为 *.mk 。这里的文件上是在Makefile里被include的,类似于库文件.这些文件定义了编译过程.</p>
+<h4>9. 其他</h4>
+<p>主要目录就是前面提及的8个,剩下的是单个文件.</p>
+<h5>9.1 Makefile:</h5>
+<blockquote>
 <p>在顶层目录执行<code>make</code>命令的入口文件.</p>
 </blockquote>
-<h5 id="9-2-rules-mk"><a href="#9-2-rules-mk" class="headerlink" title="9.2 rules.mk"></a>9.2 rules.mk</h5><blockquote>
+<h5>9.2 rules.mk</h5>
+<blockquote>
 <p>定义了Makefile中使用的一些通用变量和函数</p>
 </blockquote>
-<h5 id="9-3-Config-in"><a href="#9-3-Config-in" class="headerlink" title="9.3 Config.in"></a>9.3 Config.in</h5><blockquote>
+<h5>9.3 Config.in</h5>
+<blockquote>
 <p>在<code>include/toplevel.mk</code>中我们可以看到,这是和<code>make menuconfig</code>相关联的文件.</p>
 </blockquote>
-<h5 id="9-4-feeds-conf-default"><a href="#9-4-feeds-conf-default" class="headerlink" title="9.4 feeds.conf.default"></a>9.4 feeds.conf.default</h5><blockquote>
+<h5>9.4 feeds.conf.default</h5>
+<blockquote>
 <p>是下载第三方一些软件包时所使用的地址</p>
 </blockquote>
-<h5 id="9-5-LICENSE-amp-README"><a href="#9-5-LICENSE-amp-README" class="headerlink" title="9.5 LICENSE &amp; README"></a>9.5 LICENSE &amp; README</h5><blockquote>
+<h5>9.5 LICENSE &amp; README</h5>
+<blockquote>
 <p>即软件许可证和软件基本说明.其中README描述了编译软件的基本过程和依赖文件.</p>
 </blockquote>
 <p>至此我们把原始目录大致浏览了一遍,下面我们看看生成目录.</p>
-<h2 id="生成目录"><a href="#生成目录" class="headerlink" title="生成目录"></a>生成目录</h2><p>在我们编译完成后除了下载的源码文件,多出来的部分很明显就是编译过程中新生成的.如下图:<br><img src="http://img.blog.csdn.net/20151213171412350" alt="生成目录"></p>
-<h4 id="1-feeds"><a href="#1-feeds" class="headerlink" title="1. feeds"></a>1. feeds</h4><p>openwrt的附加软件包管理器的扩展包索引目录.有点绕,简单来说就是下载管理软件包的.默认的<code>feeds</code>下载有<code>packages、management、luci、routing、telephony</code>。如要下载其他的软件包，需打开源码根目录下面的feeds.conf.default文件，去掉相应软件包前面的#号，然后更新源:<br><code>./scripts/feeds update -a</code><br>安装下载好的包:<br><code>./scripts/feeds install -a</code></p>
-<h4 id="2-build-dir"><a href="#2-build-dir" class="headerlink" title="2. build_dir"></a>2. build_dir</h4><p>在前面的原始目录中,我们提到了host工具,toolchain工具还有目标文件.openwrt将在这个目录中展开各个软件包,进行编译.所以这个文件夹中包含3个子文件夹:</p>
-<h5 id="2-1-host"><a href="#2-1-host" class="headerlink" title="2.1 host"></a>2.1 host</h5><blockquote>
-<p> 在该文件夹中编译主机使用的工具软件</p>
+<h2>生成目录</h2>
+<p>在我们编译完成后除了下载的源码文件,多出来的部分很明显就是编译过程中新生成的.如下图:
+<img src="http://img.blog.csdn.net/20151213171412350" alt="生成目录"></p>
+<h4>1. feeds</h4>
+<p>openwrt的附加软件包管理器的扩展包索引目录.有点绕,简单来说就是下载管理软件包的.默认的<code>feeds</code>下载有<code>packages、management、luci、routing、telephony</code>。如要下载其他的软件包，需打开源码根目录下面的feeds.conf.default文件，去掉相应软件包前面的#号，然后更新源:
+<code>./scripts/feeds update -a</code>
+安装下载好的包:
+<code>./scripts/feeds install -a</code></p>
+<h4>2. build_dir</h4>
+<p>在前面的原始目录中,我们提到了host工具,toolchain工具还有目标文件.openwrt将在这个目录中展开各个软件包,进行编译.所以这个文件夹中包含3个子文件夹:</p>
+<h5>2.1 host</h5>
+<blockquote>
+<p>在该文件夹中编译主机使用的工具软件</p>
 </blockquote>
-<h5 id="2-2-toolchain-XXX"><a href="#2-2-toolchain-XXX" class="headerlink" title="2.2 toolchain-XXX"></a>2.2 toolchain-XXX</h5><blockquote>
+<h5>2.2 toolchain-XXX</h5>
+<blockquote>
 <p>在该文件夹中编译交叉工具链</p>
 </blockquote>
-<h5 id="2-3-target-XXX"><a href="#2-3-target-XXX" class="headerlink" title="2.3 target-XXX"></a>2.3 target-XXX</h5><blockquote>
+<h5>2.3 target-XXX</h5>
+<blockquote>
 <p>在此编译目标平台的目标文件,包括各个软件包和内核文件.</p>
 </blockquote>
-<h4 id="3-bin"><a href="#3-bin" class="headerlink" title="3. bin"></a>3. bin</h4><p>保存编译完成后的二进制文件,包括:完整的bin文件,所有的ipk文件.</p>
-<h4 id="4-dl"><a href="#4-dl" class="headerlink" title="4. dl"></a>4. dl</h4><p>在编译过程中使用的很多软件,刚开始下载源码并没有包含,而是在编译过程中从其他服务器下载的,这里是统一的保存目录</p>
-<h4 id="5-staging-dir"><a href="#5-staging-dir" class="headerlink" title="5. staging_dir"></a>5. staging_dir</h4><p>用于保存在<code>build_dir</code>目录中编译完成的软件.所以这里也和<code>build_dir</code>有同样的子目录结构.<br>比如,在<code>target-XXX</code>文件夹中保存了目标平台编译好的头文件,库文件.在我们开发自己的ipk文件时,编译过程中,预处理头文件,链接动态库,静态库都是到这个子文件夹中.</p>
-<h4 id="6-tmp"><a href="#6-tmp" class="headerlink" title="6.tmp"></a>6.tmp</h4><p>从名字来看,是临时文件夹.在编译过程中,有大量中间临时文件需要保存,都是在这里.</p>
-<h4 id="7-logs"><a href="#7-logs" class="headerlink" title="7.logs"></a>7.logs</h4><p>这个文件夹,有时可以看到,有时没有.这是因为这个文件夹保存的是,编译过程中出错的信息,只有当编译出错了才会出现.我们可以从这里获取信息,从而分析我们的软件编译为什么没有完成.</p>
+<h4>3. bin</h4>
+<p>保存编译完成后的二进制文件,包括:完整的bin文件,所有的ipk文件.</p>
+<h4>4. dl</h4>
+<p>在编译过程中使用的很多软件,刚开始下载源码并没有包含,而是在编译过程中从其他服务器下载的,这里是统一的保存目录</p>
+<h4>5. staging_dir</h4>
+<p>用于保存在<code>build_dir</code>目录中编译完成的软件.所以这里也和<code>build_dir</code>有同样的子目录结构.
+比如,在<code>target-XXX</code>文件夹中保存了目标平台编译好的头文件,库文件.在我们开发自己的ipk文件时,编译过程中,预处理头文件,链接动态库,静态库都是到这个子文件夹中.</p>
+<h4>6.tmp</h4>
+<p>从名字来看,是临时文件夹.在编译过程中,有大量中间临时文件需要保存,都是在这里.</p>
+<h4>7.logs</h4>
+<p>这个文件夹,有时可以看到,有时没有.这是因为这个文件夹保存的是,编译过程中出错的信息,只有当编译出错了才会出现.我们可以从这里获取信息,从而分析我们的软件编译为什么没有完成.</p>
 <p>至此我们把openwrt的目录结构大体浏览了一遍.</p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><ol>
+<h2>尾记</h2>
+<ol>
 <li>本文中不少内容都是从网上看到的,时间长了,我已经找不到出处了.这也是我写博客的一个原因,我从互联网学到不少知识,现在再反馈给网络.感谢所有有自由共享精神的朋友.</li>
 <li>知识学习是不断递进的过程.这部分知识是我目前知道的一个大概,还不够深刻.更深入的学习Makefile和openwrt之后,再来慢慢更新.</li>
 </ol>
@@ -502,7 +540,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -519,7 +557,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/blog/tags">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -555,7 +593,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原始目录"><span class="nav-number">2.</span> <span class="nav-text">原始目录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-scripts"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. scripts</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-tools"><span class="nav-number">2.0.2.</span> <span class="nav-text">2. tools</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-config"><span class="nav-number">2.0.3.</span> <span class="nav-text">3. config</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-docs"><span class="nav-number">2.0.4.</span> <span class="nav-text">4. docs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-toolchain"><span class="nav-number">2.0.5.</span> <span class="nav-text">5. toolchain</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-target"><span class="nav-number">2.0.6.</span> <span class="nav-text">6. target</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-package"><span class="nav-number">2.0.7.</span> <span class="nav-text">7. package</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-include"><span class="nav-number">2.0.8.</span> <span class="nav-text">8. include</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-其他"><span class="nav-number">2.0.9.</span> <span class="nav-text">9. 其他</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#9-1-Makefile"><span class="nav-number">2.0.9.1.</span> <span class="nav-text">9.1 Makefile:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-2-rules-mk"><span class="nav-number">2.0.9.2.</span> <span class="nav-text">9.2 rules.mk</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-3-Config-in"><span class="nav-number">2.0.9.3.</span> <span class="nav-text">9.3 Config.in</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-4-feeds-conf-default"><span class="nav-number">2.0.9.4.</span> <span class="nav-text">9.4 feeds.conf.default</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9-5-LICENSE-amp-README"><span class="nav-number">2.0.9.5.</span> <span class="nav-text">9.5 LICENSE & README</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成目录"><span class="nav-number">3.</span> <span class="nav-text">生成目录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-feeds"><span class="nav-number">3.0.1.</span> <span class="nav-text">1. feeds</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-build-dir"><span class="nav-number">3.0.2.</span> <span class="nav-text">2. build_dir</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1-host"><span class="nav-number">3.0.2.1.</span> <span class="nav-text">2.1 host</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2-toolchain-XXX"><span class="nav-number">3.0.2.2.</span> <span class="nav-text">2.2 toolchain-XXX</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-3-target-XXX"><span class="nav-number">3.0.2.3.</span> <span class="nav-text">2.3 target-XXX</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-bin"><span class="nav-number">3.0.3.</span> <span class="nav-text">3. bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-dl"><span class="nav-number">3.0.4.</span> <span class="nav-text">4. dl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-staging-dir"><span class="nav-number">3.0.5.</span> <span class="nav-text">5. staging_dir</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-tmp"><span class="nav-number">3.0.6.</span> <span class="nav-text">6.tmp</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-logs"><span class="nav-number">3.0.7.</span> <span class="nav-text">7.logs</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">4.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">原始目录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.1.</span> <span class="nav-text">1. scripts</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.2.</span> <span class="nav-text">2. tools</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.3.</span> <span class="nav-text">3. config</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.4.</span> <span class="nav-text">4. docs</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.5.</span> <span class="nav-text">5. toolchain</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.6.</span> <span class="nav-text">6. target</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.7.</span> <span class="nav-text">7. package</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.8.</span> <span class="nav-text">8. include</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.9.</span> <span class="nav-text">9. 其他</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.9.1.</span> <span class="nav-text">9.1 Makefile:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.9.2.</span> <span class="nav-text">9.2 rules.mk</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.9.3.</span> <span class="nav-text">9.3 Config.in</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.9.4.</span> <span class="nav-text">9.4 feeds.conf.default</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.9.5.</span> <span class="nav-text">9.5 LICENSE & README</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">生成目录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.1.</span> <span class="nav-text">1. feeds</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.2.</span> <span class="nav-text">2. build_dir</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.2.1.</span> <span class="nav-text">2.1 host</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.2.2.</span> <span class="nav-text">2.2 toolchain-XXX</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.2.3.</span> <span class="nav-text">2.3 target-XXX</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.3.</span> <span class="nav-text">3. bin</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.4.</span> <span class="nav-text">4. dl</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.5.</span> <span class="nav-text">5. staging_dir</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.6.</span> <span class="nav-text">6.tmp</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.0.7.</span> <span class="nav-text">7.logs</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">尾记</span></a></li></ol></div>
             
           </div>
         </section>

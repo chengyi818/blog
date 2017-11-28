@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491139173&di=1cc0bf82e240f8af1073ff2e4d43c8d6&imgtype=jpg&er=1&src=http%3A%2F%2Fwx3.sinaimg.cn%2Forj360%2F006B7ntWgy1fbumrmh4b9j31hc0u04qs.jpg" rel="gallery_cjagqnztt002e4e330kxeogsn"
+                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491139173&di=1cc0bf82e240f8af1073ff2e4d43c8d6&imgtype=jpg&er=1&src=http%3A%2F%2Fwx3.sinaimg.cn%2Forj360%2F006B7ntWgy1fbumrmh4b9j31hc0u04qs.jpg" rel="gallery_cjajp2gk4002e78338p709kul"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491139173&di=1cc0bf82e240f8af1073ff2e4d43c8d6&imgtype=jpg&er=1&src=http%3A%2F%2Fwx3.sinaimg.cn%2Forj360%2F006B7ntWgy1fbumrmh4b9j31hc0u04qs.jpg" itemprop="contentUrl"/>
               </a>
@@ -347,29 +347,53 @@
 <p>编辑器爱好者,了解vim基本使用</p>
 </blockquote>
 <hr>
-<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a><br>篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a><br>篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a><br>篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>第一篇我们主要介绍了Vim的高效和优点.简而言之,就是Vim非常牛逼,值得学习.那么本篇我就我个人学习的经验来介绍下,如何配置和使用vim.</p>
+<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a>
+篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a>
+篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a>
+篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>第一篇我们主要介绍了Vim的高效和优点.简而言之,就是Vim非常牛逼,值得学习.那么本篇我就我个人学习的经验来介绍下,如何配置和使用vim.</p>
 <p>虽然我已经使用并学习vim两年时间了,但是vim还是会偶尔给我惊喜.能力有限,这里只是简单地介绍.</p>
-<h2 id="观点"><a href="#观点" class="headerlink" title="观点"></a>观点</h2><h3 id="能站在巨人的肩膀上-就不要站在平地"><a href="#能站在巨人的肩膀上-就不要站在平地" class="headerlink" title="能站在巨人的肩膀上,就不要站在平地"></a>能站在巨人的肩膀上,就不要站在平地</h3><p>经常有新人寻求别人的配置,这个时候总会有一些人站出来说:</p>
+<h2>观点</h2>
+<h3>能站在巨人的肩膀上,就不要站在平地</h3>
+<p>经常有新人寻求别人的配置,这个时候总会有一些人站出来说:</p>
 <blockquote>
 <p>vim的牛逼之处就在于它的高配置性,还是自己定制的最好等等</p>
 </blockquote>
 <p>我的观点很明确既然已经有了那么好的配置,为什么还要自己折腾.</p>
 <p>首先读懂别人的配置,然后汲取其中的优点,再去修改和定制.这样的效率远远高于自己在那里慢慢折腾.不要一上来就去修改,先使用一段时间.既然别人那样配置,又被人所广泛接受一定是有一定道理的.</p>
 <p>额外的好处在于,如果大家都使用类似的配置,那么大家的快捷键也是类似的.这样就算别人帮你看代码也会方便一些.</p>
-<h2 id="spf13"><a href="#spf13" class="headerlink" title="spf13"></a><a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a></h2><p>spf13是我能想到的目前最优秀的配置.久经考验,值得拥有.</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装非常简单,主要就是一行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh</div></pre></td></tr></table></figure></p>
+<h2><a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a></h2>
+<p>spf13是我能想到的目前最优秀的配置.久经考验,值得拥有.</p>
+<h3>安装</h3>
+<p>安装非常简单,主要就是一行命令
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh</div></pre></td></tr></table></figure></p>
 <p>如果有其他安装问题,在Github也是很容易找到答案的.毕竟已经发布了多年,基本上你能遇到的问题,别人都已经遇到过了.</p>
-<h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>在它的 <a href="http://vim.spf13.com/" target="_blank" rel="external">官网</a>有详细的介绍和文档.不要害怕英文,慢慢读一读.一边阅读一边使用,一定是可以理解的.</p>
-<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>本质上,vim的配置文件只有一个,就是<code>.vimrc</code>.spf13为了隔离变化,将之拆分成了三个文件,分别是:</p>
-<h4 id="1-vimrc-before"><a href="#1-vimrc-before" class="headerlink" title="1. .vimrc.before"></a>1. <code>.vimrc.before</code></h4><p>用于控制载入<code>.vimrc</code>前的一些设置</p>
-<h4 id="2-vimrc-bundles"><a href="#2-vimrc-bundles" class="headerlink" title="2. .vimrc.bundles"></a>2. <code>.vimrc.bundles</code></h4><p>用于控制配置的插件</p>
-<h4 id="3-vimrc"><a href="#3-vimrc" class="headerlink" title="3. .vimrc"></a>3. <code>.vimrc</code></h4><p>vim的主配置文件<br>以上的这三个文件是官方提供的,强烈不建议更改.</p>
-<h3 id="定制"><a href="#定制" class="headerlink" title="定制"></a>定制</h3><p>那么,如果我们需要定制自己的配置怎么办呢?spf13早就帮你考虑好了.<br>如果仅仅是个人自己使用,只需要新建3个文件: <code>.vimrc.before.local</code>,<code>.vimrc.bundles.local</code>, <code>.vimrc.local</code>.<br>在这三个文件中,添加对应的内容,就可以修改了.<br>如果还希望再次发布给别人使用.将上面的<code>local</code>修改为<code>fork</code>即可.<br>关于这里的替换关系,只要稍微阅读下<code>.vimrc</code>和<code>.vimrc.before</code>就可以明白了.</p>
-<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><p>spf13本身配置了若干插件,使用了一种类似于插件包的配置手法.通过阅读<code>.vimrc.before</code>可以了解如何配置.<br>也可以参考我的 <a href="https://github.com/chengyi818/dotfiles/blob/master/home/.vimrc.before.fork" target="_blank" rel="external">配置</a></p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>我的主要编码环境是c/c++/Python.如果有需要的也可以参考我的 <a href="https://github.com/chengyi818/dotfiles/tree/master/home" target="_blank" rel="external">配置</a></p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>使用vim的乐趣,在于不断尝试,不断探索.它总能给你一些新鲜的感受.无聊的时候,去读读官方的配置,总能发现新的快捷键.</p>
+<h3>文档</h3>
+<p>在它的 <a href="http://vim.spf13.com/" target="_blank" rel="external">官网</a>有详细的介绍和文档.不要害怕英文,慢慢读一读.一边阅读一边使用,一定是可以理解的.</p>
+<h3>结构</h3>
+<p>本质上,vim的配置文件只有一个,就是<code>.vimrc</code>.spf13为了隔离变化,将之拆分成了三个文件,分别是:</p>
+<h4>1. <code>.vimrc.before</code></h4>
+<p>用于控制载入<code>.vimrc</code>前的一些设置</p>
+<h4>2. <code>.vimrc.bundles</code></h4>
+<p>用于控制配置的插件</p>
+<h4>3. <code>.vimrc</code></h4>
+<p>vim的主配置文件
+以上的这三个文件是官方提供的,强烈不建议更改.</p>
+<h3>定制</h3>
+<p>那么,如果我们需要定制自己的配置怎么办呢?spf13早就帮你考虑好了.
+如果仅仅是个人自己使用,只需要新建3个文件: <code>.vimrc.before.local</code>,<code>.vimrc.bundles.local</code>, <code>.vimrc.local</code>.
+在这三个文件中,添加对应的内容,就可以修改了.
+如果还希望再次发布给别人使用.将上面的<code>local</code>修改为<code>fork</code>即可.
+关于这里的替换关系,只要稍微阅读下<code>.vimrc</code>和<code>.vimrc.before</code>就可以明白了.</p>
+<h3>插件</h3>
+<p>spf13本身配置了若干插件,使用了一种类似于插件包的配置手法.通过阅读<code>.vimrc.before</code>可以了解如何配置.
+也可以参考我的 <a href="https://github.com/chengyi818/dotfiles/blob/master/home/.vimrc.before.fork" target="_blank" rel="external">配置</a></p>
+<h3>参考</h3>
+<p>我的主要编码环境是c/c++/Python.如果有需要的也可以参考我的 <a href="https://github.com/chengyi818/dotfiles/tree/master/home" target="_blank" rel="external">配置</a></p>
+<h2>尾记</h2>
+<p>使用vim的乐趣,在于不断尝试,不断探索.它总能给你一些新鲜的感受.无聊的时候,去读读官方的配置,总能发现新的快捷键.</p>
 <p>使用新的快捷键总能发现新的乐趣,原来还可以支持这样的操作.多练习,多使用.把vim当成第一编辑器,总能学到更多的内容.晚安:moon:</p>
 
       
@@ -491,7 +515,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -508,7 +532,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/blog/tags">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -544,7 +568,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#观点"><span class="nav-number">2.</span> <span class="nav-text">观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#能站在巨人的肩膀上-就不要站在平地"><span class="nav-number">2.1.</span> <span class="nav-text">能站在巨人的肩膀上,就不要站在平地</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#spf13"><span class="nav-number">3.</span> <span class="nav-text">spf13</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文档"><span class="nav-number">3.2.</span> <span class="nav-text">文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结构"><span class="nav-number">3.3.</span> <span class="nav-text">结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-vimrc-before"><span class="nav-number">3.3.1.</span> <span class="nav-text">1. .vimrc.before</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-vimrc-bundles"><span class="nav-number">3.3.2.</span> <span class="nav-text">2. .vimrc.bundles</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-vimrc"><span class="nav-number">3.3.3.</span> <span class="nav-text">3. .vimrc</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定制"><span class="nav-number">3.4.</span> <span class="nav-text">定制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件"><span class="nav-number">3.5.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">3.6.</span> <span class="nav-text">参考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">4.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">观点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">能站在巨人的肩膀上,就不要站在平地</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">spf13</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.</span> <span class="nav-text">结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.1.</span> <span class="nav-text">1. .vimrc.before</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.2.</span> <span class="nav-text">2. .vimrc.bundles</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.3.</span> <span class="nav-text">3. .vimrc</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.4.</span> <span class="nav-text">定制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.5.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.6.</span> <span class="nav-text">参考</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">尾记</span></a></li></ol></div>
             
           </div>
         </section>

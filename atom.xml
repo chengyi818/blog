@@ -5,7 +5,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="http://yitinglove.cn/blog/"/>
-  <updated>2017-11-26T12:25:53.560Z</updated>
+  <updated>2017-11-28T14:04:46.244Z</updated>
   <id>http://yitinglove.cn/blog/</id>
   
   <author>
@@ -16,387 +16,20 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>如何阅读一本书</title>
-    <link href="http://yitinglove.cn/blog/2017/11/26/how-to-read-a-book/"/>
-    <id>http://yitinglove.cn/blog/2017/11/26/how-to-read-a-book/</id>
-    <published>2017-11-26T09:38:55.000Z</published>
-    <updated>2017-11-26T12:25:53.560Z</updated>
-    
-    <content type="html"><![CDATA[<p>阅读条件:</p>
-<blockquote>
-<p>适合喜欢阅读的朋友</p>
-</blockquote>
-<hr>
-<a id="more"></a>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近读了一本经典书籍,<strong>如何阅读一本书</strong>.</p>
-<p>相比于不读书而言,读书肯定是要好很多的.但是我们读书的目的是什么呢?书中分了三种情况:</p>
-<ol>
-<li>为了娱乐.</li>
-<li>为了资讯信息.</li>
-<li>为了增进理解.</li>
-</ol>
-<p>为了娱乐,就是读小说,笑话之类的.纯粹是一带而过.难度最小.为了资讯典型的就是指阅读新闻,现在流行地泡沫阅读也算是.难度次之.<br>最困难的是为了增进理解力,比如阅读复杂的技术书籍,这需要记忆练习.需要在你的脑海里建立新的神经通路,是有些痛苦的.而本书就是帮助读者阅读这些比较困难的书的.</p>
-<p>说说我自己吧,我也算挺爱看书的吧.但是对于比较复杂的技术书籍,总感觉读在表面上,没有吸收.读了这本书,真的有点醍醐灌顶的感觉.之前读书真的是,把书读成了线性的了.其实读书,更应该是立体的.我们下面慢慢来说.</p>
-<h1 id="主动阅读"><a href="#主动阅读" class="headerlink" title="主动阅读"></a>主动阅读</h1><p>阅读不但不是一个被动的过程,反而需要大量的思考.不但要去理解作者的架构和内容,同时还需要在内心中构建自己的思考模型,最后还需要和现实中遇到的情况互相印证,来检验和调整模型.</p>
-<p>阅读的效果在于主动的提出问题.书中提出了阅读每本书都要提出的4个基本问题:</p>
-<ol>
-<li>架构性: 整本书谈的是什么?</li>
-<li>诠释性: 关键词,关键句,关键逻辑过程是什么?</li>
-<li>评论性: 作者讲的有没有道理?</li>
-<li>和我的现实生活,已有知识结构有什么关系?</li>
-</ol>
-<h1 id="阅读的分类"><a href="#阅读的分类" class="headerlink" title="阅读的分类"></a>阅读的分类</h1><p>书中将阅读的能力分为了4种:</p>
-<ol>
-<li>基础阅读</li>
-<li>检视阅读</li>
-<li>分析阅读</li>
-<li>主题阅读</li>
-</ol>
-<h2 id="基础阅读"><a href="#基础阅读" class="headerlink" title="基础阅读"></a>基础阅读</h2><p>指的是理解一句话字面含义的能力.对于母语,我们一般在小学初中就已经具备了这样的能努力.但是对于外语书籍相对来讲会吃力些.</p>
-<h2 id="检视阅读"><a href="#检视阅读" class="headerlink" title="检视阅读"></a>检视阅读</h2><p>检视阅读分为两种:</p>
-<ol>
-<li>阅读前言,目录和每个章节的前后重点.指的是在尽可能短的时间内获取书籍的基本信息.重点是查看这本书是否值得阅读.</li>
-<li>快速浏览整本书的内容,对书的架构做到心中有数.同时呢,对书的侧重难点也有所把握.遇到暂时不理解的内容,应该跳过去,不要纠缠.</li>
-</ol>
-<p>这部分是我之前做的很差的.</p>
-<p>首先,我经常是拿到书就读.没有对整本书的架构有所把握.其次,对于稍微困难的部分,也经常纠缠,既浪费时间,也容易打击信心.</p>
-<h2 id="分析阅读"><a href="#分析阅读" class="headerlink" title="分析阅读"></a>分析阅读</h2><p>这个就是一般意义上的细读,精读了.</p>
-<p>这部分是书中的重点.需要不断提出问题,后面我们还会谈到.</p>
-<h2 id="主题阅读"><a href="#主题阅读" class="headerlink" title="主题阅读"></a>主题阅读</h2><p>最后这个主题阅读,是阅读的最高层次.</p>
-<p>一般来讲,我们是通过阅读一本书来获得知识.整本书往往会谈到多个主题.但是如果是关于一个主题呢?比如我前几周看的<a href="http://yitinglove.cn/blog/2017/08/20/%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%AF%87%E4%B8%80/">字符编解码</a>相关的知识.</p>
-<p>往往需要阅读更多的资料,相互融会贯通.用自己的语言把知识描绘出来,才能算得上了解了一个主题.</p>
-<h1 id="分析阅读-1"><a href="#分析阅读-1" class="headerlink" title="分析阅读"></a>分析阅读</h1><p>首先,分析阅读建立在检视阅读的基础之上,我们会花费比较多的精力来进行分析阅读,所以书籍本身必须值得这样的花费.</p>
-<p>再次强调,阅读的重点在于主动的问题.分析阅读主要细化了4个基本问题.</p>
-<h2 id="架构性问题"><a href="#架构性问题" class="headerlink" title="架构性问题"></a>架构性问题</h2><h3 id="规则1-书籍分类"><a href="#规则1-书籍分类" class="headerlink" title="规则1: 书籍分类"></a>规则1: 书籍分类</h3><p>不同类型的书,阅读方式和侧重点有所不同.我目前重点看的是IT技术书籍,是归为实用工具类书籍.</p>
-<h3 id="规则2-主题"><a href="#规则2-主题" class="headerlink" title="规则2: 主题"></a>规则2: 主题</h3><p>用简短的语言,概括整本书讲的内容.</p>
-<h3 id="规则3-纲要"><a href="#规则3-纲要" class="headerlink" title="规则3: 纲要"></a>规则3: 纲要</h3><p>可能的话,尽可能详细的描述书籍的大纲.思考作者是用什么样的大纲来阐述自己的主题.</p>
-<h3 id="规则4-提炼问题"><a href="#规则4-提炼问题" class="headerlink" title="规则4: 提炼问题"></a>规则4: 提炼问题</h3><p>作者想要在书中解决哪些问题?又对哪些问题有所保留?</p>
-<h2 id="诠释性问题"><a href="#诠释性问题" class="headerlink" title="诠释性问题"></a>诠释性问题</h2><h3 id="规则5-关键词-amp-amp-规则6-关键句-amp-amp-规则7-关键逻辑推理"><a href="#规则5-关键词-amp-amp-规则6-关键句-amp-amp-规则7-关键逻辑推理" class="headerlink" title="规则5:关键词 &amp;&amp; 规则6:关键句 &amp;&amp; 规则7:关键逻辑推理"></a>规则5:关键词 &amp;&amp; 规则6:关键句 &amp;&amp; 规则7:关键逻辑推理</h3><p>整本书,每个章节都有自己的关键内容.需要自己去抽取出来.品味其中的逻辑.</p>
-<h3 id="规则8-问题解决的如何"><a href="#规则8-问题解决的如何" class="headerlink" title="规则8:问题解决的如何"></a>规则8:问题解决的如何</h3><p>这个是呼应规则4的.在规则4中,我们总结了作者将会涉及的问题.这里我们需要问自己,作者是否将这些问题解释清楚了.逻辑推理是否合理.</p>
-<h2 id="评论性问题"><a href="#评论性问题" class="headerlink" title="评论性问题"></a>评论性问题</h2><h3 id="规则9-确保自己掌握了书中内容-amp-amp-规则10-不要带有预设立场-情绪化-amp-amp-规则11-反驳需要讲究逻辑"><a href="#规则9-确保自己掌握了书中内容-amp-amp-规则10-不要带有预设立场-情绪化-amp-amp-规则11-反驳需要讲究逻辑" class="headerlink" title="规则9:确保自己掌握了书中内容 &amp;&amp; 规则10:不要带有预设立场,情绪化 &amp;&amp; 规则11:反驳需要讲究逻辑"></a>规则9:确保自己掌握了书中内容 &amp;&amp; 规则10:不要带有预设立场,情绪化 &amp;&amp; 规则11:反驳需要讲究逻辑</h3><p>这三条放在一起,更多的是评论一本书之前的礼节性问题.</p>
-<h3 id="规则12-作者的前提不够完整"><a href="#规则12-作者的前提不够完整" class="headerlink" title="规则12: 作者的前提不够完整"></a>规则12: 作者的前提不够完整</h3><h3 id="规则13-作者的前提不正确"><a href="#规则13-作者的前提不正确" class="headerlink" title="规则13: 作者的前提不正确"></a>规则13: 作者的前提不正确</h3><h3 id="规则14-作者的推理不正确"><a href="#规则14-作者的推理不正确" class="headerlink" title="规则14: 作者的推理不正确"></a>规则14: 作者的推理不正确</h3><h3 id="规则15-作者的论述不够完整"><a href="#规则15-作者的论述不够完整" class="headerlink" title="规则15: 作者的论述不够完整"></a>规则15: 作者的论述不够完整</h3><p>规则12~15,是比较正确的评论书籍的方式.在完全掌握内容的前提下,我们深入的评论作品有助于加深对内容的了解.将阅读到的替代经验内化.</p>
-<h2 id="关于自己"><a href="#关于自己" class="headerlink" title="关于自己"></a>关于自己</h2><p>最后一个部分是关于学习到的内容和经验如何实践的部分.</p>
-<p>如果书中讲了一个道理,你表示认同.那么正确的认同方式就是去实践它.这和<strong>知行合一</strong>的道理是一样的.</p>
-<p>另外,学习技术方面的知识,我现在感觉还是要有一个主题.然后慢慢形成网络.避免泡沫阅读的陷阱,积极思考.</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>我最近在阅读<strong>Python源码剖析</strong>,有的章节还是挺困难的.但是用书中的方法阅读,真的有蛮大的帮助.</p>
-<p>在刚开始接触这样的阅读方法的时候,需要不断地刻意练习.直到可以成为本能.</p>
-<p>不是所有的书籍都值得分析阅读.对于不是当前不是很重要的书籍,进行快速的检视阅读.在尽可能短的时间内,吸收尽可能多的知识,也不失为一件美事.<br>同时,我们对书籍的内容纲要有所掌握,在今后需要找寻相关资料时,也有裨益.</p>
-<p>另外,我有一点小心得.上面提出的4个基本问题,其实不但对整本书适用,在阅读每一个章节的时候,也可以问自己这些基本问题.这不正是递归的思想么?</p>
-]]></content>
-    
-    <summary type="html">
-    
-      如何阅读一本书 读书笔记
-    
-    </summary>
-    
-      <category term="读书笔记" scheme="http://yitinglove.cn/blog/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="read" scheme="http://yitinglove.cn/blog/tags/read/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>哈佛幸福课笔记</title>
-    <link href="http://yitinglove.cn/blog/2017/11/06/%E5%93%88%E4%BD%9B%E5%B9%B8%E7%A6%8F%E8%AF%BE%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yitinglove.cn/blog/2017/11/06/哈佛幸福课笔记/</id>
-    <published>2017-11-06T12:14:45.000Z</published>
-    <updated>2017-11-25T13:35:30.443Z</updated>
-    
-    <content type="html"><![CDATA[<p>阅读条件:</p>
-<blockquote>
-<p>适合所有人,尤其是压力较大及对人生有追求的人.</p>
-</blockquote>
-<hr>
-<a id="more"></a>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>现代人,尤其是在大城市生活的人总是和压力,焦虑这样的问题打交道.作为一个在大城市生活的程序员,我也是其中的一员.我一直对冥想比较有兴趣,在接触的过程中有幸接触到了<a href="http://open.163.com/special/positivepsychology/" target="_blank" rel="external">哈佛公开课:幸福课</a>.课程比较长,接近30个小时.其实我把课程丢在一边很久,后来想着每天看一点点.想不到几个月下来,竟也看完了.这让我有点欣喜,一件看似困难的事情,慢慢干,不要急,也是能做完的.</p>
-<p>正如题目所言,课程主要是讲如何生活得更加幸福.课程鼓励我们更加关注生活的积极面.并从内心,锻炼,事业,家庭,婚姻,习惯等方面给出了具体的建议.</p>
-<p>本篇是我的课程笔记和思考,写下来更多地是为了记录自己的想法,仅供参考.这是一个非常好的课程,值得学习,思考,实践.推荐亲自观看.</p>
-<hr>
-<h1 id="课程笔记"><a href="#课程笔记" class="headerlink" title="课程笔记"></a>课程笔记</h1><p>这个课程像是一个宝库,需要慢慢品味.每个人都可以从中汲取自己当前最需要的营养.<br>念念不忘,必有回响.本课程共分为23课.</p>
-<h2 id="第一课-什么是积极心理学"><a href="#第一课-什么是积极心理学" class="headerlink" title="第一课 什么是积极心理学"></a>第一课 什么是积极心理学</h2><ul>
-<li>心理学分类<br>行为主义<br>精神分析学<br>人本主义</li>
-<li><p>找寻真我<br>自信,相信自己能做到<br>好奇,充满问题. 正确的,积极的问题</p>
-</li>
-<li><p>change shape</p>
-</li>
-</ul>
-<h2 id="第二课-为什么要学习积极心理学"><a href="#第二课-为什么要学习积极心理学" class="headerlink" title="第二课 为什么要学习积极心理学"></a>第二课 为什么要学习积极心理学</h2><ul>
-<li>关注积极的方面</li>
-</ul>
-<ol>
-<li>相信自己能成功</li>
-<li>相信自己会变得更好</li>
-</ol>
-<ul>
-<li>认清自己的长处</li>
-<li>设定目标</li>
-<li>承担责任，采取行动</li>
-<li>自信,完全相信自己可以做到.</li>
-<li>经过有步骤的学习,任何事情都可以做到</li>
-</ul>
-<h2 id="第三课-幸福是种随机现象么"><a href="#第三课-幸福是种随机现象么" class="headerlink" title="第三课 幸福是种随机现象么"></a>第三课 幸福是种随机现象么</h2><ul>
-<li>让世界变得更加美好</li>
-<li>有选择的赞美</li>
-<li>瑜伽</li>
-<li>冥想</li>
-<li>锻炼</li>
-<li>改变是可能的</li>
-</ul>
-<h2 id="第四课-积极的环境能改变人"><a href="#第四课-积极的环境能改变人" class="headerlink" title="第四课 积极的环境能改变人"></a>第四课 积极的环境能改变人</h2><ul>
-<li>笑可以传染</li>
-<li>指数现象</li>
-<li>极端情况，外部环境对幸福水平影响很小</li>
-<li>心境: permission to be human</li>
-</ul>
-<h2 id="第五课-环境的力量"><a href="#第五课-环境的力量" class="headerlink" title="第五课 环境的力量"></a>第五课 环境的力量</h2><ul>
-<li>快乐最重要</li>
-<li>be the change you want to see in the world</li>
-<li>信念乃自我实现的预言</li>
-<li>营造积极的环境</li>
-</ul>
-<h2 id="第六课-乐观主义"><a href="#第六课-乐观主义" class="headerlink" title="第六课 乐观主义"></a>第六课 乐观主义</h2><ul>
-<li>从失败中学习</li>
-<li>用乐观主义解释问题</li>
-<li>前途是光明的，道路是曲折的</li>
-<li>乐观 激情 勤奋</li>
-<li>learn to fail, or fail to learn</li>
-</ul>
-<h2 id="第七课-逆境还是机遇"><a href="#第七课-逆境还是机遇" class="headerlink" title="第七课 逆境还是机遇"></a>第七课 逆境还是机遇</h2><ul>
-<li>想象成功的喜悦</li>
-<li>想象结果，更要想象过程</li>
-<li>M: 放大情绪—归纳</li>
-<li>M: 捏造</li>
-<li>隧道视野</li>
-<li>focus on benefit or fault</li>
-</ul>
-<h2 id="第八课-感激"><a href="#第八课-感激" class="headerlink" title="第八课 感激"></a>第八课 感激</h2><ul>
-<li>允许自己失败</li>
-<li>媒体关注负面,无视正面</li>
-<li>appreciate</li>
-<li>感激平凡的一天</li>
-<li>今天有什么开心的事情?</li>
-<li>保持新鲜感</li>
-</ul>
-<h2 id="第九课-积极情绪"><a href="#第九课-积极情绪" class="headerlink" title="第九课 积极情绪"></a>第九课 积极情绪</h2><ul>
-<li>表达感激</li>
-<li>分享痛苦经历</li>
-<li>沉思积极经历</li>
-<li>神经可塑性</li>
-<li>缓慢改变</li>
-</ul>
-<h2 id="第十课-如何去改变"><a href="#第十课-如何去改变" class="headerlink" title="第十课 如何去改变"></a>第十课 如何去改变</h2><ul>
-<li>是否真的想要改变</li>
-<li>改变什么, 内在联系</li>
-<li>完美主义: 动力/雄心</li>
-<li>A: affect, emotion</li>
-<li>B: behavior, action</li>
-<li>C: cognition, thought</li>
-<li>高峰体验(peak experience)</li>
-<li>身体反馈理论</li>
-</ul>
-<h2 id="第十一课-养成良好习惯"><a href="#第十一课-养成良好习惯" class="headerlink" title="第十一课 养成良好习惯"></a>第十一课 养成良好习惯</h2><ul>
-<li>just do it</li>
-<li>舒适区</li>
-<li>学习区</li>
-<li>恐慌区</li>
-<li>自律不如习惯</li>
-<li>自律有限,每30天建立一个习惯</li>
-<li>人际关系: 希望别人了解自己</li>
-<li>休息/锻炼的重要性</li>
-<li>灵光一现</li>
-</ul>
-<h2 id="第十二课-写日记"><a href="#第十二课-写日记" class="headerlink" title="第十二课 写日记"></a>第十二课 写日记</h2><ul>
-<li>最痛苦的经历</li>
-<li>最快乐的经历(回放)</li>
-<li>理解能力/管理能力/解读能力</li>
-<li>结果是短暂的,享受过程中的ABC的变化</li>
-<li>设定目标,做自己想做的事情</li>
-<li>正确看待目标,不是实现目标让人快乐,而是拥有目标</li>
-</ul>
-<h2 id="第十三课-面对压力"><a href="#第十三课-面对压力" class="headerlink" title="第十三课 面对压力"></a>第十三课 面对压力</h2><ul>
-<li>工作分类: 1. 工作 2.事业 3.使命</li>
-<li>长期目标–&gt;中期目标–&gt;短期目标–&gt;制定计划–&gt;养成习惯</li>
-<li>写下目标,加上期限</li>
-<li>建立休息习惯</li>
-<li>短跑–休息–短跑–休息</li>
-<li>小休息: 工作间隙,番茄钟,午休</li>
-<li>中休息: 睡眠</li>
-<li>大休息: 度假</li>
-</ul>
-<h2 id="第十四课-过犹不及"><a href="#第十四课-过犹不及" class="headerlink" title="第十四课 过犹不及"></a>第十四课 过犹不及</h2><ul>
-<li>多则劣,少则精</li>
-<li>断舍离</li>
-<li>时间充裕</li>
-<li>合适的工作量</li>
-<li>克服拖延:<ol>
-<li>5分钟起步</li>
-<li>奖励自己</li>
-<li>公布目标</li>
-<li>结伴同行</li>
-<li>允许放松休息</li>
-<li>分解目标</li>
-</ol>
-</li>
-<li>learn to fail, or fail to learn</li>
-<li>心理安全</li>
-</ul>
-<h2 id="第十五课-完美主义"><a href="#第十五课-完美主义" class="headerlink" title="第十五课 完美主义"></a>第十五课 完美主义</h2><ul>
-<li>完美主义者,对旅途的认识: 直线(理想)</li>
-<li><p>追求卓越者,对旅途的认识: 曲折(现实)</p>
-</li>
-<li><p>特征:</p>
-</li>
-</ul>
-<ol>
-<li>自卫性</li>
-<li>恐惧失败</li>
-<li>all or nothing</li>
-</ol>
-<ul>
-<li>克服:</li>
-</ul>
-<ol>
-<li>28原则</li>
-<li>寻找高效时间段</li>
-<li>to be a better man</li>
-<li>绩效目标 Vs 掌握目标</li>
-</ol>
-<ul>
-<li>根源:</li>
-</ul>
-<ol>
-<li>社会影响,家庭影响.</li>
-<li>奖励结果 Vs 奖励过程</li>
-</ol>
-<h2 id="第十六课-享受过程"><a href="#第十六课-享受过程" class="headerlink" title="第十六课 享受过程"></a>第十六课 享受过程</h2><ul>
-<li>自我了解,对失败的恐惧</li>
-<li>Focus on a reward effort, reward the journey</li>
-<li><p><strong>勇气</strong>不是没有恐惧,而是有了恐惧还坚持向前</p>
-</li>
-<li><p>3P:</p>
-</li>
-<li><strong>Permission</strong> to be human, acceptance</li>
-<li>reframing, interpreting the situation as <strong>Positive</strong>. benefit finding</li>
-<li><p>taking <strong>Perspective</strong>, shift focus</p>
-</li>
-<li><p>锻炼30min, 每周四次</p>
-</li>
-<li>冥想15min, 每天</li>
-<li>睡眠8h, 每天</li>
-<li>kiss&amp;&amp;hug, 每天</li>
-</ul>
-<h2 id="第十七课-运动与冥想"><a href="#第十七课-运动与冥想" class="headerlink" title="第十七课 运动与冥想"></a>第十七课 运动与冥想</h2><ul>
-<li>自我确认 self-confirmation</li>
-<li>冥想: 1.觉察 2. 放松 3. 无所求</li>
-</ul>
-<h2 id="第十八课-睡眠-触摸和爱情"><a href="#第十八课-睡眠-触摸和爱情" class="headerlink" title="第十八课 睡眠,触摸和爱情"></a>第十八课 睡眠,触摸和爱情</h2><ul>
-<li>睡眠 8h</li>
-<li>touch and hug</li>
-<li>love: 喜新厌旧 nature</li>
-<li>what makes some relationships thrive and grow stronger over time?</li>
-<li>维持恋情需要努力</li>
-<li>如何努力</li>
-<li>欣赏积极的事物</li>
-</ul>
-<h2 id="第十九课-如何让爱情天长地久"><a href="#第十九课-如何让爱情天长地久" class="headerlink" title="第十九课 如何让爱情天长地久"></a>第十九课 如何让爱情天长地久</h2><ul>
-<li><p>心态:</p>
-<blockquote>
-<p>I’m working hard<br>培养心态</p>
-</blockquote>
-</li>
-<li><p>怎么做?</p>
-<blockquote>
-<p>rituals(例行)<br>被了解而非被认可<br>允许冲突<br>细节<br>称赞对方<br>sex</p>
-</blockquote>
-</li>
-<li><p>批评</p>
-<blockquote>
-<p>针对行为<br>针对人身</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第二十课-幸福与幽默"><a href="#第二十课-幸福与幽默" class="headerlink" title="第二十课 幸福与幽默"></a>第二十课 幸福与幽默</h2><ul>
-<li>交感神经: 兴奋</li>
-<li>副交感神经: 放松</li>
-<li>镜像神经元: 移情</li>
-</ul>
-<h2 id="第二十一课-爱情和自尊"><a href="#第二十一课-爱情和自尊" class="headerlink" title="第二十一课 爱情和自尊"></a>第二十一课 爱情和自尊</h2><ul>
-<li>事情顺利时:</li>
-</ul>
-<ol>
-<li>被动破坏性回应：转移话题</li>
-<li>主动破坏性回应： 攻击坏的一面</li>
-<li>被动建设性：称赞结果</li>
-<li>主动建设性： 询问过程，参与感， 庆祝</li>
-</ol>
-<ul>
-<li><p>自尊: 是个人对自己的价值判断</p>
-<blockquote>
-<p>依赖性自尊: 他人评价<br>独立性自尊: 自我评价<br>无条件自尊: 超脱</p>
-</blockquote>
-</li>
-<li><p>方法:</p>
-<blockquote>
-<p>正直,说到做到<br>了解自己<br>有目标, 努力追求<br>承担责任<br>接纳自我<br>主见</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="第二十二课-自尊与自我实现"><a href="#第二十二课-自尊与自我实现" class="headerlink" title="第二十二课 自尊与自我实现"></a>第二十二课 自尊与自我实现</h2><ul>
-<li>在一个没有其他人的世界,你想做什么?</li>
-<li><p>真正的追求,我真正想要的生活</p>
-</li>
-<li><p>自省</p>
-</li>
-<li>正直</li>
-</ul>
-<h2 id="第二十三课-交流收获"><a href="#第二十三课-交流收获" class="headerlink" title="第二十三课 交流收获"></a>第二十三课 交流收获</h2><ul>
-<li>问题最重要: The questions you ask</li>
-<li>积极的问题带来探索,信念</li>
-<li>生命是个上升的螺旋</li>
-<li>要果断坚决,在适当的时候说”不”</li>
-</ul>
-<h1 id="我的行动"><a href="#我的行动" class="headerlink" title="我的行动"></a>我的行动</h1><p>光说不练,假把式.看课程这段时间,我也在尝试养成一些习惯,中间有反复.但我会坚持下去.每月集中自制力培养一个习惯,如果习惯没有养成,下个月继续.</p>
-<ol>
-<li>早起,目前算是养成了7点前起床的习惯.</li>
-<li>每日冥想一段时间.</li>
-<li>每日读书,每天读一点技术书,读一点人文书.</li>
-<li>每天,每周,每月养成自省的习惯.</li>
-</ol>
-<p>当然还有不足,比如锻炼丢开了一段时间,虽然有了长期目标,但是没有具体的规划.没关系,以后我有信心养成这些习惯.</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>先贤们对幸福人生,自我实现的探索总是有相似之处.课程中的很多观点和我们中国人熟悉的佛陀,孔子,老子,王阳明等先贤们的思想,穿过了千年的岁月,互相交融,熠熠生辉.</p>
-<p>韩寒的<strong>后会无期</strong>里面有句台词,我很喜欢.<code>大道理听了很多,却依旧过不好自己的生活</code>.在这个课程刚开始,老师就说了:<code>我讲的都是大家已经知道的道理</code>.王阳明的名言<code>知行合一</code>.其实都是在告诉我们一样的事情,一个道理能否被执行,才是觉得你是否真的明白这个道理的关键.</p>
-<p>在我们意识到自己有很多不足的时候,我觉得已经是一种进步了.在打磨自己的过程中,肯定会感到辛苦,但是我们的目标不就是成就更好的自己么? 子曰:<code>从心所欲,不逾矩</code>,不就是说孔子已经达到了身心协调的状态,即使不刻意克制自己,也会按照理想的行为规范行事.要达到这样的状态,是一个长期修行的过程.需要我们怀抱成长心态,用有限的自制力,不断培养良好的习惯.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      哈佛大学公开课-幸福课 笔记
-    
-    </summary>
-    
-      <category term="读书笔记" scheme="http://yitinglove.cn/blog/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="修行" scheme="http://yitinglove.cn/blog/tags/%E4%BF%AE%E8%A1%8C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Python对象模型</title>
     <link href="http://yitinglove.cn/blog/2017/10/19/Python%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B/"/>
     <id>http://yitinglove.cn/blog/2017/10/19/Python对象模型/</id>
     <published>2017-10-19T02:31:40.000Z</published>
-    <updated>2017-11-25T13:35:30.443Z</updated>
+    <updated>2017-11-28T14:04:46.244Z</updated>
     
     <content type="html"><![CDATA[<p>阅读条件:</p>
 <blockquote>
 <p>C语言基础, Python爱好者</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h1 id="序"><a href="#序" class="headerlink" title="序"></a>序</h1><p>本系列是阅读<em>Python源码剖析</em>的读书笔记.</p>
+<p>&lt;!--more--&gt;</p>
+<h1>序</h1>
+<p>本系列是阅读<em>Python源码剖析</em>的读书笔记.</p>
 <blockquote>
 <p>所有Python的语言魔法都有一个朴素的解释.</p>
 </blockquote>
@@ -405,7 +38,8 @@
 <p>对于一些语言特性,比如元类,装饰器,生成器,弱类型等,总是有一种雾里看花的感觉.惊叹于这些语言特性的魔力,但是要看穿魔法的迷雾还是需要深入到Python的源码实现中去.</p>
 <p>我们都知道原始Python语言本身是用C语言实现的.本系列就是阅读<em>Python源码剖析</em>后的读书笔记.</p>
 <p>我的读书笔记主要基于自己已有的知识,蜻蜓点水般的记录了自己的总结和收获.更多精彩的内容还是要到书中去捡拾.</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Python实现主要分为3个主要部分:</p>
+<h1>前言</h1>
+<p>Python实现主要分为3个主要部分:</p>
 <ol>
 <li>模块和库</li>
 <li>Python虚拟机</li>
@@ -417,21 +51,37 @@
 <blockquote>
 <p>如何用C语言实现不同对象的对象模型?甚至对外暴露统一的接口</p>
 </blockquote>
-<h1 id="源码目录与结构"><a href="#源码目录与结构" class="headerlink" title="源码目录与结构"></a>源码目录与结构</h1><p>书中源码是<a href="https://www.python.org/download/releases/2.5/" target="_blank" rel="external">Python 2.5.0</a>,涉及到的主要代码在<code>Include</code>和<code>Objects</code>目录中.前者是头文件声明,后者根据不同的对象在不同的文件中实现了对应的方法.</p>
-<h1 id="Python对象"><a href="#Python对象" class="headerlink" title="Python对象"></a>Python对象</h1><h2 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h2><p>在Python源码中,我们经常看到的一个结构体就是<code>PyObject</code>,似乎每个Python中的对象都可以用这个结构体来描述.下面我们就来看下这个结构体的定义:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">[object.h]</div><div class="line"></div><div class="line">typedef struct _object &#123;</div><div class="line">        PyObject_HEAD</div><div class="line">&#125; PyObject;</div><div class="line"></div><div class="line">#define PyObject_HEAD \</div><div class="line">    int ob_refcnt;    \</div><div class="line">    struct _typeobject *ob_type;</div></pre></td></tr></table></figure></p>
+<h1>源码目录与结构</h1>
+<p>书中源码是<a href="https://www.python.org/download/releases/2.5/" target="_blank" rel="external">Python 2.5.0</a>,涉及到的主要代码在<code>Include</code>和<code>Objects</code>目录中.前者是头文件声明,后者根据不同的对象在不同的文件中实现了对应的方法.</p>
+<h1>Python对象</h1>
+<h2>初识</h2>
+<p>在Python源码中,我们经常看到的一个结构体就是<code>PyObject</code>,似乎每个Python中的对象都可以用这个结构体来描述.下面我们就来看下这个结构体的定义:
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">[object.h]</div><div class="line"></div><div class="line">typedef struct _object &#123;</div><div class="line">        PyObject_HEAD</div><div class="line">&#125; PyObject;</div><div class="line"></div><div class="line">#define PyObject_HEAD \</div><div class="line">    int ob_refcnt;    \</div><div class="line">    struct _typeobject *ob_type;</div></pre></td></tr></table></figure></p>
 <p>源码还是解释的比较清楚的,<code>PyObject</code>仅仅包含了一个叫做<code>PyObject_HEAD</code>的东西.顾名思义,这大概是表示一个Python对象的头部.</p>
 <p>我们将上面的代码合并,看看头部中到底有哪些东西.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">typedef struct _object &#123;</div><div class="line">	int ob_refcnt;</div><div class="line">	struct _typeobject *ob_type;</div><div class="line">&#125; PyObject;</div></pre></td></tr></table></figure>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">typedef struct _object &#123;</div><div class="line">	int ob_refcnt;</div><div class="line">	struct _typeobject *ob_type;</div><div class="line">&#125; PyObject;</div></pre></td></tr></table></figure></p>
 <p>可以看到,首先是引用计数,不用想这一定是和内存回收有关系的,我们先跳过.其次,是一个指向类型结构体的指针.</p>
-<h2 id="对象类型"><a href="#对象类型" class="headerlink" title="对象类型"></a>对象类型</h2><p>接着我们来看看<code>struct _typeobject</code>是怎么一回事.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">[object.h]</div><div class="line">typedef struct _typeobject &#123;</div><div class="line">	PyObject_VAR_HEAD</div><div class="line">	const char *tp_name; /* For printing, in format &quot;&lt;module&gt;.&lt;name&gt;&quot; */</div><div class="line">	Py_ssize_t tp_basicsize, tp_itemsize; /* For allocation */</div><div class="line"></div><div class="line">	/* Methods to implement standard operations */</div><div class="line"></div><div class="line">	destructor tp_dealloc;</div><div class="line">	printfunc tp_print;</div><div class="line">	getattrfunc tp_getattr;</div><div class="line">	setattrfunc tp_setattr;</div><div class="line">	cmpfunc tp_compare;</div><div class="line">	reprfunc tp_repr;</div><div class="line"></div><div class="line">	/* Method suites for standard classes */</div><div class="line"></div><div class="line">	PyNumberMethods *tp_as_number;</div><div class="line">	PySequenceMethods *tp_as_sequence;</div><div class="line">	PyMappingMethods *tp_as_mapping;</div><div class="line"></div><div class="line">	/* More standard operations (here for binary compatibility) */</div><div class="line"></div><div class="line">	hashfunc tp_hash;</div><div class="line">	ternaryfunc tp_call;</div><div class="line">    ...</div><div class="line">    ...</div><div class="line">&#125; PyTypeObject;</div></pre></td></tr></table></figure></p>
-<p>这段代码还是比较长的,我们大致看看.也能猜出其中不少的含义.<br>其中通过<code>tp_name</code>描述了类型的名称,通过<code>tp_basicsize</code>和<code>tp_itemsize</code>描述了对象的大小.<br>后面还有一系列的对象方法.</p>
-<h2 id="对象数据"><a href="#对象数据" class="headerlink" title="对象数据"></a>对象数据</h2><p>我们在前面已经看到对象的类型,方法都已经有了.那么对象本身的数据呢?我们通过最简单的一个对象类型来看一看.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[intobject.h]</div><div class="line">typedef stuct &#123;</div><div class="line">    PyObject_HEAD</div><div class="line">    long ob_ival;</div><div class="line">&#125; PyIntObject;</div></pre></td></tr></table></figure></p>
-<p>深入一层,我们来看<code>PyInt_Type</code>的定义:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">[intobject.c]</div><div class="line">PyTypeObject PyInt_Type = &#123;</div><div class="line">	PyObject_HEAD_INIT(&amp;PyType_Type)</div><div class="line">	0,</div><div class="line">	&quot;int&quot;,</div><div class="line">	sizeof(PyIntObject),</div><div class="line">	0,</div><div class="line">	(destructor)int_dealloc,		/* tp_dealloc */</div><div class="line">	(printfunc)int_print,			/* tp_print */</div><div class="line">    ...</div><div class="line">    ...</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<h2>对象类型</h2>
+<p>接着我们来看看<code>struct _typeobject</code>是怎么一回事.
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">[object.h]</div><div class="line">typedef struct _typeobject &#123;</div><div class="line">	PyObject_VAR_HEAD</div><div class="line">	const char *tp_name; /* For printing, in format &quot;&lt;module&gt;.&lt;name&gt;&quot; */</div><div class="line">	Py_ssize_t tp_basicsize, tp_itemsize; /* For allocation */</div><div class="line"></div><div class="line">	/* Methods to implement standard operations */</div><div class="line"></div><div class="line">	destructor tp_dealloc;</div><div class="line">	printfunc tp_print;</div><div class="line">	getattrfunc tp_getattr;</div><div class="line">	setattrfunc tp_setattr;</div><div class="line">	cmpfunc tp_compare;</div><div class="line">	reprfunc tp_repr;</div><div class="line"></div><div class="line">	/* Method suites for standard classes */</div><div class="line"></div><div class="line">	PyNumberMethods *tp_as_number;</div><div class="line">	PySequenceMethods *tp_as_sequence;</div><div class="line">	PyMappingMethods *tp_as_mapping;</div><div class="line"></div><div class="line">	/* More standard operations (here for binary compatibility) */</div><div class="line"></div><div class="line">	hashfunc tp_hash;</div><div class="line">	ternaryfunc tp_call;</div><div class="line">    ...</div><div class="line">    ...</div><div class="line">&#125; PyTypeObject;</div></pre></td></tr></table></figure></p>
+<p>这段代码还是比较长的,我们大致看看.也能猜出其中不少的含义.
+其中通过<code>tp_name</code>描述了类型的名称,通过<code>tp_basicsize</code>和<code>tp_itemsize</code>描述了对象的大小.
+后面还有一系列的对象方法.</p>
+<h2>对象数据</h2>
+<p>我们在前面已经看到对象的类型,方法都已经有了.那么对象本身的数据呢?我们通过最简单的一个对象类型来看一看.
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[intobject.h]</div><div class="line">typedef stuct &#123;</div><div class="line">    PyObject_HEAD</div><div class="line">    long ob_ival;</div><div class="line">&#125; PyIntObject;</div></pre></td></tr></table></figure></p>
+<p>深入一层,我们来看<code>PyInt_Type</code>的定义:
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">[intobject.c]</div><div class="line">PyTypeObject PyInt_Type = &#123;</div><div class="line">	PyObject_HEAD_INIT(&amp;PyType_Type)</div><div class="line">	0,</div><div class="line">	&quot;int&quot;,</div><div class="line">	sizeof(PyIntObject),</div><div class="line">	0,</div><div class="line">	(destructor)int_dealloc,		/* tp_dealloc */</div><div class="line">	(printfunc)int_print,			/* tp_print */</div><div class="line">    ...</div><div class="line">    ...</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
 <p>可以看到对于Int类型的对象而言,数据就跟在<code>PyObject_HEAD</code>的后面.而在类型信息中,则规定它的各种对应操作.</p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><h2 id="缓冲池"><a href="#缓冲池" class="headerlink" title="缓冲池"></a>缓冲池</h2><p>在常见的内建对象类型中,包括整数,字符串,列表,字典中,都使用了类似的缓存机制.<br>本质上,就是希望尽可能少的使用到系统调用,同时尽可能高效使用内存.</p>
-<h2 id="模拟Small-Python"><a href="#模拟Small-Python" class="headerlink" title="模拟Small Python"></a>模拟Small Python</h2><p>作者提供了一段非常简洁的C++代码,模拟了简单的Python行为.我没有找到原始代码,但是在<a href="https://gist.github.com/lastmayday/e9a6d4803d7be5f83d65" target="_blank" rel="external">github</a>上我找到一份.</p>
+<h1>其他</h1>
+<h2>缓冲池</h2>
+<p>在常见的内建对象类型中,包括整数,字符串,列表,字典中,都使用了类似的缓存机制.
+本质上,就是希望尽可能少的使用到系统调用,同时尽可能高效使用内存.</p>
+<h2>模拟Small Python</h2>
+<p>作者提供了一段非常简洁的C++代码,模拟了简单的Python行为.我没有找到原始代码,但是在<a href="https://gist.github.com/lastmayday/e9a6d4803d7be5f83d65" target="_blank" rel="external">github</a>上我找到一份.</p>
 <p>我将部分warning修复后,也放到了<a href="https://github.com/chengyi818/kata/blob/master/Language/python/virtual_machine/SmallPython.cc" target="_blank" rel="external">GitHub</a>上,这是本文<strong>最有价值</strong>的部分.</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>本文描述了Python的对象模型的基础.Python对象模型是通过C来实现的,那么如何使用C语言实现面向对象的语言.在我们的示例代码中给出了范例.</p>
+<h1>总结</h1>
+<p>本文描述了Python的对象模型的基础.Python对象模型是通过C来实现的,那么如何使用C语言实现面向对象的语言.在我们的示例代码中给出了范例.</p>
 ]]></content>
     
     <summary type="html">
@@ -461,22 +111,29 @@
 <p>适合所有人</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近读了稻盛和夫先生的一本书&lt;&lt;干法&gt;&gt;.不是很厚的一本小册子,读了两遍.</p>
-<h2 id="我的感想"><a href="#我的感想" class="headerlink" title="我的感想"></a>我的感想</h2><p>书里面的话,说实话特别像我们的经常听的心灵鸡汤.&lt;&lt;后会无期&gt;&gt;里面有一句话叫做: <em>大道理听了很多,却依然过不好自己的生活</em>.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>最近读了稻盛和夫先生的一本书&lt;&lt;干法&gt;&gt;.不是很厚的一本小册子,读了两遍.</p>
+<h2>我的感想</h2>
+<p>书里面的话,说实话特别像我们的经常听的心灵鸡汤.&lt;&lt;后会无期&gt;&gt;里面有一句话叫做: <em>大道理听了很多,却依然过不好自己的生活</em>.</p>
 <p>为什么呢?我想大概是因为没有知行合一吧.怀着强烈想实现自己人生价值的愿望,努力前行.</p>
-<h3 id="极致"><a href="#极致" class="headerlink" title="极致"></a>极致</h3><p>书中描述的精神和日本人给人的那种<strong>匠人</strong>精神不谋而合.坚持做一件事情,做到极致.</p>
+<h3>极致</h3>
+<p>书中描述的精神和日本人给人的那种<strong>匠人</strong>精神不谋而合.坚持做一件事情,做到极致.</p>
 <p>互联网是一个年轻的行业,很多人都说程序员到一定年纪就干不动了.</p>
 <p>我觉得总有些工作是需要一些工匠精神的.虽然摩尔定律和框架的完善让一些编程工作即使不那么好,也可以工作.</p>
 <p>对待自己的作品,像轻抚情人肌肤一样, 像陶醉于芳香一样.</p>
-<h3 id="失败与成长"><a href="#失败与成长" class="headerlink" title="失败与成长"></a>失败与成长</h3><p>我曾经迷失过自己,我生长在一个结果导向型的环境.每一次小的考验,我都觉得是对我整个人的一种评价.这种思维让我害怕去尝试,去失败.</p>
+<h3>失败与成长</h3>
+<p>我曾经迷失过自己,我生长在一个结果导向型的环境.每一次小的考验,我都觉得是对我整个人的一种评价.这种思维让我害怕去尝试,去失败.</p>
 <blockquote>
 <p>learn to fail, or fail to learn</p>
 </blockquote>
 <p>我现在明确认识到了这个问题,发现心中的恐惧,迎上去,战胜它.不管成败与否,经历就是一种成长.</p>
-<h3 id="方向与理想"><a href="#方向与理想" class="headerlink" title="方向与理想"></a>方向与理想</h3><p>在一个方向上努力是会有复利的.曾经我一度不知道干哪个方向合适,经过近3年的彷徨摇摆,终于确立了自己的方向.我将在操作系统方向,IOT方向持续努力,努力前行.</p>
-<h3 id="坚持与自律"><a href="#坚持与自律" class="headerlink" title="坚持与自律"></a>坚持与自律</h3><p>凡事坚持最难,要不断给自己正反馈,鼓励自己.每个人的自制力是有限的,需要用有限的自律去培养自己的习惯.</p>
-<h3 id="肯定自己"><a href="#肯定自己" class="headerlink" title="肯定自己"></a>肯定自己</h3><p>对于自己过于严苛,总是对现状不满意,但是没人生而知之,何况自己耽误了那么久.承认现状,找准目标,努力前行.</p>
+<h3>方向与理想</h3>
+<p>在一个方向上努力是会有复利的.曾经我一度不知道干哪个方向合适,经过近3年的彷徨摇摆,终于确立了自己的方向.我将在操作系统方向,IOT方向持续努力,努力前行.</p>
+<h3>坚持与自律</h3>
+<p>凡事坚持最难,要不断给自己正反馈,鼓励自己.每个人的自制力是有限的,需要用有限的自律去培养自己的习惯.</p>
+<h3>肯定自己</h3>
+<p>对于自己过于严苛,总是对现状不满意,但是没人生而知之,何况自己耽误了那么久.承认现状,找准目标,努力前行.</p>
 <blockquote>
 <p>permission to be human</p>
 </blockquote>
@@ -506,30 +163,47 @@
 <p>对字符编解码有一些了解,但是又不够深入,在实际项目中遇到问题有些束手无措的同学</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>书接上回,我们接着说.前面我们看到随着计算机的迅猛发展,各国家地区为了显示本国的字符,纷纷颁布了自己的字符编码方案.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>书接上回,我们接着说.前面我们看到随着计算机的迅猛发展,各国家地区为了显示本国的字符,纷纷颁布了自己的字符编码方案.</p>
 <p>虽然这解决了本国文字的显示问题.但是不同编码集带来的兼容性问题日益突出.为了解决这种各自为政的问题,<a href="https://en.wikipedia.org/wiki/Unicode_Consortium" target="_blank" rel="external">统一码联盟</a>颁布了所谓的Unicode, 又称统一码,万国码.</p>
-<h2 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h2><p>Unicode的初衷是希望可以包含这个世界上所有的字符,给予统一的编码方式.下面我们根据现代编码模型的结构来逐一分析.</p>
-<h3 id="抽象字符表ACR"><a href="#抽象字符表ACR" class="headerlink" title="抽象字符表ACR"></a>抽象字符表ACR</h3><p>在这一层包含了世界上已知的绝大多数字符,截止2017年6月支持的字符数量已经超过13w.</p>
-<h3 id="编码字符集CCS"><a href="#编码字符集CCS" class="headerlink" title="编码字符集CCS"></a>编码字符集CCS</h3><p>Unicode使用整型值为ACR中的字符编号,并将这种编号称为码点(code point).比如中文汉字”中”的码点为<code>U+4E2D</code>.<br><code>U+</code>表明这是一个Unicode码点,而且使用16进制表示的.<code>4E2D</code>表示具体的码点值.</p>
-<h3 id="字符编码表CEF"><a href="#字符编码表CEF" class="headerlink" title="字符编码表CEF"></a>字符编码表CEF</h3><p>在CEF层,Unicode就稍显复杂一些了.<br>为了对码点进行具体的编码,最为直观的方式是将码点直接转为2进制数据.<code>UCS-2</code>和<code>UCS-4</code>就是这种思想下的产物.下面我们来具体看看.</p>
-<h4 id="UCS-2-UCS-4"><a href="#UCS-2-UCS-4" class="headerlink" title="UCS-2/UCS-4"></a>UCS-2/UCS-4</h4><p>UCS是<code>Universal Coded Character Set</code>的缩写.2和4表示的是编码后的大小,分别是2字节和4字节.<br>通常<code>UCS-2</code>已经可以覆盖我们的使用范围.</p>
+<h2>初衷</h2>
+<p>Unicode的初衷是希望可以包含这个世界上所有的字符,给予统一的编码方式.下面我们根据现代编码模型的结构来逐一分析.</p>
+<h3>抽象字符表ACR</h3>
+<p>在这一层包含了世界上已知的绝大多数字符,截止2017年6月支持的字符数量已经超过13w.</p>
+<h3>编码字符集CCS</h3>
+<p>Unicode使用整型值为ACR中的字符编号,并将这种编号称为码点(code point).比如中文汉字&quot;中&quot;的码点为<code>U+4E2D</code>.
+<code>U+</code>表明这是一个Unicode码点,而且使用16进制表示的.<code>4E2D</code>表示具体的码点值.</p>
+<h3>字符编码表CEF</h3>
+<p>在CEF层,Unicode就稍显复杂一些了.
+为了对码点进行具体的编码,最为直观的方式是将码点直接转为2进制数据.<code>UCS-2</code>和<code>UCS-4</code>就是这种思想下的产物.下面我们来具体看看.</p>
+<h4>UCS-2/UCS-4</h4>
+<p>UCS是<code>Universal Coded Character Set</code>的缩写.2和4表示的是编码后的大小,分别是2字节和4字节.
+通常<code>UCS-2</code>已经可以覆盖我们的使用范围.</p>
 <p>还是以中文汉字<code>中</code>为例,我们看看对应的UCS-2和UCS-4编码.</p>
-<p>UCS-2以两字节编码,直接将码点值转为2进制为<code>\x4e\x2d</code>.<br>UCS-4以四字节编码,将码点值转为2进制后为<code>\x0\x0\x4e\x2d</code>.<br>我们将这种编码后的序列,称为码元序列.</p>
+<p>UCS-2以两字节编码,直接将码点值转为2进制为<code>\x4e\x2d</code>.
+UCS-4以四字节编码,将码点值转为2进制后为<code>\x0\x0\x4e\x2d</code>.
+我们将这种编码后的序列,称为码元序列.</p>
 <p>这种编码方式好处是直观而且便于切割读取,因为编码是固定长度的.但是细心的读者也会发现这种编码方式会极大的浪费存储空间.因为字符的使用频率是不同的.</p>
 <p>比如英文字母的使用频率比较高,如果使用UCS-4编码将会浪费3个字节的空间.为了解决这个问题,Unicode又提出了UTF-8编码方案.</p>
-<h4 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h4><p>UTF-8的目的也是将第二层CCS中的码点进行编码,但是这次我们不会那么直接,我们有一个对应关系.</p>
+<h4>UTF-8</h4>
+<p>UTF-8的目的也是将第二层CCS中的码点进行编码,但是这次我们不会那么直接,我们有一个对应关系.</p>
 <p><img src="http://ww1.sinaimg.cn/large/006kvZhRgy1fjsg3vq0pcj30go04maav.jpg" alt="transfer"></p>
 <p>还是为中文汉字<code>中</code>为例,我们来看看UTF-8编码如何?</p>
-<p>首先判断码点的范围,是处于转换方案的第三级.所以采用的公式是<code>1110 xxxx 10xx xxxx 10xx xxxx</code>.<br><img src="http://ww1.sinaimg.cn/large/006kvZhRgy1fjsg6m4xj7j308h02hjr5.jpg" alt="code point"></p>
+<p>首先判断码点的范围,是处于转换方案的第三级.所以采用的公式是<code>1110 xxxx 10xx xxxx 10xx xxxx</code>.
+<img src="http://ww1.sinaimg.cn/large/006kvZhRgy1fjsg6m4xj7j308h02hjr5.jpg" alt="code point"></p>
 <p><img src="http://ww1.sinaimg.cn/large/006kvZhRgy1fjsg74qv6ej30c0060glg.jpg" alt="plus"></p>
 <p>通过计算,我们可以得出汉字<code>中</code>的UTF-8编码为<code>\xE4\xB8\xAD</code>.</p>
 <p>仅以汉字为例,UTF-8的编码长度超过了UCS-2的编码长度.但是仔细观察转换表,会发现英文的UTF-8编码长度一直都是一个字节.这将极大地提高编码效率.</p>
-<h3 id="字符编码方案CES"><a href="#字符编码方案CES" class="headerlink" title="字符编码方案CES"></a>字符编码方案CES</h3><p>通常我们所说的编码方案都指的是这一层的概念.</p>
-<p>对于UCS-2和UCS-4而言,一个码元序列中的顺序是区分不了的.所以我们必须规定大小端的读写顺序.<br>所以又有了UCS-2-be, UCS-2-le, UCS-4-be, UCS-4-le.</p>
+<h3>字符编码方案CES</h3>
+<p>通常我们所说的编码方案都指的是这一层的概念.</p>
+<p>对于UCS-2和UCS-4而言,一个码元序列中的顺序是区分不了的.所以我们必须规定大小端的读写顺序.
+所以又有了UCS-2-be, UCS-2-le, UCS-4-be, UCS-4-le.</p>
 <p>而对于UTF-8而言,一个码元就是一个字节,所以不在需要区分.换言之,UTF-8本身也属于CES层的概念.</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此,我们将Unicode的概念介绍完毕.下面的问题就是操作系统如何使用这些字符编码方案,保存文件,网络传输的时候,如何使用这些编码方案.在编程语言中如何使用这些编码方案.</p>
-<p>Ps: 最近做了一个在公司内部做了一个关于字符编解码的分享,反响还不错.下面是PPT链接:<br>链接: <a href="https://pan.baidu.com/s/1eSozK10" target="_blank" rel="external">https://pan.baidu.com/s/1eSozK10</a> 密码: j6ap</p>
+<h2>总结</h2>
+<p>至此,我们将Unicode的概念介绍完毕.下面的问题就是操作系统如何使用这些字符编码方案,保存文件,网络传输的时候,如何使用这些编码方案.在编程语言中如何使用这些编码方案.</p>
+<p>Ps: 最近做了一个在公司内部做了一个关于字符编解码的分享,反响还不错.下面是PPT链接:
+链接: https://pan.baidu.com/s/1eSozK10 密码: j6ap</p>
 ]]></content>
     
     <summary type="html">
@@ -563,41 +237,56 @@
 <p>对字符编解码有一些了解,但是又不够深入,在实际项目中遇到问题有些束手无措的同学</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在上一篇,我们已经介绍了字符编码模型.如果还不熟悉CCS,CEF,CES概念的同学,可以回去再看看<a href="http://yitinglove.cn/blog/2017/09/10/%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%AF%87%E4%BA%8C/">上一篇</a></p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>在上一篇,我们已经介绍了字符编码模型.如果还不熟悉CCS,CEF,CES概念的同学,可以回去再看看<a href="http://yitinglove.cn/blog/2017/09/10/%E5%AD%97%E7%AC%A6%E7%BC%96%E8%A7%A3%E7%A0%81%E7%AF%87%E4%BA%8C/">上一篇</a></p>
 <p>本章我们来讲解字符编码方案的进化史.我将整个发展史分为上古时期,混乱时代和天下归一三个阶段,下面分别来介绍.</p>
-<h2 id="上古时期"><a href="#上古时期" class="headerlink" title="上古时期"></a>上古时期</h2><p>在远古时期,在计算机之前,事实上已经有了字符编码的概念.但是年代太过久远,我们不再考虑.</p>
-<h3 id="ascii码呱呱落地"><a href="#ascii码呱呱落地" class="headerlink" title="ascii码呱呱落地"></a>ascii码呱呱落地</h3><p>上古时期,计算机作为一个新生事物刚刚在美国诞生.很明显这个时候美国人民已经有了显示字符的需求.那么显示哪些字符呢?很幸运,美国人民用的字符比较少,加上各种控制符凑了凑大概是128个.一个字节都不用,7个比特就够了.所以美国在上世纪60年代颁布了<a href="https://baike.baidu.com/item/ASCII/309296?fr=aladdin&amp;fromid=99077&amp;fromtitle=ascii%E7%A0%81" target="_blank" rel="external">ascii</a>码.</p>
+<h2>上古时期</h2>
+<p>在远古时期,在计算机之前,事实上已经有了字符编码的概念.但是年代太过久远,我们不再考虑.</p>
+<h3>ascii码呱呱落地</h3>
+<p>上古时期,计算机作为一个新生事物刚刚在美国诞生.很明显这个时候美国人民已经有了显示字符的需求.那么显示哪些字符呢?很幸运,美国人民用的字符比较少,加上各种控制符凑了凑大概是128个.一个字节都不用,7个比特就够了.所以美国在上世纪60年代颁布了<a href="https://baike.baidu.com/item/ASCII/309296?fr=aladdin&amp;fromid=99077&amp;fromtitle=ascii%E7%A0%81" target="_blank" rel="external">ascii</a>码.</p>
 <p>关于ascii码的细节,我们不再赘述,相信大家都已经比较熟悉了.</p>
-<h3 id="latin-1码诞生"><a href="#latin-1码诞生" class="headerlink" title="latin-1码诞生"></a>latin-1码诞生</h3><p>随着时间的流逝,计算机走出了北美大陆,来到了欧洲.虽然大家都是拉丁语系的,但是大家用的字符还是稍有不同的.比如法国人民就喜欢在拉丁字母上加上音调.那我们就得扩展字符的映射关系了.</p>
+<h3>latin-1码诞生</h3>
+<p>随着时间的流逝,计算机走出了北美大陆,来到了欧洲.虽然大家都是拉丁语系的,但是大家用的字符还是稍有不同的.比如法国人民就喜欢在拉丁字母上加上音调.那我们就得扩展字符的映射关系了.</p>
 <p>运气还不错哟,ascii是按字节传输的,还给后面的扩展留了一个比特.这样的话,我们还可以再编128个字符.这样一个名叫<code>latin-1</code>的编码方案就出炉了.我们主要是给西欧人民使用的.</p>
-<h3 id="KOI8系列"><a href="#KOI8系列" class="headerlink" title="KOI8系列"></a>KOI8系列</h3><p>ascii码是大哥,大家都比较尊重他.但是你个西欧小弟都有了自己的字符编码,那么我们当时伟大的苏维埃政权当然要有自己的编码方案啦.</p>
+<h3>KOI8系列</h3>
+<p>ascii码是大哥,大家都比较尊重他.但是你个西欧小弟都有了自己的字符编码,那么我们当时伟大的苏维埃政权当然要有自己的编码方案啦.</p>
 <p>运气也不错哟,斯拉夫文字字符同样不多.128个字符同样够用,这样就诞生了KOI8系列的各种编码方案.花式使用128~255这个范围来映射各种字符.</p>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>细心地同学已经发现在上古时期,其实已经出现了编码不兼容的问题了.虽然传输的大小都是1个字节,但是小于128还好说,大家都是一样的映射关系.但是大于128的时候,真的是各说各话了.</p>
+<h3>小结</h3>
+<p>细心地同学已经发现在上古时期,其实已经出现了编码不兼容的问题了.虽然传输的大小都是1个字节,但是小于128还好说,大家都是一样的映射关系.但是大于128的时候,真的是各说各话了.</p>
 <p>上古时期虽然人心开始思变了,但总的来说还算和平.毕竟计算机的使用范围还比较小.</p>
-<h2 id="混乱时期"><a href="#混乱时期" class="headerlink" title="混乱时期"></a>混乱时期</h2><p>计算机的发展势不可挡,很快就传到了全世界范围.大概是上世纪80年代初,我们国家也有了在计算机上显示自己文字的需求.那么就开始搞啊.</p>
-<h3 id="GB2312"><a href="#GB2312" class="headerlink" title="GB2312"></a>GB2312</h3><p>中华文化博大精深,我们大家都知道.不要说128个字符了,就是刨去ascii码,区区一个字节显然是容纳不了我们博大精深的中华文化的.</p>
+<h2>混乱时期</h2>
+<p>计算机的发展势不可挡,很快就传到了全世界范围.大概是上世纪80年代初,我们国家也有了在计算机上显示自己文字的需求.那么就开始搞啊.</p>
+<h3>GB2312</h3>
+<p>中华文化博大精深,我们大家都知道.不要说128个字符了,就是刨去ascii码,区区一个字节显然是容纳不了我们博大精深的中华文化的.</p>
 <p>没办法,我们必须得上两个字节了.两个字节最多可以表示65535种可能性,那我们倒也是用不了那么多啦.同时,我们还要考虑到兼容ascii码的问题.也好办,我们使用两个字节编一个汉字,同时呢我们每个字节从<code>0xA1</code>开始.大概编了7445个字符,6763个汉字.</p>
 <p>这样有什么好处呢?这样我们的GB2312编码就可以兼容ascii码啦.我们每读取一个字节,先看看大小,如果小于128,那么就是一个ascii字符.如果大于128就再读取一个字节来组成一个GB2312编码,当成一个汉字.</p>
 <p>像我们这种上了年纪的老同志,都知道当时会说一个英文一个字节,一个汉字两个字节就是这个原因.</p>
-<h3 id="GBK"><a href="#GBK" class="headerlink" title="GBK"></a>GBK</h3><p>GB2312是个好东西啊,解决了我们国家绝大多数汉字输入显示的问题.中国人民从此可以站起来啦.</p>
+<h3>GBK</h3>
+<p>GB2312是个好东西啊,解决了我们国家绝大多数汉字输入显示的问题.中国人民从此可以站起来啦.</p>
 <p>但是呢,站的时候还有点小问题.就是有些稍微生僻点的汉字显示不了.比如<code>镕</code>字,<code>祎</code>字.怎么办呢?</p>
 <p>得扩展啊,看看我们的GB2312还有没有扩展空间呢?仔细一分析,嘿!还真有.既然第一个字节已经可以判断出是ascii码还是GB2312编码,那么我们为啥还得让第二个字节小于<code>0xA1</code>呢?</p>
-<p>中国人民的老朋友–微软急人民之所急,就这样颁发了GBK编码.在完全兼容GB2312的基础,一共是编了27484个汉字,基本上把所有的汉字都编进去了.</p>
-<h3 id="GB18030"><a href="#GB18030" class="headerlink" title="GB18030"></a>GB18030</h3><p>全国人民大团结万岁.虽然GBK解决了汉字的问题,可是我们毕竟还有其他55个少数民族的兄弟姐妹要照顾.</p>
+<p>中国人民的老朋友--微软急人民之所急,就这样颁发了GBK编码.在完全兼容GB2312的基础,一共是编了27484个汉字,基本上把所有的汉字都编进去了.</p>
+<h3>GB18030</h3>
+<p>全国人民大团结万岁.虽然GBK解决了汉字的问题,可是我们毕竟还有其他55个少数民族的兄弟姐妹要照顾.</p>
 <p>于是呢,我们又颁布了<code>GB18030</code>标准,包含的字符数高达7w+.这是一个变长编码,使用两字节或者四字节编码,与GBK完全兼容.</p>
-<h3 id="Big5"><a href="#Big5" class="headerlink" title="Big5"></a>Big5</h3><p>同一时期呢,在我们的宝岛台湾同样诞生了一种编码方案,主要是为了繁体中文服务的.它拥有一个狂霸酷拽吊炸天的名字,叫做<em>倚天中文系统</em>.又被称为大五码.</p>
-<h3 id="ANSI"><a href="#ANSI" class="headerlink" title="ANSI"></a>ANSI</h3><p>在Windows系列的电脑上,我们经常还会看到一种ANSI编码,这其实是微软自己创造出来的一种概念.</p>
+<h3>Big5</h3>
+<p>同一时期呢,在我们的宝岛台湾同样诞生了一种编码方案,主要是为了繁体中文服务的.它拥有一个狂霸酷拽吊炸天的名字,叫做<em>倚天中文系统</em>.又被称为大五码.</p>
+<h3>ANSI</h3>
+<p>在Windows系列的电脑上,我们经常还会看到一种ANSI编码,这其实是微软自己创造出来的一种概念.</p>
 <p>它主要是指当前系统的(locale)的遗留(legacy)编码.不得不说,这是一个大坑.因为有的时候,你根本不知道它具体代表哪种编码.</p>
 <p>通常在我们的电脑上,如果是安装中文系统,它可能是指<code>GBK</code>编码.如果你选了英文系统,它也可能是<code>ASCII</code>.在其他国家地区,它随时变化给你看.</p>
-<h3 id="别名"><a href="#别名" class="headerlink" title="别名"></a>别名</h3><p>就像你大名叫李明,小名叫狗蛋一样.在字符编码的发展过程中,除了我们常用的这些名字.其实同一种编码方案还有些其他的小名.</p>
+<h3>别名</h3>
+<p>就像你大名叫李明,小名叫狗蛋一样.在字符编码的发展过程中,除了我们常用的这些名字.其实同一种编码方案还有些其他的小名.</p>
 <p>比如Windows系统,为其他所有的编码方案都取了小名,以cp开头.比如GBK又被称为cp936.</p>
 <p>而ISO组织呢,又给全世界好多编码方案取了小名,基本都是<code>ISO-XXX</code>,比如<code>latin-1</code>又被称为<code>ISO-8859-1</code>.</p>
 <p>这部分大家只要大概知道就好,一个王八可能有好几个马甲即可.</p>
-<h3 id="小结-1"><a href="#小结-1" class="headerlink" title="小结"></a>小结</h3><p>在上古时期,大家都使用单字节编码.但是到了混乱时期呢,我们就引入了MBCS(Multi Byte Character Set),也就是多字节编码的概念.</p>
+<h3>小结</h3>
+<p>在上古时期,大家都使用单字节编码.但是到了混乱时期呢,我们就引入了MBCS(Multi Byte Character Set),也就是多字节编码的概念.</p>
 <p>而我们主要接触的<code>GB2312</code>和<code>GBK</code>主要是使用两字节编码,所以又被称为DBCS(Double Byte Character Set).</p>
 <p>这个阶段,很多国家都颁布了自己的编码方案.甚至一些公司和组织也颁布了自己的字符编码方案.可以算的上锣鼓喧天,鞭炮齐鸣,花枝招展,群魔乱舞了.这个乱世谁来终结呢?</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>本节我们主要介绍了几种常见的编码方案,包括<code>ascii</code>,<code>latin-1</code>,<code>GB2312</code>,<code>GBK</code>,<code>Big5</code>,<code>ANSI</code>等.</p>
+<h2>总结</h2>
+<p>本节我们主要介绍了几种常见的编码方案,包括<code>ascii</code>,<code>latin-1</code>,<code>GB2312</code>,<code>GBK</code>,<code>Big5</code>,<code>ANSI</code>等.</p>
 <p>相对而言,这部分编码是比较简单的.因为他们的字符和CES的编码是一一对应的.在下一章节,我们将介绍横扫六合统一天下的猪脚.</p>
 ]]></content>
     
@@ -632,31 +321,46 @@
 <p>对字符编解码有一些了解,但是又不够深入,在实际项目中遇到问题有些束手无措的同学</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们上回提到,关于字符编解码,计算机只能处理0和1,而人只能理解符号.我们将符号转换为0/1的过程称之为编码,我们将0/1转换为符号的过程称之为解码.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>我们上回提到,关于字符编解码,计算机只能处理0和1,而人只能理解符号.我们将符号转换为0/1的过程称之为编码,我们将0/1转换为符号的过程称之为解码.</p>
 <p>在这个转换的过程中,必须要有一个保存了映射关系的表,来保证在编解码的过程中,信息不会丢失.</p>
 <p>事实上,这种保存了映射关系的表有很多种,且听我们来一一分解.</p>
-<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>在开始我们的征程之前,让我们先简单熟悉两个概念.</p>
-<h3 id="字节"><a href="#字节" class="headerlink" title="字节"></a>字节</h3><p><strong>字节(byte)</strong>应该是绝大多数程序员非常熟悉的概念.它是计算机中数据存储的基本单元,是衡量数据大小的单位.也就是说,我们的符号编码以后就是以字节为单位存储在计算机当中的.不管是在网络,硬盘,U盘还是内存当中,存储的内容或许会有区别,但是存储的单位都是字节.</p>
-<h3 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h3><p><strong>字符(character)</strong>是一个抽象概念.字符是一个信息单位,是各种文字符号的统称.一个英文字母是一个字符,一个汉字是一个字符,甚至一个Emoji表情也是一个字符.</p>
-<h3 id="定长编码"><a href="#定长编码" class="headerlink" title="定长编码"></a>定长编码</h3><p>前面字节的概念就是用于描述存储长度的,定长编码就是指在一种编码方案中,每个字符所对应的长度是固定的.</p>
-<h3 id="变长编码"><a href="#变长编码" class="headerlink" title="变长编码"></a>变长编码</h3><p>相应地,变长编码就是指在一种编码方案中,每个字符对应的长度是变化的.有的字符编码长一点,有的呢短一点.</p>
-<h2 id="现代编码模型"><a href="#现代编码模型" class="headerlink" title="现代编码模型"></a>现代编码模型</h2><p>在熟悉了基本概念之后,我们先来熟悉下<a href="https://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81" target="_blank" rel="external">现代编码模型</a>.现代编码模型将字符编码分为了5个层次,我们可以使用这样的模型来描述我们遇到的每一种具体的编码格式.下面我们从下到上依次来了解这5个层次.</p>
-<h3 id="抽象字符表"><a href="#抽象字符表" class="headerlink" title="抽象字符表"></a>抽象字符表</h3><p>ACR(Abstract Character Repertoire).我们知道每个编码格式所支持的字符是不一样的,比如Ascii不支持汉字.而抽象字符表就是表示某种编码格式所能支持的全部字符的<strong>集合</strong>.</p>
-<h3 id="编码字符集"><a href="#编码字符集" class="headerlink" title="编码字符集"></a>编码字符集</h3><p>CCS(Coded Character Set).编码字符集是一种映射关系,我们需要将前面的ACR集合中的字符进行简单的映射.比如Ascii将字符<code>a</code>映射为十进制整数97.具体的编码格式可以有各自不同的映射方式.编码字符集在这里已经是一个<strong>映射关系</strong>了.</p>
-<h3 id="字符编码表"><a href="#字符编码表" class="headerlink" title="字符编码表"></a>字符编码表</h3><p>CEF(Character Encoding Form).前面CCS的映射关系还仅仅是一种数学映射关系,那么真正存储的时候我们还需要决定使用多长的字段,怎样来存储这个映射的数值.还是Ascii码中的代表字符<code>a</code>的十进制整数97,我们决定使用一个字节直接将97转换为二进制来存储.</p>
+<h2>基本概念</h2>
+<p>在开始我们的征程之前,让我们先简单熟悉两个概念.</p>
+<h3>字节</h3>
+<p>**字节(byte)**应该是绝大多数程序员非常熟悉的概念.它是计算机中数据存储的基本单元,是衡量数据大小的单位.也就是说,我们的符号编码以后就是以字节为单位存储在计算机当中的.不管是在网络,硬盘,U盘还是内存当中,存储的内容或许会有区别,但是存储的单位都是字节.</p>
+<h3>字符</h3>
+<p>**字符(character)**是一个抽象概念.字符是一个信息单位,是各种文字符号的统称.一个英文字母是一个字符,一个汉字是一个字符,甚至一个Emoji表情也是一个字符.</p>
+<h3>定长编码</h3>
+<p>前面字节的概念就是用于描述存储长度的,定长编码就是指在一种编码方案中,每个字符所对应的长度是固定的.</p>
+<h3>变长编码</h3>
+<p>相应地,变长编码就是指在一种编码方案中,每个字符对应的长度是变化的.有的字符编码长一点,有的呢短一点.</p>
+<h2>现代编码模型</h2>
+<p>在熟悉了基本概念之后,我们先来熟悉下<a href="https://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81" target="_blank" rel="external">现代编码模型</a>.现代编码模型将字符编码分为了5个层次,我们可以使用这样的模型来描述我们遇到的每一种具体的编码格式.下面我们从下到上依次来了解这5个层次.</p>
+<h3>抽象字符表</h3>
+<p>ACR(Abstract Character Repertoire).我们知道每个编码格式所支持的字符是不一样的,比如Ascii不支持汉字.而抽象字符表就是表示某种编码格式所能支持的全部字符的<strong>集合</strong>.</p>
+<h3>编码字符集</h3>
+<p>CCS(Coded Character Set).编码字符集是一种映射关系,我们需要将前面的ACR集合中的字符进行简单的映射.比如Ascii将字符<code>a</code>映射为十进制整数97.具体的编码格式可以有各自不同的映射方式.编码字符集在这里已经是一个<strong>映射关系</strong>了.</p>
+<h3>字符编码表</h3>
+<p>CEF(Character Encoding Form).前面CCS的映射关系还仅仅是一种数学映射关系,那么真正存储的时候我们还需要决定使用多长的字段,怎样来存储这个映射的数值.还是Ascii码中的代表字符<code>a</code>的十进制整数97,我们决定使用一个字节直接将97转换为二进制来存储.</p>
 <p>在后面介绍其他编码格式的时候,我们将看到其他不同的CEF方案.</p>
-<h3 id="字符编码方案"><a href="#字符编码方案" class="headerlink" title="字符编码方案"></a>字符编码方案</h3><p>CES(Character Encoding Scheme).Ascii比较简单,一个字节可以表示所有的字符.而有些编码格式需要多个字符,那么在读写传输的过程中,必然会涉及大小端的问题.所以CES就是CEF加上了字节序列化.</p>
+<h3>字符编码方案</h3>
+<p>CES(Character Encoding Scheme).Ascii比较简单,一个字节可以表示所有的字符.而有些编码格式需要多个字符,那么在读写传输的过程中,必然会涉及大小端的问题.所以CES就是CEF加上了字节序列化.</p>
 <p>通常我们说的编码格式,就是指的是CES的概念.</p>
-<h3 id="传输编码语法"><a href="#传输编码语法" class="headerlink" title="传输编码语法"></a>传输编码语法</h3><p>TES(Transfer Encoding Syntax).TES的概念我们后面不会涉及,我们在这里稍微介绍下.</p>
+<h3>传输编码语法</h3>
+<p>TES(Transfer Encoding Syntax).TES的概念我们后面不会涉及,我们在这里稍微介绍下.</p>
 <p>一般其功能包括两种:</p>
 <ol>
-<li><p>把CES的值映射到一套更受限制的值域内,以满足传输环境的限制,例如Email传输时Base64或者quoted-printable,都是把8位的字节编码为7位长的数据.</p>
+<li>
+<p>把CES的值映射到一套更受限制的值域内,以满足传输环境的限制,例如Email传输时Base64或者quoted-printable,都是把8位的字节编码为7位长的数据.</p>
 </li>
-<li><p>另一是压缩CES的长度，如使用LZW或者行程长度编码等无损压缩技术。</p>
+<li>
+<p>另一是压缩CES的长度，如使用LZW或者行程长度编码等无损压缩技术。</p>
 </li>
 </ol>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="http://ww1.sinaimg.cn/large/006kvZhRly1fjeuvzrc3mj31h80wmgtw.jpg" alt="现代编码模型"></p>
+<h2>总结</h2>
+<p><img src="http://ww1.sinaimg.cn/large/006kvZhRly1fjeuvzrc3mj31h80wmgtw.jpg" alt="现代编码模型"></p>
 <p>本章我们主要介绍了一些基本概念和现代编码模型.其中现代编码模型非常重要,因为后面我们会涉及相当多的术语和概念,而它们都在编码模型中,有自己的位置.</p>
 <p>所以熟悉编码模型有助于厘清概念.</p>
 ]]></content>
@@ -688,9 +392,11 @@
 <p>对字符编解码有一些了解,但是又不够深入,在实际项目中遇到问题有些束手无措的同学</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在项目中遇到了编解码错误的问题,发现自己对这块的知识掌握的不是很全面,于是决定花点时间尽量弄清楚来龙去脉.</p>
-<h2 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h2><p>在我们深入学习编解码的知识之前,我们看看哪些相关的前置知识,同时将我们的问题聚焦.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>最近在项目中遇到了编解码错误的问题,发现自己对这块的知识掌握的不是很全面,于是决定花点时间尽量弄清楚来龙去脉.</p>
+<h2>前置知识</h2>
+<p>在我们深入学习编解码的知识之前,我们看看哪些相关的前置知识,同时将我们的问题聚焦.</p>
 <ol>
 <li>计算机只能处理0和1,而人是无法直接理解0和1.</li>
 <li>既然双方无法直接理解对方,那么根据冯诺依曼结构,必然要在输入和输出时做相应的转换,一旦进入计算机内部字符必然以01比特串的形式存在.</li>
@@ -698,7 +404,8 @@
 <li>我们可以将这种转换称为编解码.另外人能够理解的信息可以分为视频,音频,图片,文字等,所以编解码又可以分为视频编解码,音频编解码等.</li>
 </ol>
 <p>我们聚焦的知识是字符编解码部分.</p>
-<h2 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h2><p><img src="http://ww1.sinaimg.cn/large/006kvZhRgy1fjjbcziv2bj30qo0k0t96.jpg" alt="self-model.jpg"></p>
+<h2>模型</h2>
+<p><img src="http://ww1.sinaimg.cn/large/006kvZhRgy1fjjbcziv2bj30qo0k0t96.jpg" alt="self-model.jpg"></p>
 <p>前面我们提到计算机必然需要将人能够理解的有意义的字符转换成01比特串,那么必然要存在这样一种映射关系来进行转换.同时保证显示的时候可以将01比特串转换为字符,保证信息不丢失.</p>
 <p>事实上,这个转换的过程是非常复杂的.我们仅仅考虑输入一个字符,至少需要涉及驱动,输入法,窗口管理器,进程间通信等等内容.</p>
 <p>能力所限,我们定义了上图的模型,我们主要介绍虚线以上的内容.假定已经存在一个字符和01比特的映射表,黑盒具有根据映射表将字符和01比特串的来回转换的能力.</p>
@@ -708,7 +415,8 @@
 <li>用户空间程序,尤其是Python3程序是如何使用这种映射关系的.</li>
 </ol>
 <p>相信我,即使是这两部分也会有足够的信息量.</p>
-<h2 id="疑惑"><a href="#疑惑" class="headerlink" title="疑惑"></a>疑惑</h2><p>我们经常说带着问题找答案.我希望在本系列结束后,可以回答如下的问题.</p>
+<h2>疑惑</h2>
+<p>我们经常说带着问题找答案.我希望在本系列结束后,可以回答如下的问题.</p>
 <ol>
 <li>字节,字符等术语是什么意思?</li>
 <li>现代编码模型是什么鬼?</li>
@@ -719,7 +427,8 @@
 <li><code>UnicodeDecodeError</code>/<code>UnicodeEncodeError</code>是怎么发生的</li>
 </ol>
 <p>问题比较多,大家可以尝试着回答. 如果你觉得对这些问题都没有疑问,那么我觉得这个系列可以跳过.</p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>学而不思则罔.</p>
+<h2>尾记</h2>
+<p>学而不思则罔.</p>
 <p>大部分程序员应该都被字符编解码,乱码折磨过.我这里将稍微系统地总结下相关的字符编解码知识.</p>
 ]]></content>
     
@@ -748,15 +457,18 @@
 <p>Ubuntu 14.04使用者</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我最近在使用Ubuntu 14.04的过程发现屏幕亮度的设置不能保存.默认情况下屏幕一直保持最高亮度.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>我最近在使用Ubuntu 14.04的过程发现屏幕亮度的设置不能保存.默认情况下屏幕一直保持最高亮度.</p>
 <p>在网上找了些链接加上自己的经验,仅供参考.</p>
-<h2 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h2><p><a href="https://my.oschina.net/SBaof/blog/479439" target="_blank" rel="external">参考链接</a>大体都是类似的.</p>
+<h2>参考链接</h2>
+<p><a href="https://my.oschina.net/SBaof/blog/479439" target="_blank" rel="external">参考链接</a>大体都是类似的.</p>
 <p>主要思路是既然不能保存屏幕亮度,那么我们就利用启动脚本来帮我们在每次开机的时候,主动设置亮度.</p>
 <p>总体来说,这个思路是没问题的.但是链接上一般给出的设备是<code>acpi_video0</code>.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo ls /sys/class/backlight</div><div class="line">acpi_video0 intel_backlight</div></pre></td></tr></table></figure>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ sudo ls /sys/class/backlight</div><div class="line">acpi_video0 intel_backlight</div></pre></td></tr></table></figure></p>
 <p>在我的电脑上使用的是英特尔的核心显卡,所以对应的目录应该是<code>intel_backlight</code>.其他的思路是类似的.</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
+<h2>解决方案</h2>
+<ol>
 <li>首先需要确定你的显卡使用的是什么?如果觉得麻烦,就把<code>backlight</code>下的目录都写到<code>rc.local</code>中.</li>
 <li>其他思路参照<a href="https://my.oschina.net/SBaof/blog/479439" target="_blank" rel="external">参考链接</a>即可</li>
 <li>注意: 不同目录对应的最大亮度数值是不同.</li>
@@ -788,24 +500,34 @@
 <p>编辑器爱好者,了解vim基本使用</p>
 </blockquote>
 <hr>
-<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a><br>篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a><br>篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a><br>篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面我们介绍了<em>Spacemacs</em>的种种优点,本篇我们来介绍下<em>Spacemacs</em>的入门.我自己接触<em>Spacemacs</em>大概有半年时间了,那么我自己精通了吗?恐怕还没有.因此本文只是抛砖引玉,更多精彩的内容等待你去挖掘.所有的工具都是这样的,一定要多用,这样就会慢慢熟悉.</p>
-<h2 id="安利"><a href="#安利" class="headerlink" title="安利"></a>安利</h2><p>如果我前面的文章还是不能引起你的兴趣,欢迎你阅读陈斌的这篇<a href="http://blog.csdn.net/redguardtoo/article/details/7222501/" target="_blank" rel="external">一年成为Emacs高手</a>.</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>首先第一步,一定是安装软件.这部分我不再赘述,请参考<a href="https://github.com/syl20bnr/spacemacs" target="_blank" rel="external">github spacemacs主页</a></p>
-<h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p>任何软件工具,官方文档都是仅次于源码的权威资料,<em>Spacemacs</em>也不例外.况且正如我之前所说,<em>Spacemacs</em>非常重视用户的友好性.因此它有大量的文档是关于引导你入门的.</p>
+<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a>
+篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a>
+篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a>
+篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>前面我们介绍了<em>Spacemacs</em>的种种优点,本篇我们来介绍下<em>Spacemacs</em>的入门.我自己接触<em>Spacemacs</em>大概有半年时间了,那么我自己精通了吗?恐怕还没有.因此本文只是抛砖引玉,更多精彩的内容等待你去挖掘.所有的工具都是这样的,一定要多用,这样就会慢慢熟悉.</p>
+<h2>安利</h2>
+<p>如果我前面的文章还是不能引起你的兴趣,欢迎你阅读陈斌的这篇<a href="http://blog.csdn.net/redguardtoo/article/details/7222501/" target="_blank" rel="external">一年成为Emacs高手</a>.</p>
+<h2>安装</h2>
+<p>首先第一步,一定是安装软件.这部分我不再赘述,请参考<a href="https://github.com/syl20bnr/spacemacs" target="_blank" rel="external">github spacemacs主页</a></p>
+<h2>官方文档</h2>
+<p>任何软件工具,官方文档都是仅次于源码的权威资料,<em>Spacemacs</em>也不例外.况且正如我之前所说,<em>Spacemacs</em>非常重视用户的友好性.因此它有大量的文档是关于引导你入门的.</p>
 <p>阅读文档的方式有两种:</p>
 <ol>
 <li>你在项目官网找到文档的<a href="http://spacemacs.org/" target="_blank" rel="external">链接</a>,通过浏览器阅读.</li>
 <li>另外,如果你已经成功安装了<em>Spacemacs</em>,也可以通过快捷键<code>SPC h SPC</code>来打开文档,其中<code>SPC</code>表示空格键.事实上,<em>Spacemacs</em>的大部分快捷键都可以<code>SPC</code>来打开.</li>
 </ol>
 <p>文档是用英文书写的,在有能力的情况下,还是尽量阅读官方文档.因为<em>Spacemacs</em>还在高速更新当中,只有官方文档能够保持及时更新,而其他的介绍文章包括本文往往不够及时.</p>
-<h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><p>下面我来介绍一些最为常用的快捷键.</p>
-<h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><ol>
+<h2>常用快捷键</h2>
+<p>下面我来介绍一些最为常用的快捷键.</p>
+<h3>约定</h3>
+<ol>
 <li><code>SPC</code>表示空格</li>
 <li><code>C</code>表示ctrl键</li>
 </ol>
-<h3 id="帮助"><a href="#帮助" class="headerlink" title="帮助"></a>帮助</h3><p>首先我们来看看与帮助功能相关的快捷键.<em>Spacemacs</em>内置的帮助功能强大而易用.</p>
+<h3>帮助</h3>
+<p>首先我们来看看与帮助功能相关的快捷键.<em>Spacemacs</em>内置的帮助功能强大而易用.</p>
 <ol>
 <li><code>SPC h SPC</code>查看所有文档.可以通过方向键或者<code>C-j/C-k</code>来选择文档.</li>
 <li><code>SPC h d b</code>查询快捷键,如果你想实现某个功能却不知道快捷键的话,可以使用它.比如分割屏幕,只知道<code>split</code>和<code>window</code>来个单词,就可以搜索出所有相关快捷键了.</li>
@@ -814,27 +536,31 @@
 <li><code>SPC ?</code>功能与第二项类似.</li>
 </ol>
 <p>有了这些帮助功能,在有需要的帮助的时候,就可以及时查询了.</p>
-<h3 id="配置文件管理"><a href="#配置文件管理" class="headerlink" title="配置文件管理"></a>配置文件管理</h3><ol>
+<h3>配置文件管理</h3>
+<ol>
 <li><code>SPC f e d</code>打开配置文件</li>
 <li><code>SPC f e R</code>同步配置文件</li>
 </ol>
-<h3 id="窗口管理"><a href="#窗口管理" class="headerlink" title="窗口管理"></a>窗口管理</h3><ol>
+<h3>窗口管理</h3>
+<ol>
 <li><code>SPC w p m</code>查看log</li>
-<li><code>SPC  0..9</code>切换窗口</li>
+<li><code>SPC 0..9</code>切换窗口</li>
 <li><code>SPC f t</code>打开当前文件所在的目录</li>
 <li><code>SPC w s</code>水平分割窗口</li>
 <li><code>SPC w v</code>垂直分割窗口</li>
 <li><code>SPC w c</code>关闭当前窗口</li>
 </ol>
-<h3 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h3><ol>
+<h3>文件管理</h3>
+<ol>
 <li><code>SPC f f</code>打开文件（夹）</li>
-<li><code>SPC  /</code>智能搜索</li>
+<li><code>SPC /</code>智能搜索</li>
 <li><code>SPC f R</code>重命名当前文件</li>
 <li><code>SPC b d</code>关闭当前 buffer</li>
 <li><code>SPC f r</code>最近打开文件</li>
 <li><code>SPC b b</code>最近打开的buffer</li>
 </ol>
-<h3 id="项目管理"><a href="#项目管理" class="headerlink" title="项目管理"></a>项目管理</h3><ol>
+<h3>项目管理</h3>
+<ol>
 <li><code>SPC p t</code>打开当前文件所在的根目录</li>
 <li><code>SPC p p</code>切换项目</li>
 <li><code>SPC p D</code>在 dired 中打开项目根目录</li>
@@ -842,29 +568,40 @@
 <li><code>SPC p R</code>在项目中替换字符串</li>
 </ol>
 <p>更多的快捷键,在<code>SPC</code>键稍加暂停,即可看到菜单提示,多用多尝试.</p>
-<h2 id="Trouble-Shooting"><a href="#Trouble-Shooting" class="headerlink" title="Trouble Shooting"></a>Trouble Shooting</h2><p>在迁移到<em>Spacemacs</em>的过程后,因为卡死的问题导致我不能正常工作,不得不迁回<em>vim</em>.在询问了<a href="https://github.com/zilongshanren" target="_blank" rel="external">zilongshanren</a>后,目前我知道的解决卡死的方法如下:</p>
+<h2>Trouble Shooting</h2>
+<p>在迁移到<em>Spacemacs</em>的过程后,因为卡死的问题导致我不能正常工作,不得不迁回<em>vim</em>.在询问了<a href="https://github.com/zilongshanren" target="_blank" rel="external">zilongshanren</a>后,目前我知道的解决卡死的方法如下:</p>
 <ol>
 <li><code>C-g</code>.大部分卡死问题都可以通过<code>Ctrl-g</code>来解决.</li>
 <li>向Emacs进程发送<code>SIGUSR2</code>.在Linux上命令为<code>kill -SIGUSR2 &lt;pid of emacs&gt;</code>.</li>
 </ol>
-<h2 id="进阶玩法"><a href="#进阶玩法" class="headerlink" title="进阶玩法"></a>进阶玩法</h2><h3 id="Spacemacs-layers"><a href="#Spacemacs-layers" class="headerlink" title="Spacemacs layers"></a><a href="https://github.com/syl20bnr/spacemacs/tree/master/layers" target="_blank" rel="external">Spacemacs layers</a></h3><p><em>Spacemacs</em>提供了大量的layer,可以根据需要来进行选择.其中比较有用的包括:</p>
+<h2>进阶玩法</h2>
+<h3><a href="https://github.com/syl20bnr/spacemacs/tree/master/layers" target="_blank" rel="external">Spacemacs layers</a></h3>
+<p><em>Spacemacs</em>提供了大量的layer,可以根据需要来进行选择.其中比较有用的包括:</p>
 <ol>
 <li><a href="https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Bsource-control/git" target="_blank" rel="external">git</a>git插件</li>
 <li><a href="https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bemacs/org/README.org" target="_blank" rel="external">org</a>Emacs的特色功能</li>
 <li><a href="https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bintl/chinese/README.org" target="_blank" rel="external">chinese</a>中文输入法</li>
-<li><a href="https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Btags/cscope/README.org" target="_blank" rel="external">cscope</a>代码跳转<br>当然更多有意思的layer等着你自己去挖掘.</li>
+<li><a href="https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Btags/cscope/README.org" target="_blank" rel="external">cscope</a>代码跳转
+当然更多有意思的layer等着你自己去挖掘.</li>
 </ol>
-<h3 id="Elisp"><a href="#Elisp" class="headerlink" title="Elisp"></a>Elisp</h3><p>使用<em>Emacs</em>完全不需要掌握<em>Emacs lisp</em>,但是要玩好<em>Emacs</em>一定是要掌握<em>Emacs lisp</em>的.</p>
-<h3 id="个性化定制"><a href="#个性化定制" class="headerlink" title="个性化定制"></a>个性化定制</h3><p>与<em>Vim</em>类似,在掌握了基本用法后,你会根据自己的需要自由的定制配置.</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
-<li><p><em>zilongshanren</em>为<em>Spcemacs</em>的推广做了很多工作.<a href="https://github.com/emacs-china/Spacemacs-rocks" target="_blank" rel="external">Spacemacs-rocks</a>包含了两季的视频.</p>
+<h3>Elisp</h3>
+<p>使用<em>Emacs</em>完全不需要掌握<em>Emacs lisp</em>,但是要玩好<em>Emacs</em>一定是要掌握<em>Emacs lisp</em>的.</p>
+<h3>个性化定制</h3>
+<p>与<em>Vim</em>类似,在掌握了基本用法后,你会根据自己的需要自由的定制配置.</p>
+<h2>参考资料</h2>
+<ol>
+<li>
+<p><em>zilongshanren</em>为<em>Spcemacs</em>的推广做了很多工作.<a href="https://github.com/emacs-china/Spacemacs-rocks" target="_blank" rel="external">Spacemacs-rocks</a>包含了两季的视频.</p>
 </li>
-<li><p><a href="https://www.emacswiki.org/emacs/EmacsWiki" target="_blank" rel="external">Emacs Wiki</a>是最权威的Emacs资料来源地.</p>
+<li>
+<p><a href="https://www.emacswiki.org/emacs/EmacsWiki" target="_blank" rel="external">Emacs Wiki</a>是最权威的Emacs资料来源地.</p>
 </li>
-<li><p><a href="https://emacs-china.org/" target="_blank" rel="external">Emacs China</a>同样可以找到很多帮助,里面的坛友非常热心和Geek.</p>
+<li>
+<p><a href="https://emacs-china.org/" target="_blank" rel="external">Emacs China</a>同样可以找到很多帮助,里面的坛友非常热心和Geek.</p>
 </li>
 </ol>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>对这个世界充满好奇心,对提高效率有执着的追求.</p>
+<h2>总结</h2>
+<p>对这个世界充满好奇心,对提高效率有执着的追求.</p>
 <p>正如我之前所说的只要你充满着Geek精神,总有一天你会遇到<em>Vim</em>,你会遇到<em>Emacs</em>.因为他们都是那么的优秀,历经风雨依然散发着迷人的魅力.</p>
 <p>Happy Hacking:grinning:</p>
 ]]></content>
@@ -898,26 +635,43 @@
 <p>编辑器爱好者,了解vim基本使用</p>
 </blockquote>
 <hr>
-<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a><br>篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a><br>篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a><br>篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>前面两篇主要介绍了vim的一些优势.本篇主要是推荐大家去试试Emacs的一个发行版<a href="http://spacemacs.org/" target="_blank" rel="external">Spacemacs</a>.</p>
+<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a>
+篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a>
+篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a>
+篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>前面两篇主要介绍了vim的一些优势.本篇主要是推荐大家去试试Emacs的一个发行版<a href="http://spacemacs.org/" target="_blank" rel="external">Spacemacs</a>.</p>
 <p>关于Vim和Emacs孰优孰劣的争论已经非常多了,但是很少有人能够同时精通两种编辑器,大部分人都是在捍卫自己的选择.</p>
 <p>国内Emacs的用户要远远少于Vim,所以推荐Vim用户可以去了解了解Emacs.虽然有一些学习成本,但是我觉得物有所值.</p>
-<h2 id="Vim的精髓"><a href="#Vim的精髓" class="headerlink" title="Vim的精髓"></a>Vim的精髓</h2><p>vim的精髓在于模式切换,简而言之,在插入模式下,按键的作用是输入.但是在普通模式下,按键又被赋予了大量特殊功能.</p>
-<h2 id="Vim的不足"><a href="#Vim的不足" class="headerlink" title="Vim的不足"></a>Vim的不足</h2><h3 id="遗忘的快捷键"><a href="#遗忘的快捷键" class="headerlink" title="遗忘的快捷键"></a>遗忘的快捷键</h3><p>我个人感觉我已经算是比较重度的vim用户了,却依然有大量记不住的快捷键.然而人脑的记忆模型就是这样的,长时间不使用的东西,自然就会发生遗忘.</p>
+<h2>Vim的精髓</h2>
+<p>vim的精髓在于模式切换,简而言之,在插入模式下,按键的作用是输入.但是在普通模式下,按键又被赋予了大量特殊功能.</p>
+<h2>Vim的不足</h2>
+<h3>遗忘的快捷键</h3>
+<p>我个人感觉我已经算是比较重度的vim用户了,却依然有大量记不住的快捷键.然而人脑的记忆模型就是这样的,长时间不使用的东西,自然就会发生遗忘.</p>
 <p>那么当我想使用某个快捷键时,能不能快速的搜索呢?或者有什么助记的方法呢?</p>
-<h3 id="扩展语言"><a href="#扩展语言" class="headerlink" title="扩展语言"></a>扩展语言</h3><p><code>vimscript</code>是一种小众的脚本语言,虽然我没有详细研究过.但是看了各种介绍后,我感觉对我的吸引力不大.</p>
-<h3 id="重叠的插件"><a href="#重叠的插件" class="headerlink" title="重叠的插件"></a>重叠的插件</h3><p>在vim中,经常发生一件工作好几个插件重叠的情况.比如Python语法检查,<code>YouCompleteMe</code>,<code>Syntantic</code>,<code>Python-mode</code>都会涉及.有时真的搞不太清楚,到底是谁在其作用.</p>
-<h2 id="Emacs的优势"><a href="#Emacs的优势" class="headerlink" title="Emacs的优势"></a>Emacs的优势</h2><h3 id="强大的扩展语言"><a href="#强大的扩展语言" class="headerlink" title="强大的扩展语言"></a>强大的扩展语言</h3><p>Emacs的扩展语言是久闻大名的Emacs lisp – 著名的函数式编程语言的鼻祖.我对lisp非常感兴趣.从我现在的观点来看,Vim和Emacs完全不冲突.Emacs完全可以通过<code>Evil</code>插件来借鉴Vim的模式切换.</p>
-<p>正是由于Emacs强大的扩展和定制性,所以Emacs才会被称为神之编辑器 – 无所不能.</p>
-<h2 id="Spacemacs"><a href="#Spacemacs" class="headerlink" title="Spacemacs"></a>Spacemacs</h2><p>对于从vim迁移到Emacs的同学,我个人强烈推荐,我自己正在使用的<a href="http://spacemacs.org/" target="_blank" rel="external">spacemacs</a>.目前已经在<a href="https://github.com/syl20bnr/spacemacs" target="_blank" rel="external">Github</a>上有了11000+的star了.</p>
-<h3 id="切换成本低"><a href="#切换成本低" class="headerlink" title="切换成本低"></a>切换成本低</h3><p>通过默认的<code>Evil</code>插件,基本实现了绝大多数Vim的功能,稍微熟悉就可以上手工作.我们将在下篇介绍Spacemacs的快速入门.</p>
-<h3 id="快捷键解释和助记"><a href="#快捷键解释和助记" class="headerlink" title="快捷键解释和助记"></a>快捷键解释和助记</h3><p>通过空格键可以呼出快捷键菜单,通过有意义的分类后,你会发现快捷键非常容易查找.比如<code>空格+w</code>可以和窗口(window)相关的快捷键.</p>
+<h3>扩展语言</h3>
+<p><code>vimscript</code>是一种小众的脚本语言,虽然我没有详细研究过.但是看了各种介绍后,我感觉对我的吸引力不大.</p>
+<h3>重叠的插件</h3>
+<p>在vim中,经常发生一件工作好几个插件重叠的情况.比如Python语法检查,<code>YouCompleteMe</code>,<code>Syntantic</code>,<code>Python-mode</code>都会涉及.有时真的搞不太清楚,到底是谁在其作用.</p>
+<h2>Emacs的优势</h2>
+<h3>强大的扩展语言</h3>
+<p>Emacs的扩展语言是久闻大名的Emacs lisp -- 著名的函数式编程语言的鼻祖.我对lisp非常感兴趣.从我现在的观点来看,Vim和Emacs完全不冲突.Emacs完全可以通过<code>Evil</code>插件来借鉴Vim的模式切换.</p>
+<p>正是由于Emacs强大的扩展和定制性,所以Emacs才会被称为神之编辑器 -- 无所不能.</p>
+<h2>Spacemacs</h2>
+<p>对于从vim迁移到Emacs的同学,我个人强烈推荐,我自己正在使用的<a href="http://spacemacs.org/" target="_blank" rel="external">spacemacs</a>.目前已经在<a href="https://github.com/syl20bnr/spacemacs" target="_blank" rel="external">Github</a>上有了11000+的star了.</p>
+<h3>切换成本低</h3>
+<p>通过默认的<code>Evil</code>插件,基本实现了绝大多数Vim的功能,稍微熟悉就可以上手工作.我们将在下篇介绍Spacemacs的快速入门.</p>
+<h3>快捷键解释和助记</h3>
+<p>通过空格键可以呼出快捷键菜单,通过有意义的分类后,你会发现快捷键非常容易查找.比如<code>空格+w</code>可以和窗口(window)相关的快捷键.</p>
 <p>另过,也可以通过<code>空格+h</code>中的各种帮助来查找快捷键,甚至是解释某个快捷键的功能.</p>
-<h3 id="插件包的引入"><a href="#插件包的引入" class="headerlink" title="插件包的引入"></a>插件包的引入</h3><p>layer是指一个功能相关的package的集合.通过社区维护的layer的引入,我们可以通过快速引入一个layer来实现插件功能,而不需要去分别配置.</p>
+<h3>插件包的引入</h3>
+<p>layer是指一个功能相关的package的集合.通过社区维护的layer的引入,我们可以通过快速引入一个layer来实现插件功能,而不需要去分别配置.</p>
 <p>其实如果阅读过spf13配置的同学,已经可以看到spf13已经使用了类似的概念.但是这是配置上的概念,没有社区为你维护.相对来讲,spacemacs的layer要更为成熟.</p>
-<h3 id="其他更强大的功能"><a href="#其他更强大的功能" class="headerlink" title="其他更强大的功能"></a>其他更强大的功能</h3><p>Emacs还可以实现一些更为强大的功能,有些对我比较有吸引力.比如使用org-mode实现GTD.比如番茄钟功能的引入.比如可以直接使用有道词典查单词.</p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>对于Spacemacs我也是刚刚入门,希望大家不要抱着偏见来看这些编辑器.Vim的模式切换已经深入人心,对于Vim的学习成本不会成为沉没成本.</p>
+<h3>其他更强大的功能</h3>
+<p>Emacs还可以实现一些更为强大的功能,有些对我比较有吸引力.比如使用org-mode实现GTD.比如番茄钟功能的引入.比如可以直接使用有道词典查单词.</p>
+<h2>尾记</h2>
+<p>对于Spacemacs我也是刚刚入门,希望大家不要抱着偏见来看这些编辑器.Vim的模式切换已经深入人心,对于Vim的学习成本不会成为沉没成本.</p>
 <p>怀着一颗好奇心去试试Spacemacs,说不定有新的惊喜呢 :)</p>
 ]]></content>
     
@@ -950,29 +704,53 @@
 <p>编辑器爱好者,了解vim基本使用</p>
 </blockquote>
 <hr>
-<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a><br>篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a><br>篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a><br>篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>第一篇我们主要介绍了Vim的高效和优点.简而言之,就是Vim非常牛逼,值得学习.那么本篇我就我个人学习的经验来介绍下,如何配置和使用vim.</p>
+<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a>
+篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a>
+篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a>
+篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>第一篇我们主要介绍了Vim的高效和优点.简而言之,就是Vim非常牛逼,值得学习.那么本篇我就我个人学习的经验来介绍下,如何配置和使用vim.</p>
 <p>虽然我已经使用并学习vim两年时间了,但是vim还是会偶尔给我惊喜.能力有限,这里只是简单地介绍.</p>
-<h2 id="观点"><a href="#观点" class="headerlink" title="观点"></a>观点</h2><h3 id="能站在巨人的肩膀上-就不要站在平地"><a href="#能站在巨人的肩膀上-就不要站在平地" class="headerlink" title="能站在巨人的肩膀上,就不要站在平地"></a>能站在巨人的肩膀上,就不要站在平地</h3><p>经常有新人寻求别人的配置,这个时候总会有一些人站出来说:</p>
+<h2>观点</h2>
+<h3>能站在巨人的肩膀上,就不要站在平地</h3>
+<p>经常有新人寻求别人的配置,这个时候总会有一些人站出来说:</p>
 <blockquote>
 <p>vim的牛逼之处就在于它的高配置性,还是自己定制的最好等等</p>
 </blockquote>
 <p>我的观点很明确既然已经有了那么好的配置,为什么还要自己折腾.</p>
 <p>首先读懂别人的配置,然后汲取其中的优点,再去修改和定制.这样的效率远远高于自己在那里慢慢折腾.不要一上来就去修改,先使用一段时间.既然别人那样配置,又被人所广泛接受一定是有一定道理的.</p>
 <p>额外的好处在于,如果大家都使用类似的配置,那么大家的快捷键也是类似的.这样就算别人帮你看代码也会方便一些.</p>
-<h2 id="spf13"><a href="#spf13" class="headerlink" title="spf13"></a><a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a></h2><p>spf13是我能想到的目前最优秀的配置.久经考验,值得拥有.</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装非常简单,主要就是一行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh</div></pre></td></tr></table></figure></p>
+<h2><a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a></h2>
+<p>spf13是我能想到的目前最优秀的配置.久经考验,值得拥有.</p>
+<h3>安装</h3>
+<p>安装非常简单,主要就是一行命令
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">curl https://j.mp/spf13-vim3 -L &gt; spf13-vim.sh &amp;&amp; sh spf13-vim.sh</div></pre></td></tr></table></figure></p>
 <p>如果有其他安装问题,在Github也是很容易找到答案的.毕竟已经发布了多年,基本上你能遇到的问题,别人都已经遇到过了.</p>
-<h3 id="文档"><a href="#文档" class="headerlink" title="文档"></a>文档</h3><p>在它的 <a href="http://vim.spf13.com/" target="_blank" rel="external">官网</a>有详细的介绍和文档.不要害怕英文,慢慢读一读.一边阅读一边使用,一定是可以理解的.</p>
-<h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>本质上,vim的配置文件只有一个,就是<code>.vimrc</code>.spf13为了隔离变化,将之拆分成了三个文件,分别是:</p>
-<h4 id="1-vimrc-before"><a href="#1-vimrc-before" class="headerlink" title="1. .vimrc.before"></a>1. <code>.vimrc.before</code></h4><p>用于控制载入<code>.vimrc</code>前的一些设置</p>
-<h4 id="2-vimrc-bundles"><a href="#2-vimrc-bundles" class="headerlink" title="2. .vimrc.bundles"></a>2. <code>.vimrc.bundles</code></h4><p>用于控制配置的插件</p>
-<h4 id="3-vimrc"><a href="#3-vimrc" class="headerlink" title="3. .vimrc"></a>3. <code>.vimrc</code></h4><p>vim的主配置文件<br>以上的这三个文件是官方提供的,强烈不建议更改.</p>
-<h3 id="定制"><a href="#定制" class="headerlink" title="定制"></a>定制</h3><p>那么,如果我们需要定制自己的配置怎么办呢?spf13早就帮你考虑好了.<br>如果仅仅是个人自己使用,只需要新建3个文件: <code>.vimrc.before.local</code>,<code>.vimrc.bundles.local</code>, <code>.vimrc.local</code>.<br>在这三个文件中,添加对应的内容,就可以修改了.<br>如果还希望再次发布给别人使用.将上面的<code>local</code>修改为<code>fork</code>即可.<br>关于这里的替换关系,只要稍微阅读下<code>.vimrc</code>和<code>.vimrc.before</code>就可以明白了.</p>
-<h3 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h3><p>spf13本身配置了若干插件,使用了一种类似于插件包的配置手法.通过阅读<code>.vimrc.before</code>可以了解如何配置.<br>也可以参考我的 <a href="https://github.com/chengyi818/dotfiles/blob/master/home/.vimrc.before.fork" target="_blank" rel="external">配置</a></p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>我的主要编码环境是c/c++/Python.如果有需要的也可以参考我的 <a href="https://github.com/chengyi818/dotfiles/tree/master/home" target="_blank" rel="external">配置</a></p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>使用vim的乐趣,在于不断尝试,不断探索.它总能给你一些新鲜的感受.无聊的时候,去读读官方的配置,总能发现新的快捷键.</p>
+<h3>文档</h3>
+<p>在它的 <a href="http://vim.spf13.com/" target="_blank" rel="external">官网</a>有详细的介绍和文档.不要害怕英文,慢慢读一读.一边阅读一边使用,一定是可以理解的.</p>
+<h3>结构</h3>
+<p>本质上,vim的配置文件只有一个,就是<code>.vimrc</code>.spf13为了隔离变化,将之拆分成了三个文件,分别是:</p>
+<h4>1. <code>.vimrc.before</code></h4>
+<p>用于控制载入<code>.vimrc</code>前的一些设置</p>
+<h4>2. <code>.vimrc.bundles</code></h4>
+<p>用于控制配置的插件</p>
+<h4>3. <code>.vimrc</code></h4>
+<p>vim的主配置文件
+以上的这三个文件是官方提供的,强烈不建议更改.</p>
+<h3>定制</h3>
+<p>那么,如果我们需要定制自己的配置怎么办呢?spf13早就帮你考虑好了.
+如果仅仅是个人自己使用,只需要新建3个文件: <code>.vimrc.before.local</code>,<code>.vimrc.bundles.local</code>, <code>.vimrc.local</code>.
+在这三个文件中,添加对应的内容,就可以修改了.
+如果还希望再次发布给别人使用.将上面的<code>local</code>修改为<code>fork</code>即可.
+关于这里的替换关系,只要稍微阅读下<code>.vimrc</code>和<code>.vimrc.before</code>就可以明白了.</p>
+<h3>插件</h3>
+<p>spf13本身配置了若干插件,使用了一种类似于插件包的配置手法.通过阅读<code>.vimrc.before</code>可以了解如何配置.
+也可以参考我的 <a href="https://github.com/chengyi818/dotfiles/blob/master/home/.vimrc.before.fork" target="_blank" rel="external">配置</a></p>
+<h3>参考</h3>
+<p>我的主要编码环境是c/c++/Python.如果有需要的也可以参考我的 <a href="https://github.com/chengyi818/dotfiles/tree/master/home" target="_blank" rel="external">配置</a></p>
+<h2>尾记</h2>
+<p>使用vim的乐趣,在于不断尝试,不断探索.它总能给你一些新鲜的感受.无聊的时候,去读读官方的配置,总能发现新的快捷键.</p>
 <p>使用新的快捷键总能发现新的乐趣,原来还可以支持这样的操作.多练习,多使用.把vim当成第一编辑器,总能学到更多的内容.晚安:moon:</p>
 ]]></content>
     
@@ -1005,9 +783,13 @@
 <p>编辑器爱好者,了解vim基本使用</p>
 </blockquote>
 <hr>
-<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a><br>篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a><br>篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a><br>篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>编辑器是程序员手中最重要的兵器,充满Geek精神的程序员总是愿意折腾这些东西.</p>
+<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a>
+篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a>
+篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a>
+篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>编辑器是程序员手中最重要的兵器,充满Geek精神的程序员总是愿意折腾这些东西.</p>
 <p>有人开玩笑,程序员分3种:</p>
 <ol>
 <li>用vim的程序员</li>
@@ -1015,12 +797,14 @@
 <li>其他程序员</li>
 </ol>
 <p>推荐阅读<a href="http://blog.jobbole.com/44891/" target="_blank" rel="external">七个高效的文本编辑习惯</a>,了解一个优秀的编辑器该有的特点.</p>
-<h2 id="人生若只如初见"><a href="#人生若只如初见" class="headerlink" title="人生若只如初见"></a>人生若只如初见</h2><p>在我念书的时候,接触的操作系统是Windows,那么自然而然的接触的第一个编辑器是微软的Visual Studio.</p>
+<h2>人生若只如初见</h2>
+<p>在我念书的时候,接触的操作系统是Windows,那么自然而然的接触的第一个编辑器是微软的Visual Studio.</p>
 <p>第一次听到vim的大名,应该是在<em>鸟哥的Linux私房菜</em>中讲了一部分关于vim的知识.其中只讲了关于vim的基础知识.</p>
 <p>刚接触vim的同学,可以首先从vim tutor开始.这里推荐一个初学者网站<a href="http://www.openvim.com/" target="_blank" rel="external">openvim</a>,可以学习vim的基本操作.</p>
 <p>说实话当时并不感觉vim有多么强大,而且很不适应完全不使用鼠标的感觉.</p>
 <p>作为一名偏向底层和系统的程序员,在工作以后不断听到vim的消息.慢慢深入其中,才发觉其中的瑰丽.</p>
-<h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><p>熟悉vim,首先要了解一点vim的历史.</p>
+<h3>历史</h3>
+<p>熟悉vim,首先要了解一点vim的历史.</p>
 <p>vim是从vi发展而来,而vi诞生于20世纪的70年代,是专门为程序员编写程序所设计的编辑器.</p>
 <p>那个时候计算机刚刚蹒跚学步,还没有鼠标诞生.所以vim天然就支持全键盘操作,这就让程序员可以做到<code>手随心动</code>.</p>
 <p>这是优秀的编辑器的一个重要特点.在大脑高速运转的时候,如果突然需要双手离开键盘,那就太出戏了.</p>
@@ -1029,7 +813,8 @@
 <p>优秀编辑器的第一个要求: 手随心动</p>
 </blockquote>
 <p>另外,在当时的计算机语言中,很多惯常的用语和我们现在不太一样.比如复制,当时使用的单词是<code>yank</code>,对于这些情况,需要一定的时间来适应.</p>
-<h3 id="模式切换"><a href="#模式切换" class="headerlink" title="模式切换"></a>模式切换</h3><p>提到了vim的手随心动,那就不得不提vim的模式切换.</p>
+<h3>模式切换</h3>
+<p>提到了vim的手随心动,那就不得不提vim的模式切换.</p>
 <p>普通的编辑器,一个按键往往就代表一个功能.如果需要实现一些特殊功能,基本都是需要组合按键的.像人们所熟知的<code>Ctrl+c</code>代表复制</p>
 <p>然而由于组合键数量有限,那么就不太可能实现太多的功能.</p>
 <p>在vim当中存在多种模式,最为常用的是普通模式和插入模式.在这两种模式当中,同样的按键代表的截然不同的功能.比如<code>j</code>,在输入模式就是一个普通<code>j</code>字母.</p>
@@ -1038,7 +823,8 @@
 <blockquote>
 <p>优秀编辑器的第二个要求: 双手基本不需要离开核心区</p>
 </blockquote>
-<h3 id="高效的快捷键"><a href="#高效的快捷键" class="headerlink" title="高效的快捷键"></a>高效的快捷键</h3><p>vim的快捷键往往会让人头疼,一下子接触了实在是太多了.</p>
+<h3>高效的快捷键</h3>
+<p>vim的快捷键往往会让人头疼,一下子接触了实在是太多了.</p>
 <p>单单说说移动光标吧,上下左右全部可以用快捷键操作.前一个单词的队头/队尾,后一个单词的队头/队尾也是快捷键.</p>
 <p>整句的队头/队尾,整篇的队头/队尾还是快捷键.向上翻一页/翻半页,向下翻一页/翻半页也还是快捷键.</p>
 <p>甚至不翻页,单移动光标到当前页的队头/队中/队尾居然也是快捷键.</p>
@@ -1046,21 +832,25 @@
 <blockquote>
 <p>优秀编辑器的第三个要求: 丰富的快捷键</p>
 </blockquote>
-<h3 id="丰富而优秀的插件"><a href="#丰富而优秀的插件" class="headerlink" title="丰富而优秀的插件"></a>丰富而优秀的插件</h3><p>vim的插件之丰富,令人惊叹.根据不同的用途,按需取用合适的插件.</p>
+<h3>丰富而优秀的插件</h3>
+<p>vim的插件之丰富,令人惊叹.根据不同的用途,按需取用合适的插件.</p>
 <p><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="external">bundle</a>是专门用于管理vim插件的插件.</p>
 <p><a href="http://vimawesome.com/" target="_blank" rel="external">vim aswsome</a>则罗列了优秀的vim插件</p>
 <blockquote>
 <p>优秀编辑器的第四个要求: 丰富的插件和优秀的插件管理器</p>
 </blockquote>
-<h3 id="强大的可定制性"><a href="#强大的可定制性" class="headerlink" title="强大的可定制性"></a>强大的可定制性</h3><p>除了vim标准的快捷键和插件提供的功能,vim允许用户使用<code>vimscript</code>来定制属于他们自己的功能.</p>
+<h3>强大的可定制性</h3>
+<p>除了vim标准的快捷键和插件提供的功能,vim允许用户使用<code>vimscript</code>来定制属于他们自己的功能.</p>
 <p>比如在输入模式下,我希望可以不切换到普通模式就可以直接向右移动,这在括号内输入时非常有用.</p>
 <p>那么我们可以在<code>.vimrc</code>中加入: <code>imap &lt;c-l&gt; &lt;Right&gt;</code>,这代表了在插入模式下,将<code>Ctrl+l</code>映射为向右移动.</p>
 <blockquote>
 <p>优秀编辑器的第五个要求: 高度可定制化</p>
 </blockquote>
-<h3 id="其他的常规功能"><a href="#其他的常规功能" class="headerlink" title="其他的常规功能"></a>其他的常规功能</h3><p>其他的一些功能,比如:分屏,代码跳转,文件列表,函数列表.那已经是程序员编辑器的标配了.</p>
+<h3>其他的常规功能</h3>
+<p>其他的一些功能,比如:分屏,代码跳转,文件列表,函数列表.那已经是程序员编辑器的标配了.</p>
 <p>那作为<code>编辑器之神</code>的vim自然是具备的.</p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>在学习vim的过程中,一本叫做<em>vim实用技巧</em>的书,对我帮助很大.这里推荐给有兴趣的朋友.</p>
+<h2>尾记</h2>
+<p>在学习vim的过程中,一本叫做<em>vim实用技巧</em>的书,对我帮助很大.这里推荐给有兴趣的朋友.</p>
 <p>vim的学习曲线很陡峭,但是投入的时间是值得的.vim的模式切换已经被大量的编辑器所接纳和吸收.</p>
 <p>下一篇,我将介绍如何基于<a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a>配置和使用vim.</p>
 ]]></content>
@@ -1094,26 +884,35 @@
 <blockquote>
 <p>掌握Python类的基本使用</p>
 </blockquote>
-<a id="more"></a>
-<h2 id="类与继承"><a href="#类与继承" class="headerlink" title="类与继承"></a>类与继承</h2><p>Python作为面向对象的一门语言,完整地支持了所有面向对象的特性.继承,多态,封装.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>类与继承</h2>
+<p>Python作为面向对象的一门语言,完整地支持了所有面向对象的特性.继承,多态,封装.</p>
 <p>本章作者主要讲了如何利用Python的特性,写出易于维护的代码.</p>
-<h3 id="22-辅助类"><a href="#22-辅助类" class="headerlink" title="22. 辅助类"></a>22. 辅助类</h3><p>在维护一个对象的属性时,如果属性比较简单,那么使用字典或者元组之类的内置数据类型比较合适.</p>
+<h3>22. 辅助类</h3>
+<p>在维护一个对象的属性时,如果属性比较简单,那么使用字典或者元组之类的内置数据类型比较合适.</p>
 <p>在属性变得复杂时,我们需要及时抽象出辅助类,用于管理属性.</p>
-<h3 id="23-简单接口接受函数"><a href="#23-简单接口接受函数" class="headerlink" title="23. 简单接口接受函数"></a>23. 简单接口接受函数</h3><p>Python中函数是一级对象(first-class),可以传递.</p>
+<h3>23. 简单接口接受函数</h3>
+<p>Python中函数是一级对象(first-class),可以传递.</p>
 <p>Python中的某些内置函数,比如sort的参数key可以接受函数.此时应该尽量使用函数.</p>
 <p>如果实在有其他需求,可以使用类的实例,同时实现其<code>__call__</code>方法</p>
-<h3 id="24-以-classmethod形式的多态去通用地构建对象"><a href="#24-以-classmethod形式的多态去通用地构建对象" class="headerlink" title="24. 以@classmethod形式的多态去通用地构建对象"></a>24. 以@classmethod形式的多态去通用地构建对象</h3><p>在Python中一切都是对象,不仅实例是一个对象,类本身也是对象.</p>
+<h3>24. 以@classmethod形式的多态去通用地构建对象</h3>
+<p>在Python中一切都是对象,不仅实例是一个对象,类本身也是对象.</p>
 <p>可以通过@classmethod来实现类的多态.</p>
-<h3 id="25-用super初始化父类"><a href="#25-用super初始化父类" class="headerlink" title="25. 用super初始化父类"></a>25. 用super初始化父类</h3><p>在子类中调用父类的<code>__init__</code>方法可能引入一些副作用,所以还是推荐使用super函数来初始化父类.</p>
+<h3>25. 用super初始化父类</h3>
+<p>在子类中调用父类的<code>__init__</code>方法可能引入一些副作用,所以还是推荐使用super函数来初始化父类.</p>
 <p>在Python3中的实现方法如下:<code>super().__init__()</code></p>
-<h3 id="26-仅在使用mix-in组件制作工具类时使用多重继承"><a href="#26-仅在使用mix-in组件制作工具类时使用多重继承" class="headerlink" title="26. 仅在使用mix-in组件制作工具类时使用多重继承"></a>26. 仅在使用mix-in组件制作工具类时使用多重继承</h3><p>不管在任何面向对象的使用多重继承都是比较危险的. 在Python中,仅推荐在使用mix-in组件制作工具类时使用.</p>
-<h3 id="27-多用public属性-少用private属性"><a href="#27-多用public属性-少用private属性" class="headerlink" title="27. 多用public属性,少用private属性"></a>27. 多用public属性,少用private属性</h3><p>Python的private保护是一种伪实现,仅仅将属性稍加改名.</p>
+<h3>26. 仅在使用mix-in组件制作工具类时使用多重继承</h3>
+<p>不管在任何面向对象的使用多重继承都是比较危险的. 在Python中,仅推荐在使用mix-in组件制作工具类时使用.</p>
+<h3>27. 多用public属性,少用private属性</h3>
+<p>Python的private保护是一种伪实现,仅仅将属性稍加改名.</p>
 <p>推荐多使用protect属性,作为一种约定的保护.</p>
 <p>只有当子类不受自己控制时,才考虑使用private属性来避免名称冲突</p>
-<h3 id="28-使用collections-abc来实现自己的容器类型"><a href="#28-使用collections-abc来实现自己的容器类型" class="headerlink" title="28. 使用collections.abc来实现自己的容器类型"></a>28. 使用<code>collections.abc</code>来实现自己的容器类型</h3><p>我们都知道,python的内置容器类型,比如list, set等都实现了大量的内置方法.</p>
+<h3>28. 使用<code>collections.abc</code>来实现自己的容器类型</h3>
+<p>我们都知道,python的内置容器类型,比如list, set等都实现了大量的内置方法.</p>
 <p>如果我们想实现自己的容器,如果要支持默认函数,比如len(),print()等.需要实现大量的方法.</p>
 <p>如果继承<code>collections.adc</code>则会将必须实现的加以提示,能使用默认提供的则会使用默认提供的方法.</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>本章我们主要讲了写python函数的一些注意事项.</p>
+<h2>小结</h2>
+<p>本章我们主要讲了写python函数的一些注意事项.</p>
 ]]></content>
     
     <summary type="html">
@@ -1143,11 +942,14 @@
 <blockquote>
 <p>掌握Python基本语法</p>
 </blockquote>
-<a id="more"></a>
-<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>函数几乎是所有语言中的重要组成部分,书中用了一章的内容来介绍更为Pythonic的函数用法.</p>
-<h3 id="14-特殊情况"><a href="#14-特殊情况" class="headerlink" title="14. 特殊情况"></a>14. 特殊情况</h3><p>Python支持catch异常,所以在遇到错误情况时,我们应该主动抛出异常,帮助及时发现问题.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>函数</h2>
+<p>函数几乎是所有语言中的重要组成部分,书中用了一章的内容来介绍更为Pythonic的函数用法.</p>
+<h3>14. 特殊情况</h3>
+<p>Python支持catch异常,所以在遇到错误情况时,我们应该主动抛出异常,帮助及时发现问题.</p>
 <p>而不是返回None或者其他数值,这样会掩盖问题.</p>
-<h3 id="15-闭包"><a href="#15-闭包" class="headerlink" title="15. 闭包"></a>15. 闭包</h3><p>首先我们看看关于闭包的内容:</p>
+<h3>15. 闭包</h3>
+<p>首先我们看看关于闭包的内容:</p>
 <ol>
 <li>闭包是定义在某个作用域的函数</li>
 <li>Python中函数是一级对象,即函数可以被引用,可以赋值给变量,可以当做参数传递给其他函数.</li>
@@ -1157,7 +959,8 @@
 <li>当前函数的作用域</li>
 <li>任何外围作用域(例如, 包含当前函数的其他函数)</li>
 <li>包含当前代码的那个模块的作用域(也叫, 全局作用域)</li>
-<li>内置作用域(即, 包含len及str等函数的作用域).通常而言,我们不会用到这个作用域<br>若上述作用域都没有发现同名的变量,Python将会抛出NameError</li>
+<li>内置作用域(即, 包含len及str等函数的作用域).通常而言,我们不会用到这个作用域
+若上述作用域都没有发现同名的变量,Python将会抛出NameError</li>
 </ol>
 <p>这也就是我们说的LEGB(local,enclosing,global,built-in)</p>
 <p>与之相对的,在给<strong>变量赋值</strong>时,情况大不相同:</p>
@@ -1165,19 +968,25 @@
 <li>若在当前函数作用域已经定义过该变量,则该变量值发生变量.</li>
 <li>若尚未定义过该变量,则这次赋值将视为该变量的定义,其作用域也就是当前函数.</li>
 </ol>
-<p>综合看下,变量的范围问题,我们可以看到在引用变量时,范围逐级向外扩张.但是在变量赋值时,我们会将作用域限死在当前作用域.<br>这主要是防止函数中的局部变量污染其他的作用域.</p>
-<p>那么,如果我非要在局部函数中修改其他作用域的变量呢?<br>在Python3中,可以通过<code>nonlocal</code>关键字修改外围作用域,通过<code>global</code>关键字修改模块的全局作用域.</p>
-<h3 id="16-生成器"><a href="#16-生成器" class="headerlink" title="16. 生成器"></a>16. 生成器</h3><p>在前一篇我们讲过关于列表生成器.对于占用小内存而言,列表生成器确实不错.</p>
+<p>综合看下,变量的范围问题,我们可以看到在引用变量时,范围逐级向外扩张.但是在变量赋值时,我们会将作用域限死在当前作用域.
+这主要是防止函数中的局部变量污染其他的作用域.</p>
+<p>那么,如果我非要在局部函数中修改其他作用域的变量呢?
+在Python3中,可以通过<code>nonlocal</code>关键字修改外围作用域,通过<code>global</code>关键字修改模块的全局作用域.</p>
+<h3>16. 生成器</h3>
+<p>在前一篇我们讲过关于列表生成器.对于占用小内存而言,列表生成器确实不错.</p>
 <p>但是如果数据量较大,那么生成器就是一个更好的选择了.</p>
 <p>生成器会在每次迭代后,再进行计算.</p>
-<h3 id="17-迭代器"><a href="#17-迭代器" class="headerlink" title="17. 迭代器"></a>17. 迭代器</h3><p>在执行类似<code>for x in foo</code>这样的语句时,Python首先会调用<code>iter(foo)</code>.</p>
+<h3>17. 迭代器</h3>
+<p>在执行类似<code>for x in foo</code>这样的语句时,Python首先会调用<code>iter(foo)</code>.</p>
 <p>然后,内置函数<code>iter</code>又会调用<code>foo.__iter__</code>方法.此时该方法必须返回一个迭代器对象.</p>
 <p>返回的迭代器对象则必须实现名为<code>__next__</code>的方法.</p>
 <p>此后,for循环将会在迭代器对象上调用内置的next函数,而该函数则会调用迭代器对象实现的<code>__next__</code>方法.</p>
 <p>直至迭代器对象抛出<code>StopIteration</code>异常.</p>
 <p>在使用迭代器时,务必注意每个迭代器仅能迭代一次.</p>
-<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><p>在函数的使用过程中,参数的使用和传递必然是很重要的.本章使用了4个小节来讲述的各种参数的使用方法</p>
-<h3 id="18-位置参数-星号参数"><a href="#18-位置参数-星号参数" class="headerlink" title="18. 位置参数/星号参数"></a>18. 位置参数/星号参数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">def log(message, *values):</div><div class="line">    if not values:</div><div class="line">        print(message)</div><div class="line">    else:</div><div class="line">        values_str = &apos;, &apos;.join(str(x) for x in values)</div><div class="line">        print(&apos;%s: %s&apos; % (message, values_str))</div><div class="line"></div><div class="line">log(&apos;My numbers are&apos;, 1, 2)</div><div class="line">log(&apos;Hi there&apos;)</div><div class="line">&gt;&gt;&gt;</div><div class="line">My numbers are: 1, 2</div><div class="line">Hi there</div></pre></td></tr></table></figure>
+<h2>参数</h2>
+<p>在函数的使用过程中,参数的使用和传递必然是很重要的.本章使用了4个小节来讲述的各种参数的使用方法</p>
+<h3>18. 位置参数/星号参数</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">def log(message, *values):</div><div class="line">    if not values:</div><div class="line">        print(message)</div><div class="line">    else:</div><div class="line">        values_str = &apos;, &apos;.join(str(x) for x in values)</div><div class="line">        print(&apos;%s: %s&apos; % (message, values_str))</div><div class="line"></div><div class="line">log(&apos;My numbers are&apos;, 1, 2)</div><div class="line">log(&apos;Hi there&apos;)</div><div class="line">&gt;&gt;&gt;</div><div class="line">My numbers are: 1, 2</div><div class="line">Hi there</div></pre></td></tr></table></figure></p>
 <p>可以上面的函数定义中,log函数可以接受不定数量的参数.除了第一个参数,其余参数将会被放到元组<code>values</code>中.</p>
 <p>星号参数在使用中,需要注意两点:</p>
 <ol>
@@ -1185,24 +994,30 @@
 <li>在我们重构log函数时,原先调用log的函数的语句需要重新检查,确保符合我们的预想.</li>
 </ol>
 <p>我个人觉得,星号参数不是特别容易控制.尤其是软件开发周期比较长,经历多次重构后.我个人不推荐使用.</p>
-<h3 id="19-关键字参数"><a href="#19-关键字参数" class="headerlink" title="19. 关键字参数"></a>19. 关键字参数</h3><p>在定义函数和调用函数时,我们可以以关键字的形式给出参数.<br>好处:</p>
+<h3>19. 关键字参数</h3>
+<p>在定义函数和调用函数时,我们可以以关键字的形式给出参数.
+好处:</p>
 <ol>
 <li>在调用参数时,明确参数的含义,不容易发生参数误传.</li>
 <li>在定义函数时,可以给出参数的默认值.</li>
 <li>在重构函数时,很容易和原先的代码兼容.原先调用函数的部分,往往不需要经过修改.</li>
 </ol>
-<h3 id="20-动态默认值的参数"><a href="#20-动态默认值的参数" class="headerlink" title="20. 动态默认值的参数"></a>20. 动态默认值的参数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">def log(message, when=None):</div><div class="line">    when = datetime.now() if when is None else when</div><div class="line">    print(&quot;%s: %s&quot; % (when, message))</div></pre></td></tr></table></figure>
-<p>如果在调用参数时,我们希望参数的值是动态获得的.<br>比如当前的时间戳,那么应当在函数体中获得,而不是通过参数传递.</p>
+<h3>20. 动态默认值的参数</h3>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">def log(message, when=None):</div><div class="line">    when = datetime.now() if when is None else when</div><div class="line">    print(&quot;%s: %s&quot; % (when, message))</div></pre></td></tr></table></figure></p>
+<p>如果在调用参数时,我们希望参数的值是动态获得的.
+比如当前的时间戳,那么应当在函数体中获得,而不是通过参数传递.</p>
 <p>另外需要注意:</p>
 <blockquote>
 <p>参数的默认值,只会在程序加载模块并读到本函数的定义时评估一次.对于{}或[]等动态的值,这可能会导致奇怪的行为.</p>
 </blockquote>
-<h3 id="21-只能以关键字给出参数"><a href="#21-只能以关键字给出参数" class="headerlink" title="21. 只能以关键字给出参数"></a>21. 只能以关键字给出参数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">safe_division_c</span><span class="params">(number, divisor, *,</span></span></div><div class="line">                    ignore_overflow=False, ignore_zero_division=False):</div><div class="line">    ...</div></pre></td></tr></table></figure>
+<h3>21. 只能以关键字给出参数</h3>
+<p><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">safe_division_c</span><span class="params">(number, divisor, *,</span></span></div><div class="line">                    ignore_overflow=False, ignore_zero_division=False):</div><div class="line">    ...</div></pre></td></tr></table></figure></p>
 <p>Python3:</p>
 <blockquote>
 <p>在调用上面的函数时,参数<code>ignore_overflow</code>和<code>ignore_zero_divison</code>将必须以关键字的形式给出.</p>
 </blockquote>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>以上是Effective Python的第二章的总结.</p>
+<h2>小结</h2>
+<p>以上是Effective Python的第二章的总结.</p>
 ]]></content>
     
     <summary type="html">
@@ -1233,54 +1048,71 @@
 <blockquote>
 <p>掌握Python基本语法</p>
 </blockquote>
-<a id="more"></a>
-<h2 id="用Pythonic的方式思考"><a href="#用Pythonic的方式思考" class="headerlink" title="用Pythonic的方式思考"></a>用Pythonic的方式思考</h2><p>Python程序员崇尚美观易读的代码,准则我想大概有两个:</p>
+<p>&lt;!--more--&gt;</p>
+<h2>用Pythonic的方式思考</h2>
+<p>Python程序员崇尚美观易读的代码,准则我想大概有两个:</p>
 <ol>
-<li><p><code>import this</code></p>
+<li><code>import this</code></li>
+</ol>
 <blockquote>
 <p>Python之禅中,每一句都应当时时牢记,并向之接近</p>
 </blockquote>
-</li>
-<li><p>我们都是成年人</p>
+<ol start="2">
+<li>我们都是成年人</li>
+</ol>
 <blockquote>
 <p>Python要求程序员为自己的行为负责,并不赞同在编程时过多地限制行为</p>
 </blockquote>
-</li>
-</ol>
-<h3 id="1-Python版本"><a href="#1-Python版本" class="headerlink" title="1.Python版本"></a>1.Python版本</h3><p>在16年年末看来,Python3毫无疑问是未来的方向和趋势.Python2和Python3的不兼容给Python程序员带来的巨大的麻烦,但程序员不就是要拥抱变化么.</p>
+<h3>1.Python版本</h3>
+<p>在16年年末看来,Python3毫无疑问是未来的方向和趋势.Python2和Python3的不兼容给Python程序员带来的巨大的麻烦,但程序员不就是要拥抱变化么.</p>
 <p>所以尽快地切换到Python3是明智之选</p>
-<h3 id="2-代码风格"><a href="#2-代码风格" class="headerlink" title="2.代码风格"></a>2.代码风格</h3><p>代码风格的重要性毋庸置疑,Python主要遵守PEP8.</p>
+<h3>2.代码风格</h3>
+<p>代码风格的重要性毋庸置疑,Python主要遵守PEP8.</p>
 <p>我目前在编辑器中使用Pylint作为检查工具,只要将Pylint提示的问题都做到心中有数,代码风格应该问题不大.</p>
-<h3 id="3-字符串编码"><a href="#3-字符串编码" class="headerlink" title="3.字符串编码"></a>3.字符串编码</h3><p>Python的编码问题也是老生常谈了,相关文章也很多了,不再赘述.</p>
+<h3>3.字符串编码</h3>
+<p>Python的编码问题也是老生常谈了,相关文章也很多了,不再赘述.</p>
 <p>在Linux环境下,将默认编码统一为<strong>UTF-8</strong>,是一个良好的习惯.</p>
-<h3 id="4-辅助函数"><a href="#4-辅助函数" class="headerlink" title="4.辅助函数"></a>4.辅助函数</h3><p>Python语法支持很多奇异的特性,比如列表生成式等等.过多地滥用这些特性,会把语句写的非常晦涩难懂.</p>
+<h3>4.辅助函数</h3>
+<p>Python语法支持很多奇异的特性,比如列表生成式等等.过多地滥用这些特性,会把语句写的非常晦涩难懂.</p>
 <p>前面我们就提到的Python的原则,代码的易读和美观在Python中是非常重要的.</p>
 <p>所以书中推荐使用辅助函数来替代一些晦涩难懂的语句.</p>
-<h3 id="5-切片操作"><a href="#5-切片操作" class="headerlink" title="5.切片操作"></a>5.切片操作</h3><p>序列,尤其是列表(list)的切割在Python中非常常用,使用方法灵活且安全.</p>
+<h3>5.切片操作</h3>
+<p>序列,尤其是列表(list)的切割在Python中非常常用,使用方法灵活且安全.</p>
 <p>推荐使用</p>
-<h3 id="6-切片操作注意"><a href="#6-切片操作注意" class="headerlink" title="6.切片操作注意"></a>6.切片操作注意</h3><p>在单次切片操作中,不要同时指定start,end,stride.</p>
+<h3>6.切片操作注意</h3>
+<p>在单次切片操作中,不要同时指定start,end,stride.</p>
 <p>这会影响易读性,如果确实需要使用,不如分成两步</p>
-<h3 id="7-列表生成式"><a href="#7-列表生成式" class="headerlink" title="7.列表生成式"></a>7.列表生成式</h3><p>列表生成式(list comprehension)是Python中非常常见的用法</p>
+<h3>7.列表生成式</h3>
+<p>列表生成式(list comprehension)是Python中非常常见的用法</p>
 <p>推荐使用</p>
-<h3 id="8-列表生成式注意"><a href="#8-列表生成式注意" class="headerlink" title="8.列表生成式注意"></a>8.列表生成式注意</h3><p>和切片操作的注意类似,虽然列表生成式支持嵌套,但是不要忘了在Python中代码的易读和美观非常重要.</p>
+<h3>8.列表生成式注意</h3>
+<p>和切片操作的注意类似,虽然列表生成式支持嵌套,但是不要忘了在Python中代码的易读和美观非常重要.</p>
 <p>通常如果列表生成式嵌套不要超过两层</p>
-<h3 id="9-列表生成式无力处理大数据量"><a href="#9-列表生成式无力处理大数据量" class="headerlink" title="9.列表生成式无力处理大数据量"></a>9.列表生成式无力处理大数据量</h3><p>列表生成式会将数据一次性全部载入内存中,对于大数据量而言,这是系统无法承受的.</p>
+<h3>9.列表生成式无力处理大数据量</h3>
+<p>列表生成式会将数据一次性全部载入内存中,对于大数据量而言,这是系统无法承受的.</p>
 <p>所以在遇到大数据量,推荐使用生成器.</p>
-<h3 id="10-使用enumerate取代range"><a href="#10-使用enumerate取代range" class="headerlink" title="10.使用enumerate取代range"></a>10.使用enumerate取代range</h3><p>使用索引访问序列,是C/C++程序员的常规做法.</p>
+<h3>10.使用enumerate取代range</h3>
+<p>使用索引访问序列,是C/C++程序员的常规做法.</p>
 <p>在Python中,我们更加推荐使用enumerate,更加直观.</p>
-<h3 id="11-zip同时遍历两个迭代器"><a href="#11-zip同时遍历两个迭代器" class="headerlink" title="11.zip同时遍历两个迭代器"></a>11.zip同时遍历两个迭代器</h3><p>Python内置的zip函数可以同时遍历多个迭代器,相较于使用下标遍历更为直观.</p>
+<h3>11.zip同时遍历两个迭代器</h3>
+<p>Python内置的zip函数可以同时遍历多个迭代器,相较于使用下标遍历更为直观.</p>
 <p>换言之,Python为程序员提供了很多内置的函数,通常更加高效和直观.</p>
 <p>应当更多地使用内置函数来完成工作.</p>
-<h3 id="12-不要使用for-while-else的组合"><a href="#12-不要使用for-while-else的组合" class="headerlink" title="12.不要使用for/while + else的组合"></a>12.不要使用for/while + else的组合</h3><p><code>for/while/else</code>几乎是所有语言共同的关键字,Python也不例外.</p>
+<h3>12.不要使用for/while + else的组合</h3>
+<p><code>for/while/else</code>几乎是所有语言共同的关键字,Python也不例外.</p>
 <p>但是Python允许for/while分别和else组合,这在其他语言并不常见.</p>
 <p>语法特性比较诡异,如果是掌握多门语言的程序员对此要慎重选择.</p>
-<h3 id="13-try-except-else-finally"><a href="#13-try-except-else-finally" class="headerlink" title="13.try/except/else/finally"></a>13.try/except/else/finally</h3><p>在捕获异常时,同时使用这4种关键字可以达成很强的效果.</p>
+<h3>13.try/except/else/finally</h3>
+<p>在捕获异常时,同时使用这4种关键字可以达成很强的效果.</p>
 <p>应该合理充分利用.</p>
-<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>本章主要讲了Python一些简单的惯用法:</p>
+<h2>小结</h2>
+<p>本章主要讲了Python一些简单的惯用法:</p>
 <ol>
-<li><p>美观易读非常重要.</p>
+<li>
+<p>美观易读非常重要.</p>
 </li>
-<li><p>充分利用Python的语法特性.如果和第一条发生冲突,优先第一条</p>
+<li>
+<p>充分利用Python的语法特性.如果和第一条发生冲突,优先第一条</p>
 </li>
 </ol>
 ]]></content>
@@ -1309,24 +1141,36 @@
     
     <content type="html"><![CDATA[<p>三天打鱼,两天晒网,好尴尬</p>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近在写一个Python的工具,为了使代码清晰易阅读,我分了若干个模块.模块间是有层次关系的,所以此时有必要引入”包(package)”.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>最近在写一个Python的工具,为了使代码清晰易阅读,我分了若干个模块.模块间是有层次关系的,所以此时有必要引入&quot;包(package)&quot;.</p>
 <p>通过一个小的Demo展示了如何在包和模块间互相引用</p>
-<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><p>代码树状图如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">└── relative_import</div><div class="line">    ├── main.py</div><div class="line">    ├── subpackage1</div><div class="line">    │   ├── __init__.py</div><div class="line">    │   ├── module_x.py</div><div class="line">    │   └── module_y.py</div><div class="line">    └── subpackage2</div><div class="line">        ├── __init__.py</div><div class="line">        └── module_z.py</div><div class="line"></div><div class="line">3 directories, 6 files</div></pre></td></tr></table></figure>
-<p>其中main.py是入口,引用关系如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">main--&gt;module_x</div><div class="line">module_x--&gt;module_y</div><div class="line">module_y--&gt;module_z</div></pre></td></tr></table></figure></p>
+<h2>Demo</h2>
+<p>代码树状图如下:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">└── relative_import</div><div class="line">    ├── main.py</div><div class="line">    ├── subpackage1</div><div class="line">    │   ├── __init__.py</div><div class="line">    │   ├── module_x.py</div><div class="line">    │   └── module_y.py</div><div class="line">    └── subpackage2</div><div class="line">        ├── __init__.py</div><div class="line">        └── module_z.py</div><div class="line"></div><div class="line">3 directories, 6 files</div></pre></td></tr></table></figure></p>
+<p>其中main.py是入口,引用关系如下:
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">main--&gt;module_x</div><div class="line">module_x--&gt;module_y</div><div class="line">module_y--&gt;module_z</div></pre></td></tr></table></figure></p>
 <p>我们囊括如下几种情况:</p>
 <ul>
 <li>引用子目录的模块</li>
 <li>引用同级模块</li>
 <li>引用不同目录的模块</li>
 </ul>
-<h3 id="包-Package"><a href="#包-Package" class="headerlink" title="包(Package)"></a>包(Package)</h3><p>包是若干模块的一个集合,一个文件夹变成包的方法就是在其中放入<code>__init__.py</code>文件.在导入包的时候,该文件将会首先执行文件.</p>
+<h3>包(Package)</h3>
+<p>包是若干模块的一个集合,一个文件夹变成包的方法就是在其中放入<code>__init__.py</code>文件.在导入包的时候,该文件将会首先执行文件.</p>
 <p>所以,在我们的代码中,subpackage1和subpackage2是两个包.</p>
-<h3 id="模块-module"><a href="#模块-module" class="headerlink" title="模块(module)"></a>模块(module)</h3><p>模块,简而言之就是一个文件.文件名除去后缀就是模块名了.</p>
-<h3 id="函数和类"><a href="#函数和类" class="headerlink" title="函数和类"></a>函数和类</h3><p>在导入后,使用中是不区分函数和类的.在后面的代码中,我们将会看到.</p>
-<h3 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h3><p>下面是我写的小例子,满足了我开发中的分类需求.<br><a href="https://github.com/chengyi818/kata/tree/master/python/import_module/relative_import" target="_blank" rel="external">github Demo</a><br>在执行了main.py后,将会依次执行module_x,module_y,module_z中的代码.</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="http://blog.csdn.net/leexide/article/details/39908279" target="_blank" rel="external">csdn</a><br><a href="http://www.361way.com/python-import-dif-dir-module/4064.html" target="_blank" rel="external">不同层级导入</a><br><a href="http://codingpy.com/article/python-import-101/" target="_blank" rel="external">python导入模块</a></p>
+<h3>模块(module)</h3>
+<p>模块,简而言之就是一个文件.文件名除去后缀就是模块名了.</p>
+<h3>函数和类</h3>
+<p>在导入后,使用中是不区分函数和类的.在后面的代码中,我们将会看到.</p>
+<h3>示例代码</h3>
+<p>下面是我写的小例子,满足了我开发中的分类需求.
+<a href="https://github.com/chengyi818/kata/tree/master/python/import_module/relative_import" target="_blank" rel="external">github Demo</a>
+在执行了main.py后,将会依次执行module_x,module_y,module_z中的代码.</p>
+<h2>参考资料</h2>
+<p><a href="http://blog.csdn.net/leexide/article/details/39908279" target="_blank" rel="external">csdn</a>
+<a href="http://www.361way.com/python-import-dif-dir-module/4064.html" target="_blank" rel="external">不同层级导入</a>
+<a href="http://codingpy.com/article/python-import-101/" target="_blank" rel="external">python导入模块</a></p>
 ]]></content>
     
     <summary type="html">
@@ -1351,16 +1195,21 @@
     
     <content type="html"><![CDATA[<p>很长一段时间没有更新博客,很惭愧.毫无疑问,写博客是非常好的一个习惯.水滴石穿.</p>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>正如我之前博客中提到过的,我是一个重度vim用户.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>正如我之前博客中提到过的,我是一个重度vim用户.</p>
 <p>如果你也和我一样是个vim爱好者或者是emacs用户,那你想必知道Caps_lock键对我们并没有什么卵用.所以很多用户都会将Caps_lock键和Ctrl对换.</p>
 <p>在Linux中,我们的工具是xmodmap</p>
-<h2 id="xmodmap"><a href="#xmodmap" class="headerlink" title="xmodmap"></a>xmodmap</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>xmodmap是在Linux桌面环境<a href="https://wiki.archlinux.org/index.php/Xorg" target="_blank" rel="external">Xorg</a>中用于修改按键映射关系的工具.</p>
+<h2>xmodmap</h2>
+<h3>介绍</h3>
+<p>xmodmap是在Linux桌面环境<a href="https://wiki.archlinux.org/index.php/Xorg" target="_blank" rel="external">Xorg</a>中用于修改按键映射关系的工具.</p>
 <p>在每次按下键盘时,Linux内核都会生成一个Code.Code同keycodes表比较,然后决定按下的是什么.</p>
 <p>而Xorg使用自己的Keycodes表来参与这个过程.每一个Keycode可以调用一系列keysym.一个keysym就像一个function被Keycode调用执行.</p>
 <p>我们并不能改变每个按键对应的keycode,但是我们可以通过Xmodmap来编辑keycode-keysym的对应关系。</p>
 <p>说了那么多,那么什么是keymap表呢?下面我们来看看.</p>
-<h3 id="keymap表"><a href="#keymap表" class="headerlink" title="keymap表"></a>keymap表</h3><h4 id="查看完整keymap表"><a href="#查看完整keymap表" class="headerlink" title="查看完整keymap表"></a>查看完整keymap表</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ xmodmap -pke</div><div class="line">keycode 57 = n N</div></pre></td></tr></table></figure>
+<h3>keymap表</h3>
+<h4>查看完整keymap表</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ xmodmap -pke</div><div class="line">keycode 57 = n N</div></pre></td></tr></table></figure></p>
 <p>每条Keymap之后都跟随要被映射的keysyms.下面的例子表明keycode 57被映射到小写n,同时大写N映射于57 + Shift.</p>
 <p>每个keysym列都对应指定的键组合:</p>
 <ol>
@@ -1372,19 +1221,28 @@
 <li>AltGr+Shift+Key</li>
 </ol>
 <p>在keysym组合没有被指定时,使用NoSymbol代替.</p>
-<h4 id="查看按键对应的keymap表"><a href="#查看按键对应的keymap表" class="headerlink" title="查看按键对应的keymap表"></a>查看按键对应的keymap表</h4><p>上面我们知道如何查看完整的keymap表.如果我想知道具体某个键的keymap信息呢?</p>
-<p>执行如下命令后,再按下键盘上的按键,将逐条显示对应的keymap表:keycode值 keysyms.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xev | awk -F&apos;[ ) ]+&apos; &apos;/^KeyPress/ &#123; a[NR+2]  &#125; NR in a &#123; printf &quot;%-3s %s\n&quot;, $5, $8  &#125;&apos;</div></pre></td></tr></table></figure></p>
-<h4 id="处理方法列表"><a href="#处理方法列表" class="headerlink" title="处理方法列表"></a>处理方法列表</h4><p>以Linux Mint为例:处理方法列表放在<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/include/X11/keysymdef.h</div></pre></td></tr></table></figure></p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>上面说了辣么多,下面我们看看如何使用xmodmap改变我们的映射关系.</p>
-<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><p>一般步骤分为以下两步:</p>
-<pre><code>1. 修改`.Xmodmap`
-2. 修改`~/.xinitrc`
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">f [ -f $HOME/.Xmodmap  ]; then</div><div class="line">    /usr/bin/xmodmap $HOME/.Xmodmap</div><div class="line">fi</div></pre></td></tr></table></figure>
-</code></pre><p>下面我们来看下具体的例子.</p>
-<h4 id="交换Caps-lock和左Ctrl的位置"><a href="#交换Caps-lock和左Ctrl的位置" class="headerlink" title="交换Caps_lock和左Ctrl的位置"></a>交换Caps_lock和左Ctrl的位置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">!</div><div class="line">! Swap Caps_Lock and Control_L</div><div class="line">!</div><div class="line">remove Lock = Caps_Lock</div><div class="line">remove Control = Control_L</div><div class="line">keysym Control_L = Caps_Lock</div><div class="line">keysym Caps_Lock = Control_L</div><div class="line">add Lock = Caps_Lock</div><div class="line">add Control = Control_L</div></pre></td></tr></table></figure>
-<h4 id="交换backslash和BackSpace"><a href="#交换backslash和BackSpace" class="headerlink" title="交换backslash和BackSpace"></a>交换backslash和BackSpace</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">keycode 22 = backslash bar backslash bar</div><div class="line">keycode 51 = BackSpace BackSpace BackSpace BackSpace</div></pre></td></tr></table></figure>
-<p>我们甚至可以通过xmodmap来改变鼠标的映射关系.有兴趣的可以阅读我们的<a href="### 参考链接">参考链接</a></p>
-<h3 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h3><p>笔力有限,甚是惭愧.精心筛选,值得一读.</p>
+<h4>查看按键对应的keymap表</h4>
+<p>上面我们知道如何查看完整的keymap表.如果我想知道具体某个键的keymap信息呢?</p>
+<p>执行如下命令后,再按下键盘上的按键,将逐条显示对应的keymap表:keycode值 keysyms.
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xev | awk -F&apos;[ ) ]+&apos; &apos;/^KeyPress/ &#123; a[NR+2]  &#125; NR in a &#123; printf &quot;%-3s %s\n&quot;, $5, $8  &#125;&apos;</div></pre></td></tr></table></figure></p>
+<h4>处理方法列表</h4>
+<p>以Linux Mint为例:处理方法列表放在
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/usr/include/X11/keysymdef.h</div></pre></td></tr></table></figure></p>
+<h3>语法</h3>
+<p>上面说了辣么多,下面我们看看如何使用xmodmap改变我们的映射关系.</p>
+<h3>Example</h3>
+<p>一般步骤分为以下两步:
+1. 修改<code>.Xmodmap</code>
+2. 修改<code>~/.xinitrc</code>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">f [ -f $HOME/.Xmodmap  ]; then</div><div class="line">    /usr/bin/xmodmap $HOME/.Xmodmap</div><div class="line">fi</div></pre></td></tr></table></figure></p>
+<p>下面我们来看下具体的例子.</p>
+<h4>交换Caps_lock和左Ctrl的位置</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">!</div><div class="line">! Swap Caps_Lock and Control_L</div><div class="line">!</div><div class="line">remove Lock = Caps_Lock</div><div class="line">remove Control = Control_L</div><div class="line">keysym Control_L = Caps_Lock</div><div class="line">keysym Caps_Lock = Control_L</div><div class="line">add Lock = Caps_Lock</div><div class="line">add Control = Control_L</div></pre></td></tr></table></figure></p>
+<h4>交换backslash和BackSpace</h4>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">keycode 22 = backslash bar backslash bar</div><div class="line">keycode 51 = BackSpace BackSpace BackSpace BackSpace</div></pre></td></tr></table></figure></p>
+<p>我们甚至可以通过xmodmap来改变鼠标的映射关系.有兴趣的可以阅读我们的[参考链接](### 参考链接)</p>
+<h3>参考链接</h3>
+<p>笔力有限,甚是惭愧.精心筛选,值得一读.</p>
 <ul>
 <li><a href="http://man.cx/xmodmap" target="_blank" rel="external">Linux man手册</a></li>
 <li><a href="http://blog.csdn.net/robertsong2004/article/details/36439597" target="_blank" rel="external">xmodmap使用指南</a></li>
@@ -1417,17 +1275,21 @@
 <hr>
 <p>chrome是一个非常强大的工具,可能很快就要成为市占率第一的浏览器了.</p>
 <p>本周我们来看看chrome的一些不广为人知的功能.</p>
-<a id="more"></a>
-<h2 id="搜索技巧"><a href="#搜索技巧" class="headerlink" title="搜索技巧"></a>搜索技巧</h2><p>这一项严格来讲不属于chrome的范畴.不过google搜索对于程序员而言,真的太重要了.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>搜索技巧</h2>
+<p>这一项严格来讲不属于chrome的范畴.不过google搜索对于程序员而言,真的太重要了.</p>
 <p>我就不再这里班门弄斧了,这三篇教程都非常不错.急性子的同学看第一篇即可.</p>
 <p>我个人特别喜欢其中的的搜索引擎定制部分,装逼最合适不错.</p>
 <p><a href="http://mp.weixin.qq.com/s?__biz=MjM5OTMxMzA4NQ==&amp;mid=406465058&amp;idx=2&amp;sn=ba35bba4821ba6072e106f2f89851ac8&amp;scene=1&amp;srcid=0215XTZLHdPZ3jVjb6Nq3HUX#rd" target="_blank" rel="external">快速上手</a></p>
 <p><a href="http://v.youku.com/v_show/id_XMTgzNzA4Nzky.html#paction" target="_blank" rel="external">优酷视频</a></p>
 <p><a href="http://www.williamlong.info/archives/728.html" target="_blank" rel="external">搜索功能详细说明</a></p>
-<h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><p><a href="http://mp.weixin.qq.com/s?__biz=MjM5OTMxMzA4NQ==&amp;mid=407968030&amp;idx=2&amp;sn=9ebf21ec0701b836d198caf5809ce04f&amp;scene=1&amp;srcid=0324tMgqsVRSHeVMPGOQiskl#rd" target="_blank" rel="external">这里</a>介绍了chrome的一些小特性,帮助大家使用chrome的时候,更加得心应手.</p>
-<h2 id="开发者工具"><a href="#开发者工具" class="headerlink" title="开发者工具"></a>开发者工具</h2><p>众所周知,chrome拥有非常强大的开发调试工具,快捷键F12.</p>
+<h2>小技巧</h2>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5OTMxMzA4NQ==&amp;mid=407968030&amp;idx=2&amp;sn=9ebf21ec0701b836d198caf5809ce04f&amp;scene=1&amp;srcid=0324tMgqsVRSHeVMPGOQiskl#rd" target="_blank" rel="external">这里</a>介绍了chrome的一些小特性,帮助大家使用chrome的时候,更加得心应手.</p>
+<h2>开发者工具</h2>
+<p>众所周知,chrome拥有非常强大的开发调试工具,快捷键F12.</p>
 <p>我不是前端开发人员,对其知之甚少.有兴趣的同学可以到网上搜索相关资料.</p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>chrome是我非常喜欢的浏览器.虽然它也有一些缺点,但是瑕不掩瑜,希望大家可以充分发挥这个重磅武器的威力.</p>
+<h2>尾记</h2>
+<p>chrome是我非常喜欢的浏览器.虽然它也有一些缺点,但是瑕不掩瑜,希望大家可以充分发挥这个重磅武器的威力.</p>
 ]]></content>
     
     <summary type="html">
@@ -1436,6 +1298,8 @@
 &lt;hr&gt;
 &lt;p&gt;chrome是一个非常强大的工具,可能很快就要成为市占率第一的浏览器了.&lt;/p&gt;
 &lt;p&gt;本周我们来看看chrome的一些不广为人知的功能.&lt;/p&gt;
+&lt;p&gt;&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+&lt;h
     
     </summary>
     
@@ -1456,7 +1320,7 @@
     <content type="html"><![CDATA[<p>本周因为搬家,实在太忙,请假一周.</p>
 <p>以后吸取教训了,至少要有一周的备稿:)</p>
 <hr>
-<a id="more"></a>
+<p>&lt;!--more--&gt;</p>
 ]]></content>
     
     <summary type="html">
@@ -1464,9 +1328,416 @@
       &lt;p&gt;本周因为搬家,实在太忙,请假一周.&lt;/p&gt;
 &lt;p&gt;以后吸取教训了,至少要有一周的备稿:)&lt;/p&gt;
 &lt;hr&gt;
+&lt;p&gt;&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>我的chrome_插件篇</title>
+    <link href="http://yitinglove.cn/blog/2016/04/09/%E6%88%91%E7%9A%84chrome_%E6%8F%92%E4%BB%B6%E7%AF%87/"/>
+    <id>http://yitinglove.cn/blog/2016/04/09/我的chrome_插件篇/</id>
+    <published>2016-04-08T16:00:00.000Z</published>
+    <updated>2017-11-25T13:35:30.443Z</updated>
+    
+    <content type="html"><![CDATA[<p>本周是成胖子每周一博的第十七周 :smile:</p>
+<hr>
+<h2>1.前言</h2>
+<p>以前曾经看过一期王自如的评测节目,里面提到用chrome是一种情怀.我虽然以前知道chrome很强大,但是一直没有时间好好搜集学习下.</p>
+<p>&lt;!--more--&gt;</p>
+<p>最近刚好有点时间,稍微整理了一下,把我用的感觉还不错的一些插件罗列一下,以供参考.</p>
+<p>插件由两部分组成,一部分来自<a href="https://chrome.google.com/webstore/categories/apps?hl=en-US" target="_blank" rel="external">chrome web store</a>,另外一部分来自<a href="https://greasyfork.org/zh-CN" target="_blank" rel="external">Greasy Fork</a>的脚本库</p>
+<h2>2.系统优化</h2>
+<h3>2.1 基础必备</h3>
+<p><a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="external">Tampermonkey</a></p>
+<blockquote>
+<p>油猴,非常强大的脚本管理工具,必备.</p>
+</blockquote>
+<h3>2.2 插件管理</h3>
+<p>推荐<a href="https://chrome.google.com/webstore/detail/context/aalnjolghjkkogicompabhhbbkljnlka?hl=en-US" target="_blank" rel="external">context</a>+<a href="https://chrome.google.com/webstore/detail/extension-automation/ghopjgdkodchjclkkfdekhjfomdbakkb" target="_blank" rel="external">Extension Automation</a></p>
+<blockquote>
+<p>好用的插件太多,为了避免浪费内存需要按场景管理.</p>
+</blockquote>
+<p>前者按自定义的场景启动插件,后者按域名定制.对于插件重度使用者非常合适.</p>
+<p>插件轻度使用者还可以考虑<a href="https://chrome.google.com/webstore/detail/%E4%B8%80%E9%94%AE%E7%AE%A1%E7%90%86%E6%89%80%E6%9C%89%E6%89%A9%E5%B1%95/niemebbfnfbjfojajlmnbiikmcpjkkja?hl=zh-CN" target="_blank" rel="external">一键管理所有扩展插件</a></p>
+<h3>2.3 内存优化</h3>
+<p>推荐<a href="http://36kr.com/p/201819.html" target="_blank" rel="external">onetab</a></p>
+<blockquote>
+<p>chrome比较吃内存,这下妈妈再也不用担心我的内存不足了.</p>
+</blockquote>
+<p>其他可选:</p>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/panicbutton/faminaibgiklngmfpfbhmokfmnglamcm?hl=en-US" target="_blank" rel="external">panicbutton</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg" target="_blank" rel="external">The Great Suspender</a></li>
+</ul>
+<h3>2.4 安全</h3>
+<h4>2.4.1 密码管理</h4>
+<p>推荐<a href="https://chrome.google.com/webstore/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en-US" target="_blank" rel="external">LastPass</a></p>
+<blockquote>
+<p>这是你需要记住的最后一个密码</p>
+</blockquote>
+<p>其他可选<a href="https://chrome.google.com/webstore/detail/1password-password-manage/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en-US" target="_blank" rel="external">1password</a></p>
+<h4>2.4.2 防捆绑下载</h4>
+<p>推荐<a href="https://greasyfork.org/zh-CN/scripts/4294-antiadware" target="_blank" rel="external">AntiAdware</a></p>
+<blockquote>
+<p>妈妈再也不用担心我不小心下载了流氓软件了</p>
+</blockquote>
+<h3>2.5 去广告</h3>
+<h4>2.5.1 视频去广告</h4>
+<p>推荐<a href="https://greasyfork.org/zh-CN/scripts/16349-onens-clean-player" target="_blank" rel="external">Onens.Clean.Player</a></p>
+<blockquote>
+<p>去除优酷,爱奇艺等各种视频网站的广告</p>
+</blockquote>
+<h4>2.5.2 网页广告和隐私保护</h4>
+<p>推荐<a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?utm_source=chrome-app-launcher-info-dialog" target="_blank" rel="external">ublock origin</a></p>
+<blockquote>
+<p>去掉广告本身也有网页加速的&quot;副作用&quot;</p>
+</blockquote>
+<p>其他可选:</p>
+<ul>
+<li>
+<p>网页广告:<a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb?hl=en-US" target="_blank" rel="external">Adblock Plus</a></p>
+</li>
+<li>
+<p>隐私保护:<a href="https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij/related?hl=en-US" target="_blank" rel="external">Ghostery</a></p>
+</li>
+</ul>
+<h4>2.5.3 去百度推广</h4>
+<p>推荐<a href="https://greasyfork.org/zh-CN/scripts/13808-purify-baidu-search" target="_blank" rel="external">Purify Baidu Search</a></p>
+<h3>2.6 快速跳转</h3>
+<p>baidu和google搜索后,往往会重定向,比较耽误时间.</p>
+<ul>
+<li>
+<p><a href="https://greasyfork.org/en/scripts/568-direct-google" target="_blank" rel="external">google跳转</a></p>
+</li>
+<li>
+<p><a href="https://greasyfork.org/zh-CN/scripts/558-direct-baidu" target="_blank" rel="external">baidu跳转</a></p>
+</li>
+</ul>
+<h2>3.学习工作</h2>
+<h3>3.1 RSS</h3>
+<p><a href="https://chrome.google.com/webstore/detail/rss-feed-reader/pnjaodmkngahhkoihejjehlcdlnohgmp?hl=en-US" target="_blank" rel="external">RSS Feed Reader</a></p>
+<h3>3.2 谷歌服务</h3>
+<p><a href="https://chrome.google.com/webstore/detail/black-menu-for-google/eignhdfgaldabilaaegmdfbajngjmoke" target="_blank" rel="external">black menu</a></p>
+<blockquote>
+<p>google所有服务大集合,用起来还挺方便的</p>
+</blockquote>
+<h3>3.3 github</h3>
+<p><a href="https://github.com/buunguyen/octotree" target="_blank" rel="external">Octoree</a></p>
+<blockquote>
+<p>github使用者强烈推荐,查看代码非常方便.</p>
+</blockquote>
+<p><a href="https://chrome.google.com/webstore/detail/isometric-contributions/mjoedlfflcchnleknnceiplgaeoegien" target="_blank" rel="external">Isometric Contributions</a></p>
+<blockquote>
+<p>装逼利器,查看代码提交记录</p>
+</blockquote>
+<h3>3.4 阅读</h3>
+<p><a href="http://pan.baidu.com/s/1pL27qgr" target="_blank" rel="external">Clearly</a></p>
+<blockquote>
+<p>evernote出品的,让你的网页阅读更清净.现在已经不再支持,这里是我的网盘的链接</p>
+</blockquote>
+<p><a href="https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj" target="_blank" rel="external">Save to Pocket</a></p>
+<blockquote>
+<p>配合Pocket App使用,谁用谁知道</p>
+</blockquote>
+<p><a href="https://chrome.google.com/webstore/detail/wiznote-web-clipper/jfanfpmalehkemdiiebjljddhgojhfab?hl=en-US" target="_blank" rel="external">Wiznote Web Clipper</a></p>
+<blockquote>
+<p>为知笔记,网页剪报</p>
+</blockquote>
+<p>其他可选:</p>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/diigo-web-collector-captu/pnhplgjpclknigjpccbcnmicgcieojbh?hl=en-US" target="_blank" rel="external">diigo</a>: Pocket功能增强版,可惜我用不上</li>
+</ul>
+<h3>3.5 时间管理</h3>
+<p><a href="https://chrome.google.com/webstore/detail/pomotodo/algakdpepofkajponmledaldoloboinf?hl=en-US" target="_blank" rel="external">pomotodo</a></p>
+<h3>3.6 翻译</h3>
+<p><a href="https://chrome.google.com/webstore/detail/auto-translate/obgoiaeapddkeekbocomnjlckbbfapmk" target="_blank" rel="external">Auto-Translate</a></p>
+<p>其他可选:</p>
+<ul>
+<li>前面谷歌合集中,很容易打开谷歌翻译</li>
+</ul>
+<h3>3.7 图片</h3>
+<h4>3.7.1 截图</h4>
+<p><a href="https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj?hl=en-US" target="_blank" rel="external">Awesome screenshot</a></p>
+<blockquote>
+<p>网页截图神器,还可以做点简单的修改,挺不错的.</p>
+</blockquote>
+<h4>3.7.2 图床</h4>
+<p><a href="https://chrome.google.com/webstore/detail/%E6%96%B0%E6%B5%AA%E5%BE%AE%E5%8D%9A%E5%9B%BE%E5%BA%8A/fdfdnfpdplfbbnemmmoklbfjbhecpnhf?hl=en-US" target="_blank" rel="external">新浪微博图床</a></p>
+<p>其他可选:</p>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/%E5%9B%B4%E8%84%96%E6%98%AF%E4%B8%AA%E5%A5%BD%E5%9B%BE%E5%BA%8A/pngmcllbdfgmhdgnnpfaciaolgbjplhe?hl=en-US" target="_blank" rel="external">围脖是个好图床</a></li>
+</ul>
+<h4>3.7.3 批量下载</h4>
+<p><a href="https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf" target="_blank" rel="external">Fatkun图片批量下载</a></p>
+<h2>4.社交娱乐</h2>
+<h3>4.1 视频</h3>
+<p><a href="https://chrome.google.com/webstore/detail/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9%E5%8A%A9%E6%89%8B%EF%BC%9Abilibilicom-%E7%BB%BC%E5%90%88%E8%BE%85%E5%8A%A9%E6%89%A9%E5%B1%95/kpbnombpnpcffllnianjibmpadjolanh?hl=en-US" target="_blank" rel="external">blibli助手</a></p>
+<blockquote>
+<p>喜欢B站的同志,可以试试</p>
+</blockquote>
+<p><a href="https://greasyfork.org/en/scripts/9932-youtube" target="_blank" rel="external">youtube+</a></p>
+<blockquote>
+<p>油管的增强</p>
+</blockquote>
+<h3>4.2 音乐</h3>
+<p><a href="https://greasyfork.org/zh-CN/scripts/10582-%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E9%AB%98%E9%9F%B3%E8%B4%A8%E6%94%AF%E6%8C%81" target="_blank" rel="external">网易云音乐高音质支持</a></p>
+<blockquote>
+<p>网页版的网易云音乐默认为96kbit/s.安装插件后,调整为320kbit/s.</p>
+</blockquote>
+<h3>4.3 购物</h3>
+<p><a href="https://chrome.google.com/webstore/detail/%E6%83%A0%E6%83%A0%E8%B4%AD%E7%89%A9%E5%8A%A9%E6%89%8B/ohjkicjidmohhfcjjlahfppkdblibkkb?hl=en-US" target="_blank" rel="external">惠惠购物助手</a></p>
+<blockquote>
+<p>比比价格,最好使用前面提到的automation按域名打开.</p>
+</blockquote>
+<h2>5.界面美化</h2>
+<h3>5.1标签页</h3>
+<p><a href="https://chrome.google.com/webstore/detail/dream-afar-new-tab/henmfoppjjkcencpbjaigfahdjlgpegn?hl=en-US" target="_blank" rel="external">Dream Afar New Tab</a></p>
+<p>其他可选:</p>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca" target="_blank" rel="external">Momentum</a></li>
+</ul>
+<blockquote>
+<p>这个功能更丰富,可惜我用不到.还是更喜欢上面个简洁一些.</p>
+</blockquote>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/speed-dial-2/jpfpebmajhhopeonhlcgidhclcccjcik?hl=en-US" target="_blank" rel="external">Speed Dial 2</a></li>
+</ul>
+<blockquote>
+<p>在标签页管理收藏夹,UI清新简洁的.</p>
+</blockquote>
+<h3>5.2滚动条</h3>
+<p><a href="https://chrome.google.com/webstore/detail/scroll-style/lcfiapjcgfnalnpmgfoebehefdeekado" target="_blank" rel="external">scroll style</a></p>
+<blockquote>
+<p>自动隐藏滚动条</p>
+</blockquote>
+<p><a href="https://chrome.google.com/webstore/detail/smoothscroll/nbokbjkabcmbfdlbddjidfmibcpneigj" target="_blank" rel="external">SmoothScroll</a></p>
+<blockquote>
+<p>平滑滚动</p>
+</blockquote>
+<h3>5.3下一页</h3>
+<p><a href="chrome-extension://dhdgffkkebhmkfjojejmpbldmpobfkfo/ask.html?aid=505e6f05-5c96-4eaa-a7fe-30e9bb20130b" target="_blank" rel="external">Super_preloaderPlus_one</a></p>
+<blockquote>
+<p>自动读取下一页</p>
+</blockquote>
+<p>其他可选:</p>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/autopagerize/igiofjhpmpihnifddepnpngfjhkfenbp?hl=en-US" target="_blank" rel="external">AutoPagerize</a></li>
+</ul>
+<h3>5.4关键词</h3>
+<p><a href="https://chrome.google.com/webstore/detail/word-highlight/ooabkmkhabkahcjbgpiajffckeibpdoa?hl=en" target="_blank" rel="external">word highlight</a></p>
+<blockquote>
+<p>搜索的关键词高亮</p>
+</blockquote>
+<h2>6.快捷操作</h2>
+<h3>6.1 鼠标</h3>
+<p><a href="https://chrome.google.com/webstore/detail/yet-another-drag-and-go/hnoonkgmmnklbdehoepdjcidhjbncjmi?hl=en-US" target="_blank" rel="external">Yet Another Drag and Go</a></p>
+<blockquote>
+<p>鼠标的拖拽功能增强</p>
+</blockquote>
+<p><a href="https://chrome.google.com/webstore/detail/crxmouse-chrome-gestures/jlgkpaicikihijadgifklkbpdajbkhjo?hl=en-US" target="_blank" rel="external">crxMouse Chrome Gestures</a></p>
+<blockquote>
+<p>鼠标手势</p>
+</blockquote>
+<h3>6.2 键盘</h3>
+<p><a href="https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb" target="_blank" rel="external">Vimium</a></p>
+<blockquote>
+<p>大爱,强烈推荐.装逼神器</p>
+</blockquote>
+<h3>6.3 以图搜图</h3>
+<p><a href="https://greasyfork.org/en/scripts/2998-search-by-image" target="_blank" rel="external">Search By Image</a></p>
+<p>其他可选:</p>
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/search-by-image-by-google/dajedkncpodkggklbegccjpmnglmnflm" target="_blank" rel="external">Search by Image (by Google)</a></li>
+</ul>
+<h2>7.下载</h2>
+<h3>7.1下载管理器</h3>
+<p><a href="https://chrome.google.com/webstore/detail/download-manager/daoidaoebhfcgccdpgjjcbdginkofmfe/reviews" target="_blank" rel="external">下载管理器</a></p>
+<blockquote>
+<p>我很讨厌,默认的下载条.安装插件后,下载管理类似firefox</p>
+</blockquote>
+<h3>7.2资源</h3>
+<p><a href="https://chrome.google.com/webstore/detail/%E8%BF%85%E9%9B%B7%E3%80%81qq%E6%97%8B%E9%A3%8E-%E9%93%BE%E6%8E%A5%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2app/kpcjhgihkjbhglamhcjpaidnlniphdic" target="_blank" rel="external">迅雷、快车、旋风专用链自动破解</a></p>
+<p><a href="https://greasyfork.org/en/scripts/1317-download-youtube-videos-as-mp4" target="_blank" rel="external">Download YouTube Videos as MP4</a></p>
+<p><a href="https://greasyfork.org/zh-CN/scripts/2510-%E4%B8%8B%E8%BD%BD%E4%B8%80%E9%94%AE%E9%80%9A" target="_blank" rel="external">下载一键通</a></p>
+<p><a href="https://greasyfork.org/zh-CN/scripts/496-%E7%99%BE%E5%BA%A6%E4%BA%91%E6%8F%92%E4%BB%B6-apikey" target="_blank" rel="external">百度云插件+APIKey</a></p>
+<blockquote>
+<p>总之,就是各种资源.你懂得</p>
+</blockquote>
+<h3>7.3百度云</h3>
+<p><a href="https://greasyfork.org/zh-CN/scripts/17083-%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E5%8A%A9%E6%89%8B-%E6%94%B9" target="_blank" rel="external">百度网盘助手•改</a></p>
+<blockquote>
+<p>破解百度云的下载限制</p>
+</blockquote>
+<p><a href="https://chrome.google.com/webstore/detail/%E7%99%BE%E5%BA%A6%E4%BA%91%E7%BD%91%E7%9B%98%E7%A6%BB%E7%BA%BF%E4%B8%8B%E8%BD%BD/pfkppcfegdgjijjijpinlmobpgliikkj" target="_blank" rel="external">百度云网盘离线下载</a></p>
+<p><a href="https://greasyfork.org/zh-CN/scripts/13463-%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%86%99%E5%AF%86%E7%A0%81-%E5%A2%9E%E5%BC%BA%E7%89%88" target="_blank" rel="external">网盘自动填写密码</a></p>
+<blockquote>
+<p>直接搞出提取密码..</p>
+</blockquote>
+<h2>8.黑科技</h2>
+<h3>8.1邮件追踪</h3>
+<p><a href="https://chrome.google.com/webstore/detail/%E8%84%89%E5%8F%AF%E5%AF%BB-%E9%82%AE%E4%BB%B6%E8%BF%BD%E8%B8%AA/aomgchcgfmlmkicjdghaipodnakhdndo" target="_blank" rel="external">邮件打开追踪器</a></p>
+<h3>8.2翻墙</h3>
+<p><a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?hl=en-US" target="_blank" rel="external">Proxy SwitchyOmega</a></p>
+<h3>8.3网页限制</h3>
+<p><a href="https://greasyfork.org/zh-CN/scripts/14146-%E7%BD%91%E9%A1%B5%E9%99%90%E5%88%B6%E8%A7%A3%E9%99%A4" target="_blank" rel="external">网页限制解除</a></p>
+<blockquote>
+<p>通杀大部分网站，可以解除禁止复制、剪切、选择文本、右键菜单的限制。</p>
+</blockquote>
+<h3>8.4护眼</h3>
+<p><a href="https://greasyfork.org/zh-CN/scripts/14716-%E6%8A%A4%E7%9C%BC%E8%84%9A%E6%9C%AC" target="_blank" rel="external">护眼脚本</a></p>
+<blockquote>
+<p>保护我的钛合金狗眼..</p>
+</blockquote>
+<h3>8.5贴吧</h3>
+<p><a href="https://greasyfork.org/zh-CN/scripts/14151-baidu-tieba-no-login" target="_blank" rel="external">百度贴吧：不登录即可看贴</a></p>
+<h2>9.其他</h2>
+<h3>9.1懒得弄</h3>
+<p><a href="https://chrome.google.com/webstore/detail/pushbullet/chlffgpmiacpedhhbkiomidkjlcfhogd" target="_blank" rel="external">Pushbullet</a></p>
+<blockquote>
+<p>PC和手机间互传消息文件,可能刚开始需要翻墙.</p>
+</blockquote>
+<h3>9.2开发者</h3>
+<p>chrome下有大量开发者相关的插件,我不做网页开发.有需要的同学,自己去找找.</p>
+<h2>尾记</h2>
+<blockquote>
+<p>使用chrome是一种情怀</p>
+</blockquote>
+<p>chrome明明可以是个猛虎,玩成小猫就没啥意思了.如果有浏览到这里的同学不妨试试看.有其他好的插件,欢迎给我留言.</p>
+<p>下周再见 :wave:</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本周是成胖子每周一博的第十七周 :smile:&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;1.前言&lt;/h2&gt;
+&lt;p&gt;以前曾经看过一期王自如的评测节目,里面提到用chrome是一种情怀.我虽然以前知道chrome很强大,但是一直没有时间好好搜集学习下.&lt;/p&gt;
+&lt;p&gt;&amp;lt;!--more-
+    
+    </summary>
+    
+      <category term="工具" scheme="http://yitinglove.cn/blog/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="tool" scheme="http://yitinglove.cn/blog/tags/tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工具说_窗口管理器i3实用软件</title>
+    <link href="http://yitinglove.cn/blog/2016/04/02/%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8i3%E7%BB%AD/"/>
+    <id>http://yitinglove.cn/blog/2016/04/02/窗口管理器i3续/</id>
+    <published>2016-04-01T16:00:00.000Z</published>
+    <updated>2017-11-25T13:35:30.443Z</updated>
+    
+    <content type="html"><![CDATA[<p>本周是成胖子每周一博的第十六周 :smile:</p>
+<hr>
+<h2>前言</h2>
+<p>使用i3一周了,感觉还不错.下图是我目前的桌面.</p>
+<p><img src="http://ww1.sinaimg.cn/large/006kvZhRgw1f2dkku1ztoj30zk0qotai.jpg" alt="桌面"></p>
+<p>三个显示器全部接在同一台电脑上,大部分操作由键盘完成.</p>
+<p>实际使用中,我们还需要一些辅助的软件.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>工具软件</h2>
+<h2>分屏xrandr</h2>
+<p>i3wm的分屏是通过<code>xrandr</code>来完成的.</p>
+<p>查看显示器的信息:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">$xrandr</div><div class="line">Screen 0: minimum 320 x 200, current 5120 x 1080, maximum 32767 x 32767</div><div class="line">eDP1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 282mm x 165mm</div><div class="line">   1920x1080      60.0*+   59.9     40.0  </div><div class="line">   1680x1050      60.0     59.9  </div><div class="line">   1600x1024      60.2  </div><div class="line">   1400x1050      60.0  </div><div class="line">   1280x1024      60.0  </div><div class="line">   1440x900       59.9  </div><div class="line">   1280x960       60.0  </div><div class="line">   1360x768       59.8     60.0  </div><div class="line">   1152x864       60.0  </div><div class="line">   1024x768       60.0  </div><div class="line">   800x600        60.3     56.2  </div><div class="line">   640x480        59.9  </div><div class="line">VGA1 connected primary 1600x900+1920+0 (normal left inverted right x axis y axis) 442mm x 249mm</div><div class="line">   1600x900       60.0*+</div><div class="line">   1280x1024      75.0     60.0  </div><div class="line">   1440x900       59.9  </div><div class="line">   1024x768       75.1     70.1     60.0  </div><div class="line">   832x624        74.6  </div><div class="line">   800x600        72.2     75.0     70.0     60.3     56.2  </div><div class="line">   640x480        75.0     72.8     66.7     60.0  </div><div class="line">   720x400        70.1  </div><div class="line">HDMI1 connected 1600x900+3520+0 (normal left inverted right x axis y axis) 442mm x 249mm</div><div class="line">   1600x900       60.0*+</div><div class="line">   1280x1024      75.0     60.0  </div><div class="line">   1440x900       59.9  </div><div class="line">   1280x720       60.0     59.9  </div><div class="line">   1024x768       75.1     70.1     60.0  </div><div class="line">   832x624        74.6  </div><div class="line">   800x600        72.2     75.0     70.0     60.3     56.2  </div><div class="line">   640x480        75.0     72.8     66.7     60.0     59.9  </div><div class="line">   720x400        70.1</div></pre></td></tr></table></figure></p>
+<p>可以看到我的三块屏幕从左向右分别是:eDP1,VGA1和HDMI1.</p>
+<p>调整的命令如下:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$xrandr --output eDP1 --mode 1920x1080 --pos 0x0 --output VGA1 --primary --mode 1600x900 --pos 1920x0 --output HDMI1 --mode 1600x900 --pos 3520x0</div></pre></td></tr></table></figure></p>
+<p>命令需要根据实际需要适当调整,其中:</p>
+<p>--mode:</p>
+<blockquote>
+<p>控制分辨率</p>
+</blockquote>
+<p>--pos:</p>
+<blockquote>
+<p>控制窗口的位置,注意这个位置是需要自己经过计算的.</p>
+</blockquote>
+<p>--primary:</p>
+<blockquote>
+<p>指定为主屏幕</p>
+</blockquote>
+<p>--off:</p>
+<blockquote>
+<p>关闭指定屏幕</p>
+</blockquote>
+<h2>音量控制alsamixer</h2>
+<p>Linux Mint安装:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$sudo apt-get install alsamixergui</div></pre></td></tr></table></figure></p>
+<p>控制命令:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$alsamixergui</div><div class="line">或者</div><div class="line">$alsamixer</div></pre></td></tr></table></figure></p>
+<h2>亮度xbacklight</h2>
+<p>将屏幕亮度调整为60%:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">xbacklight -set 60</div></pre></td></tr></table></figure></p>
+<h2>网络nmcli</h2>
+<p>这是一个命令行工具,用于控制网络.</p>
+<p>输入<code>nmcli</code>之后,使用TAB补齐.很容易上手.</p>
+<h2>截图scrot</h2>
+<p>之前在cinnamon图形界面下,截图我使用的是<code>shutter</code>感觉还挺好用的.</p>
+<p>在i3wm下,如果还是使用<code>shutter</code>的话,每次会打开一个新的窗口不是很方便.</p>
+<p>所以我使用scrot来截图.首先安装<code>scrot</code>,然后在主配置文件中添加配置:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># scrot fullscreen</div><div class="line">bindsym --release Print exec scrot -e &apos;mv $f /tmp/&apos;</div><div class="line"># scrot - select window or rectangle</div><div class="line">bindsym --release $mod+Print exec scrot -s -e &apos;mv $f /tmp/&apos;</div></pre></td></tr></table></figure></p>
+<p>现在使用Print键全屏截图,使用MOD+Print鼠标划取截图.所有截图的图片存放在/tmp目录下.</p>
+<h2>启动器dmenu</h2>
+<p>dmenu是我们在i3wm下使用的软件启动器,快捷键是<code>$MOD+d</code>.</p>
+<p>如果需要root权限执行的程序,可以使用<code>$MOD+Shift+d</code>来启动dmenu的root模式.</p>
+<p>启动dmenu后,输入需要启动的程序名即可,支持模糊匹配,区分大小写.</p>
+<p>好像还有其他的启动器,由于dmenu已经可以满足我的需要了,所以我浅尝辄止了.</p>
+<h2>系统信息i3status</h2>
+<p><a href="http://i3wm.org/i3status/manpage.html#_options" target="_blank" rel="external">i3status官方说明</a></p>
+<p>状态栏可以显示一些系统信息,包括:</p>
+<ul>
+<li>有线网络</li>
+<li>无线网络</li>
+<li>CPU负载</li>
+<li>特定进程</li>
+<li>电池电量</li>
+<li>时间日期</li>
+<li>硬盘容量</li>
+</ul>
+<p>可以参照<a href="https://github.com/chengyi818/dotfiles/tree/master/home" target="_blank" rel="external">我的配置</a>或者网上其他教程,进行设置.</p>
+<h2>工作区</h2>
+<p>工作区是Linux的常见功能.</p>
+<p>i3wm支持的工作区功能包括:</p>
+<ul>
+<li>新建工作区,最多支持10个</li>
+<li>将指定容器移动到指定工作区</li>
+<li>为工作区重命名</li>
+<li>特定程序运行在指定工作区</li>
+</ul>
+<h3>改名</h3>
+<p>通过在主配置中增加配置,将工作区改名.
+比如将工作区1改为Browser:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># 修改工作区名</div><div class="line">#bindsym $mod+1 workspace 1 Browser</div></pre></td></tr></table></figure></p>
+<h3>指定程序打开的工作区</h3>
+<p>指定firefox打开在工作区1</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">assign [class=&quot;(?i)firefox&quot;] 1</div></pre></td></tr></table></figure></p>
+<h2>尾记</h2>
+<p><code>i3wm</code>使用一周以来,体验还是很愉快.感觉占用内存确实比cinnamon少.
+上手比较容易,配置简单.嗯,装逼利器.</p>
+<p><img src="http://imgs.focus.cn/upload/cz/14307/b_143063466.jpg" alt="装逼"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本周是成胖子每周一博的第十六周 :smile:&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;使用i3一周了,感觉还不错.下图是我目前的桌面.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/006kvZhRgw1f2dkku1z
+    
+    </summary>
+    
+      <category term="工具" scheme="http://yitinglove.cn/blog/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="tool" scheme="http://yitinglove.cn/blog/tags/tool/"/>
     
   </entry>
   

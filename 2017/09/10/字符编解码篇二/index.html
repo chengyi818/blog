@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505065745479&di=0c8915eff257e13d552569546ca16f5e&imgtype=0&src=http%3A%2F%2Fimg.hyrtv.cn%2Fmaterial%2Fnews%2Fimg%2F640x%2F2015%2F10%2F20151028154243ZMhU.jpg%3FIDT9" rel="gallery_cjagqnzu1002s4e33ki2ney4o"
+                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505065745479&di=0c8915eff257e13d552569546ca16f5e&imgtype=0&src=http%3A%2F%2Fimg.hyrtv.cn%2Fmaterial%2Fnews%2Fimg%2F640x%2F2015%2F10%2F20151028154243ZMhU.jpg%3FIDT9" rel="gallery_cjajp2gkb002t7833gxr7gm2b"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1505065745479&di=0c8915eff257e13d552569546ca16f5e&imgtype=0&src=http%3A%2F%2Fimg.hyrtv.cn%2Fmaterial%2Fnews%2Fimg%2F640x%2F2015%2F10%2F20151028154243ZMhU.jpg%3FIDT9" itemprop="contentUrl"/>
               </a>
@@ -347,31 +347,46 @@
 <p>对字符编解码有一些了解,但是又不够深入,在实际项目中遇到问题有些束手无措的同学</p>
 </blockquote>
 <hr>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我们上回提到,关于字符编解码,计算机只能处理0和1,而人只能理解符号.我们将符号转换为0/1的过程称之为编码,我们将0/1转换为符号的过程称之为解码.</p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>我们上回提到,关于字符编解码,计算机只能处理0和1,而人只能理解符号.我们将符号转换为0/1的过程称之为编码,我们将0/1转换为符号的过程称之为解码.</p>
 <p>在这个转换的过程中,必须要有一个保存了映射关系的表,来保证在编解码的过程中,信息不会丢失.</p>
 <p>事实上,这种保存了映射关系的表有很多种,且听我们来一一分解.</p>
-<h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>在开始我们的征程之前,让我们先简单熟悉两个概念.</p>
-<h3 id="字节"><a href="#字节" class="headerlink" title="字节"></a>字节</h3><p><strong>字节(byte)</strong>应该是绝大多数程序员非常熟悉的概念.它是计算机中数据存储的基本单元,是衡量数据大小的单位.也就是说,我们的符号编码以后就是以字节为单位存储在计算机当中的.不管是在网络,硬盘,U盘还是内存当中,存储的内容或许会有区别,但是存储的单位都是字节.</p>
-<h3 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h3><p><strong>字符(character)</strong>是一个抽象概念.字符是一个信息单位,是各种文字符号的统称.一个英文字母是一个字符,一个汉字是一个字符,甚至一个Emoji表情也是一个字符.</p>
-<h3 id="定长编码"><a href="#定长编码" class="headerlink" title="定长编码"></a>定长编码</h3><p>前面字节的概念就是用于描述存储长度的,定长编码就是指在一种编码方案中,每个字符所对应的长度是固定的.</p>
-<h3 id="变长编码"><a href="#变长编码" class="headerlink" title="变长编码"></a>变长编码</h3><p>相应地,变长编码就是指在一种编码方案中,每个字符对应的长度是变化的.有的字符编码长一点,有的呢短一点.</p>
-<h2 id="现代编码模型"><a href="#现代编码模型" class="headerlink" title="现代编码模型"></a>现代编码模型</h2><p>在熟悉了基本概念之后,我们先来熟悉下<a href="https://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81" target="_blank" rel="external">现代编码模型</a>.现代编码模型将字符编码分为了5个层次,我们可以使用这样的模型来描述我们遇到的每一种具体的编码格式.下面我们从下到上依次来了解这5个层次.</p>
-<h3 id="抽象字符表"><a href="#抽象字符表" class="headerlink" title="抽象字符表"></a>抽象字符表</h3><p>ACR(Abstract Character Repertoire).我们知道每个编码格式所支持的字符是不一样的,比如Ascii不支持汉字.而抽象字符表就是表示某种编码格式所能支持的全部字符的<strong>集合</strong>.</p>
-<h3 id="编码字符集"><a href="#编码字符集" class="headerlink" title="编码字符集"></a>编码字符集</h3><p>CCS(Coded Character Set).编码字符集是一种映射关系,我们需要将前面的ACR集合中的字符进行简单的映射.比如Ascii将字符<code>a</code>映射为十进制整数97.具体的编码格式可以有各自不同的映射方式.编码字符集在这里已经是一个<strong>映射关系</strong>了.</p>
-<h3 id="字符编码表"><a href="#字符编码表" class="headerlink" title="字符编码表"></a>字符编码表</h3><p>CEF(Character Encoding Form).前面CCS的映射关系还仅仅是一种数学映射关系,那么真正存储的时候我们还需要决定使用多长的字段,怎样来存储这个映射的数值.还是Ascii码中的代表字符<code>a</code>的十进制整数97,我们决定使用一个字节直接将97转换为二进制来存储.</p>
+<h2>基本概念</h2>
+<p>在开始我们的征程之前,让我们先简单熟悉两个概念.</p>
+<h3>字节</h3>
+<p>**字节(byte)**应该是绝大多数程序员非常熟悉的概念.它是计算机中数据存储的基本单元,是衡量数据大小的单位.也就是说,我们的符号编码以后就是以字节为单位存储在计算机当中的.不管是在网络,硬盘,U盘还是内存当中,存储的内容或许会有区别,但是存储的单位都是字节.</p>
+<h3>字符</h3>
+<p>**字符(character)**是一个抽象概念.字符是一个信息单位,是各种文字符号的统称.一个英文字母是一个字符,一个汉字是一个字符,甚至一个Emoji表情也是一个字符.</p>
+<h3>定长编码</h3>
+<p>前面字节的概念就是用于描述存储长度的,定长编码就是指在一种编码方案中,每个字符所对应的长度是固定的.</p>
+<h3>变长编码</h3>
+<p>相应地,变长编码就是指在一种编码方案中,每个字符对应的长度是变化的.有的字符编码长一点,有的呢短一点.</p>
+<h2>现代编码模型</h2>
+<p>在熟悉了基本概念之后,我们先来熟悉下<a href="https://zh.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81" target="_blank" rel="external">现代编码模型</a>.现代编码模型将字符编码分为了5个层次,我们可以使用这样的模型来描述我们遇到的每一种具体的编码格式.下面我们从下到上依次来了解这5个层次.</p>
+<h3>抽象字符表</h3>
+<p>ACR(Abstract Character Repertoire).我们知道每个编码格式所支持的字符是不一样的,比如Ascii不支持汉字.而抽象字符表就是表示某种编码格式所能支持的全部字符的<strong>集合</strong>.</p>
+<h3>编码字符集</h3>
+<p>CCS(Coded Character Set).编码字符集是一种映射关系,我们需要将前面的ACR集合中的字符进行简单的映射.比如Ascii将字符<code>a</code>映射为十进制整数97.具体的编码格式可以有各自不同的映射方式.编码字符集在这里已经是一个<strong>映射关系</strong>了.</p>
+<h3>字符编码表</h3>
+<p>CEF(Character Encoding Form).前面CCS的映射关系还仅仅是一种数学映射关系,那么真正存储的时候我们还需要决定使用多长的字段,怎样来存储这个映射的数值.还是Ascii码中的代表字符<code>a</code>的十进制整数97,我们决定使用一个字节直接将97转换为二进制来存储.</p>
 <p>在后面介绍其他编码格式的时候,我们将看到其他不同的CEF方案.</p>
-<h3 id="字符编码方案"><a href="#字符编码方案" class="headerlink" title="字符编码方案"></a>字符编码方案</h3><p>CES(Character Encoding Scheme).Ascii比较简单,一个字节可以表示所有的字符.而有些编码格式需要多个字符,那么在读写传输的过程中,必然会涉及大小端的问题.所以CES就是CEF加上了字节序列化.</p>
+<h3>字符编码方案</h3>
+<p>CES(Character Encoding Scheme).Ascii比较简单,一个字节可以表示所有的字符.而有些编码格式需要多个字符,那么在读写传输的过程中,必然会涉及大小端的问题.所以CES就是CEF加上了字节序列化.</p>
 <p>通常我们说的编码格式,就是指的是CES的概念.</p>
-<h3 id="传输编码语法"><a href="#传输编码语法" class="headerlink" title="传输编码语法"></a>传输编码语法</h3><p>TES(Transfer Encoding Syntax).TES的概念我们后面不会涉及,我们在这里稍微介绍下.</p>
+<h3>传输编码语法</h3>
+<p>TES(Transfer Encoding Syntax).TES的概念我们后面不会涉及,我们在这里稍微介绍下.</p>
 <p>一般其功能包括两种:</p>
 <ol>
-<li><p>把CES的值映射到一套更受限制的值域内,以满足传输环境的限制,例如Email传输时Base64或者quoted-printable,都是把8位的字节编码为7位长的数据.</p>
+<li>
+<p>把CES的值映射到一套更受限制的值域内,以满足传输环境的限制,例如Email传输时Base64或者quoted-printable,都是把8位的字节编码为7位长的数据.</p>
 </li>
-<li><p>另一是压缩CES的长度，如使用LZW或者行程长度编码等无损压缩技术。</p>
+<li>
+<p>另一是压缩CES的长度，如使用LZW或者行程长度编码等无损压缩技术。</p>
 </li>
 </ol>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="http://ww1.sinaimg.cn/large/006kvZhRly1fjeuvzrc3mj31h80wmgtw.jpg" alt="现代编码模型"></p>
+<h2>总结</h2>
+<p><img src="http://ww1.sinaimg.cn/large/006kvZhRly1fjeuvzrc3mj31h80wmgtw.jpg" alt="现代编码模型"></p>
 <p>本章我们主要介绍了一些基本概念和现代编码模型.其中现代编码模型非常重要,因为后面我们会涉及相当多的术语和概念,而它们都在编码模型中,有自己的位置.</p>
 <p>所以熟悉编码模型有助于厘清概念.</p>
 
@@ -492,7 +507,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -509,7 +524,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/blog/tags">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -545,7 +560,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本概念"><span class="nav-number">2.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#字节"><span class="nav-number">2.1.</span> <span class="nav-text">字节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符"><span class="nav-number">2.2.</span> <span class="nav-text">字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定长编码"><span class="nav-number">2.3.</span> <span class="nav-text">定长编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变长编码"><span class="nav-number">2.4.</span> <span class="nav-text">变长编码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#现代编码模型"><span class="nav-number">3.</span> <span class="nav-text">现代编码模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#抽象字符表"><span class="nav-number">3.1.</span> <span class="nav-text">抽象字符表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编码字符集"><span class="nav-number">3.2.</span> <span class="nav-text">编码字符集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符编码表"><span class="nav-number">3.3.</span> <span class="nav-text">字符编码表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符编码方案"><span class="nav-number">3.4.</span> <span class="nav-text">字符编码方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传输编码语法"><span class="nav-number">3.5.</span> <span class="nav-text">传输编码语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">字节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">定长编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">变长编码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">现代编码模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">抽象字符表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.2.</span> <span class="nav-text">编码字符集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.3.</span> <span class="nav-text">字符编码表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.4.</span> <span class="nav-text">字符编码方案</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.5.</span> <span class="nav-text">传输编码语法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
           </div>
         </section>

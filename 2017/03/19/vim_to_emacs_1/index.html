@@ -329,7 +329,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490529192&di=a4bb06fea2b597a8745cbc4f68045eef&imgtype=jpg&er=1&src=http%3A%2F%2Fvimg.256.cc%2Fuploads%2F2017%2F0217%2F20170217040206958.jpg" rel="gallery_cjagqnzts002a4e33zh2zy577"
+                 href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490529192&di=a4bb06fea2b597a8745cbc4f68045eef&imgtype=jpg&er=1&src=http%3A%2F%2Fvimg.256.cc%2Fuploads%2F2017%2F0217%2F20170217040206958.jpg" rel="gallery_cjajp2gk100287833m88zaorq"
                  itemscope itemtype="//schema.org/ImageObject" itemprop="url">
                 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490529192&di=a4bb06fea2b597a8745cbc4f68045eef&imgtype=jpg&er=1&src=http%3A%2F%2Fvimg.256.cc%2Fuploads%2F2017%2F0217%2F20170217040206958.jpg" itemprop="contentUrl"/>
               </a>
@@ -347,9 +347,13 @@
 <p>编辑器爱好者,了解vim基本使用</p>
 </blockquote>
 <hr>
-<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a><br>篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a><br>篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a><br>篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
-<a id="more"></a>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>编辑器是程序员手中最重要的兵器,充满Geek精神的程序员总是愿意折腾这些东西.</p>
+<p>篇一: <a href="http://yitinglove.cn/blog/2017/03/19/vim_to_emacs_1/">初识vim</a>
+篇二: <a href="http://yitinglove.cn/blog/2017/03/26/vim_to_emacs_2/">vim的配置与使用</a>
+篇三: <a href="http://yitinglove.cn/blog/2017/04/04/vim_to_emacs_3/">vim的不足和新的选择</a>
+篇四: <a href="http://yitinglove.cn/blog/2017/04/23/vim_to_emacs_4/">spacemacs入门</a></p>
+<p>&lt;!--more--&gt;</p>
+<h2>前言</h2>
+<p>编辑器是程序员手中最重要的兵器,充满Geek精神的程序员总是愿意折腾这些东西.</p>
 <p>有人开玩笑,程序员分3种:</p>
 <ol>
 <li>用vim的程序员</li>
@@ -357,12 +361,14 @@
 <li>其他程序员</li>
 </ol>
 <p>推荐阅读<a href="http://blog.jobbole.com/44891/" target="_blank" rel="external">七个高效的文本编辑习惯</a>,了解一个优秀的编辑器该有的特点.</p>
-<h2 id="人生若只如初见"><a href="#人生若只如初见" class="headerlink" title="人生若只如初见"></a>人生若只如初见</h2><p>在我念书的时候,接触的操作系统是Windows,那么自然而然的接触的第一个编辑器是微软的Visual Studio.</p>
+<h2>人生若只如初见</h2>
+<p>在我念书的时候,接触的操作系统是Windows,那么自然而然的接触的第一个编辑器是微软的Visual Studio.</p>
 <p>第一次听到vim的大名,应该是在<em>鸟哥的Linux私房菜</em>中讲了一部分关于vim的知识.其中只讲了关于vim的基础知识.</p>
 <p>刚接触vim的同学,可以首先从vim tutor开始.这里推荐一个初学者网站<a href="http://www.openvim.com/" target="_blank" rel="external">openvim</a>,可以学习vim的基本操作.</p>
 <p>说实话当时并不感觉vim有多么强大,而且很不适应完全不使用鼠标的感觉.</p>
 <p>作为一名偏向底层和系统的程序员,在工作以后不断听到vim的消息.慢慢深入其中,才发觉其中的瑰丽.</p>
-<h3 id="历史"><a href="#历史" class="headerlink" title="历史"></a>历史</h3><p>熟悉vim,首先要了解一点vim的历史.</p>
+<h3>历史</h3>
+<p>熟悉vim,首先要了解一点vim的历史.</p>
 <p>vim是从vi发展而来,而vi诞生于20世纪的70年代,是专门为程序员编写程序所设计的编辑器.</p>
 <p>那个时候计算机刚刚蹒跚学步,还没有鼠标诞生.所以vim天然就支持全键盘操作,这就让程序员可以做到<code>手随心动</code>.</p>
 <p>这是优秀的编辑器的一个重要特点.在大脑高速运转的时候,如果突然需要双手离开键盘,那就太出戏了.</p>
@@ -371,7 +377,8 @@
 <p>优秀编辑器的第一个要求: 手随心动</p>
 </blockquote>
 <p>另外,在当时的计算机语言中,很多惯常的用语和我们现在不太一样.比如复制,当时使用的单词是<code>yank</code>,对于这些情况,需要一定的时间来适应.</p>
-<h3 id="模式切换"><a href="#模式切换" class="headerlink" title="模式切换"></a>模式切换</h3><p>提到了vim的手随心动,那就不得不提vim的模式切换.</p>
+<h3>模式切换</h3>
+<p>提到了vim的手随心动,那就不得不提vim的模式切换.</p>
 <p>普通的编辑器,一个按键往往就代表一个功能.如果需要实现一些特殊功能,基本都是需要组合按键的.像人们所熟知的<code>Ctrl+c</code>代表复制</p>
 <p>然而由于组合键数量有限,那么就不太可能实现太多的功能.</p>
 <p>在vim当中存在多种模式,最为常用的是普通模式和插入模式.在这两种模式当中,同样的按键代表的截然不同的功能.比如<code>j</code>,在输入模式就是一个普通<code>j</code>字母.</p>
@@ -380,7 +387,8 @@
 <blockquote>
 <p>优秀编辑器的第二个要求: 双手基本不需要离开核心区</p>
 </blockquote>
-<h3 id="高效的快捷键"><a href="#高效的快捷键" class="headerlink" title="高效的快捷键"></a>高效的快捷键</h3><p>vim的快捷键往往会让人头疼,一下子接触了实在是太多了.</p>
+<h3>高效的快捷键</h3>
+<p>vim的快捷键往往会让人头疼,一下子接触了实在是太多了.</p>
 <p>单单说说移动光标吧,上下左右全部可以用快捷键操作.前一个单词的队头/队尾,后一个单词的队头/队尾也是快捷键.</p>
 <p>整句的队头/队尾,整篇的队头/队尾还是快捷键.向上翻一页/翻半页,向下翻一页/翻半页也还是快捷键.</p>
 <p>甚至不翻页,单移动光标到当前页的队头/队中/队尾居然也是快捷键.</p>
@@ -388,21 +396,25 @@
 <blockquote>
 <p>优秀编辑器的第三个要求: 丰富的快捷键</p>
 </blockquote>
-<h3 id="丰富而优秀的插件"><a href="#丰富而优秀的插件" class="headerlink" title="丰富而优秀的插件"></a>丰富而优秀的插件</h3><p>vim的插件之丰富,令人惊叹.根据不同的用途,按需取用合适的插件.</p>
+<h3>丰富而优秀的插件</h3>
+<p>vim的插件之丰富,令人惊叹.根据不同的用途,按需取用合适的插件.</p>
 <p><a href="https://github.com/VundleVim/Vundle.vim" target="_blank" rel="external">bundle</a>是专门用于管理vim插件的插件.</p>
 <p><a href="http://vimawesome.com/" target="_blank" rel="external">vim aswsome</a>则罗列了优秀的vim插件</p>
 <blockquote>
 <p>优秀编辑器的第四个要求: 丰富的插件和优秀的插件管理器</p>
 </blockquote>
-<h3 id="强大的可定制性"><a href="#强大的可定制性" class="headerlink" title="强大的可定制性"></a>强大的可定制性</h3><p>除了vim标准的快捷键和插件提供的功能,vim允许用户使用<code>vimscript</code>来定制属于他们自己的功能.</p>
+<h3>强大的可定制性</h3>
+<p>除了vim标准的快捷键和插件提供的功能,vim允许用户使用<code>vimscript</code>来定制属于他们自己的功能.</p>
 <p>比如在输入模式下,我希望可以不切换到普通模式就可以直接向右移动,这在括号内输入时非常有用.</p>
 <p>那么我们可以在<code>.vimrc</code>中加入: <code>imap &lt;c-l&gt; &lt;Right&gt;</code>,这代表了在插入模式下,将<code>Ctrl+l</code>映射为向右移动.</p>
 <blockquote>
 <p>优秀编辑器的第五个要求: 高度可定制化</p>
 </blockquote>
-<h3 id="其他的常规功能"><a href="#其他的常规功能" class="headerlink" title="其他的常规功能"></a>其他的常规功能</h3><p>其他的一些功能,比如:分屏,代码跳转,文件列表,函数列表.那已经是程序员编辑器的标配了.</p>
+<h3>其他的常规功能</h3>
+<p>其他的一些功能,比如:分屏,代码跳转,文件列表,函数列表.那已经是程序员编辑器的标配了.</p>
 <p>那作为<code>编辑器之神</code>的vim自然是具备的.</p>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>在学习vim的过程中,一本叫做<em>vim实用技巧</em>的书,对我帮助很大.这里推荐给有兴趣的朋友.</p>
+<h2>尾记</h2>
+<p>在学习vim的过程中,一本叫做<em>vim实用技巧</em>的书,对我帮助很大.这里推荐给有兴趣的朋友.</p>
 <p>vim的学习曲线很陡峭,但是投入的时间是值得的.vim的模式切换已经被大量的编辑器所接纳和吸收.</p>
 <p>下一篇,我将介绍如何基于<a href="https://github.com/spf13/spf13-vim" target="_blank" rel="external">spf13</a>配置和使用vim.</p>
 
@@ -525,7 +537,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -542,7 +554,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/blog/tags">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -578,7 +590,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人生若只如初见"><span class="nav-number">2.</span> <span class="nav-text">人生若只如初见</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#历史"><span class="nav-number">2.1.</span> <span class="nav-text">历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模式切换"><span class="nav-number">2.2.</span> <span class="nav-text">模式切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#高效的快捷键"><span class="nav-number">2.3.</span> <span class="nav-text">高效的快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#丰富而优秀的插件"><span class="nav-number">2.4.</span> <span class="nav-text">丰富而优秀的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#强大的可定制性"><span class="nav-number">2.5.</span> <span class="nav-text">强大的可定制性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他的常规功能"><span class="nav-number">2.6.</span> <span class="nav-text">其他的常规功能</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">3.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">人生若只如初见</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.1.</span> <span class="nav-text">历史</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.</span> <span class="nav-text">模式切换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.3.</span> <span class="nav-text">高效的快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.4.</span> <span class="nav-text">丰富而优秀的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.5.</span> <span class="nav-text">强大的可定制性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.6.</span> <span class="nav-text">其他的常规功能</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">尾记</span></a></li></ol></div>
             
           </div>
         </section>

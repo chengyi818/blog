@@ -86,17 +86,32 @@
 
 
 
-<meta name="description" content="本周是成胖子每周一博的第五周.更好的阅读体验,请点击这里">
+<meta name="description" content="本周是成胖子每周一博的第五周.
+更好的阅读体验,请点击这里
+&amp;lt;!--more--&amp;gt;
+
+前言
+ 前一篇博客中,我们已经知道整个openwrt的编译顺序,本文我们来探讨与开发者息息相关的单个ipk的编译过程.在开发者进行二次开发的时候,我们既可以单个编译ipk也可以完整编译整个镜像文件.在完整编译的时候,我们选中的单个ipk同样会被编入镜像文件中,所以完整编译同样会进行单个ipk包的编译.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="openwrt单个ipk编译过程">
 <meta property="og:url" content="http://yitinglove.cn/blog/2016/01/03/openwrt单个ipk编译过程/index.html">
 <meta property="og:site_name" content="道法自然">
-<meta property="og:description" content="本周是成胖子每周一博的第五周.更好的阅读体验,请点击这里">
+<meta property="og:description" content="本周是成胖子每周一博的第五周.
+更好的阅读体验,请点击这里
+&amp;lt;!--more--&amp;gt;
+
+前言
+ 前一篇博客中,我们已经知道整个openwrt的编译顺序,本文我们来探讨与开发者息息相关的单个ipk的编译过程.在开发者进行二次开发的时候,我们既可以单个编译ipk也可以完整编译整个镜像文件.在完整编译的时候,我们选中的单个ipk同样会被编入镜像文件中,所以完整编译同样会进行单个ipk包的编译.">
 <meta property="og:image" content="http://ww4.sinaimg.cn/large/006kvZhRjw1ezmd5eo1iej31bb0fcwh0.jpg">
 <meta property="og:updated_time" content="2017-11-25T13:35:30.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="openwrt单个ipk编译过程">
-<meta name="twitter:description" content="本周是成胖子每周一博的第五周.更好的阅读体验,请点击这里">
+<meta name="twitter:description" content="本周是成胖子每周一博的第五周.
+更好的阅读体验,请点击这里
+&amp;lt;!--more--&amp;gt;
+
+前言
+ 前一篇博客中,我们已经知道整个openwrt的编译顺序,本文我们来探讨与开发者息息相关的单个ipk的编译过程.在开发者进行二次开发的时候,我们既可以单个编译ipk也可以完整编译整个镜像文件.在完整编译的时候,我们选中的单个ipk同样会被编入镜像文件中,所以完整编译同样会进行单个ipk包的编译.">
 <meta name="twitter:image" content="http://ww4.sinaimg.cn/large/006kvZhRjw1ezmd5eo1iej31bb0fcwh0.jpg">
 
 
@@ -326,17 +341,21 @@
       
 
       
-        <p>本周是成胖子每周一博的第五周.<br>更好的阅读体验,请点击<a href="https://www.zybuluo.com/icyriver/note/257687" target="_blank" rel="external">这里</a></p>
-<a id="more"></a>
+        <p>本周是成胖子每周一博的第五周.
+更好的阅读体验,请点击<a href="https://www.zybuluo.com/icyriver/note/257687" target="_blank" rel="external">这里</a></p>
+<p>&lt;!--more--&gt;</p>
 <hr>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>&emsp;前一篇博客中,我们已经知道整个openwrt的编译顺序,本文我们来探讨与开发者息息相关的单个ipk的编译过程.在开发者进行二次开发的时候,我们既可以单个编译ipk也可以完整编译整个镜像文件.在完整编译的时候,我们选中的单个ipk同样会被编入镜像文件中,所以完整编译同样会进行单个ipk包的编译.</p>
+<h2>前言</h2>
+<p> 前一篇博客中,我们已经知道整个openwrt的编译顺序,本文我们来探讨与开发者息息相关的单个ipk的编译过程.在开发者进行二次开发的时候,我们既可以单个编译ipk也可以完整编译整个镜像文件.在完整编译的时候,我们选中的单个ipk同样会被编入镜像文件中,所以完整编译同样会进行单个ipk包的编译.</p>
 <p>我们前面在<em>stampfile</em>函数部分提高过,当编译目标为<strong>package/stamp-compile</strong>的时候,实际执行的目标为<strong>package/compile</strong>;同时根据<em>subdir</em>函数的定义,<strong>package/compile</strong>将会依赖于package文件夹下被<code>make menuconfig</code>选中的子文件夹的<strong>compile</strong>.简而言之,当我们执行<code>make package/compile</code>相当于对所有选中的文件夹执行<code>make package/XXX/compile</code>.</p>
 <hr>
-<h2 id="ipk-Makefile分析"><a href="#ipk-Makefile分析" class="headerlink" title="ipk Makefile分析"></a>ipk Makefile分析</h2><p>我们以一个具体的包的编译过程来看看,本文我们以package/network/services/dropbear这个包为例.当我们在命令行中输入<code>make package/network/services/dropbear/compile</code>的时候,<strong>make</strong>将会读入dropbear下的Makefile文件,同时目标指定为<strong>compile</strong>.</p>
-<p>因为空间问题,我在这里不展开具体的Makefile文件.相信能看这篇博客的同学应该都有源码,自己打开便是.<br>下面我们根据<strong>GNU make</strong>语法来分析这个Makefile文件.它包含了两个.mk文件:一个是rules.mk,另一个是package.mk.</p>
+<h2>ipk Makefile分析</h2>
+<p>我们以一个具体的包的编译过程来看看,本文我们以package/network/services/dropbear这个包为例.当我们在命令行中输入<code>make package/network/services/dropbear/compile</code>的时候,<strong>make</strong>将会读入dropbear下的Makefile文件,同时目标指定为<strong>compile</strong>.</p>
+<p>因为空间问题,我在这里不展开具体的Makefile文件.相信能看这篇博客的同学应该都有源码,自己打开便是.
+下面我们根据<strong>GNU make</strong>语法来分析这个Makefile文件.它包含了两个.mk文件:一个是rules.mk,另一个是package.mk.</p>
 <p>rules.mk:</p>
 <blockquote>
-<p>这个文件我们前文已经提到过了,主要是大量变量的定义.包括各种路径的定义,编译器的定义等等.其中要说明的是<strong>.config</strong>文件也是这里被包含进来的.</p>
+<p>这个文件我们前文已经提到过了,主要是大量变量的定义.包括各种路径的定义,编译器的定义等等.其中要说明的是**.config**文件也是这里被包含进来的.</p>
 </blockquote>
 <p>package.mk</p>
 <blockquote>
@@ -344,26 +363,34 @@
 </blockquote>
 <p>其余的我们可以认为是变量的赋值语句,很明显使用它们的地方并不在这里.关于模板和变量值的说明及作用.,你可以参照<a href="https://wiki.openwrt.org/doc/devel/packages" target="_blank" rel="external">官方说明</a>,也可以在网上找到一大堆资料.</p>
 <p>最后,最重要的语句是这一句:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(eval $(call BuildPackage,dropbear))</div></pre></td></tr></table></figure>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(eval $(call BuildPackage,dropbear))</div></pre></td></tr></table></figure></p>
 <p>这里将会把<strong>dropbear</strong>作为参数值传给函数<strong>BuildPackage</strong></p>
-<p>Tips<br>:   不知道大家还记得我们Makefile的执行顺序么?Makefile是先读入所有信息,展开,然后生成依赖关系.最后再按依赖关系先后来执行.</p>
+<p>Tips
+:   不知道大家还记得我们Makefile的执行顺序么?Makefile是先读入所有信息,展开,然后生成依赖关系.最后再按依赖关系先后来执行.</p>
 <hr>
-<h2 id="依赖关系"><a href="#依赖关系" class="headerlink" title="依赖关系"></a>依赖关系</h2><h3 id="BuildPackage分析"><a href="#BuildPackage分析" class="headerlink" title="BuildPackage分析"></a>BuildPackage分析</h3><p><strong>BuildPackage</strong>的定义在<strong>package.mk</strong>中,定义如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">define BuildPackage</div><div class="line">  $(Build/IncludeOverlay)</div><div class="line">  $(eval $(Package/Default))</div><div class="line">  $(eval $(Package/$(1)))</div><div class="line"></div><div class="line">ifdef DESCRIPTION</div><div class="line">$$(error DESCRIPTION:= is obsolete, use Package/PKG_NAME/description)</div><div class="line">endif</div><div class="line"></div><div class="line">ifndef Package/$(1)/description</div><div class="line">define Package/$(1)/description</div><div class="line">	$(TITLE)</div><div class="line">endef</div><div class="line">endif</div><div class="line"></div><div class="line">  BUILD_PACKAGES += $(1)</div><div class="line">  $(STAMP_PREPARED): $$(if $(QUILT)$(DUMP),,$(call find_library_dependencies,$(DEPENDS)))</div><div class="line"></div><div class="line">  $(foreach FIELD, TITLE CATEGORY SECTION VERSION,</div><div class="line">    ifeq ($($(FIELD)),)</div><div class="line">      $$(error Package/$(1) is missing the $(FIELD) field)</div><div class="line">    endif</div><div class="line">  )</div><div class="line"></div><div class="line">  $(if $(DUMP), \</div><div class="line">    $(Dumpinfo/Package), \</div><div class="line">    $(foreach target, \</div><div class="line">      $(if $(Package/$(1)/targets),$(Package/$(1)/targets), \</div><div class="line">        $(if $(PKG_TARGETS),$(PKG_TARGETS), ipkg) \</div><div class="line">      ), $(BuildTarget/$(target)) \</div><div class="line">    ) \</div><div class="line">  )</div><div class="line">  $(if $(PKG_HOST_ONLY)$(DUMP),,$(call Build/DefaultTargets,$(1)))</div><div class="line">endef</div></pre></td></tr></table></figure>
+<h2>依赖关系</h2>
+<h3>BuildPackage分析</h3>
+<p><strong>BuildPackage</strong>的定义在<strong>package.mk</strong>中,定义如下:</p>
+<p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line">define BuildPackage</div><div class="line">  $(Build/IncludeOverlay)</div><div class="line">  $(eval $(Package/Default))</div><div class="line">  $(eval $(Package/$(1)))</div><div class="line"></div><div class="line">ifdef DESCRIPTION</div><div class="line">$$(error DESCRIPTION:= is obsolete, use Package/PKG_NAME/description)</div><div class="line">endif</div><div class="line"></div><div class="line">ifndef Package/$(1)/description</div><div class="line">define Package/$(1)/description</div><div class="line">	$(TITLE)</div><div class="line">endef</div><div class="line">endif</div><div class="line"></div><div class="line">  BUILD_PACKAGES += $(1)</div><div class="line">  $(STAMP_PREPARED): $$(if $(QUILT)$(DUMP),,$(call find_library_dependencies,$(DEPENDS)))</div><div class="line"></div><div class="line">  $(foreach FIELD, TITLE CATEGORY SECTION VERSION,</div><div class="line">    ifeq ($($(FIELD)),)</div><div class="line">      $$(error Package/$(1) is missing the $(FIELD) field)</div><div class="line">    endif</div><div class="line">  )</div><div class="line"></div><div class="line">  $(if $(DUMP), \</div><div class="line">    $(Dumpinfo/Package), \</div><div class="line">    $(foreach target, \</div><div class="line">      $(if $(Package/$(1)/targets),$(Package/$(1)/targets), \</div><div class="line">        $(if $(PKG_TARGETS),$(PKG_TARGETS), ipkg) \</div><div class="line">      ), $(BuildTarget/$(target)) \</div><div class="line">    ) \</div><div class="line">  )</div><div class="line">  $(if $(PKG_HOST_ONLY)$(DUMP),,$(call Build/DefaultTargets,$(1)))</div><div class="line">endef</div></pre></td></tr></table></figure></p>
 <p>那么这里的$(1)就是指的传入的参数<strong>dropbear</strong>.这里包含了一些检查和补充变量定义.继续深究下去的线索是第25~32行之间.这里我将它简化后就是展开<strong>BuildTarget/ipkg</strong>;同时第33行,将dropbear当作参数传给函数<strong>Build/DefaultTargets</strong>.</p>
-<p><strong>BuildTarget/ipkg</strong>定义在<strong>package-ipkg.mk</strong>中,我们需要重点关注其中的冒号,这个形成我们的依赖关系.<br><strong>Build/DefaultTargets</strong>定义在<strong>package.mk</strong>中,其中形成了我们stamp-*的依赖关系.根据这些依赖关系,我将关系图绘制如下:<br><img src="http://ww4.sinaimg.cn/large/006kvZhRjw1ezmd5eo1iej31bb0fcwh0.jpg" alt="package/compile"></p>
-<h2 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h2><p>当我们得出依赖关系后,执行过程就是倒序进行而已,即从上图的右边向左执行.这也可以和我们预料的执行过程相印证.</p>
-<p>$(stamp-prepared)<br>:   主要完成代码包的准备工作,如果开发者定义了<strong>build/prepare</strong>,则执行<strong>build/prepare</strong>.如果开发者未定义,则执行<strong>build/prepare/default</strong>这其中包含了多个情形,最为常见的是将<strong>dl</strong>下的压缩包解压并打上patch.</p>
+<p><strong>BuildTarget/ipkg</strong>定义在<strong>package-ipkg.mk</strong>中,我们需要重点关注其中的冒号,这个形成我们的依赖关系.
+<strong>Build/DefaultTargets</strong>定义在<strong>package.mk</strong>中,其中形成了我们stamp-*的依赖关系.根据这些依赖关系,我将关系图绘制如下:
+<img src="http://ww4.sinaimg.cn/large/006kvZhRjw1ezmd5eo1iej31bb0fcwh0.jpg" alt="package/compile"></p>
+<h2>执行</h2>
+<p>当我们得出依赖关系后,执行过程就是倒序进行而已,即从上图的右边向左执行.这也可以和我们预料的执行过程相印证.</p>
+<p>$(stamp-prepared)
+:   主要完成代码包的准备工作,如果开发者定义了<strong>build/prepare</strong>,则执行<strong>build/prepare</strong>.如果开发者未定义,则执行<strong>build/prepare/default</strong>这其中包含了多个情形,最为常见的是将<strong>dl</strong>下的压缩包解压并打上patch.</p>
 <p>$(stamp-built)</p>
 <blockquote>
-<p>这个将会进入到<strong>build_dir/target-XXX/</strong>下对应的文件夹进行编译.同时将会带入一些定义好的变量.比如CFLAGS,LDFLAGS.</p>
+<p>这个将会进入到**build_dir/target-XXX/**下对应的文件夹进行编译.同时将会带入一些定义好的变量.比如CFLAGS,LDFLAGS.</p>
 </blockquote>
 <p>IPKG_(1)</p>
 <blockquote>
 <p>这个目标将会将编译好的文件安装到对应的<strong>ipkg-arch</strong>目录下,同时将这个目录打包为ipk文件.</p>
 </blockquote>
 <hr>
-<h2 id="尾记"><a href="#尾记" class="headerlink" title="尾记"></a>尾记</h2><p>本周博客基本就到这里,本来私心想着元旦没啥大事,可以写两篇的.结果混着混着就到第三天晚上了.剩下的最后一篇我们看看单个的ipk编译好了,内核的编译过程,最后的打包过程.整个镜像文件由哪些部分组成.下周再见.</p>
+<h2>尾记</h2>
+<p>本周博客基本就到这里,本来私心想着元旦没啥大事,可以写两篇的.结果混着混着就到第三天晚上了.剩下的最后一篇我们看看单个的ipk编译好了,内核的编译过程,最后的打包过程.整个镜像文件由哪些部分组成.下周再见.</p>
 
       
     </div>
@@ -484,7 +511,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/blog/archives">
-              <span class="site-state-item-count">39</span>
+              <span class="site-state-item-count">37</span>
               <span class="site-state-item-name">posts</span>
             </a>
           </div>
@@ -501,7 +528,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/blog/tags">
-                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-count">25</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -537,7 +564,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ipk-Makefile分析"><span class="nav-number">2.</span> <span class="nav-text">ipk Makefile分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#依赖关系"><span class="nav-number">3.</span> <span class="nav-text">依赖关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#BuildPackage分析"><span class="nav-number">3.1.</span> <span class="nav-text">BuildPackage分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#执行"><span class="nav-number">4.</span> <span class="nav-text">执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#尾记"><span class="nav-number">5.</span> <span class="nav-text">尾记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">ipk Makefile分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">依赖关系</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.1.</span> <span class="nav-text">BuildPackage分析</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">4.</span> <span class="nav-text">执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">5.</span> <span class="nav-text">尾记</span></a></li></ol></div>
             
           </div>
         </section>
